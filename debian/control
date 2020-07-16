@@ -4,6 +4,9 @@ Priority: optional
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
 Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.7.0), po-debconf (>= 0.5.0)
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/apt-setup
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/apt-setup.git
 
 Package: apt-setup-udeb
 Package-Type: udeb
@@ -16,7 +19,7 @@ Description: Configure apt
 Package: apt-mirror-setup
 Package-Type: udeb
 Architecture: all
-Depends: choose-mirror-bin, ${misc:Depends}
+Depends: choose-mirror-bin, base-installer (>= 1.195), ${misc:Depends}
 Description: set up a mirror in sources.list
 
 Package: apt-cdrom-setup

@@ -1,3 +1,23 @@
+apt-setup (1:0.158+kaisen1) kaisen-devel; urgency=medium
+
+  * Import new upstream release 
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Thu, 16 Jul 2020 15:57:44 +0200
+
+apt-setup (1:0.158) unstable; urgency=medium
+
+  * Team upload.
+
+  [ наб ]
+  * apt-mirror-setup: Depend on base-installer (>= 1.195)
+  * generators/50mirror: Use is_ports_architecture from base-installer
+
+  [ Updated translations ]
+  * Persian (fa.po) by Reg3xp
+  * Icelandic (is.po) by Sveinn í Felli
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 12 Jul 2020 13:38:19 +0200
+
 apt-setup (1:0.157+kaisen1) kaisen-devel; urgency=medium
 
   * Adapting 91security file for Kaisen Linux (adding personnal repositories)

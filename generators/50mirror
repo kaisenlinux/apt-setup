@@ -2,6 +2,7 @@
 set -e
 
 . /usr/share/debconf/confmodule
+. /usr/lib/base-installer/library.sh
 
 file="$1"
 
@@ -25,22 +26,11 @@ ask_no_mirror() {
 	fi
 }
 
-is_ports_architecture() {
-	case "$(chroot /target /usr/bin/dpkg --print-architecture)" in
-		alpha|hppa|hurd-i386|ia64|kfreebsd-amd64|kfreebsd-i386|m68k|powerpc|ppc64|riscv64|sh4|sparc64|x32)
-			log "Debian-Ports architecture detected"
-			return 0
-			;;
-		*)
-			return 1
-			;;
-	esac
-}
-
 # For architectures in the Debian-Ports archive, sources.list has to include
 # an additional entry for the "unreleased" suite.
 unset use_unreleased
-if is_ports_architecture; then
+if is_ports_architecture "$(chroot /target /usr/bin/dpkg --print-architecture)"; then
+	log "Debian-Ports architecture detected"
 	use_unreleased=yes
 fi
 

@@ -9,7 +9,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 #
 # Copyright (C) 2010 Free Software Foundation
-# Sveinn í Felli <sv1@fellsnet.is>, 2018, 2019.
+# Sveinn í Felli <sv1@fellsnet.is>, 2018, 2019, 2020.
 #
 # Translations from iso-codes:
 # Copyright (C) 2002,2003, 2010, 2011, 2012 Free Software Foundation, Inc.
@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: Icelandic (Debian Installer)\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-11-21 11:04+0000\n"
+"PO-Revision-Date: 2020-06-23 09:41+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -163,7 +163,7 @@ msgid ""
 "Commented out entries for ${HOST} have been added to the /etc/apt/sources."
 "list file."
 msgstr ""
-"Óvirkum færslum fyrir ${HOST}  hefur núna verið bætt við /etc/apt/sources."
+"Óvirkum færslum fyrir ${HOST} hefur núna verið bætt við /etc/apt/sources."
 "list skránna."
 
 #. Type: multiselect
@@ -373,7 +373,7 @@ msgstr "Diskmynd með eftirfarandi merkingu hefur verið lesin:"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "The image with the following label has already been scanned:"
-msgstr "Diskmynd með eftirfarandi merkingu  hefur þegar verið lesin:"
+msgstr "Diskmynd með eftirfarandi merkingu hefur þegar verið lesin:"
 
 #. Type: boolean
 #. Description
