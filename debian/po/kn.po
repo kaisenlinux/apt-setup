@@ -10,6 +10,7 @@
 # Translators:
 # shashi kiran <shashi859@gmail.com>, 2010, 2011.
 # Prabodh CP <prabodhcp@gmail.com>, 2011.
+# Yogesh <yogesh@karnatakaeducation.org.in>, 2020.
 #
 # Credits: Thanks to contributions from Free Software Movement Karnataka (FSMK), 2011.
 #
@@ -21,8 +22,8 @@ msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-08-28 18:10+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
+"PO-Revision-Date: 2020-07-21 17:24+0000\n"
+"Last-Translator: Yogesh <yogesh@karnatakaeducation.org.in>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
 "Language: kn\n"
 "MIME-Version: 1.0\n"
@@ -274,9 +275,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "ಅನುಸ್ಥಾಪನೆಯನ್ನು ಅಂತ್ಯಗೊಳಿಸಲಾಗುತ್ತಿದೆ."
+msgstr "ಇನ್ಸ್ಟಾಲ್ ಲೇಶನ್ ಮೀಡಿಯ ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
 #. Type: error
 #. Description

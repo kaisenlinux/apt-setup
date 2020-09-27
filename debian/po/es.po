@@ -4,7 +4,7 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Spanish messages for debian-installer.
-# Copyright (C) 2003-2018 Software in the Public Interest, Inc.
+# Copyright (C) 2003-2020 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 # Contributors to the translation of debian-installer:
@@ -17,7 +17,7 @@
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2005
 # Rubén Porras Campo <nahoo@inicia.es>, 2005
 # Omar Campagne <ocampagne@gmail.com>, 2010
-# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2012, 2014-2018
+# Javier Fernández-Sanguino <jfs@debian.org>, 2003-2012, 2014-2018, 2020
 #
 # Equipo de traducción al español, por favor lean antes de traducir
 # los siguientes documentos:
@@ -59,7 +59,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2018-12-19 23:49+0100\n"
+"PO-Revision-Date: 2020-08-23 19:21+0200\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -320,9 +320,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Finalizando la instalación"
+msgstr "Analizando los medios de instalación..."
 
 #. Type: error
 #. Description
@@ -338,13 +337,12 @@ msgstr "problema de configuración de apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
 "Ha fallado el intento de configurar apt para instalar paquetes adicionales "
-"del CD."
+"desde el medio de instalación."
 
 #. Type: boolean
 #. Description
@@ -360,32 +358,30 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "La instalación de SILO ha fallado"
+msgstr "¿Desea analizar medios de instalación adicionales?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Escaneando el medio de instalación se encontró la etiqueta:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Ahora tiene la opción de analizar CDs o DVDs adicionales para que los "
-"utilice el gestor de paquetes («apt»). Generalmente estos deberían ser del "
-"mismo conjunto que el CD/DVD de instalación. Puede omitir este paso si no "
-"dispone de más CDs o DVDs."
+"Ahora tiene la opción de analizar medios de instalación adicionales para que "
+"los utilice el gestor de paquetes («apt»). Generalmente estos deberían ser "
+"del mismo conjunto de instalación que utilizó inicialmente. Puede omitir "
+"este paso si no dispone de más medios de instalación."
 
 #. Type: boolean
 #. Description
@@ -394,42 +390,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Inserte ahora otro CD o DVD si desea analizarlo."
+msgstr "Inserte ahora otro medio de instalación si desea analizarlo."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Se ha analizado el CD o DVD con la siguiente etiqueta:"
+msgstr "Se ha analizado la imagen con la siguiente etiqueta:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr ""
-"Ya se había analizado previamente el CD o DVD con la siguiente etiqueta:"
+msgstr "Ya se había analizado previamente la imagen con la siguiente etiqueta:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Por favor, cámbielo ahora si desea analizar otro CD o DVD."
+msgstr "Por favor, cámbielo ahora si desea analizar otro."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Por favor, asegúrese de que ha introducido el CD/DVD correctamente."
+msgstr "Por favor, asegúrese de que ha introducido el medio correctamente."
 
 #. Type: text
 #. Description
@@ -442,11 +432,8 @@ msgstr "Cambio de medio"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Introduzca el disco etiquetado «${LABEL}» en la unidad «/cdrom/» y "
-"pulse Intro."
+msgstr "Introduzca el disco etiquetado «${LABEL}» y pulse Intro."
 
 #. Type: text
 #. Description
@@ -463,39 +450,36 @@ msgstr "Deshabilitando el CD «netinst» del archivo sources.list..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Si está instalando utilizando un CD de arranque de red («netinst») y no "
-"elige una réplica acabará con una instalación de un sistema base muy "
-"reducida."
+"Si está instalando utilizando una imagen de CD de arranque de red "
+"(«netinst») y no elige una réplica acabará con una instalación de un sistema "
+"base muy reducida."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Está instalando de un CD de arranque de red («netinst») que por sí sólo "
-"permite la instalación de un sistema base muy reducido. Utilice una réplica "
-"para instalar un sistema más completo."
+"Está instalando de una imagen de CD de arranque de red («netinst») que por "
+"sí sólo permite la instalación de un sistema base muy reducido. Utilice una "
+"réplica para instalar un sistema más completo."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
 msgstr ""
-"Está vd. instalando de un CD, que contiene una selección limitada de "
+"Está vd. instalando de una imagen que contiene una selección limitada de "
 "paquetes."
 
 #. Type: text
@@ -503,28 +487,28 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Ha analizado %i CDs. Aunque estos contengan una amplia selección de paquetes "
-"puede que no tenga algunos programas (por ejemplo algunos paquetes que "
-"ofrecen soporte para idiomas distintos del inglés)."
+"Ha analizado %i imágenes. Aunque éstas contengan una amplia selección de "
+"paquetes puede que no tenga algunos programas (por ejemplo algunos paquetes "
+"que ofrecen soporte para idiomas distintos del inglés)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Ha analizado %i CDs. Aunque estos contengan una amplia selección de paquetes "
-"pueden faltar algunos."
+"Ha analizado %i imágenes. Aunque éstas contengan una amplia selección de "
+"paquetes pueden faltar algunos."
 
 #. Type: text
 #. Description
@@ -541,13 +525,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Está instalando desde un DVD. Aunque el DVD contenga una amplia selección de "
-"paquetes pueden faltar algunos."
+"Está instalando desde una imagen de DVD. Aunque el DVD contenga una amplia "
+"selección de paquetes pueden faltar algunos."
 
 #. Type: text
 #. Description
@@ -705,15 +688,14 @@ msgstr "¿Desea utilizar una réplica en red?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
 "Puede utilizar una réplica en red para complementar los programas incluidos "
-"en el CD-ROM. Esto también puede hacer que tenga a su disposición nuevas "
-"versiones de los programas."
+"en el medio de instalación. Esto también puede hacer que tenga a su "
+"disposición nuevas versiones de los programas."
 
 #. Type: boolean
 #. Description

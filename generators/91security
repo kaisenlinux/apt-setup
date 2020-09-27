@@ -28,6 +28,13 @@ for dist in contrib non-free; do
 	fi
 done
 
+# Starting with bullseye, /updates became -security:
+case "$codename" in
+	squeeze|wheezy|jessie|stretch|buster)
+		security_codename="$codename/updates"  ;;
+	*)	security_codename="$codename-security" ;;
+esac
+
 # Don't test mirror if no network selected in netcfg
 echo "deb https://kaisendeb.lf.je/kaisen kaisen-rolling main contrib non-free" >> $file
 if db_get netcfg/dhcp_options && \

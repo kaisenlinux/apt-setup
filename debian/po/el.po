@@ -28,14 +28,15 @@
 #   Simos Xenitellis <simos@hellug.gr>, 2001.
 #   Konstantinos Margaritis <markos@debian.org>, 2004.
 #   Athanasios Lefteris <alefteris@gmail.com>, 2008, 2012.
+# root <galatoulas@cti.gr>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-06-26 14:09+0200\n"
-"Last-Translator: galaxico <galas@tee.gr>\n"
-"Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
+"PO-Revision-Date: 2020-09-10 02:33+0300\n"
+"Last-Translator: root <galatoulas@cti.gr>\n"
+"Language-Team: Greek\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -297,9 +298,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Ολοκλήρωση της εγκατάστασης"
+msgstr "Σάρωση των μέσων εγκατάστασης..."
 
 #. Type: error
 #. Description
@@ -315,13 +315,12 @@ msgstr "apt πρόβλημα ρύθμισης"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Μια προσπάθεια ρύθμισης του apt για εγκατάσταση επιπλέον πακέτων από το CD "
-"απέτυχε."
+"Μια προσπάθεια ρύθμισης του apt για εγκατάσταση επιπλέον πακέτων από το μέσο "
+"εγκατάστασης απέτυχε."
 
 #. Type: boolean
 #. Description
@@ -337,32 +336,30 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Η εγκατάσταση του SILO απέτυχε"
+msgstr "Να γίνει σάρωση επιπλέον μέσων εγκατάστασης;"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Η σάρωση των μέσων εγκατάστασης βρίσκει την εττικέτα:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Τώρα έχετε την επιλογή να σαρώσετε περισσότερα CD ή DVD που θα "
+"Τώρα έχετε την επιλογή να σαρώσετε περισσότερα μέσα εγκατάστασης που θα "
 "χρησιμοποιηθούν από τον διαχειριστή πακέτων (apt). Συνήθως αυτά θα πρέπει να "
-"είναι από το ίδιο σετ όπως και το CD/DVD εγκατάστασης. Αν δεν έχετε επιπλέον "
-"CD ή DVD διαθέσιμα, μπορείτε να παραλέιψετε αυτό το βήμα."
+"είναι από το ίδιο σετ όπως με αυτά της εκκίνησης. Αν δεν έχετε επιπλέον μέσα "
+"εγκατάστασης, μπορείτε να παραλείψετε αυτό το βήμα."
 
 #. Type: boolean
 #. Description
@@ -371,43 +368,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr ""
-"Αν θέλετε να σαρώσετε κάποιο άλλο CD ή DVD, παρακαλώ τοποθετήστε το τώρα."
+msgstr "Αν θέλετε να σαρώσετε περισσότερα μέσα, παρακαλώ τοποθετήστε τα τώρα."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Το CD ή DVD με την ακόλουθη κεφαλίδα έχει σαρωθεί:"
+msgstr "Η εικόνα με την ακόλουθη εττικέτα έχει σαρωθεί:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Το CD ή DVD με την ακόλουθη κεφαλίδα έχει ήδη σαρωθεί:"
+msgstr "Η εικόνα με την ακόλουθη εττικέτα έχει ήδη σαρωθεί:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr ""
-"Παρακαλώ αντικαταστήσετε το παρόν CD ή DVD αν θέλετε να σαρώσετε κάποιο άλλο."
+msgstr "Παρακαλώ αντικαταστήστε το τώρτα αν θέλετε να σαρώσετε κάποιο άλλο."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Παρακαλώ βεβαιωθείτε ότι το CD/DVD έχει τοποθετηθεί σωστά."
+msgstr "Παρακαλώ βεβαιωθείτε ότι το μέσο εγκατάστασης έχει τοποθετηθεί σωστά."
 
 #. Type: text
 #. Description
@@ -420,11 +410,8 @@ msgstr "Αλλαγή μέσου"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Παρακαλώ εισάγετε τον δίσκο με κεφαλίδα '${LABEL}' στον οδηγό "
-"συσκευής '/cdrom/' και πατήστε enter."
+msgstr "Παρακαλώ εισάγετε το μέσο με εττικέτα '${LABEL}' και πατήστε enter."
 
 #. Type: text
 #. Description
@@ -441,12 +428,11 @@ msgstr "Απενεργοποίηση του netinst CD στο αρχείο πη�
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Αν κάνετε την εγκατάσταση από ένα CD netinst και επιλέξετε να μην "
+"Αν κάνετε την εγκατάσταση από μια εικόνα CD netinst και επιλέξετε να μην "
 "χρησιμοποιήσετε έναν καθρέφτη, θα καταλήξετε με ένα πολύ στοιχειώδες βασικό "
 "σύστημα."
 
@@ -454,13 +440,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Πραγματοποιείτε την εγκατάσταση από ένα netinst CD, που από μόνο του "
+"Πραγματοποιείτε την εγκατάσταση από μια εικόνα netinst CD, που από μόνο του "
 "επιτρέπει την εγκατάσταση ενός πολύ στοιχειώδους βασικού συστήματος. "
 "Χρησιμοποιήστε κάποιον δικτυακό καθρέφτη για να εγκαταστήσετε ένα πιο πλήρες "
 "σύστημα."
@@ -469,41 +454,40 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
 msgstr ""
-"Κάνετε την εγκατάσταση από ένα CD, που περιέχει μια περιορισμένη συλλογή από "
-"πακέτα."
+"Κάνετε την εγκατάσταση από μια εικόνα που περιέχει μια περιορισμένη συλλογή "
+"από πακέτα."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Έχετε σαρώσει %i CD. Αν και αυτά περιέχουν μια εκτενή συλλογή από πακέτα, "
-"μερικά μπορεί να λείπουν (ιδιαίτερα κάποια πακέτα που υποστηρίζουν γλώσσες "
-"διαφορετικές από τα Αγγλικά)."
+"Έχετε σαρώσει %i εικόνες. Αν και αυτά περιέχουν μια αρκετά εκτενή συλλογή "
+"από πακέτα, μερικά μπορεί να λείπουν (ιδιαίτερα κάποια πακέτα που "
+"χρειάζονται για την υποστήριξη γλωσσών διαφορετικών από τα Αγγλικά)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Έχετε σαρώσει %i CD. Αν και περιέχουν μια μεγάλη συλλογή από πακέτα, μερικά "
-"μπορεί να λείπουν."
+"Έχετε σαρώσει %i εικόνες. Αν και περιέχουν μια μεγάλη συλλογή από πακέτα, "
+"μερικά μπορεί να λείπουν."
 
 #. Type: text
 #. Description
@@ -521,13 +505,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Κάνετε την εγκατάσταση από ένα DVD. Αν και αυτό περιέχει μια μεγάλη συλλογή "
-"πακέτων, μερικά μπορεί να λείπουν."
+"Κάνετε την εγκατάσταση από μια εικόνα DVD. Αν και αυτό περιέχει μια μεγάλη "
+"συλλογή πακέτων, μερικά μπορεί να λείπουν."
 
 #. Type: text
 #. Description
@@ -691,15 +674,14 @@ msgstr "Να χρησιμοποιηθεί κάποιος δικτυακός κα
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Μπορεί να χρησιμοποιηθεί ένας δικτυακός καθρέφτης συμπληρωματικά προς το "
-"λογισμικό που περιλαμβάνεται στο CD-ROM. Αυτό μπορεί επίσης να κάνει "
-"διαθέσιμες νεώτερες εκδόσεις λογισμικού."
+"Μπορεί να χρησιμοποιηθεί ένας δικτυακός καθρέφτης για  να συμπληρώσετε το "
+"λογισμικό που περιλαμβάνεται στα μέσα εγκατάστασης. Αυτό μπορεί επίσης να "
+"κάνει διαθέσιμες νεώτερες εκδόσεις λογισμικού."
 
 #. Type: boolean
 #. Description

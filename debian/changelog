@@ -1,3 +1,24 @@
+apt-setup (1:0.159+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 27 Sep 2020 14:00:56 +0200
+
+apt-setup (1:0.159) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Greek (el.po) by root
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * French (fr.po) by Baptiste Jammet
+  * Kannada (kn.po) by Yogesh
+  * Marathi (mr.po) by Prachi Joshi
+  * Polish (pl.po) by Bartosz Feński
+  * Serbian (sr.po) by Filipovic Dragan
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 20 Sep 2020 00:09:42 +0200
+
 apt-setup (1:0.158+kaisen1) kaisen-devel; urgency=medium
 
   * Import new upstream release 

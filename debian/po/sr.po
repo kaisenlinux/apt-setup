@@ -11,7 +11,7 @@
 # Janos Guljas <janos@resenje.org>, 2010-2012.
 # Veselin Mijušković <veselin.mijuskovic@gmail.com>, 2008.
 # Milan Kostic <kosticmilan77@open.telekom.rs>, 2012.
-# Filipovic Dragan <filipovic@tutanota.com>, 2018.
+# Filipovic Dragan <filipovic@tutanota.com>, 2018, 2020.
 #
 # Translations from iso-codes:
 #   Aleksandar Jelenak <aleksandar.jelenak@gmail.com>, 2010.
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-12-05 21:45+0000\n"
+"PO-Revision-Date: 2020-09-07 19:36+0000\n"
 "Last-Translator: Filipovic Dragan <filipovic@tutanota.com>\n"
 "Language-Team: Serbian <debian-l10n-serbian@lists.debian.org>\n"
 "Language: sr\n"
@@ -278,8 +278,8 @@ msgid ""
 msgstr ""
 "Подразумевано листа софтверских ризница се налази у /etc/apt/sources.list "
 "(са одговарајућим \"deb-src\" линијама) па тако \"apt-get source\" ради. "
-"Међутим , ако не желите ову функцију, можете искључити ову ставку и сачувати "
-"интернет проток током  \"apt-get update\" операција."
+"Међутим, ако не желите ову функцију, можете искључити ову ставку и сачувати "
+"интернет проток током \"apt-get update\" операција."
 
 #. Type: text
 #. Description

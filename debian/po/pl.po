@@ -28,20 +28,22 @@
 #      Tomasz Z. Napierala <zen@debian.linux.org.pl>, 2004, 2006.
 # Marcin Owsiany <porridge@debian.org>, 2011.
 # Michał Kułach <michal.kulach@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# Bartosz Feński <fenio@debian.org>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2018-12-17 22:56+0100\n"
-"Last-Translator: Michał Kułach <michal.kulach@gmail.com>\n"
+"PO-Revision-Date: 2020-09-11 20:10+0000\n"
+"Last-Translator: Bartosz Feński <fenio@debian.org>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 
 #. Type: text
 #. Description
@@ -173,7 +175,8 @@ msgid ""
 "Commented out entries for ${HOST} have been added to the /etc/apt/sources."
 "list file."
 msgstr ""
-"Zakomentowane wpisy dla ${HOST} zostały dodane do pliku /etc/apt/sources.list"
+"Zakomentowane wpisy dla ${HOST} zostały dodane do pliku /etc/apt/sources."
+"list."
 
 #. Type: multiselect
 #. Choices
@@ -295,9 +298,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Kończenie instalacji"
+msgstr "Skanowanie nośnika instalacyjnego..."
 
 #. Type: error
 #. Description
@@ -313,13 +315,12 @@ msgstr "Problem konfiguracji apta"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Próba skonfigurowania apta do instalacji dodatkowych pakietów z płyty CD nie "
-"powiodła się."
+"Próba skonfigurowania apta do instalacji dodatkowych pakietów z nośnika "
+"instalacyjnego nie powiodła się."
 
 #. Type: boolean
 #. Description
@@ -335,31 +336,29 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Instalacja SILO nie powiodła się"
+msgstr "Przeskanować dodatkowy nośnik instalacyjny?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Skanowanie nośnika instalacyjnego znalazło etykietę:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Masz teraz możliwość przeskanowania dodatkowych płyt CD lub DVD, które będą "
-"użyte przez menedżera pakietów (apt). Zazwyczaj są to kolejne płyty, które "
-"rozprowadzane były w zestawie. Jeśli nie masz żadnych dodatkowych płyt, "
+"Masz teraz możliwość przeskanowania dodatkowych nośników, które będą użyte "
+"przez menedżera pakietów (apt). Zazwyczaj są to kolejne nośniki, które "
+"rozprowadzane były w zestawie. Jeśli nie masz żadnych dodatkowych nośników, "
 "pomiń ten krok."
 
 #. Type: boolean
@@ -369,41 +368,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Jeśli chcesz przeskanować inną płytę CD lub DVD, włóż ją teraz."
+msgstr "Jeśli chcesz przeskanować inny nośnik, włóż go teraz."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Płyta CD lub DVD o następującej etykiecie została przeskanowana:"
+msgstr "Nośnik instalacyjny o następującej etykiecie został przeskanowany:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Płyta CD lub DVD z następującą etykietą została już przeskanowana:"
+msgstr "Nośnik instalacyjny z następującą etykietą został już przeskanowany:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Proszę ją wymienić jeśli chcesz przeskanować kolejną."
+msgstr "Proszę go wymienić jeśli chcesz przeskanować kolejny."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Upewnij się, że płyta CD/DVD jest w napędzie."
+msgstr "Upewnij się, że nośnik instalacyjny jest dostępny."
 
 #. Type: text
 #. Description
@@ -416,11 +410,8 @@ msgstr "Zmiana nośnika"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Włóż płytę z etykietą '${LABEL}' do napędu '/cdrom/' i naciśnij "
-"enter."
+msgstr "Włóż nośnik instalacyjny z etykietą '${LABEL}' i naciśnij enter."
 
 #. Type: text
 #. Description
@@ -437,7 +428,6 @@ msgstr "Wyłączanie płyty netinst z sources.list..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -449,7 +439,6 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
@@ -463,39 +452,38 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Instalujesz z płyty CD zawierającej ograniczoną liczbę pakietów."
+msgstr "Instalujesz z nośnika zawierającego ograniczoną liczbę pakietów."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Przeskanowano %1 CD. Mimo, że zawierają one sporą ilość pakietów, to nadal "
-"niektóre mogą być niedostępne (zapewne pakiety wymagane do obsługi języków "
-"innych niż angielski)."
+"Przeskanowano nośnik %1 . Mimo, że zawierają one sporą ilość pakietów, to "
+"nadal niektóre mogą być niedostępne (zapewne pakiety wymagane do obsługi "
+"języków innych niż angielski)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Przeskanowano %1 CD. Mimo, że zawierają one dużą ilość pakietów, to nadal "
-"część może być niedostępna."
+"Przeskanowano %1 nośnik. Mimo, że zawierają one dużą ilość pakietów, to "
+"nadal część może być niedostępna."
 
 #. Type: text
 #. Description
@@ -512,7 +500,6 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
@@ -549,7 +536,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Przeszukiwanie serwera lustrzanego..."
+msgstr "Skanowanie serwera lustrzanego..."
 
 #. Type: boolean
 #. Description
@@ -677,14 +664,13 @@ msgstr "Użyć sieciowego serwera lustrzanego?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
 "Sieciowy serwer lustrzany może uzupełnić oprogramowanie, które dostępne jest "
-"na płycie CD-ROM. Może też dostarczyć nowszych wersji oprogramowania."
+"na nośniku instalacyjnym. Może też dostarczyć nowszych wersji oprogramowania."
 
 #. Type: boolean
 #. Description
