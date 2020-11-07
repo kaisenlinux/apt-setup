@@ -29,14 +29,14 @@
 #   Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004.
 #   Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010.
 #   Roumen Petrov <transl@roumenpetrov.info>, 2010.
-# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018.
+# Damyan Ivanov <dmn@debian.org>, 2006-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2018-08-21 21:43+0300\n"
+"PO-Revision-Date: 2020-10-24 09:53+0300\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Български <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -143,8 +143,8 @@ msgid ""
 "key. You can choose to retry the download, or ignore the problem and "
 "continue without all the packages from this repository."
 msgstr ""
-"Това може да е проблем с мрежата или с огледалото. Можете да опитате отново "
-"или да продължите без пакетите от огледалото."
+"Това може да е проблем с мрежата или с огледалния сървър. Можете да опитате "
+"отново или да продължите без пакетите от огледалния сървър."
 
 #. Type: error
 #. Description
@@ -295,9 +295,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Завършване на инсталацията"
+msgstr "Преглед на инсталационния носител..."
 
 #. Type: error
 #. Description
@@ -313,13 +312,12 @@ msgstr "Проблем с настройване на apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Провален е опитът за настройване на apt, така че да инсталира допълнителни "
-"пакети от компактдиск."
+"Опитът за настройване на apt, така че да инсталира допълнителни пакети от "
+"носителя се провали."
 
 #. Type: boolean
 #. Description
@@ -335,32 +333,30 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Грешка при инсталирането на SILO"
+msgstr "Преглед на допълнителен инсталационен носител?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Прегледът на инсталационния носител откри етикет:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Сега имате възможност да сканирате допълнителни CD или DVD, които да се "
+"Сега имате възможност да прегледате допълнителни носители, които да се "
 "използват от пакетния мениджър (apt). Обикновено допълнителните носители "
-"трябва да са от комплекта на инсталационния диск. Ако нямате допълнителни "
-"дискове просто прескочете тази стъпка."
+"трябва да са от комплекта на инсталационния носител. Ако нямате допълнителни "
+"носители просто прескочете тази стъпка."
 
 #. Type: boolean
 #. Description
@@ -369,42 +365,39 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
 msgstr ""
-"Ако желаете да бъде сканиран допълнителен диск, поставете го в устройството."
+"Ако желаете да бъде прегледан допълнителен носител, поставете го в "
+"устройството."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Следният носител беше сканиран:"
+msgstr "Образът със следния етикет беше прегледан:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Носителят с този етикет вече е сканиран:"
+msgstr "Образът с този етикет вече е прегледан:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Ако желаете да бъде сканиран друг диск, поставете го в устройството."
+msgstr ""
+"Ако желаете да бъде прегледан друг носител, поставете го в устройството."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Уверете се, че дискът е поставен правилно."
+msgstr "Уверете се, че носителят е поставен правилно."
 
 #. Type: text
 #. Description
@@ -417,11 +410,8 @@ msgstr "Смяна на носителя"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Поставете диска с етикет „${LABEL}“ в устройството „/cdrom/“ и "
-"натиснете клавиша „Enter“."
+msgstr "Поставете носителя с етикет „${LABEL}“ и натиснете клавиша „Enter“."
 
 #. Type: text
 #. Description
@@ -438,50 +428,47 @@ msgstr "Забраняване на netinst CD в sources.list..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Ако инсталирате от CD за мрежова инсталация и решите да не използвате "
+"Ако инсталирате от носител за мрежова инсталация и решите да не използвате "
 "огледален сървър, система ще съдържа само ограничен брой базови пакети."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Компактдискът, който използвате за инсталиране (netinst) съдържа само "
-"минимална базова система. Използвайте огледало за инсталирането на "
-"останалата част от системата."
+"Носителят, който използвате за инсталиране (netinst) съдържа само минимална "
+"базова система. Използвайте огледален сървър за инсталирането на останалата "
+"част от системата."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Инсталирате от компактдиск, който съдържа ограничен набор от пакети."
+msgstr "Инсталирате от носител, който съдържа ограничен набор от пакети."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Сканирани са %i носителя. Въпреки, че те съдържат голям набор от пакети, "
+"Прегледани са %i носителя. Въпреки, че те съдържат голям набор от пакети, "
 "някои пакети може да не са налични (например тези за поддръжка на езици, "
 "различни от английски)."
 
@@ -490,12 +477,12 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Сканирани са %i носителя. Въпреки, че те съдържат голям набор от пакети, "
+"Прегледани са %i носителя. Въпреки, че те съдържат голям набор от пакети, "
 "някои пакети може да не са налични."
 
 #. Type: text
@@ -506,20 +493,19 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Използването на огледало може да доведе то изтеглянето на голям обем "
+"Използването на огледален сървър може да доведе то изтеглянето на голям обем "
 "информация по време на следващата стъпка на инсталацията."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Инсталирате от DVD. Въпреки, че то съдържа голям набор от пакети, има "
-"пакети, които не са включени."
+"Инсталирате от DVD носител. Въпреки, че той съдържа голям набор от пакети, "
+"има пакети, които не са включени."
 
 #. Type: text
 #. Description
@@ -530,8 +516,8 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Ако имате добра връзка с Интернет се препоръчва използването на огледало, "
-"особено ако планирате да инсталирате графична работна среда."
+"Ако имате добра връзка с Интернет се препоръчва използването на огледален "
+"сървър, особено ако планирате да инсталирате графична работна среда."
 
 #. Type: text
 #. Description
@@ -541,22 +527,22 @@ msgid ""
 "If you have a reasonably good Internet connection, use of a mirror is "
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
-"Ако имате добра връзка с Интернет се препоръчва използването на огледало, "
-"особено ако планирате да инсталирате графична работна среда."
+"Ако имате добра връзка с Интернет се препоръчва използването на огледален "
+"сървър, особено ако планирате да инсталирате графична работна среда."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Сканиране на огледалото..."
+msgstr "Преглед на огледалния сървър..."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:2001
 msgid "Use non-free software?"
-msgstr "Използване на non-free софтуер?"
+msgstr "Използване на софтуер от раздел non-free?"
 
 #. Type: boolean
 #. Description
@@ -678,14 +664,14 @@ msgstr "Използване на огледален сървър?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Пакетите, които се намират на CD, могат да бъдат допълнени от огледален "
-"сървър. По този начин е възможен достъпа и до по-нови версии на пакетите."
+"Пакетите, които се намират на инсталационните носители, могат да бъдат "
+"допълнени от огледален сървър. По този начин е възможен достъпа и до по-нови "
+"версии на пакетите."
 
 #. Type: boolean
 #. Description

@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-09-11 04:45+0000\n"
+"PO-Revision-Date: 2020-10-10 17:26+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: CDAC_DI\n"
 "Language: mr\n"
@@ -630,14 +630,13 @@ msgstr "नेटवर्क दर्पण वापरायचा?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"सिडी-रॉम मधे समाविष्ट असलेल्या सॉफ्टवेअरला पूरक म्हणून नेटवर्क दर्पणचा वापर करता येतो. "
-"यामुळे सॉफ्टवेअरच्या नवीन आवृत्या देखील उपलब्ध होऊ शकतात."
+"नेटवर्क मिररचा वापर इंस्टॉलेशन मिडीयामध्ये समाविष्ट असलेल्या सॉफ्टवेअरला पूरक करण्यासाठी "
+"केला जाऊ शकतो. हे सॉफ्टवेअरची नवीन आवृत्ती देखील उपलब्ध करुन देऊ शकते."
 
 #. Type: boolean
 #. Description

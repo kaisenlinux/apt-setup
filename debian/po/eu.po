@@ -20,20 +20,21 @@
 # Marcos Goienetxe <marcos_g@infonegocio.com>, 2002.
 # Piarres Beobide <pi@beobide.net>, 2008.
 # Xabier Bilbao <xabidu@gmail.com>, 2008.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-08-28 18:10+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
-"Language-Team: debian-l10n-eu@lists.debian.org\n"
+"PO-Revision-Date: 2020-10-28 20:33+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Content-Transfer-Encoding=UTF-8Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -51,7 +52,7 @@ msgstr "Konfiguratu pakete-kudeatzailea"
 #. :sl1:
 #: ../apt-setup-udeb.templates:2001
 msgid "Configuring apt"
-msgstr "Apt konfiguratzen"
+msgstr "apt konfiguratzen"
 
 #. Type: text
 #. Description
@@ -134,10 +135,10 @@ msgid ""
 "key. You can choose to retry the download, or ignore the problem and "
 "continue without all the packages from this repository."
 msgstr ""
-"Instalatzaileak huts egin du ispiluarekin konektatzean.Baliteke arazoren bat "
-"egotea sarean edo gakoaz hornitzen duen zerbitzarian. Berriro deskargatzea, "
-"beste ispilu bat hautatzea edo arazoari ez ikusi egin eta ispilu honetako "
-"pakete guztiak gabe jarraitzea hauta dezakezu."
+"Instalatzaileak huts egin du ispiluarekin konektatzean. Baliteke arazoren "
+"bat egotea sarean edo gakoaz hornitzen duen zerbitzarian. Berriro "
+"deskargatzea, beste ispilu bat hautatzea edo arazoari ez ikusi egin eta "
+"ispilu honetako pakete guztiak gabe jarraitzea hauta dezakezu."
 
 #. Type: error
 #. Description
@@ -188,6 +189,7 @@ msgstr "Segurtasun eguneraketak (${SEC_HOST}(e)tik)"
 msgid "release updates"
 msgstr "argitalpen eguneraketak:"
 
+# Backport: testing adarreko paketeak Stable-n instalatzeko biltegia. Ez dakit ondo nola euskaratu. 
 #. Type: multiselect
 #. Choices
 #. SEC_HOST is a host name (e.g. security.debian.org)
@@ -195,9 +197,8 @@ msgstr "argitalpen eguneraketak:"
 #. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
-#, fuzzy
 msgid "backported software"
-msgstr "Erabili bertsio berrietara migraturiko softwarea?"
+msgstr "Atzera-bihurtutako (backport) softwarea"
 
 #. Type: multiselect
 #. Description
@@ -225,8 +226,8 @@ msgid ""
 "Security updates help to keep your system secured against attacks. Enabling "
 "this service is strongly recommended."
 msgstr ""
-"Segurtasun eguneraketek sistema erasoetaz babesten laguntzen dute. Zerbitzu "
-"hau gaitzea gomendagarria da."
+"Segurtasun eguneraketek sistema erasoen aurrean babesten laguntzen dute. "
+"Zerbitzu hau gaitzea biziki gomendatzen da."
 
 #. Type: multiselect
 #. Description
@@ -238,16 +239,16 @@ msgid ""
 "the usability of the software. It also provides regression fixes. This "
 "service is only available for stable and oldstable releases."
 msgstr ""
-"Argitalpen eguneraketa maiztasun handiz aldatu eta azken bertsioa ez izateak "
-"erabiltasuna murrizten duen software eguneraketak eskaintzen dituzte. "
-"Adibidez birusen sinadurak birus-arakatzaile batentzat. Zerbitzu hau stable "
-"(egonkor) eta oldstable (egonkor-zaharra) banaketan soilik erabilgarri dago."
+"Argitalpen eguneraketek maiztasun handiz aldatzen diren eta azken bertsioa "
+"ez izateak erabilgarritasuna murrizten duen software eguneraketak eskaintzen "
+"dituzte. Adibidez birusen sinadurak birus-arakatzaile batentzat. Zerbitzu "
+"hau stable (egonkor) eta oldstable (egonkor-zaharra) banaketan soilik "
+"erabilgarri dago."
 
 #. Type: multiselect
 #. Description
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
-#, fuzzy
 msgid ""
 "Backported software are adapted from the development version to work with "
 "this release. Although this software has not gone through such complete "
@@ -256,9 +257,14 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"Zenbait software garapen adarretik bertsio honekin lan egin ahal izateko "
-"migratu izan da. Nahiz eta software hauei proba guztiak ez aplikatu, "
-"ezaugarri erabilgarriak dituzten aplikazio batzuen bertsio berrienak ditu."
+"Atzera-bihurtutako (backports) softwarea garapeneko bertsiotik moldatuta "
+"dago sistemaren argitalpen-bertsio honekin funtzionatu ahal izateko. Nahiz "
+"eta erabat probatu gabe egon (sistemaren argitalpenekoarekin konparatuz), "
+"erabilgarriak izan daitezkeen eginbideak eskaintzen dituzten aplikazio "
+"batzuen bertsio berriagoak ditu.\n"
+"Atzera-bihurtutakoak gaitzean horietarikoak ez dira lehenetsi gisa "
+"instalatuko; erabiliko diren atzera-bihurtutakoen biltegiak soilik eskuz "
+"hautatzea baimenduko dizu."
 
 #. Type: boolean
 #. Description
@@ -282,9 +288,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Instalazioa amaitzen"
+msgstr "Instalazio-euskarria aztertzen..."
 
 #. Type: error
 #. Description
@@ -300,11 +305,11 @@ msgstr "apt-ren konfigurazio arazoa"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
-msgstr "Huts egin du apt konfiguratzean pakete gehigarriak CDtik instalatzeko."
+msgstr ""
+"Huts egin du apt konfiguratzean pakete gehigarriak euskarritik instalatzeko."
 
 #. Type: boolean
 #. Description
@@ -320,31 +325,29 @@ msgstr "Huts egin du apt konfiguratzean pakete gehigarriak CDtik instalatzeko."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Huts egin du SILO instalatzean"
+msgstr "Aztertu beste instalazio-euskarri bat?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Aurkitutako etiketa instalazio-euskarria aztertzean:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Orain pakete-kudeatzaileak (apt) erabiltzeko CD edo DVD gehigarriak "
-"irakurtzeko aukera duzu. Normalean instalazioko CD/DVD bilduma berdinekoak "
-"izan beharko lirateke. Ez baduzu CD/DVD gehigarririk pausu hau alde batetara "
+"Orain pakete-kudeatzaileak (apt) erabiltzeko euskarri gehigarriak aztertzeko "
+"aukera duzu. Normalean instalazioa abiatu duzun euskarri berdinekoak izan "
+"beharko lirateke. Ez baduzu euskarri gehigarririk pausu hau alde batetara "
 "utz dezakezu."
 
 #. Type: boolean
@@ -354,41 +357,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Beste CD edo DVD bat irakurtzea nahi baduzu, sar ezazu orain."
+msgstr "Euskarri gehiago aztertzea nahi baduzu, sar ezazu orain."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Hurrengo etiketa duen CD edo DVDa irakurri da:"
+msgstr "Honako etiketa duen irudia aztertu da:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Hurrengo etiketa duen CD edo DVDa dagoeneko irakurrita dago:"
+msgstr "Honako etiketa duen irudia jadanik aztertu da:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Ordeztu ezazu beste CD edo DVD bat irakurtzea nahi baduzu."
+msgstr "Ordeztu ezazu orain, beste bat aztertzea nahi baduzu."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Ziurtatu CD/DVDa behar bezala sarturik dagoela."
+msgstr "Ziurtatu euskarria behar bezala sartuta dagoela."
 
 #. Type: text
 #. Description
@@ -401,11 +399,8 @@ msgstr "Euskarri aldaketa"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: sartu etiketa hau duen diskoa '${LABEL}' '/cdrom/' gailuan eta "
-"sakatu Sartu tekla."
+msgstr "Sartu '${LABEL}' etiketatutako euskarria eta sakatu Sartu tekla."
 
 #. Type: text
 #. Description
@@ -422,7 +417,6 @@ msgstr "Netinst CDa sources.list-ean desgaitzen..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -434,7 +428,6 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
@@ -447,39 +440,38 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Paketeen hautapen mugatua duen CD batetik instalatzen ari zara."
+msgstr "Paketeen hautapen mugatua duen irudi batetik instalatzen ari zara."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"%i CD eskaneatu dituzu. Nahiz eta hauek pakete bilduma labur bat duten, "
-"zenbait falta daitezke (kontutan izan zenbait programek bereiztutako "
-"hizkuntz-paketeak dituztela)."
+"%i irudi aztertu dituzu. Nahiz eta hauek pakete bilduma egoki bat duten, "
+"zenbait falta daitezke (bereziki Ingelesa ez diren hizkuntzei dagokien "
+"pakete batzuk)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"%i CD eskaneatu dituzu. Nahiz eta hauek pakete bilduma luze bat duten, baten "
-"bat falta daiteke."
+"%i irudi aztertu dituzu. Nahiz eta hauek pakete bilduma luze bat duten, "
+"baten bat falta daiteke."
 
 #. Type: text
 #. Description
@@ -489,19 +481,18 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Kontuan izan ispilu bat erabiltzeak instalazioaren hurrengo pausuan datu "
+"Kontuan izan ispilu bat erabiltzeak instalazioaren hurrengo urratsean datu "
 "kantitate handi bat deskargatzea eragin dezakeela."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"DVD batetik instalatzen ari zara. Nahiz eta DVDak pakete bilduma handi bat "
+"DVD irudi batetik instalatzen ari zara. Nahiz eta pakete bilduma handi bat "
 "duen baten bat falta daiteke."
 
 #. Type: text
@@ -513,8 +504,8 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Interneteko konexio on bat ez duzun kasuan ez bada, ispilu bat erabiltzea "
-"gomendatzen da, bereziki mahaigain grafiko bat instalatzea pentsatzen baduzu."
+"Interneteko konexio on bat edukiz gero ispilu bat erabiltzea gomendatzen da, "
+"bereziki mahaigain grafiko bat instalatzea nahi baduzu."
 
 #. Type: text
 #. Description
@@ -524,15 +515,15 @@ msgid ""
 "If you have a reasonably good Internet connection, use of a mirror is "
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
-"Interneteko konexio nahiko ona baduzu, ispilu bat erabiltzea gomendatzen da "
-"bereziki mahaigain grafiko bat instalatzea pentsatzen baduzu."
+"Interneteko konexio nahiko ona baduzu, ispilu bat erabiltzea iradokitzen da "
+"bereziki mahaigain grafiko bat instalatzea nahi baduzu."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Ispilua eskaneatzen..."
+msgstr "Ispilua aztertzen..."
 
 #. Type: boolean
 #. Description
@@ -555,7 +546,7 @@ msgstr ""
 "Nahiz eta software hauek Debian-eko erabateko zati ez izan, Debian-en "
 "tresnak erabil daitezke hauek instalatzeko. Software hauek lizentzia "
 "desberdinak eduki ditzakete eta software hauek erabiltzea, eraldatzea edo "
-"partekatzeko eskubidea murriztu dezakete."
+"partekatzeko eskubidea debeka dezakete."
 
 #. Type: boolean
 #. Description
@@ -587,8 +578,8 @@ msgid ""
 msgstr ""
 "Zenbait software Debian-ekin lan egiteko garatuak izan dira. Baina nahiz "
 "software hauek librea izan, libreak ez diren softwareak behar dituzte. Nahiz "
-"eta software hauek Debian-eko erabateko zati ez izan, Debian-en tresna "
-"arruntak erabili daitezke hauek instalatzeko."
+"eta software hauek Debian-ekoak ez izan, Debian-en tresna arruntak erabili "
+"daitezke hauek instalatzeko."
 
 #. Type: boolean
 #. Description
@@ -659,14 +650,14 @@ msgstr "Sareko ispilua erabili?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Sareko ispilu bat erabil daiteke CD-ROMean dagoen softwarearen osagai gisa. "
-"Honela gainera softwareen bertsio berrienak eskuragarri egongo lirateke."
+"Sareko ispilu bat erabil daiteke instalazio-euskarrian dagoen softwarearen "
+"osagai gisa. Honela gainera softwareen bertsio berrienak eskuragarri egongo "
+"lirateke."
 
 #. Type: boolean
 #. Description
