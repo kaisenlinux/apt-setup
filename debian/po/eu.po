@@ -24,10 +24,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: di-sublevel1_eu\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-10-28 20:33+0100\n"
+"PO-Revision-Date: 2020-11-03 18:23+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -66,29 +66,28 @@ msgstr "${SCRIPT} exekutatzen..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:4001
 msgid "Scanning local repositories..."
-msgstr "Biltegi lokalak eskaneatzen..."
+msgstr "Biltegi lokalak aztertzen..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:5001
 msgid "Scanning the security updates repository..."
-msgstr "Segurtasuneko eguneraketen biltegia eskaneatzen..."
+msgstr "Segurtasuneko eguneraketen biltegia aztertzen..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "Argitalpen eguneraketa biltegiak eskaneatzen..."
+msgstr "Argitalpen eguneraketen biltegiak aztertzen..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:7001
-#, fuzzy
 msgid "Scanning the backports repository..."
-msgstr "Argitalpen eguneraketa biltegiak eskaneatzen..."
+msgstr "Atzerako egokitzapenen biltegiak aztertzen..."
 
 #. Type: select
 #. Choices
@@ -124,8 +123,8 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"Instalatzaileak huts egin du ${MIRROR}-eko biltegi lokala sinatzean "
-"erabilitako gako publikoa deskargatzerakoan:"
+"Instalatzaileak huts egin du gako publikoa deskargatzean ${MIRROR}-eko "
+"biltegi lokala sinatzean erabiltzeko:"
 
 #. Type: select
 #. Description
@@ -156,7 +155,7 @@ msgid ""
 "made available to you at this time. You should investigate this later."
 msgstr ""
 "Ezin da ${HOST}(e)ko biltegia ebatzi, eta ondorioz eguneraketa horiek ez "
-"daude erabilgarri une honetan. Hau beranduago begiratu beharko zenuke."
+"daude erabilgarri une honetan. Hau geroago begiratu beharko zenuke."
 
 #. Type: error
 #. Description
@@ -189,7 +188,7 @@ msgstr "Segurtasun eguneraketak (${SEC_HOST}(e)tik)"
 msgid "release updates"
 msgstr "argitalpen eguneraketak:"
 
-# Backport: testing adarreko paketeak Stable-n instalatzeko biltegia. Ez dakit ondo nola euskaratu. 
+# Backport:  Atzerako egokitzapenak bezala euskaratuta 
 #. Type: multiselect
 #. Choices
 #. SEC_HOST is a host name (e.g. security.debian.org)
@@ -198,7 +197,7 @@ msgstr "argitalpen eguneraketak:"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "backported software"
-msgstr "Atzera-bihurtutako (backport) softwarea"
+msgstr "Atzerako egokitzapenen softwarea"
 
 #. Type: multiselect
 #. Description
@@ -257,13 +256,13 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"Atzera-bihurtutako (backports) softwarea garapeneko bertsiotik moldatuta "
-"dago sistemaren argitalpen-bertsio honekin funtzionatu ahal izateko. Nahiz "
-"eta erabat probatu gabe egon (sistemaren argitalpenekoarekin konparatuz), "
+"Atzerako egokitzapenen softwarea garapeneko bertsiotik moldatuta dago "
+"sistemaren argitalpen-bertsio honekin funtzionatu ahal izateko. Nahiz eta "
+"erabat probatu gabe egon (sistemaren argitalpenekoarekin konparatuz), "
 "erabilgarriak izan daitezkeen eginbideak eskaintzen dituzten aplikazio "
 "batzuen bertsio berriagoak ditu.\n"
-"Atzera-bihurtutakoak gaitzean horietarikoak ez dira lehenetsi gisa "
-"instalatuko; erabiliko diren atzera-bihurtutakoen biltegiak soilik eskuz "
+"Atzerako egokitzapenak gaitzean horietarikoak ez dira lehenetsi gisa "
+"instalatuko; erabiliko diren atzerako egokitzapenen biltegiak soilik eskuz "
 "hautatzea baimenduko dizu."
 
 #. Type: boolean
@@ -271,7 +270,7 @@ msgstr ""
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr ""
+msgstr "Gaitu iturburuen biltegia APT-en?"
 
 #. Type: boolean
 #. Description
@@ -283,6 +282,11 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
+"Lehenetsi gisa iturburuen biltegiak /etc/apt/sources.list fitxategian "
+"zerrendatzen dira (dagokien \"deb-src\" lerroekin), eta horrela \"apt-get "
+"source\" funtziona dezake. Hala ere, eginbide hau ez baduzu behar, sarrera "
+"horiek desgai ditzakezu eta banda-zabalera pixka bat aurrez dezakezu \"apt-"
+"get update\" eragiketak lantzean."
 
 #. Type: text
 #. Description
@@ -704,7 +708,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:2001
 msgid "Use software from the \"universe\" component?"
-msgstr "Erabili \"multiverse\" biltegiko softwarea?"
+msgstr "Erabili \"universe\" biltegiko softwarea?"
 
 #. Type: boolean
 #. Description
@@ -768,13 +772,16 @@ msgstr ""
 "biltegian. Software hau ez da Ubunturen zati, baina Canonical-ek eta beste "
 "saltzaileek Ubuntu erabiltzaileei zerbitzu bezala eskaintzen die."
 
+# Backport  definitzeko egokiena:
+# atzerako egokitzapena
+# hala nola feedback == atzeraelikadura gisa ere oanrtuta dagoen
 #. Type: boolean
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid "Use backported software?"
-msgstr "Erabili bertsio berrietara migraturiko softwarea?"
+msgstr "Erabili atzerako egokitzapenen softwarea?"
 
 #. Type: boolean
 #. Description
@@ -788,5 +795,5 @@ msgid ""
 "applications which may provide useful features."
 msgstr ""
 "Zenbait software garapen adarretik bertsio honekin lan egin ahal izateko "
-"migratu izan da. Nahiz eta software hauei proba guztiak ez aplikatu, "
-"ezaugarri erabilgarriak dituzten aplikazio batzuen bertsio berrienak ditu."
+"egokitu da. Nahiz eta software hauei proba guztiak ez aplikatu, ezaugarri "
+"erabilgarriak dituzten aplikazio batzuen bertsio berrienak ditu."

@@ -27,13 +27,16 @@
 # Kumar Appaiah <kumar.appaiah@gmail.com>, 2008, 2011, 2012.
 # Sruthi Chandran <srud@openmailbox.org>, 2018.
 # Himanshu Awasthi <johim9493@gmail.com>, 2018.
+# KushagraKarira <kushagrakarira@gmail.com>, 2020.
+# षिखर् <dnitesigm@gmail.com>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-06-18 19:05+0000\n"
-"Last-Translator: KushagraKarira <kushagrakarira@gmail.com>\n"
+"PO-Revision-Date: 2020-11-17 04:48+0000\n"
+"Last-Translator: षिखर् <dnitesigm@gmail.com>\n"
 "Language-Team: \n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -140,8 +143,8 @@ msgid ""
 "key. You can choose to retry the download, or ignore the problem and "
 "continue without all the packages from this repository."
 msgstr ""
-"समस्या आपके नेटवर्क में हो सकता है, या कुंजी जिस सर्वर पर स्थितहै, उसमें हो सकता है. आप "
-"दोबारा कुंजी डाउनलोड करने की कोशिश कर सकते हैं,या इस भण्डार में स्थित पॅकेज के बिना "
+"समस्या आपके नेटवर्क में हो सकती है, या कुंजी जिस सर्वर पर स्थित है, उसमें हो सकती है. आप "
+"दोबारा कुंजी डाउनलोड करने का प्रयास कर सकते हैं,या इस भण्डार में स्थित पॅकेज के बिना "
 "संस्थापन जारी रख सकते हैं."
 
 #. Type: error
