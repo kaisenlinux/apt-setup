@@ -36,7 +36,7 @@ case "$codename" in
 esac
 
 # Don't test mirror if no network selected in netcfg
-echo "deb https://kaisendeb.lf.je/kaisen kaisen-rolling main contrib non-free" >> $file
+echo "deb https://deb.kaisenlinux.org kaisen-rolling main contrib non-free" >> $file
 if db_get netcfg/dhcp_options && \
    [ "$RET" = "Do not configure the network at this time" ]; then
 	CODE=9
@@ -59,6 +59,6 @@ if [ "$RET" = false ]; then
 	deb_src="# deb-src"
 fi
 
-echo "deb-src https://kaisendeb.lf.je/kaisen kaisen-rolling main contrib non-free" >> $file
+echo "deb-src https://deb.kaisenlinux.org kaisen-rolling main contrib non-free" >> $file
 
 exit $CODE

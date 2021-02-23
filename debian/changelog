@@ -1,3 +1,10 @@
+apt-setup (1:0.161+kaisen2) kaisen-packages; urgency=medium
+
+  * Update repositories in generators/91-security
+  * Update mail address in control file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 23 Feb 2021 00:51:07 +0200
+
 apt-setup (1:0.161+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release
