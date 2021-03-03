@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-03-20 22:31+0100\n"
+"PO-Revision-Date: 2021-01-02 22:03+0100\n"
 "Last-Translator: Anton Gladky <gladk@debian.org>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
@@ -293,7 +293,7 @@ msgstr "Завершення встановлення"
 #. :sl2:
 #: ../apt-cdrom-setup.templates:2001
 msgid "apt configuration problem"
-msgstr "Проблема при налаштуванні apt"
+msgstr "проблема при налаштуванні apt"
 
 #. Type: error
 #. Description

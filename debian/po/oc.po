@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-11-15 18:28+0000\n"
+"PO-Revision-Date: 2021-02-12 18:39+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "Language: oc\n"
@@ -693,7 +693,7 @@ msgstr ""
 "S'aquestes paquets apartenon pas a la distribucion principala, es de tot "
 "biais possible d'utilizar las aisinas estandardas de gestion dels paquets "
 "per los installar. Vos cal notar qu'aquestes logicials pòdon èsser someses a "
-"de licéncias que vos  pòdon enebir de las modificar, partejar..."
+"de licéncias que vos pòdon enebir de las modificar, partejar..."
 
 #. Type: boolean
 #. Description

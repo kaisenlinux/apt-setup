@@ -1,3 +1,29 @@
+apt-setup (1:0.162+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 03 Mar 2021 06:00:47 +0200
+
+apt-setup (1:0.162) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by zer0-x
+  * Bengali (bn.po) by Indrani Roy
+  * Catalan (ca.po) by d
+  * Danish (da.po) by Michael Millet
+  * Galician (gl.po) by mantinan
+  * Hindi (hi.po) by KushagraKarira
+  * kab (kab.po) by Selyan Sliman Amiri
+  * Latvian (lv.po) by Tranzistors
+  * Occitan (oc.po) by Quentin PAGÈS
+  * Tamil (ta.po) by Vasudevan Tirumurti
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Ukrainian (uk.po) by Anton Gladky
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 14 Feb 2021 18:41:01 +0100
+
 apt-setup (1:0.161+kaisen2) kaisen-packages; urgency=medium
 
   * Update repositories in generators/91-security

@@ -23,13 +23,14 @@
 # Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2017.
 # Peteris Krisjanis <pecisk@gmail.com>, 2008, 2012.
-# Tranzistors <rudolfs.mazurs@gmail.com>, 2018.
+# Tranzistors <rudolfs.mazurs@gmail.com>, 2018, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2018-10-17 19:33+0000\n"
+"PO-Revision-Date: 2021-01-29 15:32+0000\n"
 "Last-Translator: Tranzistors <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -288,9 +289,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Pabeidz instalēšanu"
+msgstr "Skenē instalēšanas datu nesēju..."
 
 #. Type: error
 #. Description
@@ -306,11 +306,11 @@ msgstr "apt konfigurācijas kļūda"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
-msgstr "Kļūda, mēģinot nokonfigurēt apt, lai instalētu papildu pakotnes no CD."
+msgstr ""
+"Neizdevās nokonfigurēt apt, lai instalētu papildu pakotnes no datu nesēja."
 
 #. Type: boolean
 #. Description
@@ -326,31 +326,30 @@ msgstr "Kļūda, mēģinot nokonfigurēt apt, lai instalētu papildu pakotnes no
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Pabeigt instalēšanu"
+msgstr "Skenēt papildu instalēšanas datu nesējus?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Instalācijas datu nesēja skenēšana atrada iezīmi:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Iespējams skenēt papildus CD vai DVD diskus, kurus varētu izmantot pakotņu "
-"pārvaldnieks (apt). Parasti tiem jābūt tādā pašā formātā kā instalācijas CD/"
-"DVD. Ja jums nav citu CD vai DVD disku, variet izlaist šo soli."
+"Iespējams skenēt papildu datu nesējus, kurus varētu izmantot pakotņu "
+"pārvaldnieks (apt). Parasti tiem jābūt tādā pašā formātā kā instalācijas "
+"tiem, no kuriem ielādējāt sistēmu. Ja jums nav papildu datu nesēju, variet "
+"izlaist šo soli."
 
 #. Type: boolean
 #. Description
@@ -359,41 +358,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Ja vēlaties skenēt citu CD vai DVD, ievietojiet to tagad."
+msgstr "Ja vēlaties skenēt vairāk datu nesēju, ievietojiet nākošo tagad."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Tika noskenēts CD vai DVD ar šādu etiķeti:"
+msgstr "Tika noskenēts datu nesējs ar šādu iezīmi:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "CD vai DVD ar šādu etiķeti jau ir skenēts iepriekš:"
+msgstr "Attēls ar šādu iezīmi jau ir skenēts iepriekš:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Lūdzu, tagad aizvietojiet to, ja vēlaties skenēt vēl citu CD vai DVD."
+msgstr "Lūdzu, aizvietojiet to tagad, ja vēlaties skenēt vēl citu."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Lūdzu, pārliecinieties, ka CD/DVD disks ir pareizi ievietots."
+msgstr "Lūdzu, pārliecinieties, ka datu nesējs ir pareizi ievietots."
 
 #. Type: text
 #. Description
@@ -406,11 +400,9 @@ msgstr "Datu nesēja maiņa"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
 msgstr ""
-"/cdrom/ — lūdzu, ielieciet disku lasītājā '/cdrom/' disku ar etiķeti "
-"'${LABEL}' un nospiediet enter."
+"Lūdzu, ielieciet datu nesēju ar etiķeti '${LABEL}' un nospiediet enter."
 
 #. Type: text
 #. Description
@@ -427,50 +419,47 @@ msgstr "Deaktivizē netinst CD avotu sources.list datnē..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Ja instalējat programmatūru no netinst CD un izvēlaties nelietot "
+"Ja instalējat programmatūru no netinst CD attēla un izvēlaties nelietot "
 "spoguļserveri, izveidotā bāzes sistēma būs ļoti minimāla."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Jūs instalējat programmatūru no netinst CD, kas nodrošina tikai minimālas "
-"bāzes sistēmas instalēšanu. Izmantojiet spoguļserverus, lai uzinstalētu "
-"pilnīgāku sistēmu."
+"Jūs instalējat programmatūru no netinst CD attēla, kas nodrošina tikai "
+"minimālas bāzes sistēmas instalēšanu. Izmantojiet spoguļserverus, lai "
+"uzinstalētu pilnīgāku sistēmu."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Jūs instalējat no CD, kas satur ierobežotu pakotņu kopu."
+msgstr "Jūs instalējat no attēla, kas satur ierobežotu pakotņu kopu."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Jūs esat noskenējis %i CD diskus. Lai gan šie diski satur diezgan daudz "
+"Jūs esat noskenējis %i attēlus diskus. Lai gan tie satur diezgan daudz "
 "pakotņu, dažu trūkst (īpaši pakotņu, kas nodrošina atbalstu valodām, kas nav "
 "angļu)."
 
@@ -479,12 +468,12 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Jūs esat noskenējis %i CD diskus. Lai gan šie diski satur diezgan daudz "
+"Jūs esat noskenējis %i attēlus. Lai gan šie diski satur diezgan daudz "
 "pakotņu, dažu varētu trūkt."
 
 #. Type: text
@@ -502,12 +491,11 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Jūs instalējat no DVD diska. Lai gan DVD diezgan daudz pakotņu, dažu varētu "
+"Jūs instalējat no DVD attēla. Lai gan tas diezgan daudz pakotņu, dažu varētu "
 "trūkt."
 
 #. Type: text
@@ -664,14 +652,13 @@ msgstr "Lietot tīkla spoguļserveri?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
 "Tīkla spoguļserveris var paplašināt pieejamo programmatūras klāstu (papildus "
-"uz CD-ROM pieejamajai programmatūrai). Tas var arī dot pieeju jaunākām "
+"uz datu nesēja pieejamajai programmatūrai). Tas var arī dot pieeju jaunākām "
 "programmatūras versijām."
 
 #. Type: boolean
