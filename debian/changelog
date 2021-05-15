@@ -1,3 +1,23 @@
+apt-setup (1:0.163-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+  * Quilt package
+  * Add Standards-Version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 16 May 2021 00:02:04 +0200
+
+apt-setup (1:0.163) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by zer0-x
+  * Norwegian Bokmal (nb.po) by Allan Nordhøy
+  * Serbian (sr.po) by Filipovic Dragan
+  * Traditional Chinese (zh_TW.po) by louies0623
+
+ -- ned <ned@t520>  Fri, 19 Mar 2021 17:17:17 +0100
+
 apt-setup (1:0.162+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release

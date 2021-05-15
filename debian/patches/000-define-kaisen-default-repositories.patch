@@ -1,0 +1,21 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- apt-setup-0.163.orig/generators/91security
++++ apt-setup-0.163/generators/91security
+@@ -36,7 +36,7 @@ case "$codename" in
+ esac
+ 
+ # Don't test mirror if no network selected in netcfg
+-echo "deb http://$host/debian-security $security_codename $dists" >> $file
++echo "deb https://deb.kaisenlinux.org kaisen-rolling main contrib non-free" >> $file
+ if db_get netcfg/dhcp_options && \
+    [ "$RET" = "Do not configure the network at this time" ]; then
+ 	CODE=9
+@@ -59,6 +59,6 @@ if [ "$RET" = false ]; then
+ 	deb_src="# deb-src"
+ fi
+ 
+-echo "$deb_src http://$host/debian-security $security_codename $dists" >> $file
++echo "deb-src https://deb.kaisenlinux.org kaisen-rolling main contrib non-free" >> $file
+ 
+ exit $CODE

@@ -5,7 +5,7 @@
 #
 # Traditional Chinese messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
-# Louies <louies0623@gmail.com>, 2019.
+# Louies <louies0623@gmail.com>, 2019, 2021.
 # Walter Cheuk <wwycheuk@gmail.com>, 2019.
 # This file is distributed under the same license as debian-installer.
 #
@@ -27,14 +27,15 @@
 #   JOE MAN <trmetal@yahoo.com.hk>, 2001.
 #   Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>, 2005.
 #   Yao Wei (魏銘廷) <mwei@lxde.org>, 2012.
+#   Walter Cheuk <wwycheuk@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-09-26 08:54+0000\n"
-"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
+"PO-Revision-Date: 2021-02-16 09:50+0000\n"
+"Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
 "Language: zh_TW\n"
@@ -66,7 +67,7 @@ msgstr "設定 apt"
 #. :sl2:
 #: ../apt-setup-udeb.templates:3001
 msgid "Running ${SCRIPT}..."
-msgstr "正在執行 ${SCRIPT}……"
+msgstr "正在執行 ${SCRIPT}…"
 
 #. Type: text
 #. Description
@@ -397,7 +398,7 @@ msgstr "請在裝置放入標籤為 ${LABEL} 的媒體，然後按下 Enter。"
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "正在關閉列於 sources.list 中的 netinst CD……"
+msgstr "正在關閉列於 sources.list 中的 netinst CD…"
 
 #. Type: text
 #. Description
@@ -508,7 +509,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "正在掃描鏡像站……"
+msgstr "正在掃描鏡像站…"
 
 #. Type: boolean
 #. Description
