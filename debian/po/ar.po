@@ -13,6 +13,8 @@
 # ButterflyOfFire <ButterflyOfFire@protonmail.com>, 2018.
 # Osama <osama.ibrahim.89@gmail.com>, 2019.
 # zer0-x <ProFessorHassan3@gmail.com>, 2021.
+# Fahim Sabah <katheer.kaleel@gmail.com>, 2021.
+#
 #
 # Translations from iso-codes:
 #     Translations taken from ICU SVN on 2007-09-09
@@ -29,8 +31,8 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-02-22 11:50+0000\n"
-"Last-Translator: zer0-x <zer0_@tutanota.com>\n"
+"PO-Revision-Date: 2021-04-01 14:26+0000\n"
+"Last-Translator: Fahim Sabah <katheer.kaleel@gmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -262,7 +264,6 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
-#, fuzzy
 msgid "Enable source repositories in APT?"
 msgstr "تمكين المستودعات المصدرية في APT؟"
 
@@ -276,14 +277,17 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
+"مبدئيا، فإنّ المستودعات المصدرية مسرودة في /etc/apt/sources.list (مع سطور "
+"\"deb-src\" مناسبة) ليعمل \"apt-get source\". لكن إذا لم تكن بحاجة إلى هذه "
+"الميزة، يمكنك تعطيل هذه المُدخَلات وادّخار الانترنت أثناء عمليات التحديث \"apt-"
+"get update\"."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "إنهاء التثبيت"
+msgstr "فحص وسيطة التثبيت..."
 
 #. Type: error
 #. Description
@@ -299,11 +303,10 @@ msgstr "مشكلة في تهيئة apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
-msgstr "فشلت محاولة تهيئة apt لتثبيت حزم إضافية من القرص المدمج."
+msgstr "فشلت محاولة تهيئة apt لتثبيت حزم إضافية من الوسيطة."
 
 #. Type: boolean
 #. Description
@@ -319,9 +322,8 @@ msgstr "فشلت محاولة تهيئة apt لتثبيت حزم إضافية م
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "فشل تثبيت SILO"
+msgstr "فحص وسيطة تثبيت إضافية؟"
 
 #. Type: boolean
 #. Description
@@ -334,16 +336,15 @@ msgstr "فحص وسط التثبيت الخاص بك أدى عثر على تسم
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"لديك خيار كشف أقراص إضافية لاستخدامها من قبل مدير الحزم (apt). عادة تكون هذه "
-"الأقراص من المجموعة نفسها. إن لم تكن لديك أية أقراص إضافية متوفرة، يمكن "
-"ببساطة تخطي هذه الخطوة."
+"لديك الآن خيار فحص وسائط إضافية لاستخدامها من قبل مدير الحزم (apt). عادة "
+"ينبغي أن تكون هذه الأقراص من المجموعة نفسها التي أقلعت منها. إن لم تكن لديك "
+"أية وسائط إضافية، يمكن ببساطة تخطي هذه الخطوة."
 
 #. Type: boolean
 #. Description
@@ -352,41 +353,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "إن كنت تريد كشف قرص CD أو DVD آخر، رجاءً أدخله الآن."
+msgstr "إن كنت تريد فحص وسائط إضافية، رجاءً أدخِل آخراً الآن."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "تم كشف قرص CD أو DVD المسمى:"
+msgstr "فُحصَت الصورة ذات التسمية التالية:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "القرص المسمى كما يلي تم كشفه:"
+msgstr "الصورة ذات التسمية التالية سبق أن فُحصَت:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "رجاء غيّره الآن إن كنت تريد كشف قرص آخر."
+msgstr "رجاء غيّرها الآن إن كنت تريد فحص غيرها."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "رجاء تأكد من أن القرص أُدخل بشكل صحيح."
+msgstr "رجاء تأكد من أن الوسيطة أُدخلت بشكل صحيح."
 
 #. Type: text
 #. Description
@@ -399,11 +395,8 @@ msgstr "تغيير القرص"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: رجاءً أدخل القرص المسمى '${LABEL}' في السواقة '/cdrom/' واضغط زر "
-"الإدخال."
+msgstr "لطفاً أدخل القرص المسمى '${LABEL}' واضغط زر الإدخال."
 
 #. Type: text
 #. Description
@@ -420,64 +413,59 @@ msgstr "تعطيل قرص التثبيت الشبكي netinst CD في ملف sou
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"إن كنت تقوم بالتثبيت من قرص مدمج خاص للتثبيت الشبكي netinst واخترت عدم "
+"إن كنت تقوم بالتثبيت من صورة قرص مدمج خاص للتثبيت الشبكي netinst واخترت عدم "
 "استخدام مرآة، فسوف ينتهي بك الأمر بنظام بسيط جداً."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"تقوم بالتثبيت من قرص netinst مدمج، والذي يمكنك من تثبيت نظام أساسي صغير جداً. "
-"استخدم مرآة شبكية لتثبيت نظام أكثر كمالاً."
+"تقوم بالتثبيت من صورة قرص netinst مدمج، والذي من تلقاءه يتيح تثبيت نظام "
+"أساسي صغير جداً. استخدم مرآة لتثبيت نظام أكثر اكتمالاً."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "تقوم بالتثبيت الآن من قرص CD، والذي يحتوي مجموعة محدودة من الحزم."
+msgstr "تقوم بالتثبيت من صورة تحتوي مجموعة محدودة من الحُزم."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"لقد كشفت %i أقراص مدمجة. مع أن هذه الأقراص تحتوي مجموعة وافرة من الحزم، إلا "
-"أن بعضها الآخر قد يكون مفقوداً (أهمها بعض الحزم المطلوبة لدعم اللغات الأخرى "
-"غير الانجليزية)."
+"لقد فحصت %i. مع أن هذه تحتوي مجموعة وافرة من الحزم، إلا أن بعضها الآخر قد "
+"يكون مفقوداً (أهمها بعض الحزم المطلوبة لدعم اللغات الأخرى غير الانجليزية)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"لقد كشفت %i أقراص مدمجة. مع أن هذه الأقراص تحتوي مجموعة كبيرة من الحزم، إلا "
-"أن بعضها الآخر غير موجود."
+"لقد فحصت %i. مع أن هذه تحتوي مجموعة كبيرة من الحزم، إلا أن بعضها الآخر مفقود."
 
 #. Type: text
 #. Description
@@ -494,13 +482,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"تقوم بالتثبيت الآن من قرص DVD. مع أن هذا القرص يحتوي مجموعة كبيرة من الحزم، "
-"إلا أن بعضها الآخر قد يكون مفقوداً."
+"تقوم بالتثبيت الآن من صورة قرص DVD. مع أنه يحتوي مجموعة كبيرة من الحزم، إلا "
+"أن البعض قد يكون مفقوداً."
 
 #. Type: text
 #. Description
@@ -653,14 +640,13 @@ msgstr "تريد استخدام مرآة شبكية؟"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"يمكن للمرآة الشبكية الإضافة إلى البرامج الموجودة على القرص المدمج. وقد يوفر "
-"ذلك أيضاً النسخ الأحدث من هذه البرامج."
+"يمكن استخدام المرآة الشبكية لتكميل البرامج الموجودة على وسيطة التثبيت. وقد "
+"يوفر ذلك أيضاً الإصدارات الأحدث من البرامج."
 
 #. Type: boolean
 #. Description

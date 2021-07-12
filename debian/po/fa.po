@@ -26,8 +26,8 @@ msgstr ""
 "Project-Id-Version: fa sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-10-24 17:09+0000\n"
-"Last-Translator: سهیل خانعلی‌پور <soheilkhanalipur@tutanota.com>\n"
+"PO-Revision-Date: 2021-04-25 05:03+0000\n"
+"Last-Translator: Sina Carnelious <sinacarnelious@protonmail.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -265,7 +265,7 @@ msgstr ""
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr ""
+msgstr "آیا مخازن منبع در APT فعال شوند؟"
 
 #. Type: boolean
 #. Description
@@ -277,6 +277,10 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
+"مخازن منبع پیش فرض در /etc/apt/sources.list (با خطوط مناسب \"deb-src\") ذکر "
+"شده اند تا \"apt-get source\" کار کند. با این حال ، اگر نیازی به این ویژگی "
+"ندارید ، می توانید آن‌ها را غیرفعال کنید و در حین عملیات \"apt-get update\" "
+"پهنای باند کمتری مصرف کنید."
 
 #. Type: text
 #. Description

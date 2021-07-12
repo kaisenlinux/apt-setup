@@ -1,3 +1,29 @@
+apt-setup (1:0.165-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 12 Jul 2021 02:45:16 +0200
+
+apt-setup (1:0.165) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Fatih Altun
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 08 Jul 2021 09:27:45 +0200
+
+apt-setup (1:0.164) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Fahim Sabah
+  * Persian (fa.po) by Sina Carnelious
+  * Japanese (ja.po) by YOSHINO Yoshihito
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 30 May 2021 22:00:54 +0200
+
 apt-setup (1:0.163-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
