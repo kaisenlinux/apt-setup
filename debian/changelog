@@ -1,3 +1,18 @@
+apt-setup (1:0.166-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 18 Aug 2021 22:10:41 +0200
+
+apt-setup (1:0.166) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Kimmo Kujansuu
+
+ -- Holger Wansing <hwansing@mailbox.org>  Fri, 23 Jul 2021 18:50:43 +0200
+
 apt-setup (1:0.165-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
