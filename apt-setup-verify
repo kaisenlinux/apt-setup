@@ -65,7 +65,7 @@ valid () {
 
 	[ "${line%%:*}" != "deb cdrom" ] || return 0
 
-	tmp=$($chroot $ROOT tempfile)
+	tmp=$($chroot $ROOT mktemp)
 	echo "$line" > $ROOT$tmp
 	code=0
 	$logoutput $intarget debconf-apt-progress --logstderr $dap_opts -- \

@@ -13,14 +13,15 @@
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
 # Hai-Nam Nguyen <hainam@jcisio.com>, 2012
 # Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019.
+# Tran Dinh Hai <haidinhtran@pm.me>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-02-27 14:34+0700\n"
-"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
+"PO-Revision-Date: 2021-09-08 05:34+0000\n"
+"Last-Translator: Tran Dinh Hai <haidinhtran@pm.me>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -276,9 +277,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Đang hoàn tất cài đặt"
+msgstr "Đang quét bộ cài đa phương tiện..."
 
 #. Type: error
 #. Description
@@ -294,12 +294,12 @@ msgstr "lỗi cấu hình trình apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Việc thử cấu hình trình apt để cài đặt các gói thêm từ đĩa CD đã bị lỗi."
+"Việc thử cấu hình trình apt để cài đặt các gói mở rộng từ đa phương tiện "
+"thất bại."
 
 #. Type: boolean
 #. Description
@@ -315,31 +315,30 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Việc cài đặt SILO bị lỗi"
+msgstr "Quét thêm bộ cài phương tiện truyền thông?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Đang quét bộ cài phương tiện truyền thông của bạn để tìm nhãn:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Lúc này bạn có tùy chọn quét các đĩa CD/DVD thêm cho trình quản lý gói (APT) "
-"sử dụng. Bình thường, các đĩa này nên thuộc về cùng một tập hợp với đĩa CD/"
-"DVD cài đặt. Không có đĩa thêm thì bỏ qua bước này."
+"Bây giờ bạn có thể lựa chọn quét thêm các gói đa phương tiện bằng trình quản "
+"lý kiện hàng (apt). Bình thường chúng được lấy từ cùng một nguồn mà bạn đang "
+"sử dụng. Nếu bạn không có thêm phần phương tiện mở rộng nào, bạn có thể bỏ "
+"qua bước này."
 
 #. Type: boolean
 #. Description
@@ -348,41 +347,37 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Muốn quét đĩa CD/DVD khác thì nạp vào ngay."
+msgstr ""
+"Nếu bạn muốn quét thêm các gói đa phương tiện, vui lòng bỏ nó vào bây giờ."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Mới quét đĩa CD/DVD có nhãn sau đây:"
+msgstr "Các mục kèm nhãn đã được quét bao gồm:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Đã quét đĩa CD/DVD có nhãn sau đây:"
+msgstr "Các mục kèm nhãn đã được quét bao gồm:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Muốn quét đĩa CD/DVD khác thì thay thế nó ngay."
+msgstr "Hãy đưa vào một cái khác nếu bạn muốn quét thêm."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Hãy kiểm tra xem bạn đã nạp đúng đĩa CD/DVD."
+msgstr "Hãy kiểm tra rằng bộ phương tiện đã được đưa vào đúng cách."
 
 #. Type: text
 #. Description
@@ -395,11 +390,8 @@ msgstr "Chuyển đổi đĩa"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Vui lòng nạp đĩa có nhãn “${LABEL}” vào ổ đĩa “/cdrom/” rồi bấm "
-"phím Enter."
+msgstr "Hãy thêm vào bộ cài có nhãn '${LABEL}' và bấm enter."
 
 #. Type: text
 #. Description
@@ -416,66 +408,62 @@ msgstr "Đang tắt đĩa CD cài đặt qua mạng trong danh sách nguồn (so
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Nếu bạn đang cài đặt từ đĩa CD kiểu cài đặt qua mạng (netinst) và chọn không "
-"dùng máy bản sao, kết quả là hệ thống cơ bản rất tối thiểu."
+"Nếu bạn đang cài đặt từ một bản CD netinst và chọn không dùng một miror, bạn "
+"sẽ chỉ có một phiên bản rất cơ bản."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Bạn đang cài đặt từ một đĩa CD cài đặt qua mạng, mà tự nó chỉ cho phép cài "
-"đặt một hệ thống cơ bản rất nhỏ. Hãy dùng máy bản sao để cài đặt hệ thống "
-"hoàn tất hơn."
+"Bạn đang cài đặt từ một netinst CD, cái mà bản thân nó sẽ chỉ được phép cài "
+"đặt những thứ cơ bản của hệ thống. Sử dụng một mirror để cài thêm cho hoàn "
+"chỉnh hệ thống."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr ""
-"Bạn đang cài đặt từ một đĩa CD không có đủ sức chứa cho mọi gói phần mềm."
+msgstr "Bạn đang cài đặt từ một đĩa với rất ít kiện hàng được chọn kèm."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Bạn đã quét %i đĩa CD. Mặc dù chúng chứa rất nhiều gói phần mềm khác nhau, "
-"một số gói vẫn còn có thể bị thiếu (đặc biệt các gói cần thiết để hỗ trợ "
-"ngôn ngữ khác)."
+"Bạn đã quét %i các image. Mặc dù chúng chứa rất nhiều gói phần mềm khác "
+"nhau, một số gói vẫn còn có thể bị thiếu (đặc biệt các gói cần thiết để hỗ "
+"trợ ngôn ngữ khác)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Bạn đã quét %i đĩa CD. Mặc dù chúng chứa rất nhiều gói phần mềm khác nhau, "
-"một số gói vẫn còn có thể bị thiếu."
+"Bạn đã quét %i đĩa. Mặc dù chúng chứa rất nhiều gói phần mềm khác nhau, một "
+"số gói vẫn còn có thể bị thiếu."
 
 #. Type: text
 #. Description
@@ -492,13 +480,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Bạn đã quét %i đĩa DVD. Mặc dù chúng chứa rất nhiều gói phần mềm khác nhau, "
-"một số gói vẫn còn có thể bị thiếu."
+"Bạn đã quét %i các image. Mặc dù chúng chứa rất nhiều gói phần mềm khác "
+"nhau, một số gói vẫn còn có thể bị thiếu."
 
 #. Type: text
 #. Description
@@ -653,14 +640,13 @@ msgstr "Dùng máy bản sao mạng không?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
 "Một máy bản sao mạng có thể được dùng để lấy phần mềm thêm vào nội dung của "
-"đĩa CD-ROM. Cũng có thể chứa phiên bản mới hơn của phần mềm đã có."
+"bộ cài đa phương tiện. Cũng có thể chứa phiên bản mới hơn của phần mềm đã có."
 
 #. Type: boolean
 #. Description

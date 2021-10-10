@@ -1,0 +1,66 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- apt-setup-0.167.orig/generators/92updates
++++ apt-setup-0.167/generators/92updates
+@@ -42,13 +42,9 @@ echo "# ${codename}-updates, to get upda
+ echo "# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports" >> $file
+ 
+ if  [ -n "$protocol" ] && [ -n "$host" ]; then
+-	echo "deb $protocol://${host}${directory} ${codename}-updates $dists" >> $file
++	echo ""
+ else
+-	echo "# A network mirror was not selected during install.  The following entries" >> $file
+-	echo "# are provided as examples, but you should amend them as appropriate" >> $file
+-	echo "# for your mirror of choice." >> $file
+-	echo "#" >> $file
+-	echo "# deb http://deb.debian.org/debian/ ${codename}-updates $dists" >> $file
++	echo ""
+ fi
+ if db_get netcfg/dhcp_options && \
+    [ "$RET" = "Do not configure the network at this time" ]; then
+@@ -77,9 +73,9 @@ if [ "$RET" = false ]; then
+ fi
+ 
+ if [ -n "$protocol" ] && [ -n "$host" ]; then
+-	echo "$deb_src $protocol://${host}${directory} ${codename}-updates $dists" >> $file
++	echo ""
+ else
+-	echo "# deb-src http://deb.debian.org/debian/ ${codename}-updates $dists" >> $file
++	echo ""
+ fi
+ 
+ exit $CODE
+--- apt-setup-0.167.orig/generators/93backports
++++ apt-setup-0.167/generators/93backports
+@@ -37,17 +37,11 @@ for dist in contrib non-free; do
+ 	fi
+ done
+ 
+-echo "# ${codename}-backports, previously on backports.debian.org" >> $file
+-
+ # Don't test mirror if no network selected in netcfg
+ if  [ -n "$protocol" ] && [ -n "$host" ]; then
+-	echo "deb $protocol://${host}${directory} ${codename}-backports $dists" >> $file
++	echo ""
+ else
+-	echo "# A network mirror was not selected during install.  The following entries" >> $file
+-	echo "# are provided as examples, but you should amend them as appropriate" >> $file
+-	echo "# for your mirror of choice." >> $file
+-	echo "#" >> $file
+-	echo "# deb http://deb.debian.org/debian/ ${codename}-backports $dists" >> $file
++	echo ""
+ fi
+ if db_get netcfg/dhcp_options && \
+    [ "$RET" = "Do not configure the network at this time" ]; then
+@@ -76,9 +70,9 @@ if [ "$RET" = false ]; then
+ fi
+ 
+ if [ -n "$protocol" ] && [ -n "$host" ]; then
+-	echo "$deb_src $protocol://${host}${directory} ${codename}-backports $dists" >> $file
++	echo ""
+ else
+-	echo "# deb-src http://deb.debian.org/debian/ ${codename}-backports $dists" >> $file
++	echo ""
+ fi
+ 
+ exit $CODE

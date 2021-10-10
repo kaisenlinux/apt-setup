@@ -55,7 +55,7 @@ for generator in $gendir/*; do
 		db_progress INFO apt-setup/progress/fallback || true
 	fi
 	
-	tmp=$($chroot $ROOT tempfile)
+	tmp=$($chroot $ROOT mktemp)
 
 	code=0
 	$generator $ROOT$tmp || code=$?

@@ -1,1 +1,2 @@
-000-define-kaisen-default-repositories.patch
+000-define-kaisen-default-repositories-security.patch
+001-remove-backports-and-updates-repositories.patch
