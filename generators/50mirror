@@ -9,6 +9,11 @@ file="$1"
 NL="
 "
 
+logoutput=""
+if [ "$CATCHLOG" ]; then
+	logoutput="log-output -t apt-setup"
+fi
+
 log() {
 	logger -t apt-setup "$@"
 }
@@ -233,6 +238,11 @@ while [ ! "$done" ]; do
 	hostname="$RET"
 	db_get mirror/$protocol/directory
 	directory="/${RET#/}"
+
+	if [ "$protocol" = "https" ]; then
+		# Ensure that ca-certificates is installed, so apt can verify the https certificate
+		$logoutput apt-install ca-certificates
+	fi
 
 	case $protocol in
 	    http|https)

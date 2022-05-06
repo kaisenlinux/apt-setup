@@ -17,20 +17,22 @@
 # Maxim V. Dziumanenko <dziumanenko@gmail.com>, 2010.
 # Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013.
 # Anton Gladky <gladk@debian.org>, 2011-2016
+# Taras Panchenko <top39@ukr.net>, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-01-02 22:03+0100\n"
-"Last-Translator: Anton Gladky <gladk@debian.org>\n"
+"PO-Revision-Date: 2021-12-03 23:44+0000\n"
+"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. Type: text
 #. Description
@@ -284,9 +286,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Завершення встановлення"
+msgstr "Сканування носія встановлювача..."
 
 #. Type: error
 #. Description
@@ -302,12 +303,11 @@ msgstr "проблема при налаштуванні apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Спроба налаштувати apt для встановлення додаткових пакунків з компакт-диска "
+"Спроба налаштувати apt для встановлення додаткових пакунків з носія "
 "завершилася невдачею."
 
 #. Type: boolean
@@ -324,31 +324,29 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Не вдалося встановити SILO"
+msgstr "Сканувати додатковий носій встановлювача?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Під час сканування носія встановлювача знайдено напис:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Ви зараз маєте можливість сканувати додаткові CD чи DVD для використання з "
-"менеджером пакунків (apt). Зазвичай вони повинні бути з того ж набору що і "
-"встановлювальний CD/DVD. Якщо ви не маєте додаткових CD чи DVD, ви можете "
+"Тепер у вас є можливість сканувати додаткові носії для використання з "
+"менеджером пакунків (apt). Зазвичай вони повинні бути з того ж набору, з "
+"якого ви завантажувалися. Якщо ви не маєте додаткових носіїв, ви можете "
 "пропустити цей крок."
 
 #. Type: boolean
@@ -358,41 +356,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Якщо ви бажаєте сканувати інший CD чи DVD, вставте його зараз."
+msgstr "Якщо ви бажаєте відсканувати більше носіїв, вставте інший носій зараз."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Було проскановано CD чи DVD з наступною міткою:"
+msgstr "Було проскановано носій з наступною міткою:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "CD чи DVD з наступною міткою вже було проскановано:"
+msgstr "Носій з наступною міткою вже було проскановано:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Замініть його зараз якщо ви бажаєте сканувати інший CD чи DVD."
+msgstr "Замініть його зараз якщо ви бажаєте сканувати інший."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Перевірте чи правильно вставлено CD або DVD."
+msgstr "Перевірте чи правильно вставлено носій."
 
 #. Type: text
 #. Description
@@ -405,11 +398,8 @@ msgstr "Зміна носія"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Вставте, будь ласка, диск помічений '${LABEL}' в привід '/cdrom/' і "
-"натисніть Enter."
+msgstr "Будь ласка, вставте носій з міткою '${LABEL}' та натисніть Enter."
 
 #. Type: text
 #. Description
@@ -426,51 +416,47 @@ msgstr "Блокування netinst CD в sources.list..."
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Якщо ви встановлюєте систему з диску „netinst“ і не використовуватимете "
+"Якщо ви встановлюєте систему з образу диску netinst і не використовуватимете "
 "дзеркальний сервер, то отримаєте лише мінімальну базову систему."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Ви встановлюєте систему з диску „netinst“ який сам дозволяє встановити "
-"тільки дуже мінімальну базову систему. Використовуйте дзеркало щоб "
-"встановити більш повну систему."
+"Ви встановлюєте систему з з образу диску netinst, який дозволяє встановити "
+"лише мінімальну базову систему. Використовуйте дзеркало щоб встановити більш "
+"повну систему."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr ""
-"Ви встановлюєте з компакт-диску що містить лише обмежений набір пакунків."
+msgstr "Ви встановлюєте з образу, що містить лише обмежений набір пакунків."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Ви просканували %i CD. Хоча вони містять великий набір пакунків, деякі "
+"Ви просканували %i образів. Хоча вони містять великий набір пакунків, деякі "
 "можуть бути відсутні (особливо деякі пакунки потрібні для підтримання мов "
 "відмінних від англійської)."
 
@@ -479,12 +465,12 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Ви просканували %i CD. Хоча вони містять великий набір пакунків, деякі "
+"Ви просканували %i образів. Хоча вони містять великий набір пакунків, деякі "
 "можуть бути відсутні."
 
 #. Type: text
@@ -502,13 +488,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Ви встановлюєте з DVD. Хоча DVD містить великий набір пакунків, деякі можуть "
-"бути відсутні."
+"Ви встановлюєте з образу DVD. Хоча він містить великий набір пакунків, деякі "
+"можуть бути відсутні."
 
 #. Type: text
 #. Description
@@ -665,15 +650,14 @@ msgstr "Використовувати дзеркало в мережі?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
 "Можна використати дзеркальний сервер в мережі для доповнення програмного "
-"забезпечення на компакт-диску. Це також може зробити доступними новіші "
-"версії програмного забезпечення."
+"забезпечення на носієві встановлювача. Це також може зробити доступними "
+"новіші версії програмного забезпечення."
 
 #. Type: boolean
 #. Description

@@ -1,3 +1,33 @@
+apt-setup (1:0.168-1kaisen) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 06 May 2022 14:16:02 +0100
+
+apt-setup (1:0.168) unstable; urgency=medium
+
+  * Team upload
+
+  [ bauen1 ]
+  * Ensure target can validate https certificates when using the https
+    protocol for mirrors.
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 13.
+  * Set debhelper-compat version in Build-Depends.
+
+  [ Updated translations ]
+  * Welsh (cy.po) by Ceiri Wyn Tudur
+  * Danish (da.po) by Joe Hansen
+  * German (de.po) by Holger Wansing
+  * Hungarian (hu.po) by Balázs Máhli
+  * Dutch (nl.po) by Frans Spiesschaert
+  * Polish (pl.po) by Matthaiks
+  * Telugu (te.po) by Praveen Illa
+  * Ukrainian (uk.po) by Taras Panchenko
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 12 Apr 2022 23:09:41 +0200
+
 apt-setup (1:0.167-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
