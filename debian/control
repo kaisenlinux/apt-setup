@@ -4,8 +4,8 @@ Priority: optional
 XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Build-Depends: debhelper-compat (= 13), po-debconf
-Vcs-Browser: https://salsa.debian.org/installer-team/apt-setup
-Vcs-Git: https://salsa.debian.org/installer-team/apt-setup.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/apt-setup
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/apt-setup.git
 
 Package: apt-setup-udeb
 Package-Type: udeb

@@ -28,16 +28,18 @@
 #   Mai Hao Hui <mhh@126.com>, 2001 (translations from galeon)
 # YunQiang Su <wzssyqa@gmail.com>, 2010, 2011, 2012, 2013.
 # Yangfl <mmyangfl@gmail.com>, 2017.
-# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019, 2020.
 # 玉堂白鹤 <yjwork@qq.com>, 2020.
+# TTT DEAL <ikmn2jlt@linshiyouxiang.net>, 2021.
+# Wenbin Lv <wenbin816@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-01-18 06:21+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"PO-Revision-Date: 2022-04-17 17:12+0000\n"
+"Last-Translator: Wenbin Lv <wenbin816@gmail.com>\n"
 "Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +98,7 @@ msgstr "正在扫描发布版本的 updates 软件源..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:7001
 msgid "Scanning the backports repository..."
-msgstr "正在扫描 backport 软件源..."
+msgstr "正在扫描 backports 软件源..."
 
 #. Type: select
 #. Choices
@@ -131,7 +133,7 @@ msgstr "下载本地仓库密钥失败："
 msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
-msgstr "安装程序从 ${MIRROR} 下载用于签署本地仓库的公钥失败："
+msgstr "安装程序从 ${MIRROR} 下载用于签署本地软件源的公钥失败："
 
 #. Type: select
 #. Description
@@ -142,7 +144,7 @@ msgid ""
 "continue without all the packages from this repository."
 msgstr ""
 "这可能是您的网络问题，也可能是保存此密钥的服务器发生错误。您可以选择重试下"
-"载，或者忽略这一问题，不使用该镜像站的任何软件包并继续。"
+"载，或者忽略这一问题，不使用该镜像站点的任何软件包并继续。"
 
 #. Type: error
 #. Description
@@ -159,8 +161,8 @@ msgid ""
 "The repository on ${HOST} couldn't be accessed, so its updates will not be "
 "made available to you at this time. You should investigate this later."
 msgstr ""
-"无法访问位于 ${HOST} 的软件源，因此您现在还无法使用那里的软件更新。您应随后调"
-"查这一问题。"
+"无法访问位于 ${HOST} 的软件源，因此您暂时无法使用此软件源进行更新。您应当随后"
+"调查这一问题。"
 
 #. Type: error
 #. Description
@@ -199,7 +201,7 @@ msgstr "发布版本更新 (updates)"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "backported software"
-msgstr "向后移植 (backported) 的软件"
+msgstr "向后移植的软件 (backports)"
 
 #. Type: multiselect
 #. Description
@@ -253,17 +255,17 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"向后移植 (backport) 的软件是从开发版中向本发布版中移植的版本。虽然此软件并没"
-"有如发布版中的软件那样进行如此完整的测试，它包含了某些应用程序的新版本，可能"
-"会提供一些有用的新功能。启用 backport 并不会自动安装这些软件：只是可以让您手"
-"动选择安装。"
+"向后移植的软件 (backports) 移植自开发版本，并经过修改以适合在本发布版本中使"
+"用。虽然这些软件并没有如发布版本中的软件那样进行过如此完整的测试，但是 "
+"backports 包含了某些应用程序的新版本，可能会提供一些有用的新功能。启用 "
+"backports 并不会自动安装这些软件，只是可以让您手动选择安装。"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr "启用 APT 源代码软件源？"
+msgstr "是否启用 APT 源代码软件源？"
 
 #. Type: boolean
 #. Description
@@ -275,23 +277,23 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
-"默认情况下，源代码库会在 /etc/apt/sources.list 中列出 (前面带有“deb-src”)，以"
-"使用 “apt-get source”。但是，如果您不需要此功能，则可以在“apt-get update”操作"
-"期间禁用这些条目并节省一些带宽。"
+"默认情况下，/etc/apt/sources.list 中会包含源代码仓库的条目 (前面带有 \"deb-"
+"src\")，以允许您使用 \"apt-get source\" 命令。但是，如果您不需要此功能，则可"
+"以禁用这些条目，这样可以在 \"apt-get update\" 操作过程中节省一些带宽。"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
 msgid "Scanning the installation media..."
-msgstr "正在扫描安装介质……"
+msgstr "正在扫描安装介质..."
 
 #. Type: error
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:2001
 msgid "apt configuration problem"
-msgstr "Apt 设置问题"
+msgstr "apt 设置问题"
 
 #. Type: error
 #. Description
@@ -339,8 +341,9 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"现在您可以选择扫描其他介质以供软件包管理器 (apt) 使用。一般来说，这些和您引导"
-"启动的在同一套里面。如果您没有任何其他的介质，可以直接跳过这一步。"
+"现在您可以选择扫描其他介质以供软件包管理器 (apt) 使用。一般来说，这些介质和您"
+"引导时使用的介质属于同一套介质。如果您没有任何其他的介质，可以直接跳过这一"
+"步。"
 
 #. Type: boolean
 #. Description
@@ -350,28 +353,28 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "如果您想要扫描更多介质，请立即插入另一个。"
+msgstr "如果您想要扫描更多介质，请现在插入另一个介质。"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
 msgid "The image with the following label has been scanned:"
-msgstr "已经扫描了有下列标记的镜像："
+msgstr "已经扫描了带有下列标签的镜像："
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "The image with the following label has already been scanned:"
-msgstr "下列标记的镜像之前已经扫描过了："
+msgstr "带有下列标签的镜像之前已经扫描过了："
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "Please replace it now, if you wish to scan another."
-msgstr "如果您想要扫描其他的，现在请将其替换。"
+msgstr "如果您想要扫描其他的镜像，请现在更换它。"
 
 #. Type: boolean
 #. Description
@@ -392,7 +395,7 @@ msgstr "更换介质"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "请将标记为“${LABEL}”的介质插入，然后按下 Enter。"
+msgstr "请插入标签为 \"${LABEL}\" 的介质，然后按下 Enter。"
 
 #. Type: text
 #. Description
@@ -426,7 +429,7 @@ msgid ""
 "complete system."
 msgstr ""
 "您正在从网络安装 (netinst) 光盘镜像进行安装，而网络安装光盘只能安装一个非常小"
-"的基本系统。您可以使用镜像来安装一个更完备的系统。"
+"的基本系统。您可以使用镜像站点来安装一个更完整的系统。"
 
 #. Type: text
 #. Description
@@ -448,8 +451,8 @@ msgid ""
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"您已经扫描了 %i 个镜像。虽然其中包含了相当多的软件包，但是仍然可能缺少一些 "
-"(特别是那些用于支持英语以外的语言的软件包)。"
+"您已经扫描了 %i 个镜像。虽然其中包含了较多的软件包，但是仍然可能有所遗漏 (特"
+"别是那些用于支持非英语语言的软件包)。"
 
 #. Type: text
 #. Description
@@ -461,7 +464,7 @@ msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"您已经扫描了 %i 份镜像。虽然其中包含了很大一部分软件包，但是仍然可能有所遗"
+"您已经扫描了 %i 个镜像。虽然其中包含了很大一部分软件包，但是仍然可能有所遗"
 "漏。"
 
 #. Type: text
@@ -471,7 +474,7 @@ msgstr ""
 msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
-msgstr "注意使用镜像将导致在下一步安装过程中下载大量的数据。"
+msgstr "注意，使用镜像站点将导致在下一步安装过程中下载大量的数据。"
 
 #. Type: text
 #. Description
@@ -481,7 +484,7 @@ msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"您正在从 DVD 镜像进行安装。虽然它提供了很大一部分软件包，但是仍然可能有所遗"
+"您正在从 DVD 镜像进行安装。虽然其中包含了很大一部分软件包，但是仍然可能有所遗"
 "漏。"
 
 #. Type: text
@@ -493,8 +496,8 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"除非您并没有良好的互联网连接，否则建议您使用镜像，尤其是如果您计划要安装图形"
-"界面的桌面环境的话。"
+"除非您并没有良好的互联网连接，否则建议您使用镜像站点，尤其是如果您计划要安装"
+"图形界面的桌面环境的话。"
 
 #. Type: text
 #. Description
@@ -505,14 +508,14 @@ msgid ""
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
 "如果您有足够好的互联网连接，并且打算安装一个图形界面的桌面环境的话，建议您使"
-"用镜像。"
+"用镜像站点。"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "正在扫描镜像站..."
+msgstr "正在扫描镜像站点..."
 
 #. Type: boolean
 #. Description
@@ -531,9 +534,9 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"有些非自由软件也能在 Debian 中使用。尽管这些软件并不是 Debian 的一部分，但标"
-"准 Debian 工具还是可以安装它们。这些软件都有其不同的使用许可权，这可能会阻止"
-"您使用、修改或共享它们。"
+"有些非自由软件也能在 Debian 中使用。尽管这些软件并不是 Debian 的一部分，但可"
+"以使用标准 Debian 工具安装它们。这些软件都有各自的许可证，其内容可能会阻止您"
+"使用、修改或共享它们。"
 
 #. Type: boolean
 #. Description
@@ -563,9 +566,9 @@ msgid ""
 "software is not a part of Debian, but standard Debian tools can be used to "
 "install it."
 msgstr ""
-"有些额外的软件可以在 Debian 中使用。尽管其本身是自由的，但它们的运行依赖于其"
-"它一些非自由的软件。这些软件也不是 Debian 的一部分，但标准 Debian 工具可以安"
-"装它们。"
+"有些额外的软件可以在 Debian 中使用。尽管这些软件本身是自由的，但它们的运行依"
+"赖于其它一些非自由软件。这些软件不是 Debian 的一部分，但可以使用标准 Debian "
+"工具安装它们。"
 
 #. Type: boolean
 #. Description
@@ -601,7 +604,7 @@ msgstr "请您选择是否想使用这些软件。"
 #. an infinitive form
 #: ../apt-mirror-setup.templates:4001
 msgid "Change mirror"
-msgstr "更换镜像"
+msgstr "更换镜像站点"
 
 #. Type: select
 #. Description
@@ -620,16 +623,16 @@ msgid ""
 "different mirror, or ignore the problem and continue without all the "
 "packages from this mirror."
 msgstr ""
-"安装程序无法访问镜像站。这可能是您的网络问题，也可能是保存此密钥的服务器发生"
-"错误。您可以选择重试下载，选择另一个镜像站，或者忽略这一问题，不使用该镜像站"
-"的任何软件包并继续。"
+"安装程序无法访问镜像站点。这可能是您的网络问题，也可能是保存此密钥的服务器发"
+"生错误。您可以选择重试下载，选择另一个镜像站，或者忽略这一问题，不使用该镜像"
+"站点的任何软件包并继续。"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:5001
 msgid "Use a network mirror?"
-msgstr "使用网络镜像吗？"
+msgstr "使用网络镜像站点吗？"
 
 #. Type: boolean
 #. Description
@@ -639,21 +642,22 @@ msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
-msgstr "网络镜像可以用来补充安装介质所带的软件。也可以用来提供较新版本的软件。"
+msgstr ""
+"网络镜像站点可以用来提供安装介质未包含的软件，也可以用来提供较新版本的软件。"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../apt-mirror-setup.templates:6001
 msgid "Continue without a network mirror?"
-msgstr "没有网络镜像，继续安装吗？"
+msgstr "不使用网络镜像站点，继续安装吗？"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../apt-mirror-setup.templates:6001
 msgid "No network mirror was selected."
-msgstr "没有选择网络镜像。"
+msgstr "没有选择网络镜像站点。"
 
 #. Type: boolean
 #. Description
@@ -674,9 +678,9 @@ msgid ""
 "can be used to install it. This software has varying licenses which may "
 "prevent you from using, modifying, or sharing it."
 msgstr ""
-"某些非自由软件也有可用的软件包。虽然这些软件不是主要发布 (main distribution) "
-"的一部分，您仍可用标准的软件包管理工具来安装它们。这些软件有各种不同的授权许"
-"可，可能会禁止您使用、修改、或分享该软件。"
+"某些非自由软件也有可用的软件包。虽然这些软件不是 \"main\" 发布版本的一部分，"
+"您仍然可以使用标准的软件包管理工具来安装它们。这些软件有各种不同的许可证，可"
+"能会禁止您使用、修改、或分享它们。"
 
 #. Type: boolean
 #. Description
@@ -684,7 +688,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:2001
 msgid "Use software from the \"universe\" component?"
-msgstr "使用“universe”部分的软件吗？"
+msgstr "使用 \"universe\" 中的软件吗？"
 
 #. Type: boolean
 #. Description
@@ -696,8 +700,8 @@ msgid ""
 "free and, though it is not a part of the main distribution, standard package "
 "management tools can be used to install it."
 msgstr ""
-"某些附加的软件也有可用的软件包。这些软件是自由软件，尽管它们不是主要发布 "
-"(main distribution) 的一部分，您一样可以使用标准的软件包管理工具来安装它们。"
+"某些额外的软件也有可用的软件包。这些软件是自由软件，尽管它们不是 \"main\" 发"
+"布版本的一部分，您仍然可以使用标准的软件包管理工具来安装它们。"
 
 #. Type: boolean
 #. Description
@@ -705,7 +709,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:3001
 msgid "Use software from the \"multiverse\" component?"
-msgstr "使用“multiverse”源中的软件吗？"
+msgstr "使用 \"multiverse\" 中的软件吗？"
 
 #. Type: boolean
 #. Description
@@ -719,9 +723,9 @@ msgid ""
 "cases) patent restrictions which may prevent you from using, modifying, or "
 "sharing it."
 msgstr ""
-"某些非自由软件也有可用的软件包。虽然这些软件不是主要发布 (main distribution) "
-"的一部分，您仍可用标准的软件包管理工具来安装它们。这些软件有各种不同的授权许"
-"可和 (在某些情况下有) 专利限制，这可能会禁止您使用、修改、或分享该软件。"
+"某些非自由软件也有可用的软件包。虽然这些软件不是 \"main\" 发布版本的一部分，"
+"您仍然可以使用标准的软件包管理工具来安装它们。这些软件有各种不同的许可证，有"
+"些还有专利上的限制，可能会禁止您使用、修改、或分享它们。"
 
 #. Type: boolean
 #. Description
@@ -729,7 +733,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:4001
 msgid "Use software from the \"partner\" repository?"
-msgstr "使用“partner”仓库的软件吗？"
+msgstr "使用 \"partner\" 仓库的软件吗？"
 
 #. Type: boolean
 #. Description
@@ -741,8 +745,8 @@ msgid ""
 "repository. This software is not part of Ubuntu, but is offered by Canonical "
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
-"Canonical 的“partner”仓库中有额外的软件。这些软件不是 Ubuntu 的组成部分，但是"
-"是由 Canonical 以及各个供应商作为 Ubuntu 用户的服务而提供的。"
+"Canonical 的 \"partner\" 仓库中有额外的软件。这些软件不是 Ubuntu 的组成部分，"
+"但是 Canonical 以及各软件的供应商将其作为一种服务提供给 Ubuntu 用户。"
 
 #. Type: boolean
 #. Description
@@ -763,6 +767,6 @@ msgid ""
 "testing as that contained in the release, it includes newer versions of some "
 "applications which may provide useful features."
 msgstr ""
-"有些软件由开发中的版本向后移植到这个发行版中。虽然这些软件不象正式发布中包含"
-"的软件一样经过了详尽的测试，但是它们包括一些应用程序的新版本，因而可能会提供"
-"一些有用的功能。"
+"一些软件是从开发版本的源码树中向后移植 (backport) 过来的，并经过修改以适合在"
+"本发布版本中使用。虽然这些软件并没有如发布版本中的软件那样进行过如此完整的测"
+"试，但是 backports 包含了某些应用程序的新版本，可能会提供一些有用的新功能。"
