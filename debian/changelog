@@ -1,3 +1,10 @@
+apt-setup (1:0.169-2kaisen) kaisen-packages; urgency=medium
+
+  * Rename the 10apt-cdrom-setup in 62apt-cdrom-setup to exec the 61kaisen script
+    before
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 06 Oct 2022 04:49:21 +0100
+
 apt-setup (1:0.169-1kaisen) kaisen-packages; urgency=medium
 
   * Import new upstream release
