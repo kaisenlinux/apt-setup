@@ -38,8 +38,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2022-04-17 17:12+0000\n"
-"Last-Translator: Wenbin Lv <wenbin816@gmail.com>\n"
+"PO-Revision-Date: 2022-08-19 07:23+0000\n"
+"Last-Translator: Yang Yulin <yylteam@hotmail.com>\n"
 "Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -91,7 +91,7 @@ msgstr "正在扫描安全更新软件源..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "正在扫描发布版本的 updates 软件源..."
+msgstr "正在扫描发布版本的更新软件源..."
 
 #. Type: text
 #. Description

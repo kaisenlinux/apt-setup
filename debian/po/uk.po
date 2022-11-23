@@ -18,14 +18,15 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013.
 # Anton Gladky <gladk@debian.org>, 2011-2016
 # Taras Panchenko <top39@ukr.net>, 2021.
+# Denys Nykula <vegan@libre.net.ua>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-12-03 23:44+0000\n"
-"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
+"PO-Revision-Date: 2022-06-30 19:21+0000\n"
+"Last-Translator: Artem <artem@molotov.work>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -264,7 +265,7 @@ msgstr ""
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr "Включити репозиторії початкового коду в APT?"
+msgstr "Увімкнути репозиторії початкового коду в APT?"
 
 #. Type: boolean
 #. Description
@@ -279,7 +280,7 @@ msgstr ""
 "За замовчуванням репозиторії початкового коду розміщуються у /etc/apt/"
 "sources.list (з відповідними рядками \"deb-src\"), щоб працювала команда "
 "\"apt-get source\". Проте, якщо вам ця функціональність не потрібна, ви "
-"можете виключити ті параметри та заощадити трафік під час операції \"apt-get "
+"можете вимкнути ті параметри та заощадити трафік під час операції \"apt-get "
 "update\"."
 
 #. Type: text

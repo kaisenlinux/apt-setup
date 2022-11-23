@@ -5,42 +5,45 @@ set -e
 
 file="$1"
 
-i=0
-while db_get "apt-setup/local$i/repository" && [ "$RET" ]; do
+i=-2
+while i="$(($i + 1))" || true; do
+	repo_name="local$i"
+	if [ $i -lt 0 ]; then repo_name="_DEVEL_"; fi
+	db_get "apt-setup/$repo_name/repository" && [ "$RET" ] || {
+		if [ $i -lt 0 ]; then continue; fi
+		break
+	}
 	repository="${RET#deb }"
 	comment=
-	if db_get "apt-setup/local$i/comment"; then
+	if db_get "apt-setup/$repo_name/comment"; then
 		comment="$RET"
 	fi
 	key=
-	if db_get "apt-setup/local$i/key"; then
+	if db_get "apt-setup/$repo_name/key"; then
 		key="$RET"
 	fi
 	echo >> $file
 	if [ -n "$comment" ]; then
 		echo "## $comment" >> $file
+		name=$(echo "$comment" | sed -E 's/[^0-9A-Za-z]+/_/g')
+	else
+		name="apt-setup_$repo_name"
 	fi
-	echo "deb $repository" >> $file
-	# if true, add a line for deb-src
-	if db_get "apt-setup/local$i/source" && [ "$RET" = true ]; then
-		echo "deb-src $repository" >> $file
-	fi
+	key_path=
 	if [ -n "$key" ]; then
 		# fetch the key
 		while :; do
 			if fetch-url "$key" "$ROOT/tmp/key$i.pub"; then
-				# add it to the keyring
-				if [ -n "$comment" ]; then
-					name=$(echo "$comment" | sed -E 's/[^0-9A-Za-z]+/_/g')
-				else
-					name="apt-setup_local$i"
-				fi
+				# select extension for key file
 				if grep -q -- '-----BEGIN PGP PUBLIC KEY BLOCK-----' "$ROOT/tmp/key$i.pub"
-					then
-					mv "$ROOT/tmp/key$i.pub" "$ROOT/etc/apt/trusted.gpg.d/$name.asc"
+				then
+					ext="asc"
 				else
-					mv "$ROOT/tmp/key$i.pub" "$ROOT/etc/apt/trusted.gpg.d/$name.gpg"
+					ext="gpg"
 				fi
+				key_path="/etc/apt/keyrings/$name.$ext"
+				# move it into place
+				mv "$ROOT/tmp/key$i.pub" "$ROOT$key_path"
 				break
 			else
 				db_subst apt-setup/local/key-error MIRROR "${repository%% *}"
@@ -55,7 +58,11 @@ while db_get "apt-setup/local$i/repository" && [ "$RET" ]; do
 			fi
 		done
 	fi
-	i="$(($i + 1))"
+	echo "deb ${key_path:+[signed-by=$key_path]} $repository" >> $file
+	# if true, add a line for deb-src
+	if db_get "apt-setup/$repo_name/source" && [ "$RET" = true ]; then
+		echo "deb-src ${key_path:+[signed-by=$key_path]} $repository" >> $file
+	fi
 done
 
 exit 0

@@ -1,3 +1,41 @@
+apt-setup (1:0.172-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.172 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 21 Nov 2022 11:37:31 +0100
+
+apt-setup (1:0.172) unstable; urgency=medium
+
+  * Team upload
+
+  [ Philip Hands ]
+  * use [signed-by=...] for extra repository keys
+    (rather than just globally trusting them)
+  * add a `_DEVEL_` repo akin to the numbered `local` repos.
+    (for internal development/testing use only)
+
+  [ Samuel Thibault ]
+  * For port architectures, trust snapshot.debian.org.
+
+ -- Philip Hands <phil@hands.com>  Mon, 31 Oct 2022 10:50:27 +0100
+
+apt-setup (1:0.171) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Simplified Chinese (zh_CN.po) by Yang Yulin
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 12 Sep 2022 20:03:09 +0200
+
+apt-setup (1:0.170) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Ukrainian (uk.po) by Artem
+  * Vietnamese (vi.po) by Trần Ngọc Quân
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 17 Aug 2022 23:46:21 +0200
+
 apt-setup (1:0.169-2kaisen) kaisen-packages; urgency=medium
 
   * Rename the 10apt-cdrom-setup in 62apt-cdrom-setup to exec the 61kaisen script

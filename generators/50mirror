@@ -256,9 +256,15 @@ while [ ! "$done" ]; do
 		;;
 	esac
 
-	echo "deb $protocol://$hostname$directory $codename $dists" > $file
+	trusted=""
+	if [ -n "${use_unreleased}" -a "$hostname" = snapshot.debian.org ]; then
+		# debian-ports' key does not last long, cannot use gpg :/
+		trusted="[trusted=yes] "
+	fi
+
+	echo "deb $trusted$protocol://$hostname$directory $codename $dists" > $file
 	if [ -n "${use_unreleased}" ]; then
-		echo "deb $protocol://$hostname$directory unreleased main" >> $file
+		echo "deb $trusted$protocol://$hostname$directory unreleased main" >> $file
 	fi
 	
 	if apt-setup-verify --from $PROGRESS_FROM --to $PROGRESS_TO $file; then
@@ -283,8 +289,8 @@ if [ "$RET" = false ]; then
 	deb_src="# deb-src"
 fi
 
-echo "$deb_src $protocol://$hostname$directory $codename $dists" >> $file
+echo "$deb_src $trusted$protocol://$hostname$directory $codename $dists" >> $file
 if [ -n "${use_unreleased}" ]; then
 	echo "# 'unreleased' does not support sources yet" >> $file
-	echo "# $deb_src $protocol://$hostname$directory unreleased main" >> $file
+	echo "# $deb_src $trusted$protocol://$hostname$directory unreleased main" >> $file
 fi
