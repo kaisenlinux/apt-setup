@@ -1,3 +1,91 @@
+apt-setup (1:0.177-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.177 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 10 Mar 2023 17:44:03 +0100
+
+apt-setup (1:0.177) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Galician (gl.po) by gallegonovato
+  * Occitan (oc.po) by Quentin PAGÈS
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 15 Feb 2023 16:44:56 +0100
+
+apt-setup (1:0.176) unstable; urgency=medium
+
+  [ Updated translations ]
+  * French (fr.po) by Baptiste Jammet
+  * Japanese (ja.po) by Kentaro Hayashi
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+  * Occitan (oc.po) by Quentin PAGÈS
+  * Swedish (sv.po) by Luna Jernberg
+  * Simplified Chinese (zh_CN.po) by Wenbin Lv
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 07 Feb 2023 15:25:27 +0100
+
+apt-setup (1:0.175) unstable; urgency=medium
+
+  [ Cyril Brulebois ]
+  * generators/01setup: remove existing sources.list file instead of
+    keeping all of its entries commented out. This avoids leaving
+    duplicate cdrom: entries in comments at the end of the installation
+    (Closes: #1029922).
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Esperanto (eo.po) by phlostically
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+  * Dutch (nl.po) by Frans Spiesschaert
+  * Polish (pl.po) by Matthaiks
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 30 Jan 2023 02:43:24 +0100
+
+apt-setup (1:0.174) unstable; urgency=medium
+
+  [ Holger Wansing ]
+  * Set Standards-Version to 3.8.4 (checked).
+
+  [ Cyril Brulebois ]
+  * Add support for non-free-firmware, following the 2022 General
+    Resolution about non-free firmware:
+     - Add an apt-setup/non-free-firmware template, similar to the
+       non-free and contrib ones, used by 50mirror to enable the
+       non-free-firmware component.
+     - The question is only asked for expert installs (low priority).
+     - non-free-firmware is not enabled by default.
+     - non-free-firmware can be enabled automatically by hw-detect if it
+       detects the need for packages from non-free-firmware.
+     - It's independent from the existing non-free/contrib logic.
+  * Fix component handling in Debian generators:
+     - Make 50mirror save the list of enabled components.
+     - Make later generators read that list instead of parsing a partial
+       sources.list file.
+     - Doing so propagates non-free-firmware support to those generators.
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Szabó Péter
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 23 Jan 2023 03:40:57 +0100
+
+apt-setup (1:0.173) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Amharic (am.po) by Danial Behzadi
+  * Asturian (ast.po) by Danial Behzadi
+  * Bengali (bn.po) by Danial Behzadi
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 31 Dec 2022 16:17:44 +0100
+
 apt-setup (1:0.172-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.172 release

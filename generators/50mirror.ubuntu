@@ -84,10 +84,10 @@ if [ $STATE -eq 0 ]; then
 	exit 10
 fi
 
-dists="main"
+components="main"
 db_get apt-setup/restricted
 if [ "$RET" = true ]; then
-	dists="$dists restricted"
+	components="$components restricted"
 fi
 
 db_get mirror/protocol
@@ -131,20 +131,20 @@ db_get apt-setup/proposed
 PROPOSED="$RET"
 
 cat >> $file <<EOF
-deb $protocol://$hostname$directory $codename $dists
-$deb_src $protocol://$srchostname$srcdirectory $codename $dists
+deb $protocol://$hostname$directory $codename $components
+$deb_src $protocol://$srchostname$srcdirectory $codename $components
 
 ## Major bug fix updates produced after the final release of the
 ## distribution.
-deb $protocol://$hostname$directory $codename-updates $dists
-$deb_src $protocol://$srchostname$srcdirectory $codename-updates $dists
+deb $protocol://$hostname$directory $codename-updates $components
+$deb_src $protocol://$srchostname$srcdirectory $codename-updates $components
 EOF
 if [ "$PROPOSED" = true ]; then
 	cat >> $file <<EOF
 
 ## Proposed updates undergoing testing.
-deb $protocol://$hostname$directory $codename-proposed $dists
-$deb_src $protocol://$srchostname$srcdirectory $codename-proposed $dists
+deb $protocol://$hostname$directory $codename-proposed $components
+$deb_src $protocol://$srchostname$srcdirectory $codename-proposed $components
 EOF
 fi
 

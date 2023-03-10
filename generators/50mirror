@@ -180,9 +180,13 @@ STATE=1
 while true; do
 	case "$STATE" in
 	    1)
-		db_input low apt-setup/non-free || true
+		# non-free-firmware is independent from non-free and contrib:
+		db_input low apt-setup/non-free-firmware || true
 		;;
 	    2)
+		db_input low apt-setup/non-free || true
+		;;
+	    3)
 		# If they chose not to use non-free, ask about
 		# contrib, with a default of no. If they chose to
 		# use non-free, they get contrib too..
@@ -200,7 +204,7 @@ while true; do
 			fi
 		fi
 		;;
-	    3)
+	    4)
 		db_input low apt-setup/enable-source-repositories || true
 		;;
 	    *)
@@ -218,15 +222,13 @@ if [ $STATE -eq 0 ]; then
 	exit 10
 fi
 
-dists="main"
-db_get apt-setup/non-free
-if [ "$RET" = true ]; then
-	dists="$dists non-free"
-fi
-db_get apt-setup/contrib
-if [ "$RET" = true ]; then
-	dists="$dists contrib"
-fi
+components="main"
+for component in contrib non-free non-free-firmware; do
+	db_get apt-setup/$component
+	if [ "$RET" = true ]; then
+		components="$components $component"
+	fi
+done
 
 done=""
 while [ ! "$done" ]; do
@@ -262,7 +264,7 @@ while [ ! "$done" ]; do
 		trusted="[trusted=yes] "
 	fi
 
-	echo "deb $trusted$protocol://$hostname$directory $codename $dists" > $file
+	echo "deb $trusted$protocol://$hostname$directory $codename $components" > $file
 	if [ -n "${use_unreleased}" ]; then
 		echo "deb $trusted$protocol://$hostname$directory unreleased main" >> $file
 	fi
@@ -289,8 +291,11 @@ if [ "$RET" = false ]; then
 	deb_src="# deb-src"
 fi
 
-echo "$deb_src $trusted$protocol://$hostname$directory $codename $dists" >> $file
+echo "$deb_src $trusted$protocol://$hostname$directory $codename $components" >> $file
 if [ -n "${use_unreleased}" ]; then
 	echo "# 'unreleased' does not support sources yet" >> $file
 	echo "# $deb_src $trusted$protocol://$hostname$directory unreleased main" >> $file
 fi
+
+# Remember components so that other generators don't have to grep:
+echo $components > /tmp/apt-setup.components

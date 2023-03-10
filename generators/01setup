@@ -5,8 +5,8 @@ set -e
 
 file="$1"
 
-# add old file as comments
-sed 's/^/# /' < $ROOT/etc/apt/sources.list | sed 's/^# # */# /' > $file
+# Reset existing file, without retaining existing entries as comments (#1029922):
+>$file
 
 # start out with old configuration, if any
 if [ -e $ROOT/etc/apt/apt.conf ]; then
