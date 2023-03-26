@@ -1,0 +1,13 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- apt-setup-0.177.orig/generators/91security
++++ apt-setup-0.177/generators/91security
+@@ -20,7 +20,7 @@ fi
+ codename="$RET"
+ 
+ # Trust what was set by 50mirror:
+-components=$(cat /tmp/apt-setup.components)
++#components=$(cat /tmp/apt-setup.components)
+ 
+ # Starting with bullseye, /updates became -security:
+ case "$codename" in

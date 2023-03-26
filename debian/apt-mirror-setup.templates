@@ -3,6 +3,18 @@ Type: text
 # :sl1:
 _Description: Scanning the mirror...
 
+Template: apt-setup/non-free-firmware
+Type: boolean
+Default: false
+# :sl5:
+_Description: Use non-free firmware?
+ Some non-free firmware has been made to work with Debian. Though this
+ firmware is not at all a part of Debian, standard Debian tools can be used
+ to install it. This firmware has varying licenses which may prevent you
+ from using, modifying, or sharing it.
+ .
+ Please choose whether you want to have it available anyway.
+
 Template: apt-setup/non-free
 Type: boolean
 Default: false
