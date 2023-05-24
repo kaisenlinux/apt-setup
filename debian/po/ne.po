@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_ne\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
 "PO-Revision-Date: 2019-08-28 18:10+0000\n"
 "Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -93,7 +93,7 @@ msgstr "अस्थायी अद्यावधिक भण्डार स
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "पुन:प्रयास गर्नुहोस्"
 
@@ -102,7 +102,7 @@ msgstr "पुन:प्रयास गर्नुहोस्"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "उपेक्षा गर्नुहोस् "
 
@@ -417,7 +417,7 @@ msgstr "स्रोत डट सूचीमा netinst सीडी अक्
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 #, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
@@ -534,15 +534,59 @@ msgstr "मिरर स्क्यान गरिदैछ..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid "Use non-free software?"
+msgid "Use non-free firmware?"
+msgstr "स-शुल्क सफ्टवेयर प्रयोग गर्नुहुन्छ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid ""
+#| "Some non-free software has been made to work with Debian. Though this "
+#| "software is not at all a part of Debian, standard Debian tools can be "
+#| "used to install it. This software has varying licenses which may prevent "
+#| "you from using, modifying, or sharing it."
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"डेवियन सँगै काम गर्न केही स-शुल्क सफ्टवेयर बनेका छन् । यद्यपि यो सफ्टवेयर डेवियनको सबै भागमा "
+"छैन, यो स्थापना गर्न मानक डेवियन उपकरणहरू प्रयोग हुन्छन् । यो सफ्टवेयर सँग रुपान्तरित "
+"इजाजतपत्रहरु छन् जसले तपाईँलाई यसबाट प्रयोग गर्न, परिमार्जन गर्न, सेयर गर्न रोक्न सक्छ ।"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "कृपया रोज्नुहोस् कि तपाईँ जे भए पनि यसलाई उपलब्ध चाहनुहुन्छ ।"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "स-शुल्क सफ्टवेयर प्रयोग गर्नुहुन्छ?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -556,25 +600,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "कृपया रोज्नुहोस् कि तपाईँ जे भए पनि यसलाई उपलब्ध चाहनुहुन्छ ।"
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "contrib सफ्टवेयर प्रयोग गर्नुहोस्?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -604,7 +637,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -617,21 +650,21 @@ msgstr "कृपया रोज्नुहोस् कि तपाईँ �
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "मिरर परिवर्तन गर्नुहोस्"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "डाउनलोड गरिरहेको फाइल असफल भयो:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -645,14 +678,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "सञ्जाल ऐना प्रयोग गर्नुहुन्छ ?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
@@ -665,14 +698,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "सञ्जाल मिरर बिना जारी राख्नुहुन्छ ?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "कुनै सञ्जाल मिरर चयन गरिएको छैन ।"
 

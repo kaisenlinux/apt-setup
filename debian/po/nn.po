@@ -26,9 +26,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2022-04-23 23:30+0000\n"
-"Last-Translator: aujawindar <eivind.odegard@sogn.no>\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-05-17 23:53+0000\n"
+"Last-Translator: Yngve Spjeld-Landro <l10n@landro.net>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
@@ -66,7 +66,7 @@ msgstr "Køyrer ${SCRIPT} ..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:4001
 msgid "Scanning local repositories..."
-msgstr "Søkjer gjennom lokale arkiv ..."
+msgstr "Søkjer gjennom lokale arkiv …"
 
 #. Type: text
 #. Description
@@ -80,21 +80,21 @@ msgstr "Søkjer gjennom arkivet for tryggleiksoppdateringar ..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "Søkjer gjennom arkivet for utgjevingsopptaderingar ..."
+msgstr "Søkjer gjennom arkivet for utgjevingsoppdateringar ..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:7001
 msgid "Scanning the backports repository..."
-msgstr "Søkjer gjennom arkivet for tilbakeførte opptaderingar ..."
+msgstr "Søkjer gjennom arkivet for tilbakeførte oppdateringar ..."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Prøv igjen"
 
@@ -103,7 +103,7 @@ msgstr "Prøv igjen"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Ignorer"
 
@@ -123,7 +123,7 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"Installasjonsprogrammet klarte ikkje laste ned den offentlege nøkkelen som "
+"Installasjonsprogrammet klarte ikkje å laste ned den offentlege nøkkelen som "
 "blir brukt til å signere den lokale kjelda på ${MIRROR}:"
 
 #. Type: select
@@ -134,9 +134,9 @@ msgid ""
 "key. You can choose to retry the download, or ignore the problem and "
 "continue without all the packages from this repository."
 msgstr ""
-"Dette kan vera eit problem med nettverket ditt eller med tjeneren som har "
-"nøkkelen Du kan velja å prøva å lasta ned fila på nytt, eller oversjå "
-"problemet og halde fram utan alle pakkene frå denne kjelda."
+"Dette kan vera eit problem med nettverket ditt eller med tenaren som har "
+"nøkkelen. Du kan velja å prøva å lasta ned fila på nytt eller sjå vekk frå "
+"problemet og halda fram utan alle pakkane frå denne kjelda."
 
 #. Type: error
 #. Description
@@ -223,7 +223,7 @@ msgid ""
 "Security updates help to keep your system secured against attacks. Enabling "
 "this service is strongly recommended."
 msgstr ""
-"Tryggleiksoppdateringar hjelper deg å halde systemet trygga mot angrep. Bruk "
+"Tryggleiksoppdateringar hjelper deg å halda systemet trygga mot angrep. Bruk "
 "av denne tenesta er sterkt tilrådd."
 
 #. Type: multiselect
@@ -254,19 +254,18 @@ msgid ""
 "manually select backports to use."
 msgstr ""
 "Tilbakeførte program kjem frå utviklingsversjonen for å fungere med denne "
-"utgåva. Sjølv om desse programma ikkje har gått gjennom slik testing som "
-"program som er med i distrubisjonen, kan det vere nyare versjonar av nokre "
-"program som kan innehalde nyttige forbetringar er tilgjengeleg. Viss du "
-"skrur på tilbakeførte program vil ingen av dei bli installerte automatisk, "
-"det blir berre mogleg for deg å velje manuelt kva tilbakeførte versjonar du "
-"vil bruke."
+"utgåva. Sjølv om desse programma ikkje har gått gjennom same utprøvinga som "
+"program som er med i distribusjonen, inkluderer han nyare versjonar av nokre "
+"program som kan innehalde nyttige forbetringar. Viss du skrur på "
+"tilbakeførte program vil ingen av dei bli installerte automatisk. Du må "
+"velje manuelt kva tilbakeførte versjonar du vil bruke."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr "Bruk kjeldearkiv i APT?"
+msgstr "Bruka kjeldearkiv i APT?"
 
 #. Type: boolean
 #. Description
@@ -280,15 +279,15 @@ msgid ""
 msgstr ""
 "Vanlegvis står kjeldearkiv i /etc/apt/sources.list-fila (med \"deb-src\" "
 "føre) slik at \"apt-get source\" verkar. Viss du ikkje treng denne "
-"funksjonen, kan du skru av kjeldeoppfringane og spara litt bandbreidd når du "
-"utfører \"apt-get update\"-handlingar."
+"funksjonen, kan du skru av kjeldeoppføringane og spara litt bandbreidd når "
+"du utfører \"apt-get update\"-handlingar."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
 msgid "Scanning the installation media..."
-msgstr "Ser gjennom installasjonsmedia..."
+msgstr "Ser gjennom installasjonsmedia …"
 
 #. Type: error
 #. Description
@@ -308,8 +307,7 @@ msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Eit forsøk på å setje opp apt til å installere tilleggspakkar frå mediet "
-"mislukkast."
+"Klarte ikkje å setje opp apt til å installere tilleggspakkar frå mediet."
 
 #. Type: boolean
 #. Description
@@ -326,7 +324,7 @@ msgstr ""
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
 msgid "Scan extra installation media?"
-msgstr "Sjå gjennom ekstra installasjonsmedia?"
+msgstr "Sjå gjennom ekstra installasjonsmedium?"
 
 #. Type: boolean
 #. Description
@@ -395,7 +393,7 @@ msgstr "Sjå etter at lagringsmediet er sett inn rett."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Media change"
-msgstr "Byte disk"
+msgstr "Medium-endring"
 
 #. Type: text
 #. Description
@@ -410,7 +408,7 @@ msgstr "Set inn mediet med merkelappen «${LABEL}» og trykk enter."
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "Kommenterer ut netinst CD i sources.list ..."
+msgstr "Kommenterer ut netinst-CD-en i sources.list ..."
 
 #. Type: text
 #. Description
@@ -418,7 +416,7 @@ msgstr "Kommenterer ut netinst CD i sources.list ..."
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -447,7 +445,7 @@ msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
 msgstr ""
-"Du installerer frå eit filavtrykk som inneheld eit avgrensa utval av pakkar."
+"Du installerer frå eit filavtrykk som inneheld eit avgrensa utval pakkar."
 
 #. Type: text
 #. Description
@@ -496,7 +494,7 @@ msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Du installerer frå ein DVD. Sjølv om DVDen inneheld eit stort utval av "
+"Du installerer frå ein DVD. Sjølv om DVD-en inneheld eit stort utval av "
 "pakkar, så kan det vere det manglar nokre."
 
 #. Type: text
@@ -531,26 +529,29 @@ msgstr "Søkjer gjennom nettarkivet ..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
-msgid "Use non-free software?"
-msgstr "Vil du bruke ufri programvare?"
+msgid "Use non-free firmware?"
+msgstr "Vil du bruke ufri fastvare?"
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid ""
-"Some non-free software has been made to work with Debian. Though this "
-"software is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This software has varying licenses which may prevent you from "
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Det finst ein del ufri programvare som verkar fint saman med Debian. Sjølv "
-"om programvaren ikkje er ein del av Debian, kan du installere han ved hjelp "
-"av Debian-verktøya. Program av denne typen kan ha fleire ulike lisensar som "
+"Det finst ein del ufri fastvare som verkar fint saman med Debian. Sjølv om "
+"fastvara ikkje er ein del av Debian, kan du installere ho ved hjelp av "
+"Debian-verktøya. Fastvare av denne typen kan ha fleire ulike lisensar som "
 "kan hindra deg i å bruke dei, endra dei eller dela dei med andre."
 
+#. Type: boolean
+#. Description
+#. :sl5:
 #. Type: boolean
 #. Description
 #. :sl1:
@@ -558,7 +559,8 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Vel om du likevel vil ha dei tilgjengelege."
 
@@ -566,13 +568,35 @@ msgstr "Vel om du likevel vil ha dei tilgjengelege."
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:3001
+msgid "Use non-free software?"
+msgstr "Vil du bruke ufri programvare?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
+msgid ""
+"Some non-free software has been made to work with Debian. Though this "
+"software is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This software has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Det finst ein del ufri programvare som verkar fint saman med Debian. Sjølv "
+"om programvara ikkje er ein del av Debian, kan du installere ho ved hjelp av "
+"Debian-verktøya. Program av denne typen kan ha fleire ulike lisensar som kan "
+"hindra deg i å bruke dei, endra dei eller dela dei med andre."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Vil du bruke tilleggsprogram?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -603,7 +627,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -616,64 +640,64 @@ msgstr "Vel om programma skal vere tilgjengelege."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Byt nettarkiv"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Nedlasting av ei fil feila:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
 "different mirror, or ignore the problem and continue without all the "
 "packages from this mirror."
 msgstr ""
-"Installasjonsprogrammet får ikkje tilgang til nettarkivet. Dette kan vera "
-"eit problem med nettverket ditt eller med nettarkivet. Du kan velja å prøva "
-"å lasta ned fila på nytt, velja eit anna nettarkiv eller avbryta og velja "
-"ein annan installasjonsmåte."
+"Installasjonsprogrammet får ikkje tilgang til nettarkivet. Det kan vera eit "
+"problem med nettverket ditt eller med nettarkivet. Du kan velja å prøva å "
+"lasta ned fila på nytt, velja eit anna nettarkiv eller avbryta og velja ein "
+"annan installasjonsmåte."
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
-msgstr "Bruk eit nettarkiv?"
+msgstr "Vil du bruka eit nettarkiv?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Eit nettarkiv kan brukast for å supplere programvaren som er inkludert på "
+"Eit nettarkiv kan brukast for å supplere programvara som er inkludert på "
 "installasjonsmediet. Dette kan også gje nyare versjonar av programma."
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Gå vidare utan eit nettarkiv?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
-msgstr "Ingen nettarkiv var valt."
+msgstr "Ikkje noko nettarkiv vart valt."
 
 #. Type: boolean
 #. Description
@@ -681,7 +705,7 @@ msgstr "Ingen nettarkiv var valt."
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Use restricted software?"
-msgstr "Bruk programvare som har restriksjonar?"
+msgstr "Bruka programvare som har restriksjonar?"
 
 #. Type: boolean
 #. Description
@@ -695,8 +719,8 @@ msgid ""
 "prevent you from using, modifying, or sharing it."
 msgstr ""
 "Nokre ikkje-frie program er blitt gjort tilgjengeleg som pakkar. Sjølv om "
-"denne programvaren ikkje er ein del av hoveddistribusjonen, så kan vanlege "
-"pakkehandteringsverktøy brukast til å installere han. Denne programvaren har "
+"denne programvara ikkje er ein del av hovuddistribusjonen, så kan ein bruke "
+"vanlege pakkehandteringsverktøy til å installere han. Denne programvara har "
 "ulike lisensar. I nokre tilfelle kan lisensane hindre deg i å bruke han, "
 "endre han eller dele han med andre."
 
@@ -706,7 +730,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:2001
 msgid "Use software from the \"universe\" component?"
-msgstr "Bruk programvare frå «univers»-delen?"
+msgstr "Bruka programvare frå «univers»-delen?"
 
 #. Type: boolean
 #. Description
@@ -718,9 +742,9 @@ msgid ""
 "free and, though it is not a part of the main distribution, standard package "
 "management tools can be used to install it."
 msgstr ""
-"Nokre tilleggsprogram finst i standard pakkeformat. Denne programvaren er "
-"fri, og sjølv om han ikkje er ein del av hoveddistribusjonen, så kan "
-"standard pakkehandteringsverktøy brukast til å installere han."
+"Nokre tilleggsprogram finst i standard pakkeformat. Denne programvara er "
+"fri, og sjølv om ho ikkje er ein del av hoveddistribusjonen, så kan standard "
+"pakkehandteringsverktøy brukast til å installere ho."
 
 #. Type: boolean
 #. Description
@@ -728,7 +752,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:3001
 msgid "Use software from the \"multiverse\" component?"
-msgstr "Bruk programvare frå «multivers»-delen?"
+msgstr "Bruka programvare frå «multivers»-delen?"
 
 #. Type: boolean
 #. Description
@@ -743,10 +767,10 @@ msgid ""
 "sharing it."
 msgstr ""
 "Nokre ikkje-frie program er blitt gjort tilgjengeleg som pakkar. Sjølv om "
-"denne programvaren ikkje er ein del av hoveddistribusjonen, så kan vanlege "
-"pakkehandteringsverktøy brukast til å installere han. Denne programvaren har "
-"ulike lisensar. I nokre tilfelle kan lisensane hindre deg i å bruke han, "
-"endre han eller dele han med andre."
+"denne programvara ikkje er ein del av hoveddistribusjonen, så kan ein bruke "
+"vanlege pakkehandteringsverktøy brukast til å installere ho. Denne "
+"programvara har ulike lisensar. I nokre tilfelle kan lisensane hindre deg i "
+"å bruke han, endre han eller dele han med andre."
 
 #. Type: boolean
 #. Description
@@ -766,7 +790,7 @@ msgid ""
 "repository. This software is not part of Ubuntu, but is offered by Canonical "
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
-"I «partnar»-fillageret til Canonical finn du noko tilleggsprogramvare. Denne "
+"I «partnar»-fillageret til Canonical finn du noka tilleggsprogramvare. Denne "
 "er ikkje ein del av Ubuntu, men tilbydd av Canonical og dei enkelte "
 "produsentane som ei teneste til Ubuntu-brukarar."
 
@@ -776,7 +800,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid "Use backported software?"
-msgstr "Bruk tilbakeført programvare?"
+msgstr "Bruka tilbakeført programvare?"
 
 #. Type: boolean
 #. Description

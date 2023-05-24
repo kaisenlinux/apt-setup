@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-12-27 14:49+0100\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-01-24 19:04+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -85,7 +85,7 @@ msgstr "Prohledává se repositář se zpětně přeneseným softwarem..."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Opakovat"
 
@@ -94,7 +94,7 @@ msgstr "Opakovat"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Ignorovat"
 
@@ -408,7 +408,7 @@ msgstr "Blokuje se netinst CD v sources.list..."
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -521,15 +521,52 @@ msgstr "Prohledává se zrcadlo..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+msgid "Use non-free firmware?"
+msgstr "Používat nesvobodný firmware?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Některý nesvobodný firmware byl upraven, aby s Debianem pracoval. Přestože "
+"tento firmware není součástí Debianu, můžete ho nainstalovat standardními "
+"nástroji Debianu. Tento firmware má různé licence, které mohou omezovat jeho "
+"použití, modifikaci nebo šíření."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "Rozhodněte se, zda chcete zpřístupnit tento software."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "Používat nesvobodný software?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -544,25 +581,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "Rozhodněte se, zda chcete zpřístupnit tento software."
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Používat contrib software?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -593,7 +619,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -606,21 +632,21 @@ msgstr "Rozhodněte se, zda chcete mít tento software k dispozici."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Změnit zrcadlo"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Stažení souboru selhalo:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -634,14 +660,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "Používat síťové zrcadlo?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
@@ -653,14 +679,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Pokračovat bez síťového zrcadla?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nebylo vybráno žádné síťové zrcadlo."
 

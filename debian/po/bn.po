@@ -32,8 +32,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-01-09 15:33+0000\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-05-14 17:53+0000\n"
 "Last-Translator: Indrani Roy <indrani@scriptek.co.in>\n"
 "Language-Team: Bengali\n"
 "Language: bn\n"
@@ -58,14 +58,14 @@ msgstr "'প্যাকেজ ব্যবস্থাপককে কনফি
 #. :sl1:
 #: ../apt-setup-udeb.templates:2001
 msgid "Configuring apt"
-msgstr "apt-কে কনফিগার করা হচ্ছে..."
+msgstr "apt কনফিগার করা হচ্ছে"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:3001
 msgid "Running ${SCRIPT}..."
-msgstr "${SCRIPT} চলছে..."
+msgstr "${SCRIPT} চলছে…"
 
 #. Type: text
 #. Description
@@ -103,7 +103,7 @@ msgstr "রিলিজ হালনাগাদ রিপোজিটরী স
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "পুনঃপ্রচেষ্টা"
 
@@ -112,7 +112,7 @@ msgstr "পুনঃপ্রচেষ্টা"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "উপেক্ষা করো"
 
@@ -211,9 +211,8 @@ msgstr "রিলিজ হালনাগাদ করুন"
 #. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
-#, fuzzy
 msgid "backported software"
-msgstr "ব্যাকপোর্টকৃত সফটওয়্যার ব্যবহার করতে চান কি?"
+msgstr "ব্যাকপোর্টকৃত সফটওয়্যার"
 
 #. Type: multiselect
 #. Description
@@ -264,7 +263,6 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
-#, fuzzy
 msgid ""
 "Backported software are adapted from the development version to work with "
 "this release. Although this software has not gone through such complete "
@@ -273,10 +271,11 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"কিছু সফটওয়্যারকে ডেভেলপমেন্ট ট্রি থেকে ব্যাকপোর্ট করা হয়েছে যেন তা এই সংস্করণের "
-"সাথে কাজ করে। এই সফটওয়্যারটিকে এই ডিস্ট্রিবিউশনের অন্যান্য সফটওয়্যারের মত যথেষ্ট "
-"পরিমাণে পরীক্ষা করা হয় নি। তবে এতে এমন অনেক অ্যাপলিকেশনের নতুন সংস্করণ রয়েছে, "
-"যার বিভিন্ন বৈশিষ্ট্য হয়তো খুবই উপকারে আসবে।"
+"ডেভেলপমেন্ট ভার্সান থেকে ব্যাকপোর্ট করা সফটওয়্যার কে এই সংস্করণের সাথে কাজ করাবার "
+"জন্য বদলানো হয়েছে। যদিও এই সফ্টওয়্যারটিকে, রিলীজ করা সফ্টওয়্যারের মত যথেষ্ট "
+"পরিমাণে পরীক্ষা করা হয় নি, তবুও এতে কিছু অ্যাপলিকেশনের নতুন সংস্করণ রয়েছে, যার "
+"বিভিন্ন ফীচার কাজে লাগতে পারে।এখানে ব্যাকপোর্ট এনেবল করলে এগুলো বাই ডিফাল্ট ইনস্টল "
+"হয় না; এতে কেবল আপনি ম্যানুয়াল ভাবে ব্যকবোর্ট সিলেক্ট করার সুবিধা পান।"
 
 #. Type: boolean
 #. Description
@@ -300,9 +299,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "ইনস্টলেশন সম্পন্ন করা হচ্ছে"
+msgstr "ইনস্টলেশন মিডিয়া স্ক্যান করা হচ্ছে..।"
 
 #. Type: error
 #. Description
@@ -318,13 +316,11 @@ msgstr "apt কনফিগারেশন করতে সমস্যা"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"সিডি থেকে অতিরিক্ত প্যাকেজ ইনস্টল করার জন্য apt প্রয়োজন এবং এই apt কনফিগার করার "
-"চেষ্টা ব্যর্থ হয়েছে।"
+"মিডিয়া থেকে অতিরিক্ত প্যাকেজ ইনস্টল করার জন্য apt কনফিগার করার চেষ্টা ফেল করেছে।"
 
 #. Type: boolean
 #. Description
@@ -340,30 +336,29 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "SILO ইনস্টলেশন ব্যর্থ হল"
+msgstr "অতিরিক্ত ইনস্টলেশন মিডিয়া স্ক্যান করতে চান?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "আপনার ইনস্টলেশন মিডিয়া স্ক্যান করে এই লেবেল পাওয়া গেছে:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"এখন প্যাকেজ ম্যানেজার (apt.) কর্তৃক ব্যবহারের জন্য অতিরিক্ত সিডি বা ডিভিডি স্ক্যান "
-"করতে পারবেন। অতিরিক্ত সিডি বা ডিভিডি না থাকলে এই ধাপটি বাদ দিতে পারেন।"
+"আপনি এখন প্যাকেজ ম্যানেজারের (apt.) ব্যবহারের জন্য মিডিয়া স্ক্যান করতে পারেন। "
+"সাধারণত এগুলো যেই সেট থেকে আপনি বুট করেছেন, সেই সেট থেকেই হওয়া উচিত । আপনার "
+"কাছে অতিরিক্ত মিডিয়া না থাকলে এই ধাপটি বাদ দিতে পারেন।"
 
 #. Type: boolean
 #. Description
@@ -372,41 +367,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "আপনি যদি অতিরিক্ত সিডি বা ডিভিডি স্ক্যান করতে চান, তবে তা এখন ঢুকিয়ে দিন।"
+msgstr "আপনি যদি আরও মিডিয়া স্ক্যান করতে চান, তাহলে তা এখন ঢুকিয়ে দিন।"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "নিচে প্রদর্শিত লেবেলের সিডি বা ডিভিডি স্ক্যান করা হচ্ছে:"
+msgstr "এই লেবেল দেওয়া মিডিয়া স্ক্যান করা হচ্ছে:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "নিচে প্রদর্শিত লেবেলের সিডি বা ডিভিডি ইতিমধ্যে স্ক্যান করা হয়েছে:"
+msgstr "এই লেবেলের মিডিয়া স্ক্যান করা হয়ে গেছে:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "আরেকটি সিডি অথবা ডিভিডি স্ক্যান করতে চাইলে এটি প্রতিস্থাপন করুন।"
+msgstr "আরেকটি মিডিয়া স্ক্যান করতে চাইলে এটি পাল্টে দিন।"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "অনুগ্রহপূর্বক নিশ্চিত করুন যে সিডি অথবা ডিভিডি সঠিকভাবে প্রবেশ করানো হয়েছে।"
+msgstr "মিডিয়া সঠিকভাবে ঢোকানো হয়েছে কিনা চেক করুন।"
 
 #. Type: text
 #. Description
@@ -419,9 +409,8 @@ msgstr "মিডিয়া পরিবর্তন"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "/cdrom/: '${LABEL}' লেবেলযুক্ত ডিস্কটি '/cdrom/' ড্রাইভে ঢুকিয়ে এন্টার চাপুন।"
+msgstr "'${LABEL}' লেবেলযুক্ত মিডিয়া ঢুকিয়ে এন্টার টিপুন।"
 
 #. Type: text
 #. Description
@@ -429,7 +418,7 @@ msgstr "/cdrom/: '${LABEL}' লেবেলযুক্ত ডিস্কটি
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "sources.list এ নেটইনস্ট সিডি নিষ্ক্রিয় করা হচ্ছে..."
+msgstr "sources.list এ নেটইনস্ট সিডি নিষ্ক্রিয় করা হচ্ছে..।"
 
 #. Type: text
 #. Description
@@ -437,50 +426,47 @@ msgstr "sources.list এ নেটইনস্ট সিডি নিষ্ক�
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"আপনি যদি নেটইনস্টল সিডি থেকে ইনস্টল করেন এবং কোন মিরর নির্বাচন না করেন, তাহলে "
-"একটি সাধারণ (শুধুমাত্র বেজ) সিস্টেম ইনস্টল হবে।"
+"আপনি যদি নেটইনস্টল সিডি ইমেজ থেকে ইনস্টল করেন এবং কোন মিরর নির্বাচন না করেন, "
+"তাহলে শুধুমাত্র একটি বেস সিস্টেম ইনস্টল হবে।"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"আপনি একটি নেটইনস্ট সিডি থেকে ইনস্টল করছেন, যা নিজে থেকেই অতি অল্প বেজ সিস্টেম "
+"আপনি একটি নেটইনস্ট সিডি ইমেজ থেকে ইনস্টল করছেন, যেটি কেবল অতি সাধারণ সিস্টেম "
 "ইনস্টল করে। পুরো সিস্টেম ইনস্টল করার জন্য মিরর নির্বাচন করুন।"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "আপনি সীমিত প্যাকেজ সমৃদ্ধ একটি সিডি হতে ইনস্টল করছেন।"
+msgstr "আপনি যেই ইমেজ থেকে ইনস্টল করছেন তাতে সীমিত প্যাকেজ রয়েছে ।"
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"আপনি %iগুলো সিডি স্ক্যান করেছেন। যদিও এতে উল্ল্যেখযোগ্য প্যাকেজসমূহ রয়েছে, তবুও কিছু "
+"আপনি %i ইমেজ স্ক্যান করেছেন। যদিও এতে উল্ল্যেখযোগ্য প্যাকেজসমূহ রয়েছে, তবুও কিছু "
 "প্যাকেজ বাদ যেতে পারে (যা ইংরেজী ব্যাতীত অন্যান্য ভাষাকে সক্রিয় করতে প্রয়োজন হতে "
 "পারে)।‍"
 
@@ -489,13 +475,13 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"আপনি %iগুলো সিডি স্ক্যান করেছেন। যদিও এতে বেশিরভাগ প্যাকেজসমূহ রয়েছে, তবুও কিছু "
-"প্যাকেজ বাদ যেতে পারে।‍"
+"আপনি %i ইমেজ স্ক্যান করেছেন। যদিও এতে বেশিরভাগ প্যাকেজসমূহ রয়েছে, তবুও কিছু প্যাকেজ "
+"বাদ যেতে পারে।"
 
 #. Type: text
 #. Description
@@ -505,20 +491,19 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"লক্ষ্য করুন, মিরর ব্যবহার করলে - ইনস্টলেশনের পরবর্তী ধাপে প্রচুর পরিমানে ডাটা "
-"ডাউনলোড করা হবে।"
+"মনে রাখবেন, মিরর ব্যবহার করলে, ইনস্টলেশনের পরবর্তী ধাপে প্রচুর পরিমানে ডাটা "
+"ডাউনলোড করা হতে পারে।"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"আপনি ডিভিডি থেকে ইনস্টল করছেন। যদিও ডিভিডিতে প্রচুর প্যাকেজ রয়েছে, তবুও কিছু "
-"প্যাকেজ বাদ পরে যেতে পারে।‍"
+"আপনি ডিভিডি ইমেজ থেকে ইনস্টল করছেন। যদিও এতে প্রচুর প্যাকেজ রয়েছে, তবুও কিছু "
+"প্যাকেজ নাও থাকতে পারে।"
 
 #. Type: text
 #. Description
@@ -552,8 +537,48 @@ msgstr "মিরর স্ক্যান করা হচ্ছে..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+msgid "Use non-free firmware?"
+msgstr "যে সব সফটওয়্যার ফ্রী সফটওয়্যার নয় আপনি কি তাদের ব্যবহার করতে চান?"
+
+# FIXME: Is the translation okay?
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"ডেবিয়ান-এ আপনি এমন কিছু সফটওয়্যার ব্যবহার করতে পারেন যারা ফ্রী সফটওয়্যার নয়। এই "
+"সফটওয়্যারটি ডেবিয়ানের অংশ না হলেও, একে ডেবিয়ান-এর সফটওয়্যার ইনস্টলেশন পদ্ধতি "
+"ব্যবহার করে ইনস্টল করা যায়। এই সফটওয়্যারটির বিভিন্নরকম লাইসেন্স রয়েছে যা হয়তো "
+"আপনাকে সফটওয়্যারটি ব্যবহার, পরিবর্তন, বা শেয়ার করতে বাঁধা দিতে পারে।"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "আপনি এরপরও এ সফটওয়্যারটি ব্যবহার করতে চান কিনা তা নিশ্চিত করুন।"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "যে সব সফটওয়্যার ফ্রী সফটওয়্যার নয় আপনি কি তাদের ব্যবহার করতে চান?"
 
@@ -561,7 +586,7 @@ msgstr "যে সব সফটওয়্যার ফ্রী সফটওয়�
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -573,29 +598,18 @@ msgstr ""
 "ব্যবহার করে ইনস্টল করা যায়। এই সফটওয়্যারটির বিভিন্নরকম লাইসেন্স রয়েছে যা হয়তো "
 "আপনাকে সফটওয়্যারটি ব্যবহার, পরিবর্তন, বা শেয়ার করতে বাঁধা দিতে পারে।"
 
-#. Type: boolean
-#. Description
-#. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "আপনি এরপরও এ সফটওয়্যারটি ব্যবহার করতে চান কিনা তা নিশ্চিত করুন।"
-
 # FIXME
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "দানকৃত (contrib) সফটওয়্যার ব্যবহার করতে চান কি?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -625,7 +639,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -638,21 +652,21 @@ msgstr "আপনি এ সফটওয়্যারটি ব্যবহার
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "মিরর পরিবর্তন করো"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "ফাইল ডাউনলোড ব্যর্থ হয়েছে:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -667,34 +681,34 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "নেটওয়ার্ক মিরর ব্যবহৃত হবে?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
-#, fuzzy
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"এ নেটওয়ার্ক মিরর ক্যান বি ইউজড্ টু সাপলিমেন্ট দ্যা সফটওযার দ্যাট ইজ ইনক্লুডেড অন দ্যা "
-"CD-ROM। দিস মে অলসো মেক নিউযার ভার্সনস্ অফ সফটওযার এভিয়েলেভেল।"
+"ইনস্টলেশন মিডিয়াতে যেই সফ্টওয়্যার রয়েছে তা ছাড়া আরো সফ্টওয়্যার ইনস্টল করার জন্য "
+"একটি নেটওয়ার্ক মিরর ব্যবহার করা যেতে পারে। তা করলে আপনি সফ্টওয়্যারের নতুন ভার্সান "
+"গুলোও পেতে পারেন।"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "কোন নেটওয়ার্ক মিরর ছাড়াই চালিয়ে যাব কি?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "কোন নেটওয়ার্ক নির্বাচন করা হয়নি।"
 

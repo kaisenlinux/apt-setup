@@ -17,16 +17,16 @@
 #   Vlatko Kosturjak, 2001
 #   Tomislav Krznar <tomislav.krznar@gmail.com>, 2012, 2013, 2014, 2015.
 #   Valentin Vidic <Valentin.Vidic@CARNet.hr>, 2017
-#   Milo Ivir <mail@milotype.de>, 2019.
+#   Milo Ivir <mail@milotype.de>, 2019, 2021, 2022.
 #   gogogogi <trebelnik2@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2020-04-02 18:02+0000\n"
-"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-03-16 10:58+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr "Pretraživanje repozitorija podržanih nadopuna..."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Pokušaj ponovno"
 
@@ -102,7 +102,7 @@ msgstr "Pokušaj ponovno"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Zanemari"
 
@@ -412,7 +412,7 @@ msgstr "Onemogućavanje CD-a mrežne instalacije u sources.list datoteci..."
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -524,15 +524,52 @@ msgstr "Pretraživanje zrcalnog poslužitelja..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+msgid "Use non-free firmware?"
+msgstr "Koristiti vlasnički softver?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Pojedini vlasnički firmware je načinjen kako bi radio s Debianom. Iako taj "
+"firmware ni na koji način nije dio Debiana, možete ga instalirati "
+"uobičajenim Debianovim alatima. Taj firmware ima različite licence koje "
+"sprječavaju njegovo korištenje, prilagođavanje ili dijeljenje."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "Odaberite hoćete li ga ipak imati omogućenim."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "Koristi vlasnički softver?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -547,25 +584,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "Odaberite hoćete li ga ipak imati omogućenim."
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Koristi doprineseni softver?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -595,7 +621,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -608,21 +634,21 @@ msgstr "Odaberite želite li imati ovaj softver dostupnim."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Promijeni zrcalni poslužitelj"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Preuzimanje datoteke nije uspjelo:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -637,14 +663,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "Koristi mrežni zrcalni poslužitelj?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
@@ -657,14 +683,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Nastavi bez mrežnog zrcalnog poslužitelja?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Mrežni zrcalni poslužitelj nije odabran."
 

@@ -39,9 +39,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-12-28 22:11+0000\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-05-10 00:53+0000\n"
+"Last-Translator: Tino Didriksen <mail@tinodidriksen.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgstr "Skanner arkivet for bagud-porteringer ..."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Prøv igen"
 
@@ -116,7 +116,7 @@ msgstr "Prøv igen"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Ignorer"
 
@@ -432,7 +432,7 @@ msgstr "Deaktiverer netværksinstallations-cd i »sources.list« ..."
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
@@ -547,15 +547,52 @@ msgstr "Gennemsøger filspejlet ..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+msgid "Use non-free firmware?"
+msgstr "Anvend ikke-fri firmware?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Noget ikke-fri firmware er blevet ændret til at fungere med Debian. Selvom "
+"denne firmware slet ikke er en del af Debian, kan standard Debian-værktøjer "
+"bruges til at installere det. Denne firmware har forskellige licenser, som "
+"muligvis kan forhindre dig i at benytte, ændre, eller dele den."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "Vælg om du ønsker at have dem tilgængelige alligevel."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "Anvend ikke-frie programmer?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -570,25 +607,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "Vælg om du ønsker at have dem tilgængelige alligevel."
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Anvend \"contrib\"-programmer?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -619,7 +645,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -632,21 +658,21 @@ msgstr "Angiv om du ønsker at dette program gøres tilgængeligt for dig."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Skift filspejl"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Det lykkedes ikke at hente en fil:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -661,14 +687,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "Benyt et netværks-filspejl?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
@@ -681,14 +707,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Fortsæt uden et filspejl?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Der blev ikke fundet noget filspejl."
 

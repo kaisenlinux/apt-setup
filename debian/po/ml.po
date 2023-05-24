@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
 "PO-Revision-Date: 2018-01-04 06:20+0000\n"
 "Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
@@ -92,7 +92,7 @@ msgstr "പ്രകാശനപരിഷ്കരണ സംഭരണിയി�
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "വീണ്ടും ശ്രമിയ്ക്കുക"
 
@@ -101,7 +101,7 @@ msgstr "വീണ്ടും ശ്രമിയ്ക്കുക"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "ശ്രദ്ധിക്കേണ്ട"
 
@@ -121,8 +121,8 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"${MIRROR} ലെ പ്രാദേശിക സംഭരണിയില്‍ ഒപ്പുവയ്ക്കാനുപയോഗിച്ച പബ്ലിക് കീ ഡൌണ്‍ലോഡ് ചെയ്യാന്‍ "
-"ഇന്‍സ്റ്റോളര്‍ പരാജയപ്പെട്ടിരിയ്ക്കുന്നു:"
+"${MIRROR} ലെ പ്രാദേശിക സംഭരണിയില്‍ ഒപ്പുവയ്ക്കാനുപയോഗിച്ച പബ്ലിക് കീ ഡൌണ്‍ലോഡ് ചെയ്യാന്‍ ഇന്‍"
+"സ്റ്റോളര്‍ പരാജയപ്പെട്ടിരിയ്ക്കുന്നു:"
 
 #. Type: select
 #. Description
@@ -340,8 +340,8 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"പാക്കേജുകളുടെ നടത്തിപ്പുകാരനു് (apt) ഉപയോഗിയ്ക്കാന്‍ കൂടുതല്‍ സിഡികളോ ഡിവിഡികളോ ചേര്‍ക്കാന്‍ "
-"നിങ്ങള്‍ക്കിപ്പോഴവസരമുണ്ടു്. സാധാരണയായി ഇതു് നിങ്ങള്‍ ഇന്‍സ്റ്റളേഷനുപയോഗിച്ച സിഡി/ഡിവിഡി ഗണത്തില്‍ "
+"പാക്കേജുകളുടെ നടത്തിപ്പുകാരനു് (apt) ഉപയോഗിയ്ക്കാന്‍ കൂടുതല്‍ സിഡികളോ ഡിവിഡികളോ ചേര്‍ക്കാന്‍ നിങ്ങള്‍"
+"ക്കിപ്പോഴവസരമുണ്ടു്. സാധാരണയായി ഇതു് നിങ്ങള്‍ ഇന്‍സ്റ്റളേഷനുപയോഗിച്ച സിഡി/ഡിവിഡി ഗണത്തില്‍ "
 "തന്നെയുള്ളതായിരിയ്ക്കണം. നിങ്ങളുടെ കയ്യില്‍ കൂടുതല്‍ സിഡികളോ ഡിവിഡികളോ ഇല്ലെങ്കില്‍ ഈ "
 "നടപടിക്രമം അവഗണിയ്ക്കാം."
 
@@ -420,7 +420,7 @@ msgstr "നെറ്റിന്‍സ്റ്റ് സിഡി സോഴ്�
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 #, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
@@ -538,15 +538,60 @@ msgstr "മിററില്‍ തെരഞ്ഞു കൊണ്ടിരി�
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid "Use non-free software?"
+msgid "Use non-free firmware?"
+msgstr "സ്വതന്ത്രമല്ലാത്ത സോഫ്റ്റ്‌വെയര്‍ ഉപയോഗിക്കണോ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid ""
+#| "Some non-free software has been made to work with Debian. Though this "
+#| "software is not at all a part of Debian, standard Debian tools can be "
+#| "used to install it. This software has varying licenses which may prevent "
+#| "you from using, modifying, or sharing it."
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"ചില സ്വതന്ത്രമല്ലാത്ത സോഫ്റ്റ്‌വെയര്‍ ഡെബിയനോടൊപ്പം പ്രവര്‍ത്തിപ്പിക്കാവുന്നതാക്കിയിട്ടുണ്ട്. ഈ "
+"സോഫ്റ്റ്‌വെയര്‍ ഡെബിയന്റെ ഭാഗമല്ലെങ്കിലും ഇതു് ഇന്‍സ്റ്റോള്‍ ചെയ്യാന്‍ സാധാരണ ഡെബിയന്‍ ടൂളുകള്‍ "
+"ഉപയോഗിയ്ക്കാം. ഈ സോഫ്റ്റ്‌വെയറിനുള്ള പലതരത്തിലുള്ള അനുമതി പത്രങ്ങള്‍ ഉപയോഗിക്കുന്നതില്‍ നിന്നും, "
+"മാറ്റം വരുത്തുന്നതില്‍ നിന്നും അല്ലെങ്കില്‍ പങ്കുവെക്കുന്നതില്‍ നിന്നും നിങ്ങളെ തടഞ്ഞേക്കാം."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "എന്നിരുന്നാലും ഇതു് ലഭ്യമാകാന്‍ നിങ്ങള്‍ക്കാവശ്യമുണ്ടോ എന്നു്  ദയവായി തെരഞ്ഞെടുക്കുക."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "സ്വതന്ത്രമല്ലാത്ത സോഫ്റ്റ്‌വെയര്‍ ഉപയോഗിക്കണോ?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -561,25 +606,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "എന്നിരുന്നാലും ഇതു് ലഭ്യമാകാന്‍ നിങ്ങള്‍ക്കാവശ്യമുണ്ടോ എന്നു്  ദയവായി തെരഞ്ഞെടുക്കുക."
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "contrib സോഫ്റ്റ്‌വെയര്‍ ഉപയോഗിക്കണോ?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -610,7 +644,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -623,21 +657,21 @@ msgstr "ഈ സോഫ്റ്റ്‌വെയര്‍ ലഭ്യമാക�
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "മിറര്‍ മാറ്റുക"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "ഒരു ഫയല്‍ ഡൌന്‍ലോഡ്‌ ചെയ്യുന്നതില്‍ പരാജയപ്പെട്ടു:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -652,14 +686,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "ശൃഖല മിറര്‍ ഉപയോഗിക്കണോ?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
@@ -672,14 +706,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "ശൃംഖലയിലെ മിററില്ലാതെ തുടരണോ?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ശൃംഖലയിലെ മിററുകളൊന്നും തെരഞ്ഞെടുത്തിട്ടില്ല."
 
@@ -774,8 +808,8 @@ msgid ""
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
 "കൂടുതലായി ചില സോഫ്റ്റ്‌വെയറുകള്‍ കാനോനിക്കലിന്റെ \"partner\" ശേഖരത്തല്‍ നിന്നും ലഭ്യമാണു്. ഈ "
-"സോഫ്റ്റ്‌വെയര്‍ ഉബുണ്ടുവിന്റെ ഭാഗമല്ലെങ്കിലും കാനോനിക്കലും അതാതു് കമ്പനികളും ഉബുണ്ടു "
-"ഉപയോക്താക്കള്‍ക്കുള്ള സേവനമായി നല്‍കുന്നതാണു്."
+"സോഫ്റ്റ്‌വെയര്‍ ഉബുണ്ടുവിന്റെ ഭാഗമല്ലെങ്കിലും കാനോനിക്കലും അതാതു് കമ്പനികളും ഉബുണ്ടു ഉപയോക്താക്കള്‍"
+"ക്കുള്ള സേവനമായി നല്‍കുന്നതാണു്."
 
 #. Type: boolean
 #. Description

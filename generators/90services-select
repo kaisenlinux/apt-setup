@@ -40,8 +40,9 @@ if [ "$suite" = unstable ]; then
 	exit
 fi
 
+# Let's not wait until stable r0 before enabling -updates! (#991947)
 updates=y
-if [ "$suite" != stable ] && [ "$suite" != oldstable ]; then
+if [ "$suite" != stable ] && [ "$suite" != oldstable ] && [ "$suite" != testing ]; then
 	disable_service updates || true
 	updates=n
 fi

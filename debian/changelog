@@ -1,7 +1,65 @@
+apt-setup (1:0.182-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.182 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 24 May 2023 13:03:18 +0100
+
+apt-setup (1:0.182) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+  * Bengali (bn.po) by Indrani Roy
+  * Catalan (ca.po) by d
+  * Danish (da.po) by Tino Didriksen
+  * Greek (el.po) by galaxico
+  * Norwegian Nynorsk (nn.po) by Yngve Spjeld-Landro
+  * Turkish (tr.po) by Fatih Altun
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 21 May 2023 23:14:07 +0200
+
+apt-setup (1:0.181) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Korean (ko.po) by Changwoo Ryu
+  * Norwegian Bokmal (nb.po) by Kjetil Sørlund
+  * Norwegian Nynorsk (nn.po) by Kjetil Sørlund
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 07 May 2023 12:25:35 +0200
+
+apt-setup (1:0.180) unstable; urgency=medium
+
+  [ Cyril Brulebois ]
+  * Don't disable -updates when installing for testing (Closes: #991947).
+    It might make sense to have some flag to control this, and maybe only
+    enable it once we move from D-I Alpha to D-I RC. In any case, let's
+    turn this on right now for Bookworm!
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Estonian (et.po) by Kristjan Räts
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Georgian (ka.po) by Temuri Doghonadze
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 26 Apr 2023 00:53:21 +0200
+
+apt-setup (1:0.179) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Milo Ivir
+  * Macedonian (mk.po) by Kristijan Fremen Velkovski
+  * Romanian (ro.po) by Remus-Gabriel Chelu
+  * Serbian (sr.po) by Filipovic Dragan
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 29 Mar 2023 14:27:00 +0200
+
 apt-setup (1:0.178-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.178 release
-  * Add thz following patchs:
+  * Add the following patchs:
     - 002-deletion-of-the-component-var
     - 003-disable-cd-count
     - 004-remove-all-comments-and-empty-lines-final-source-list

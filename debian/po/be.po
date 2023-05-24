@@ -17,13 +17,13 @@
 # Alexander Nyakhaychyk <nyakhaychyk@gmail.com>, 2009.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007, 2010.
 # Viktar Siarheichyk <viсs@eq.by>, 2014.
-# Viktar Siarheichyk <vics@fsfe.org>, 2014, 2015, 2017, 2018.
+# Viktar Siarheichyk <vics@fsfe.org>, 2014, 2015, 2017, 2018, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2018-07-10 13:44+0300\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-04-27 15:36+0300\n"
 "Last-Translator: Viktar Siarheichyk <vics@eq.by>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "Language: be\n"
@@ -91,7 +91,7 @@ msgstr "Прагляд сховішча з адаптаванымі прагра
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Ізноў"
 
@@ -100,7 +100,7 @@ msgstr "Ізноў"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Ігнараваць"
 
@@ -283,9 +283,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "Заканчэнне ўстаноўкі"
+msgstr "Сканаванне ўсталявальнага носьбіта..."
 
 #. Type: error
 #. Description
@@ -301,13 +300,12 @@ msgstr "Праблема наладкі apt"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Не атрымалася наладзіць apt, каб усталяваць дадатковыя пакеты з кампакт-"
-"дыска."
+"Спроба наладзіць apt для ўсталявання дадатковых пакетаў з носьбіта не "
+"ўдалася."
 
 #. Type: boolean
 #. Description
@@ -323,31 +321,30 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "Не атрымалася ўсталяваць SILO"
+msgstr "Сканіраваць дадатковы ўсталявальны носьбіт?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Сканаванне ўсталявальнага носьбіта знаходзіць пазнаку:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Цяпер маеце магчымасць даць кіраўніку пакетаў (apt) прагледзець дадатковы CD "
-"ці DVD. Звычайны гэта дыск з таго ж набору, што і першы дыск. Калі не маеце "
-"дадатковых дыскаў, гэты крок можа быць прапушчаны."
+"Цяпер у вас ёсць магчымасць сканаваць дадатковыя носьбіты для выкарыстання "
+"менеджарам пакетаў (apt). Звычайна яны павінны быць з таго ж набору, што і "
+"той, з якога вы загрузіліся. Калі ў вас няма дадатковых носьбітаў, гэты крок "
+"можна проста прапусціць."
 
 #. Type: boolean
 #. Description
@@ -356,41 +353,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Калі хочаце прагледзець іншы CD ці DVD, устаўце яго зараз."
+msgstr "Калі вы жадаеце адсканаваць больш носьбітаў, устаўце іншы зараз."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Быў прагледжаны CD ці DVD з наступнай пазнакай:"
+msgstr "Вобраз з наступнай пазнакай быў адсканаваны:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "CD ці DVD з наступнай пазнакай ужо быў прагледжаны "
+msgstr "Вобраз з наступнай пазнакай ужо адсканаваны:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Калі ласка, замяніце дыск зараз, калі хочаце дадаць іншы CD ці DVD."
+msgstr "Калі ласка, заменіце яго зараз, калі хочаце адсканаваць іншы."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Калі ласка, праверце, што ўставілі дыск належным чынам."
+msgstr "Праверце, ці правільна ўстаўлены носьбіт."
 
 #. Type: text
 #. Description
@@ -403,11 +395,8 @@ msgstr "Змена носьбіта"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: устаўце дыск, пазначаны '${LABEL}' ў прывад '/cdrom/' і націсніцу "
-"Enter."
+msgstr "Калі ласка, устаўце носьбіт з паметкай '${LABEL}' і націсніце enter."
 
 #. Type: text
 #. Description
@@ -424,67 +413,63 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
-#, fuzzy
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Калі Вы робіце ўсталяванне з дыска \"netinst\" і вырашылі не выкарыстоўваць "
-"люстэрка, у выніку атрымаецца базавая сістэма з вельмі сціплымі магчымасцямі."
+"Калі вы ўсталёўваеце з вобраза кампакт-дыска netinst і не выкарыстоўваеце "
+"люстэрка, вы атрымаеце толькі мінімальную базавую сістэму."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Вы робіце ўсталяванне з дыску \"netinst\", які дазваляе толькі ўсталяваць "
-"сістэму з мінімальным наборам магчымасцяў. Выкарыстоўвайце люстэрка, каб "
-"усталяваць больш поўную сістэму."
+"Вы ўсталёўваеце з вобраза кампакт-дыска netinst, які сам па сабе дазваляе "
+"ўсталяваць толькі мінімальную базавую сістэму. Выкарыстоўвайце люстэрка для "
+"ўстаноўкі больш поўнай сістэмы."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr ""
-"Вы робіце ўсталяванне з CD-дыску, які змяшчае абмежаваную колькасць пакетаў."
+msgstr "Вы ўсталёўваеце з вобразу, які змяшчае абмежаваны выбар пакетаў."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Вы дадалі %i CD дыскаў. Хоць яны і ўтрымліваюць пэўную колькасць пакетаў, "
-"але штосці патрэбнае ўсё ж можа адсутнічаць (напрыклад, пакеты, што "
-"забяспечваюць падтрымку іншых моваў, апрэч ангельскай)."
+"Вы адсканавалі %i вобразаў. Нягледзячы на тое, што яны ўтрымліваюць даволі "
+"вялікі выбар пакетаў, некаторыя з іх могуць адсутнічаць (у прыватнасці, "
+"некаторыя пакеты неабходныя для падтрымкі іншых моваў, акрамя англійскай)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Вы дадалі %i CD дыскаў. Хоць яны і ўтрымліваюць пэўную колькасць пакетаў, "
-"але штосці патрэбнае ўсё ж можа адсутнічаць."
+"Вы адсканіравалі %i вобразаў. Хоць яны ўтрымліваюць вялікі выбар пакетаў, "
+"некаторыя з іх могуць адсутнічаць."
 
 #. Type: text
 #. Description
@@ -501,13 +486,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Усталяванне ідзе з DVD. Хоць DVD і змяшчае велізарную колькасць пакетаў, але "
-"штосьці патрэбнае ўсё ж можа адсутнічаць."
+"Вы ўсталёўваеце з вобразу DVD. Нягледзячы на тое, што ён змяшчае вялікі "
+"выбар пакетаў, некаторыя з іх могуць адсутнічаць."
 
 #. Type: text
 #. Description
@@ -541,15 +525,54 @@ msgstr "Прагляд люстэрка..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+msgid "Use non-free firmware?"
+msgstr "Выкарыстоўваць несвабодныя прашыўкі?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Некаторыя несвабодныя прашыўкі былі створаны для працы з Debian. Хоць гэтая "
+"прашыўка зусім не з'яўляецца часткай Debian, для яе ўсталявання можна "
+"выкарыстоўваць стандартныя інструменты Debian. Гэта прашыўка мае розныя "
+"ліцэнзіі, якія могуць перашкодзіць вам выкарыстоўваць, змяняць або "
+"абагульваць яе."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr ""
+"Ці хочаце Вы, нягледзячы на несвабоднасць, мець доступ да такіх праграмаў?"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "Ужываць несвабодныя праграмы?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -559,31 +582,19 @@ msgstr ""
 "Пэўныя несвабодныя праграмы здольныя працаваць з Debian. Яны ўвогуле не "
 "з'яўляюцца часткай Debian, але стандартныя прылады Debian здольныя іх "
 "усталёўваць. Ліцэнзіі, паводле якіх распаўсюджваюцца такія праграмы, могуць "
-"забараняць іх ужытак, мадыфікацыю альбо распаўсюд. "
+"забараняць іх ужытак, мадыфікацыю альбо распаўсюд."
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr ""
-"Ці хочаце Вы, нягледзячы на несвабоднасць, мець доступ да такіх праграмаў?"
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Выкарыстоўваць праграмы з \"contrib\"?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -614,7 +625,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -627,21 +638,21 @@ msgstr "Калі ласка, вырашыце: ці хочаце Вы мець �
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Іншае люстэрка"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Не атрымалася загрузіць файл:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -656,34 +667,34 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "Ужываць сеткавае люстэрка?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
-#, fuzzy
+#: ../apt-mirror-setup.templates:6001
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Сеткавае люстэрка можа быць выкарыстана для падтрымкі праграмаў, якія "
-"ўваходзяць у CD-ROM. Таксама гэта дасць доступ да новых версій."
+"У дадатак да праграмнага забеспячэння, якое змяшчаецца на ўсталявальным "
+"носьбіце, можа выкарыстоўвацца сеткавае люстэрка. Гэта таксама можа дадаць "
+"новыя версіі праграмнага забеспячэння."
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Ці працягваць без сеткавага люстэрка?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Не пазначана ніводнага сеткавага люстэрка."
 

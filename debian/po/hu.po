@@ -28,9 +28,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2021-12-28 23:29+0000\n"
-"Last-Translator: Balázs Máhli <mahli@posteo.net>\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2023-04-06 18:48+0000\n"
+"Last-Translator: SZERVÁC Attila <szoftvergazda@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
 "Language: hu\n"
@@ -109,7 +109,7 @@ msgstr "Backport tárolók átnézése..."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "Ismét"
 
@@ -123,7 +123,7 @@ msgstr "Ismét"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "Kihagy"
 
@@ -363,22 +363,21 @@ msgstr "Beolvassa az extra telepítőt?"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "Telepítő médiád átnézése a következő címkét találta:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Itt van lehetőség további CD/DVD lemezek átnézésére a csomagkezelő (apt) "
-"számára. Általában ezek a telepítő CD/DVD készletében vannak. Ha nincs más "
-"CD/DVD-d, e lépés nyugodtan átugorható."
+"Most van lehetőséged további média átnézésére a csomagkezelő (apt) számára. "
+"Általában ezek ugyanabban a készletben vannak, mint amelyről most "
+"indítottál. Ha nincs semmilyen más médiád, ezt a lépést kihagyhatod."
 
 #. Type: boolean
 #. Description
@@ -387,9 +386,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Ha további CD/DVD-t szeretne átnézni, helyezze be most."
+msgstr "Ha további médiát néznél át, tégy be egy másikat most."
 
 #. Type: boolean
 #. Description
@@ -397,7 +395,7 @@ msgstr "Ha további CD/DVD-t szeretne átnézni, helyezze be most."
 #: ../apt-cdrom-setup.templates:4001
 #, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Az alábbi CD vagy DVD került áttekintésre:"
+msgstr "Az alábbi címkével jelölt CD vagy DVD került átnézésre:"
 
 #. Type: boolean
 #. Description
@@ -405,7 +403,7 @@ msgstr "Az alábbi CD vagy DVD került áttekintésre:"
 #: ../apt-cdrom-setup.templates:5001
 #, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Az alábbi CD vagy DVD lemezt már át lett nézve:"
+msgstr "Az alábbi címkével jelölt CD vagy DVD lemez már át lett nézve:"
 
 #. Type: boolean
 #. Description
@@ -434,11 +432,8 @@ msgstr "Adathordozó csere"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: Tegye be ezt a lemezt '${LABEL}' a '/cdrom/' meghajtóba és üssön "
-"enter-t."
+msgstr "Tegye be ezt a lemezt '${LABEL}' és üssön enter-t."
 
 #. Type: text
 #. Description
@@ -455,7 +450,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 #, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
@@ -572,15 +567,57 @@ msgstr "Tükör átnézése..."
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+msgid "Use non-free firmware?"
+msgstr "Használ nem-szabad szoftvereket?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Pár nem-szabad szoftver be lett csomagolva, hogy a Debian rendszer-"
+"eszközeivel is felrakható legyenek. FIGYELEM: Ezek a szoftverek NEM RÉSZEI a "
+"Debian rendszernek, csupán egyes feltételekkel feltelepíthető. E szoftverek "
+"eltérő felhasználói licenc-szerződéssel rendelkeznek, melyek megakadályozzák "
+"a szoftver szabad felhasználását, tanulmányozását és ellenőrzését, "
+"módosítását vagy terjesztését, ezért csak bizonyos hasonló feltételek esetén "
+"használhatók fel.."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "Kérlek döntsd el, hogy így is szeretnéd-e."
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "Használ nem-szabad szoftvereket?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -598,25 +635,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "Kérlek döntsd el, hogy így is szeretnéd-e."
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "Felhasznál 'contrib' szoftvereket?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -647,7 +673,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -660,21 +686,21 @@ msgstr "Kérlek döntsd el, hogy elérhetőek legyenek-e ezek a szoftverek."
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "Tükör cseréje"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "Fájlletöltés meghiúsult:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -688,14 +714,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "Használ hálózati tükröt?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
@@ -711,7 +737,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "Hálózati tükör nélkül folytatja?"
 
@@ -721,7 +747,7 @@ msgstr "Hálózati tükör nélkül folytatja?"
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nincs kiválasztva hálózati tükröt."
 

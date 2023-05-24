@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
 "PO-Revision-Date: 2019-08-28 18:09+0000\n"
 "Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
@@ -78,7 +78,7 @@ msgstr "ཉེན་སྲུང་གི་གསར་སྒྱུར་གས
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "བསྐྱར་དུ་ཚོད་ལྟ"
 
@@ -87,7 +87,7 @@ msgstr "བསྐྱར་དུ་ཚོད་ལྟ"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "སྣང་མེད་དུ་བསྐྱུར་བ"
 
@@ -396,7 +396,7 @@ msgstr "sources.list ནང་དུ་netinst CD ནུས་མེད་བཟ
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 #, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
@@ -509,8 +509,51 @@ msgstr "དྲ་ཚིགས་དེ་འཚོལ་བཤེར་བྱེ
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+msgid "Use non-free firmware?"
+msgstr "སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་སྤྱོད་དགོས་སམ?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid ""
+#| "Some non-free software has been made to work with Debian. Though this "
+#| "software is not at all a part of Debian, standard Debian tools can be "
+#| "used to install it. This software has varying licenses which may prevent "
+#| "you from using, modifying, or sharing it."
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"Debian ལ་སྤྱོད་ཆོག་པའི་སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་བཟོས་འདུག མཉེན་ཆས་འདི་Debian ཡི་མིན་ནའང་ཚད་ལྡན་"
+"གྱི་Debian ལག་ཆ་སྤྱད་ནས་དེ་སྒྲིག་འཇུག་བྱེད་ཆོག མཉེན་ཆས་འདི་ལ་ཆོག་ཡིག་མི་འདྲ་བ་ཡོད་པས་ཁྱོད་ཀྱིས་བེད་"
+"སྤྱོད་དང་བཟོ་བཅོས། མཉམ་སྤྱོད་བྱེད་པར་བཀག་འགོག་བྱས་ཡོད་ཤས་ཆེ"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "གང་ལྟར་ཁྱོད་ཀྱིས་འདི་སྤྱོད་རུང་བ་བཟོ་དགོས་མིན་གདམ་རོགས"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 #, fuzzy
 msgid "Use non-free software?"
 msgstr "སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་སྤྱོད་དགོས་སམ?"
@@ -518,7 +561,7 @@ msgstr "སྤྱི་སྤྱོད་མིན་པའི་མཉེན་
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -532,18 +575,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "གང་ལྟར་ཁྱོད་ཀྱིས་འདི་སྤྱོད་རུང་བ་བཟོ་དགོས་མིན་གདམ་རོགས"
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 #, fuzzy
 msgid "Use contrib software?"
 msgstr "ཞལ་འདེགས་ཡིན་པའི་མཉེན་ཆས་སྤྱོད་དགོས་སམ?"
@@ -551,7 +583,7 @@ msgstr "ཞལ་འདེགས་ཡིན་པའི་མཉེན་ཆས
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -581,7 +613,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -594,21 +626,21 @@ msgstr "མཉེན་ཆས་འདི་སྤྱོད་རུང་བར
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "དྲ་ཚིགས་བརྗེ་བ"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "ཡིག་ཆ་ཞིག་ལེན་འཇུག་བྱེད་མ་ཐུབ་པ："
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -622,7 +654,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid "Use a network mirror?"
 msgstr "དྲ་ཚིགས་ཤིག་སྤྱོད་དགོས་སམ?"
@@ -630,7 +662,7 @@ msgstr "དྲ་ཚིགས་ཤིག་སྤྱོད་དགོས་ས
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
@@ -643,14 +675,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "དྲ་གནས་ཤིག་མེད་པར་མུ་མཐུད་དགོས་སམ"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "དྲ་གནས་གང་ཡང་བདམས་མེད་པ"
 

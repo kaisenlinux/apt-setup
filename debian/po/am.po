@@ -17,9 +17,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 22:41+0100\n"
-"PO-Revision-Date: 2019-08-28 18:09+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
+"POT-Creation-Date: 2023-01-23 20:01+0000\n"
+"PO-Revision-Date: 2022-12-11 11:40+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
 "Language: am\n"
 "MIME-Version: 1.0\n"
@@ -50,28 +50,28 @@ msgstr "apt በማስተካከል ላይ"
 #. :sl2:
 #: ../apt-setup-udeb.templates:3001
 msgid "Running ${SCRIPT}..."
-msgstr "${SCRIPT} በማስክከድ ላይ..."
+msgstr "${SCRIPT} በማስክከድ ላይ…"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:4001
 msgid "Scanning local repositories..."
-msgstr "የከባቢ ማኅደሮችን በማሰስ ላይ..."
+msgstr "የከባቢ ማኅደሮችን በማሰስ ላይ…"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:5001
 msgid "Scanning the security updates repository..."
-msgstr "የደህንነት ማሻሻያ ማኅደሮችን በመፈተሽ ላይ..."
+msgstr "የደህንነት ማሻሻያ ማኅደሮችን በመፈተሽ ላይ…"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "የዝርያ ማሻሻያ ማኅደሮችን በመፈተሽ ላይ..."
+msgstr "የዝርያ ማሻሻያ ማኅደሮችን በመፈተሽ ላይ…"
 
 #. Type: text
 #. Description
@@ -79,14 +79,14 @@ msgstr "የዝርያ ማሻሻያ ማኅደሮችን በመፈተሽ ላይ..."
 #: ../apt-setup-udeb.templates:7001
 #, fuzzy
 msgid "Scanning the backports repository..."
-msgstr "የዝርያ ማሻሻያ ማኅደሮችን በመፈተሽ ላይ..."
+msgstr "የዝርያ ማሻሻያ ማኅደሮችን በመፈተሽ ላይ…"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
 msgstr "እንደገና ሞክር"
 
@@ -95,7 +95,7 @@ msgstr "እንደገና ሞክር"
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:4001
+#: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Ignore"
 msgstr "ተዉት"
 
@@ -388,7 +388,7 @@ msgstr ""
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "የnetinst CD አኮላሽ in sources.list..."
+msgstr "የnetinst CD አኮላሽ in sources.list…"
 
 #. Type: text
 #. Description
@@ -396,7 +396,7 @@ msgstr "የnetinst CD አኮላሽ in sources.list..."
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:6001
+#: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
 #, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
@@ -502,15 +502,59 @@ msgstr "የማኅደር-መስተዋትን በማሰስ ላይ"
 
 #. Type: boolean
 #. Description
-#. :sl1:
+#. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid "Use non-free software?"
+msgid "Use non-free firmware?"
+msgstr "ነጻ ያልሆነ ስስ-አካል ልጠቀም?"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+#, fuzzy
+#| msgid ""
+#| "Some non-free software has been made to work with Debian. Though this "
+#| "software is not at all a part of Debian, standard Debian tools can be "
+#| "used to install it. This software has varying licenses which may prevent "
+#| "you from using, modifying, or sharing it."
+msgid ""
+"Some non-free firmware has been made to work with Debian. Though this "
+"firmware is not at all a part of Debian, standard Debian tools can be used "
+"to install it. This firmware has varying licenses which may prevent you from "
+"using, modifying, or sharing it."
+msgstr ""
+"አንዳንድ ነጻ ያልሆኑ ስልቶች ከደቢያን አቅርቦት ጋር እንዲሰሩ ተደርገዋል። ምንም እንኳን እነዚህ ስልቶች የዋናው "
+"አቅርቦት አካል ባይሆኑም የተከላ አስተዳዳሪውን በመጠቀም እንዚህን ስልቶች መትከል ይቻላል። እንዚህ ስልቶች ከመጠቀም፣ "
+"ከማጋራት ወይም ከማሻሻል ሊገደብ የሚችሉ የተለያዩ ፈቃዶች ሊኖራቸው ይችላል።"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#. Type: boolean
+#. Description
+#. :sl1:
+#. Type: boolean
+#. Description
+#. This template is used by the Ubuntu version of d-i.
+#. :sl2:
+#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates-ubuntu:1001
+msgid "Please choose whether you want to have it available anyway."
+msgstr "እባክዎ ብሆንም እንኳን እንዲኖርዎት ይፈልጉ እንደሆን ይምረጡ፡፡"
+
+#. Type: boolean
+#. Description
+#. :sl1:
+#: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
 msgstr "ነጻ ያልሆነ ስስ-አካል ልጠቀም?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:2001
+#: ../apt-mirror-setup.templates:3001
 msgid ""
 "Some non-free software has been made to work with Debian. Though this "
 "software is not at all a part of Debian, standard Debian tools can be used "
@@ -524,25 +568,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Please choose whether you want to have it available anyway."
-msgstr "እባክዎ ብሆንም እንኳን እንዲኖርዎት ይፈልጉ እንደሆን ይምረጡ፡፡"
-
-#. Type: boolean
-#. Description
-#. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
 msgstr "contrib ስሳክልን ልጠቀም?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:3001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Some additional software has been made to work with Debian. Though this "
 "software is free, it depends on non-free software for its operation. This "
@@ -572,7 +605,7 @@ msgstr ""
 #. Description
 #. This template is used by the Ubuntu version of d-i.
 #. :sl2:
-#: ../apt-mirror-setup.templates:3001 ../apt-mirror-setup.templates-ubuntu:2001
+#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
 #: ../apt-mirror-setup.templates-ubuntu:3001
 #: ../apt-mirror-setup.templates-ubuntu:4001
 #: ../apt-mirror-setup.templates-ubuntu:5001
@@ -585,21 +618,21 @@ msgstr "ይህን ፕሮግራም ይፈልጉት እንደሆን ይምረጡ�
 #. :sl2:
 #. These are choices of actions so this is, at least in English,
 #. an infinitive form
-#: ../apt-mirror-setup.templates:4001
+#: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
 msgstr "ማኅደር-መስተዋት ቀይር"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
 msgstr "ፋይል ማምጣት አልተሳካም"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:4002
+#: ../apt-mirror-setup.templates:5002
 msgid ""
 "The installer failed to access the mirror. This may be a problem with your "
 "network, or with the mirror. You can choose to retry the download, select a "
@@ -612,14 +645,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
 msgstr "የአውታር ማኅደር-መስተዋት ልጠቀም?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#: ../apt-mirror-setup.templates:5001
+#: ../apt-mirror-setup.templates:6001
 #, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
@@ -632,14 +665,14 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
 msgstr "ያለአውታር መስተዋት ይቀጥል?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
-#: ../apt-mirror-setup.templates:6001
+#: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "የአውታር መስተዋት አልተመረጠም"
 

@@ -1,7 +1,7 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- apt-setup-0.177.orig/finish-install.d/62apt-cdrom-setup
-+++ apt-setup-0.177/finish-install.d/62apt-cdrom-setup
+--- apt-setup-0.182.orig/finish-install.d/62apt-cdrom-setup
++++ apt-setup-0.182/finish-install.d/62apt-cdrom-setup
 @@ -26,13 +26,7 @@ fi
  if [ "$disable_cdrom_entries" = "true" ]; then
  	logger -t finish-install "Disabling CDROM entries in sources.list"
