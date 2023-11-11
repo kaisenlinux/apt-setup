@@ -30,13 +30,14 @@
 # Michał Kułach <michal.kulach@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
 # Bartosz Feński <fenio@debian.org>, 2020.
 # Matthaiks <kitynska@gmail.com>, 2021, 2022.
+# Łukasz Dulny <BartekChom@poczta.onet.pl>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-01-26 07:52+0000\n"
+"PO-Revision-Date: 2023-08-03 08:07+0000\n"
 "Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
@@ -574,14 +575,14 @@ msgstr ""
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
-msgstr "Proszę wybrać czy chcesz mieć je mimo wszystko dostępne."
+msgstr "Proszę wybrać, czy chcesz mieć je mimo wszystko dostępne."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
-msgstr "Czy używać oprogramowania nie wolnodostępnego?"
+msgstr "Czy używać niewolnego oprogramowania?"
 
 #. Type: boolean
 #. Description
@@ -647,7 +648,7 @@ msgstr ""
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr ""
-"Proszę wybrać czy chcesz by to oprogramowanie było dla Ciebie dostępne."
+"Proszę wybrać, czy chcesz, aby to oprogramowanie było dla Ciebie dostępne."
 
 #. Type: select
 #. Choices

@@ -21,13 +21,17 @@
 # Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
 # Rimas Kudelis <rq@akl.lt>, 2012, 2017, 2018.
 # Tautvydas Zukauskas <tautzuk@tutanota.com>, 2020.
+# Andrius Ulrikas <andrius@ulrikas.lt>, 2020.
+# Andrius Majauskas <komitetas@gmail.com>, 2020.
+# Kornelijus Tvarijanavičius <kornelitvari@protonmail.com>, 2020, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2020-02-16 17:50+0000\n"
-"Last-Translator: Tautvydas Zukauskas <tautzuk@tutanota.com>\n"
+"PO-Revision-Date: 2023-07-17 07:08+0000\n"
+"Last-Translator: Rimas Kudelis <rimas@kudelis.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -343,7 +347,7 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Dabar Jūs galite atlikti papildomų laikmneų apžvalgą, kad paketų tvarkyklė "
+"Dabar Jūs galite atlikti papildomų laikmenų apžvalgą, kad paketų tvarkyklė "
 "(apt) galėtų juos naudoti. Paprastai, jie turėtų būti iš to pačio rinkinio, "
 "kaip ir įdiegimo laikmena. Jei papildomų laikmenų neturite, praleiskite šį "
 "žingsnį."
@@ -528,32 +532,24 @@ msgstr "Apžvelgiamas paketų archyvo serveris..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid "Use non-free software?"
 msgid "Use non-free firmware?"
-msgstr "Ar naudoti ne laisvą (non-free) programinę įrangą?"
+msgstr "Ar naudoti ne laisvą (non-free) aparatinę programinę įrangą?"
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
 "Some non-free firmware has been made to work with Debian. Though this "
 "firmware is not at all a part of Debian, standard Debian tools can be used "
 "to install it. This firmware has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Kai kuri ne laisva programinė įranga yra parengta dirbti „Debian“ sistemose. "
-"Nors ši programinė įranga nėra „Debian“ dalis, jos įdiegimui gali būti "
-"naudojamos standartinės „Debian“ priemonės. Ši programinė įranga platinama "
-"pagal įvairias licencijas, kurios riboja Jus ją naudojant, keičiant ar "
-"dalinantis su kitais."
+"Kai kuri ne laisva aparatinė programinė įranga yra parengta dirbti „Debian“ "
+"sistemose. Nors ši aparatinė programinė įranga nėra „Debian“ dalis, jos "
+"įdiegimui gali būti naudojamos įprastinės „Debian“ priemonės. Ši aparatinė "
+"programinė įranga platinama pagal įvairias licencijas, kurios gali riboti "
+"naudojimąsi ja, jos modifikavimą ar platinimą."
 
 #. Type: boolean
 #. Description

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-04-09 20:53+0000\n"
+"PO-Revision-Date: 2023-08-05 18:47+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian\n"
 "Language: ka\n"
@@ -233,7 +233,6 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
-#, fuzzy
 msgid ""
 "Backported software are adapted from the development version to work with "
 "this release. Although this software has not gone through such complete "
@@ -245,7 +244,8 @@ msgstr ""
 "ამ გამოშვებაში ზოგიერთი პროგრამა გადმოტანილია დამუშავების პროცესში მყოფი "
 "ვერსიიდან. მათ არ გაუვლიათ ისეთი სრული ტესტირება, როგორც სხვებს, მაგრამ ზოგი "
 "პროდუქტის ახალ ვერსიას შეიძლება საჭირო თვისებები ჰქონდეს და ამდენად, "
-"საინტერესო იყოს."
+"საინტერესო იყოს. გადმოტანილი პროგრამების ჩართვა მათ ავტომატურად დაყენებას არ "
+"ნიშნავს. ეს მხოლოდ მათი ხელით დაყენების საშუალებას მოგცემთ."
 
 #. Type: boolean
 #. Description
@@ -286,12 +286,12 @@ msgstr "apt-ს კონფიგურაციის პრობლემა
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"ვერ მოხერხდა apt-ს კონფიგურაცია CD-დან დამატებითი პაკეტების დასაყენებლად."
+"APT-ის მიერ დამატებითი პაკეტების მედიიდან დაყენების მორგების მცდელობა "
+"ჩავარდა."
 
 #. Type: boolean
 #. Description

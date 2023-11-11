@@ -19,14 +19,15 @@
 # Anton Gladky <gladk@debian.org>, 2011-2016
 # Taras Panchenko <top39@ukr.net>, 2021.
 # Denys Nykula <vegan@libre.net.ua>, 2022.
+# Yatsenko Alexandr <yatsenko.alexandr@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2022-06-30 19:21+0000\n"
-"Last-Translator: Artem <artem@molotov.work>\n"
+"PO-Revision-Date: 2023-06-15 17:50+0000\n"
+"Last-Translator: Tymofii Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -531,31 +532,24 @@ msgstr "Сканування дзеркала..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid "Use non-free software?"
 msgid "Use non-free firmware?"
-msgstr "Використовувати невільне програмне забезпечення?"
+msgstr "Використовувати невільні мікропрограми?"
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
 "Some non-free firmware has been made to work with Debian. Though this "
 "firmware is not at all a part of Debian, standard Debian tools can be used "
 "to install it. This firmware has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Деякі невільні програми були підлаштовані для роботи в Debian. Хоча вони не "
-"є частиною Debian, стандартні інструменти Debian можуть їх встановити. Це "
-"програмне забезпечення має різні ліцензії, які можуть обмежити вас у "
-"використанні, модифікуванні чи сумісному використанні цих програм."
+"Деякі невільні мікропрограми були підлаштовані для роботи в Debian. Хоча "
+"вони не є частиною Debian, стандартні інструменти Debian можуть їх "
+"встановити. Це програмне забезпечення має різні ліцензії, які можуть "
+"обмежити вас у використанні, модифікуванні чи сумісному використанні цих "
+"програм."
 
 #. Type: boolean
 #. Description

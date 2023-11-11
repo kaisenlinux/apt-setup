@@ -1,3 +1,44 @@
+apt-setup (1:0.185-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.185 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 11 Nov 2023 17:21:28 +0100
+
+apt-setup (1:0.185) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Gujarati (gu.po) by Kartik Mistry
+  * Malayalam (ml.po) by Anish Sheela
+  * Punjabi (Gurmukhi) (pa.po) by Aman Alam
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 23 Sep 2023 20:35:26 +0200
+
+apt-setup (1:0.184) unstable; urgency=medium
+
+  * Team upload
+
+  [ Samuel Thibault ]
+  * generators/50mirror: Fix syntax to get trusted=yes understood.
+
+  [ Updated translations ]
+  * Georgian (ka.po) by Temuri Doghonadze
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Polish (pl.po) by Matthaiks
+  * Romanian (ro.po) by NicolaeFericitu
+  * Turkish (tr.po) by Fatih Altun
+  * Ukrainian (uk.po) by Tymofii Lytvynenko
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 23 Aug 2023 09:07:15 +0200
+
+apt-setup (1:0.183) unstable; urgency=medium
+
+  * For port architectures, let snapshot.debian.org have an outdated
+    validation.
+
+ -- Samuel Thibault <sthibault@debian.org>  Thu, 01 Jun 2023 18:06:27 +0200
+
 apt-setup (1:0.182-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.182 release

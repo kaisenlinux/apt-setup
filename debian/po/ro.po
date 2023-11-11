@@ -39,8 +39,8 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-03-21 08:42+0000\n"
-"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"PO-Revision-Date: 2023-06-19 12:51+0000\n"
+"Last-Translator: NicolaeFericitu <cni@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-setup-udeb.templates:1001
 msgid "Configure the package manager"
-msgstr "Configurează managerul de pachete"
+msgstr "Configurați managerul de pachete"
 
 #. Type: text
 #. Description
@@ -124,7 +124,7 @@ msgstr "Ignoră"
 #. Description
 #: ../apt-setup-udeb.templates:8002
 msgid "Downloading local repository key failed:"
-msgstr "Descărcarea cheii pentru depozitul local a eșuat:"
+msgstr "Descărcarea cheii depozitului local a eșuat:"
 
 #. Type: select
 #. Description
@@ -147,9 +147,9 @@ msgid ""
 "key. You can choose to retry the download, or ignore the problem and "
 "continue without all the packages from this repository."
 msgstr ""
-"De vină poate fi rețeaua sau serverul care găzduiește cheia. Puteți să "
-"reîncercați descărcarea sau să ignorați problema și să continuați fără toate "
-"pachetele din acest depozit."
+"Aceasta poate fi o problemă cu rețeaua dvs. sau cu serverul care găzduiește "
+"această cheie. Puteți alege să încercați din nou descărcarea sau să ignorați "
+"problema și să continuați fără toate pachetele din acest depozit."
 
 #. Type: error
 #. Description
@@ -199,7 +199,7 @@ msgstr "actualizări de securitate (de la ${SEC_HOST})"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "release updates"
-msgstr "actualizări a distribuției"
+msgstr "actualizări ale versiunii"
 
 #. Type: multiselect
 #. Choices
@@ -208,6 +208,7 @@ msgstr "actualizări a distribuției"
 #. including host name. In short, KEEP THIS SHORT and, yes, that's tricky
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
+#, fuzzy
 msgid "backported software"
 msgstr "programe portate pentru versiunile anterioare"
 
@@ -216,7 +217,7 @@ msgstr "programe portate pentru versiunile anterioare"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
 msgid "Services to use:"
-msgstr "Servicii folosite:"
+msgstr "Servicii de utilizat:"
 
 #. Type: multiselect
 #. Description
@@ -226,8 +227,8 @@ msgid ""
 "Debian has two services that provide updates to releases: security and "
 "release updates."
 msgstr ""
-"Debian are două servicii care furnizează actualizări pentru versiunile "
-"lansate: serviciul de securitate și cel de actualizări a distribuției."
+"Debian are două servicii care oferă actualizări pentru versiunile lansate: "
+"actualizări de securitate și actualizări de lansare."
 
 # puternic recomandat/recomandat cu tărie
 #. Type: multiselect
@@ -251,11 +252,11 @@ msgid ""
 "the usability of the software. It also provides regression fixes. This "
 "service is only available for stable and oldstable releases."
 msgstr ""
-"Actualizările pentru distribuție oferă versiuni mai noi ale aplicațiilor "
-"care se schimbă relativ frecvent și pentru care absența celei mai noi "
-"versiuni ar putea reduce utilitatea aplicației. Acest serviciu este "
-"disponibil doar pentru versiunea stabilă și pentru versiunea stabilă "
-"anterioară."
+"Actualizările de lansare oferă versiuni mai actuale pentru software-ul care "
+"se modifică relativ frecvent și în cazul în care lipsa celei mai recente "
+"versiuni ar putea reduce capacitatea de utilizare a software-ului. De "
+"asemenea, oferă remedieri de regresie. Acest serviciu este disponibil numai "
+"pentru versiunile stabile și pentru versiunile stabile anterioare."
 
 #. Type: multiselect
 #. Description
@@ -272,7 +273,7 @@ msgstr ""
 "Unele programe au fost portate din ramura de dezvoltare pentru a funcționa "
 "cu această versiune. Deși aceste programe nu au trecut prin teste așa de "
 "complete ca cele din versiunea oficială, ele conțin versiuni mai noi ale "
-"unor aplicații care ar putea oferi capabilități utile. Activând această "
+"unor aplicații care ar putea oferi caracteristici utile. Activând această "
 "opțiune aici nu va determina instalarea acestor programe, ci permite doar "
 "selectarea manuală a programelor pe care doriți să le folosiți."
 
@@ -360,10 +361,10 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Acum puteți să examinați alte medii de instalare pentru a fi folosite de "
-"managerul de pachete (apt). În mod normal, acestea ar trebui să fie parte "
-"din același set ca și cel folosit pentru inițializare. Dacă nu aveți medii "
-"suplimentare acest pas poate fi omis."
+"Acum aveți opțiunea de a scana medii suplimentare pentru a fi utilizate de "
+"managerul de pachete (apt). În mod normal, acestea ar trebui să fie din "
+"același set cu cel din care ați pornit. Dacă nu aveți niciun conținut media "
+"suplimentar, acest pas poate fi omis."
 
 #. Type: boolean
 #. Description
@@ -373,7 +374,9 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Dacă doriți să scanați alt mediu acesta trebuie introdus acum."
+msgstr ""
+"Dacă doriți să scanați mai multe medii, vă rugăm să introduceți încă unul "
+"acum."
 
 #. Type: boolean
 #. Description
@@ -394,28 +397,29 @@ msgstr "Imaginea cu eticheta următoare a fost deja scanată:"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Înlocuiți-l acum dacă doriți să examinați altul."
+msgstr "Vă rugăm să îl înlocuiți acum, dacă doriți să scanați altul."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
 msgid "Please check that the media has been inserted correctly."
-msgstr "Verificați că mediul a fost introdus corect."
+msgstr "Vă rugăm să verificați dacă suportul a fost introdus corect."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Media change"
-msgstr "Schimbare de mediu de instalare"
+msgstr "Schimbare mediu de instalare"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "Introduceți mediul etichetat '${LABEL}' și apăsați enter."
+msgstr ""
+"Vă rugăm să introduceți suportul etichetat '${LABEL}' și apăsați enter."
 
 #. Type: text
 #. Description
@@ -423,7 +427,7 @@ msgstr "Introduceți mediul etichetat '${LABEL}' și apăsați enter."
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "Se dezactivează CD-ul netinst din sources.list..."
+msgstr "Se dezactivează CD-ul netinst în sources.list..."
 
 #. Type: text
 #. Description
@@ -474,9 +478,9 @@ msgid ""
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Ați examinat %i imagini. Deși acestea conțin o selecție apreciabilă de "
-"pachete, este posibil ca unele pachete să lipsească (în special pachete "
-"necesare pentru suportul altor limbi decât limba engleză)."
+"Ați scanat %i imagini. Chiar dacă acestea conțin o selecție corectă de "
+"pachete, este posibil ca unele să lipsească (în special unele pachete "
+"necesare pentru a suporta alte limbi decât engleza)."
 
 #. Type: text
 #. Description
@@ -499,8 +503,8 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"A se reține că folosirea unui sit alternativ poate duce la descărcarea unei "
-"cantități mari de date în timpul următorului pas al procesul de instalare."
+"Rețineți că utilizarea unui sit alternativ poate duce la descărcarea unei "
+"cantități mari de date în timpul următoarei etape a instalării."
 
 #. Type: text
 #. Description
@@ -522,8 +526,9 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Dacă aveți o conexiune bună la internet, este recomandat să folosiți un sit "
-"alternativ, mai ales dacă plănuiți să instalați un mediu grafic."
+"Cu excepția cazului în care nu dispuneți de o conexiune bună la internet, se "
+"recomandă utilizarea unui sit alternativ, în special dacă intenționați să "
+"instalați un mediu desktop grafic."
 
 #. Type: text
 #. Description
@@ -533,8 +538,9 @@ msgid ""
 "If you have a reasonably good Internet connection, use of a mirror is "
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
-"Dacă aveți o conexiune internet rezonabil de bună, este sugerat să folosiți "
-"un sit alternativ dacă plănuiți să instalați un mediu grafic."
+"Dacă dispuneți de o conexiune la internet destul de bună, se recomandă "
+"utilizarea unui sit alternativ dacă intenționați să instalați un mediu "
+"desktop grafic."
 
 #. Type: text
 #. Description
@@ -548,7 +554,7 @@ msgstr "Se examinează situl alternativ..."
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid "Use non-free firmware?"
-msgstr "Folosiți firmware non-liber?"
+msgstr "Utilizați un firmware care nu este liber?"
 
 #. Type: boolean
 #. Description
@@ -560,11 +566,10 @@ msgid ""
 "to install it. This firmware has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Unele microcoduri (firmware-uri) non-libere au fost făcute să funcționeze cu "
-"Debian. Deși acest microcod (firmware) nu face parte din Debian, se pot "
-"folosi unelte standard pentru al instala. Acest microcod (firmware) are "
-"diverse licențe care vă pot împiedica să-l folosiți, să-l modificați sau să-"
-"l oferiți altora."
+"Unele firmware-uri nelibere au fost făcute să funcționeze cu Debian. Deși "
+"acest firmware nu face parte din Debian, pentru a-l instala pot fi utilizate "
+"instrumentele Debian standard. Acest firmware are diferite licențe care vă "
+"pot împiedica să îl utilizați, să îl modificați sau să îl partajați."
 
 #. Type: boolean
 #. Description
@@ -579,14 +584,14 @@ msgstr ""
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
-msgstr "Vă rugăm să alegeți dacă totuși doriți să le aveți disponibile."
+msgstr "Vă rugăm să alegeți dacă doriți să le aveți disponibile."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
-msgstr "Folosiți software non-liber?"
+msgstr "Folosiți software care nu este liber?"
 
 #. Type: boolean
 #. Description
@@ -598,10 +603,10 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Unele programe non-libere au fost făcute să funcționeze cu Debian. Deși "
-"aceste programe nu fac parte din Debian, se pot folosi unelte standard "
-"pentru a le instala. Aceste programe au diverse licențe care vă pot "
-"împiedica să le folosiți, să le modificați sau să le oferiți altora."
+"Unele programe nelibere au fost făcute să funcționeze cu Debian. Deși acest "
+"software nu face parte din Debian, pentru a-l instala pot fi folosite "
+"instrumentele Debian standard. Acest software are licențe diferite care vă "
+"pot împiedica să îl utilizați, să îl modificați sau să îl partajați."
 
 #. Type: boolean
 #. Description
@@ -620,10 +625,10 @@ msgid ""
 "software is not a part of Debian, but standard Debian tools can be used to "
 "install it."
 msgstr ""
-"Unele programe adiționale au fost făcute să funcționeze cu Debian. Deși "
-"aceste programe sunt libere, ele depind de programe non-libere pentru a "
-"opera. Aceste programe nu sunt parte din Debian, dar uneltele standard "
-"Debian se pot folosi pentru a le instala."
+"Unele programe suplimentare au fost create pentru a funcționa cu Debian. "
+"Deși acest software este liber, el depinde de software neliber pentru a "
+"funcționa. Acest software nu face parte din Debian, dar pot fi utilizate "
+"instrumente Debian standard pentru a-l instala."
 
 #. Type: boolean
 #. Description

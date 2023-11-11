@@ -260,8 +260,8 @@ while [ ! "$done" ]; do
 
 	trusted=""
 	if [ -n "${use_unreleased}" -a "$hostname" = snapshot.debian.org ]; then
-		# debian-ports' key does not last long, cannot use gpg :/
-		trusted="[trusted=yes] "
+		# debian-ports' and snapshot's signatures do not last long, cannot use gpg :/
+		trusted="[check-valid-until=no trusted=yes] "
 	fi
 
 	echo "deb $trusted$protocol://$hostname$directory $codename $components" > $file
