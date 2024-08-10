@@ -9,6 +9,7 @@
 # This file is distributed under the same license as debian-installer.
 # Jeyanthinath MuthuRam <jeyanthinath10@gmail.com>, 2020.
 # Vasudevan Tirumurti <agnihot3@gmail.com>, 2021.
+# Alex <alexraj2003@gmail.com>, 2022.
 #
 #
 # Translations from iso-codes:
@@ -23,9 +24,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2021-02-09 18:59+0000\n"
-"Last-Translator: Vasudevan Tirumurti <agnihot3@gmail.com>\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2023-11-25 05:13+0000\n"
+"Last-Translator: FRANKLIN PRAKASH <franklinprakash1090@gmail.com>\n"
 "Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
@@ -523,7 +524,6 @@ msgstr "இணைப்பதிப்பை வருடுகிறது...."
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 #, fuzzy
-#| msgid "Use non-free software?"
 msgid "Use non-free firmware?"
 msgstr "இலவசமல்லாத மென் பொருளை பயன்படுத்த வேண்டுமா?"
 
@@ -531,22 +531,22 @@ msgstr "இலவசமல்லாத மென் பொருளை பயன
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"இலவசமல்லாத சில மென் பொருட்கள் டெபியனுடன் வேலை செய்கின்றன. இந்த மென் பொருட்கள் டெபியனின் "
-"பகுதி அல்ல எனினும் வழக்கமான டெபியன் கருவிகளைக் கொண்டு அவற்றை நிறுவலாம். இந்த மென் "
-"பொருட்களுக்கு பலவித உரிமங்கள் உள்ளன. அவை உங்களை அவற்றை பயன் படுத்துவது மாற்றுவது மற்றும் "
-"பகிர்ந்து கொள்வது ஆகியவற்றை கட்டுப் படுத்தும்."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description

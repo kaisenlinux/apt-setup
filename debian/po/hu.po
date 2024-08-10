@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-04-06 18:48+0000\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-03-26 16:02+0000\n"
 "Last-Translator: SZERVÁC Attila <szoftvergazda@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -155,7 +155,7 @@ msgid ""
 "continue without all the packages from this repository."
 msgstr ""
 "Ez lehet akár a hálózat vagy a kulcsot tároló kiszolgáló hibája is. "
-"Újrapróbálhatja, vagy figyelmen kívül hagyhatja e problémát és folytathatja "
+"Újrapróbálhatod, vagy figyelmen kívül hagyhatod e problémát és folytathatod "
 "e tároló csomagjai nélkül."
 
 # Type: error
@@ -356,7 +356,7 @@ msgstr "Nem sikerült az apt konfigurálása további csomagokkal a telepítőr�
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
 msgid "Scan extra installation media?"
-msgstr "Beolvassa az extra telepítőt?"
+msgstr "Beolvasod az extra telepítőt?"
 
 #. Type: boolean
 #. Description
@@ -393,33 +393,29 @@ msgstr "Ha további médiát néznél át, tégy be egy másikat most."
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "Az alábbi címkével jelölt CD vagy DVD került átnézésre:"
+msgstr "Az alábbi címkével lemezképet átnéztük:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "Az alábbi címkével jelölt CD vagy DVD lemez már át lett nézve:"
+msgstr "Az alábbi címkéjű lemezképet már korábban átnéztük:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Cserélje most, ha szeretne további CD/DVD-t is átnézni."
+msgstr "Cseréld most, ha szeretnél továbbit átnézni."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "Ellenőrizze, hogy a CD/DVD helyesen lett betéve."
+msgstr "Ellenőrizd, hogy a média helyesen lett-e betéve."
 
 #. Type: text
 #. Description
@@ -433,7 +429,7 @@ msgstr "Adathordozó csere"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "Tegye be ezt a lemezt '${LABEL}' és üssön enter-t."
+msgstr "Tedd be ezt a lemezt '${LABEL}' és üssön enter-t."
 
 #. Type: text
 #. Description
@@ -451,65 +447,60 @@ msgstr ""
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Ha hálózati telepítő (netinst) CD-ről telepít, és nem használ tükröt, csak "
-"egy minimális alaprendszert kap majd."
+"Ha hálózati telepítő (netinst) CD-ről telepítesz, és nem használsz tükröt, "
+"csak egy minimális alaprendszert kapsz majd."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Hálózati telepítő (netinst) CD lemezről telepít, mely önmaga csak egy "
-"minimális alaprendszert telepít. Használjon tükröt egy teljesebb rendszer "
+"Hálózati telepítő (netinst) CD lemezről telepítesz, mely önmaga csak egy "
+"minimális alaprendszert telepít. Használj tükröt egy teljesebb rendszer "
 "telepítéséhez."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr ""
-"Olyan CD-lemezről telepít, mely a csomagkészletnek csak egy részét "
-"tartalmazza."
+msgstr "Olyan lemezképről telepítesz, mely csak kevés csomagot tartalmaz."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"%i CD-t átnéztünk. Bár ezek sok csomagot tartalmaznak, néhány hiányozhat "
-"(főleg egyes nyelvek teljes támogatásához szükséges csomagok)."
+"%i lemezképet átnéztünk. Bár ezek sok csomagot tartalmaznak, néhány "
+"hiányozhat (főleg egyes nyelvek teljes támogatásához szükséges csomagok)."
 
 #. Type: text
 #. Description
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"%i CD át lett nézve. Bár ezek sok csomagot tartalmaznak, egyesek "
+"%i lemezképet átnéztünk. Bár ezek sok csomagot tartalmaznak, egyesek "
 "hiányozhatnak."
 
 #. Type: text
@@ -527,12 +518,11 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Ön DVD lemezről telepít. Bár ez sok csomagot tartalmaz, egyesek "
+"DVD lemezképről telepítesz. Bár ez sok csomagot tartalmaz, egyesek "
 "hiányozhatnak."
 
 #. Type: text
@@ -569,28 +559,29 @@ msgstr "Tükör átnézése..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid "Use non-free firmware?"
-msgstr "Használ nem-szabad szoftvereket?"
+msgstr "Használod a nem-szabad firmware-eket?"
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Pár nem-szabad szoftver be lett csomagolva, hogy a Debian rendszer-"
-"eszközeivel is felrakható legyenek. FIGYELEM: Ezek a szoftverek NEM RÉSZEI a "
-"Debian rendszernek, csupán egyes feltételekkel feltelepíthető. E szoftverek "
-"eltérő felhasználói licenc-szerződéssel rendelkeznek, melyek megakadályozzák "
-"a szoftver szabad felhasználását, tanulmányozását és ellenőrzését, "
-"módosítását vagy terjesztését, ezért csak bizonyos hasonló feltételek esetén "
-"használhatók fel.."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -722,14 +713,13 @@ msgstr "Használ hálózati tükröt?"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"A hálózati tükör remekül használható a CD-n lévő szoftverek kiegészítésére. "
-"Az elérhető szoftverek újabb változatait is adhatja."
+"A hálózati tükör az, amely kiegészíti a telepítő médián korlátozottan lévő "
+"szoftvereket. Az elérhető szoftverek újabb változatait is adhatja."
 
 # Type: boolean
 # Description

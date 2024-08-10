@@ -15,7 +15,7 @@
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2012.
 # Juhani Numminen <juhaninumminen0@gmail.com>, 2018, 2019.
 # Arto Keiski <arto.keiski@iki.fi>, 2018.
-# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2021.
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2021, 2022.
 #
 # Translations from iso-codes:
 # Copyright (C) 2007 Tobias Toedter <t.toedter@gmx.net>.
@@ -27,9 +27,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2021-07-17 08:34+0000\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2022-09-16 09:23+0000\n"
+"Last-Translator: Tommi Nieminen <software@legisign.org>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -531,7 +531,6 @@ msgstr "Tutkitaan asennuspalvelinta..."
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 #, fuzzy
-#| msgid "Use non-free software?"
 msgid "Use non-free firmware?"
 msgstr "Käytä epävapaita ohjelmistoja?"
 
@@ -539,22 +538,22 @@ msgstr "Käytä epävapaita ohjelmistoja?"
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Joitakin epävapaita ohjelmistoja on muokattu toimimaan Debianin kanssa. "
-"Vaikka nämä ohjelmistot eivät ole osa Debiania, ne voidaan asentaa Debianin "
-"vakiotyökaluilla. Näillä ohjelmistoilla on vaihtelevia lisenssejä, jotka "
-"voivat estää sinua käyttämästä, muokkaamasta tai jakamasta niitä."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description

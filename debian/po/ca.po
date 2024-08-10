@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-05-17 23:53+0000\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-05-06 11:07+0000\n"
 "Last-Translator: d <dmanye@gmail.com>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "Language: ca\n"
@@ -289,7 +289,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
 msgid "Scanning the installation media..."
-msgstr "Analitzant el medi d'instal·lació..."
+msgstr "S'està analitzant el suport d'instal·lació..."
 
 #. Type: error
 #. Description
@@ -327,14 +327,14 @@ msgstr ""
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
 msgid "Scan extra installation media?"
-msgstr "Analitzar un altre mitjà d'instal·lació?"
+msgstr "Voleu analitzar un altre mitjà d'instal·lació?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr "Analitzant el medi d'instal·lació es troba l'etiqueta:"
+msgstr "Escanejant el vostre suport d'instal·lació trobareu l'etiqueta:"
 
 #. Type: boolean
 #. Description
@@ -346,9 +346,10 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Ara podeu analitzar mitjans addicionals per a que els utilitze el gestor de "
-"paquets (APT). Normalment aquests haurien de ser del mateix joc que l'usat "
-"per a arrencar. Si no teniu cap mitjà addicional, podeu ometre aquest pas."
+"Ara teniu l'opció d'escanejar suports addicionals perquè l'utilitzi el "
+"gestor de paquets (apt). Normalment aquests haurien de ser del mateix joc "
+"que l'usat per a arrencar. Si no teniu cap mitjà addicional, podeu ometre "
+"aquest pas."
 
 #. Type: boolean
 #. Description
@@ -393,14 +394,15 @@ msgstr "Assegureu-vos que s'ha inserit el mitjà correctament."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Media change"
-msgstr "El medi ha canviat"
+msgstr "Canvi de suport"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "Inseriu el mitjà amb l'etiqueta «${LABEL}» i premeu Intro."
+msgstr ""
+"Inseriu el mitjà amb l'etiqueta «${LABEL}» i premeu la tecla de retorn."
 
 #. Type: text
 #. Description
@@ -408,7 +410,7 @@ msgstr "Inseriu el mitjà amb l'etiqueta «${LABEL}» i premeu Intro."
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "S'esta inhabilitant el CD d'instal·lació per xarxa de sources.list..."
+msgstr "S'està inhabilitant el CD d'instal·lació per xarxa de sources.list..."
 
 #. Type: text
 #. Description
@@ -435,7 +437,7 @@ msgid ""
 "complete system."
 msgstr ""
 "Esteu instal·lant des d'una imatge de CD d'instal·lació per xarxa, que per "
-"ella mateixa només permet la instal·lació d'un sistema base mínim. Useu una "
+"si sola només permet la instal·lació d'un sistema base mínim. Useu una "
 "rèplica de xarxa per instal·lar un sistema més complet."
 
 #. Type: text
@@ -460,9 +462,9 @@ msgid ""
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Heu analitzat %i imatges. Tot i que aquestes contenen una selecció "
-"acceptable de paquets, alguns poden faltar (especialment alguns paquets "
-"necessaris per a implementar llengües diferents a l'anglès)."
+"Heu analitzat %i imatges. Tot i que aquestes contenen una bona selecció de "
+"paquets, és possible que en faltin alguns (especialment alguns paquets "
+"necessaris per permetre l'ús de llengües diferents a l'anglès)."
 
 #. Type: text
 #. Description
@@ -475,7 +477,7 @@ msgid ""
 "packages, some may be missing."
 msgstr ""
 "Heu analitzat %i imatges. Tot i que aquests contenen una gran selecció de "
-"paquets, alguns poden faltar."
+"paquets, és possible que en faltin alguns."
 
 #. Type: text
 #. Description
@@ -485,8 +487,8 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Teniu en compte que usar una rèplica pot resultar en una baixada de grans "
-"quantitats de dades durant el següent pas de la instal·lació."
+"Tingueu en compte que l'ús d'una rèplica pot provocar que es baixin una gran "
+"quantitat de dades durant el següent pas de la instal·lació."
 
 #. Type: text
 #. Description
@@ -497,7 +499,7 @@ msgid ""
 "selection of packages, some may be missing."
 msgstr ""
 "Esteu instal·lant des d'una imatge de DVD. Tot i que conté una gran selecció "
-"de paquets, alguns poden faltar."
+"de paquets, és possible que en faltin alguns."
 
 #. Type: text
 #. Description
@@ -542,16 +544,21 @@ msgstr "Voleu usar microprogramari no lliure (non-free)?"
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Hi ha microprogramari no lliure (non-free) que s'ha preparat perquè funcione "
-"amb Debian. Encara que aquest microprogramari no és de cap manera part de "
-"Debian, es poden utilitzar les eines comunes de Debian per instal·lar-lo. "
-"Aquest microprogramari té diverses llicències que vos poden impedir que "
-"l'utilitzeu, modifiqueu o compartiu."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -566,7 +573,7 @@ msgstr ""
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
-msgstr "Seleccioneu si el voleu tindre disponible de tota manera."
+msgstr "Trieu si voleu tenir-lo disponible de totes maneres."
 
 #. Type: boolean
 #. Description
@@ -585,11 +592,10 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Hi ha un poc de programari no lliure (non-free) que s'ha preparat perquè "
-"funcione amb Debian. Encara que aquest programari no és de cap manera part "
-"de Debian, es poden utilitzar les eines comunes de Debian per instal·lar-lo. "
-"Aquest programari té diverses llicències que vos poden impedir que "
-"l'utilitzeu, modifiqueu o compartiu."
+"S'ha fet que alguns programes no lliures funcionin amb Debian. Tot i que "
+"aquest programari no forma part de Debian, es poden utilitzar les eines "
+"estàndard de Debian per instal·lar-lo. Aquest programari té diferents "
+"llicències que us poden impedir utilitzar-lo, modificar-lo o compartir-lo."
 
 #. Type: boolean
 #. Description
@@ -608,10 +614,10 @@ msgid ""
 "software is not a part of Debian, but standard Debian tools can be used to "
 "install it."
 msgstr ""
-"Hi ha programari addicional que s'ha preparat per a que funcioni amb Debian. "
-"Encara que aquest programari és lliure, depèn de programari no lliure (non-"
-"free) per a que funcioni. Aquest programari no és part de Debian, però les "
-"eines comunes de Debian es poden utilitzar per instal·lar-lo."
+"Hi ha programari addicional que s'ha preparat per funcionar amb Debian. Tot "
+"i que aquest programari és lliure, depèn de programari no lliure per al seu "
+"funcionament. Aquest programari no forma part de Debian, però es poden "
+"utilitzar eines estàndard de Debian per instal·lar-lo."
 
 #. Type: boolean
 #. Description
@@ -638,7 +644,7 @@ msgstr ""
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid ""
 "Please choose whether you want this software to be made available to you."
-msgstr "Seleccioneu si voleu que aquest programari siga disponible."
+msgstr "Seleccioneu si voleu que aquest programari estigui disponible."
 
 #. Type: select
 #. Choices
@@ -687,9 +693,9 @@ msgid ""
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"Es pot utilitzar una rèplica a la xarxa per a suplementar el programari que "
-"s'inclou al mitjà d'instal·lació. Això també pot posar a l'abast versions "
-"noves del programari."
+"Es pot utilitzar una rèplica de xarxa per complementar el programari que "
+"s'inclou al mitjà d'instal·lació. Això també pot fer que les versions més "
+"noves del programari estiguin disponibles."
 
 #. Type: boolean
 #. Description

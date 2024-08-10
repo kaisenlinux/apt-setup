@@ -7,7 +7,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # Console-setup strings translations:
 # (identified by "./console-setup.templates")
-# Copyright (C) 2003-2022 Miguel Figueiredo <elmig@debianpt.org>
+# Copyright (C) 2003-2024 Miguel Figueiredo <elmig@debianpt.org>
 # This file is distributed under the same license as debian-installer.
 #
 #
@@ -18,13 +18,15 @@
 #   Filipe Maia <fmaia@gmx.net>, 2001.
 #   Alastair McKinstry <mckinstry@computer.org>, 2001.
 #   Miguel Figueiredo <elmig@debianpt.org>, 2005-2020
+#   Rui Branco - DebianPT <ruipb@debianpt.org>, 2017.
+#
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-02-22 22:00+0000\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-05-12 22:22+0100\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -541,15 +543,28 @@ msgstr "Utilizar firmware non-free?"
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Algum firmware não-livre foi preparado para funcionar com Debian. Embora "
-"este firmware não faça parte de Debian, podem ser utilizadas as ferramentas "
-"standard de Debian para o instalar. Este firmware tem variadas licenças que "
-"podem impedir que você o possa utilizar, modificar ou partilhar."
+"Firmware é um tipo de software que fornece controlo de baixo nível a certos "
+"componentes de hardware (tal como a placas de Wi-Fi ou a chipsets de audio), "
+"que podem não funcionar na totalidade ou até mesmo não funcionar sem ele."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
+"Apesar de não fazer parte Debian, algum firmware non-free foi tornado "
+"funcional em Debian. Este firmware tem licenças variadas que restringem as "
+"suas liberdades de utilizar, modificar ou partilhar o software, e geralmente "
+"não tem formas de código-fonte que possa estudar."
 
 #. Type: boolean
 #. Description

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2019-08-28 18:09+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-05-10 13:52+0000\n"
+"Last-Translator: Terry <wopskino2023@gmail.com>\n"
 "Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
 "Language: bo\n"
 "MIME-Version: 1.0\n"
@@ -519,21 +519,22 @@ msgstr "སྤྱི་སྤྱོད་མིན་པའི་མཉེན་
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Debian ལ་སྤྱོད་ཆོག་པའི་སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་བཟོས་འདུག མཉེན་ཆས་འདི་Debian ཡི་མིན་ནའང་ཚད་ལྡན་"
-"གྱི་Debian ལག་ཆ་སྤྱད་ནས་དེ་སྒྲིག་འཇུག་བྱེད་ཆོག མཉེན་ཆས་འདི་ལ་ཆོག་ཡིག་མི་འདྲ་བ་ཡོད་པས་ཁྱོད་ཀྱིས་བེད་"
-"སྤྱོད་དང་བཟོ་བཅོས། མཉམ་སྤྱོད་བྱེད་པར་བཀག་འགོག་བྱས་ཡོད་ཤས་ཆེ"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description

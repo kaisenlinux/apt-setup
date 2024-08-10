@@ -19,9 +19,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2020-10-10 17:26+0000\n"
-"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2023-12-10 18:08+0000\n"
+"Last-Translator: omwani <omwani03+gitlab@gmail.com>\n"
 "Language-Team: CDAC_DI\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
@@ -266,6 +266,10 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
+"बाय डीफॉल्ट स्त्रोत रेपॉजिटरीज /etc/apt/sources.list मध्ये सूचीबद्ध केल्या जातात (योग्य "
+"\"deb-src\" ओळींसह) जेणेकरून \"apt-get source\" कार्य करेल. तथापि, जर तुम्हाला या "
+"वैशिष्ट्याची आवश्यकता नसेल, तर तुम्ही त्या नोंदी अक्षम करू शकता आणि \"apt-get update\" "
+"ऑपरेशन्स दरम्यान काही बँडविड्थ जतन करू शकता."
 
 #. Type: text
 #. Description
@@ -513,30 +517,29 @@ msgstr "दर्पण तपासला जात आहे..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid "Use non-free software?"
 msgid "Use non-free firmware?"
-msgstr "मुक्त नसलेले सॉफ्टवेअर वापरायचे?"
+msgstr "नॉन-फ्री फर्मवेअर वापरायचे?"
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
-#| msgid ""
-#| "Some non-free software has been made to work with Debian. Though this "
-#| "software is not at all a part of Debian, standard Debian tools can be "
-#| "used to install it. This software has varying licenses which may prevent "
-#| "you from using, modifying, or sharing it."
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"काही मुक्त नसलेले सॉफ्टवेअर डेबियन मधे वापरण्याजोगे बनवलेले आहे. जरी हे सॉफ्टवेअर डेबियन चा "
-"भाग नसले, तरी ते अधिष्ठापित करण्याकरिता नेहमीची डेबियन टूलस् वापरता येऊ शकतात. या "
-"सॉफ्टवेअरचे विविध परवाने ते वापरण्यावर, त्यात बदल करण्यावर किंवा वाटपावर बंधने आणू शकतात."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description

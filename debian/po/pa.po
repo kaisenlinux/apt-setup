@@ -26,8 +26,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-09-03 10:42+0000\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-05-20 15:01+0000\n"
 "Last-Translator: Aman Alam <aalam@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -528,14 +528,24 @@ msgstr "ਗ਼ੈਰ-ਮੁਕਤ ਫ਼ਿਰਮਵੇਅਰ ਵਰਤਣਾ ਹ�
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"ਕੁਝ ਨਾ-ਮੁਕਤ ਫ਼ਿਰਮਵੇਅਰ ਡੇਬੀਅਨ ਨਾਲ ਵਰਤਣ ਲਈ ਬਣਾਏ ਹਨ। ਭਾਵੇਂ ਇਹ ਫ਼ਿਰਮਵੇਅਰ ਡੇਬੀਅਨ ਦਾ ਭਾਗ "
-"ਨਹੀਂ, ਸਟੈਂਡਰਡ ਡੇਬੀਅਨ ਟੂਲ ਇਸ ਨੂੰ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਵਰਤੇ ਜਾ ਸਕਦੇ ਹਨ। ਇਸ ਫ਼ਿਰਮਵੇਅਰ ਦਾ ਵੱਖਰਾ ਲਸੰਸ "
-"ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਵਰਤਣ, ਤਬਦੀਲ ਕਰਨ, ਜਾਂ ਸਾਂਝਾ ਕਰਨ ਤੋਂ ਹਟਾ ਸਕਦਾ ਹੈ।"
+"ਫਿਰਮਵੇਅਰ ਸਾਫ਼ਟਵੇਅਰ ਦੀ ਅਜਿਹੀ ਕਿਸਮ ਹੈ, ਜੋ ਕਿ ਕੁਝ ਹਾਰਡਵੇਅਰ ਸਾਮਾਨ (ਜਿਵੇਂ ਕਿ Wi-Fi ਕਾਰਡ ਜਾਂ "
+"ਆਡੀਓ ਚਿਪਸੈੱਟਾਂ ਆਦਿ) ਲਈ ਮੁੱਢਲੇ ਪੱਧਰ ਦਾ ਕੰਟਰੋਲ ਦਿੰਦਾ ਹੈ, ਜੋ ਕਿ ਇਸ ਦੇ ਬਿਨਾਂ ਕੁਝ ਕੁ ਜਾਂ ਪੂਰੀ ਤਰ੍ਹਾਂ "
+"ਕੰਮ ਨਹੀਂ ਸਕਦੇ ਹਨ।"
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -771,7 +781,7 @@ msgid ""
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
 "ਕੁਝ ਹੋਰ ਸਾਫਟਵੇਅਰ ਕਨੋਨੀਕਲ ਦੀ \"partner\" ਰਿਪੋਜ਼ਟਰੀ ਵਿੱਚ ਉਪਲੱਬਧ ਹਨ। ਇਹ ਸਾਫਟਵੇਅਰ ਉਬਤੂੰ ਦਾ "
-"ਹਿੱਸਾ ਨਹੀਂ ਹਨ, ਪਰ ਕਨੋਨੀਕਲ ਵਲੋਂ ਦਿੱਤੇ ਜਾ ਰਹੇ ਹਨ ਅਤੇ ਉਬਤੂੰ ਯੂਜ਼ਰਾਂ ਲਈ ਸਰਵਿਸ ਵਜੋਂ ਇਹ ਵੇਂਡਰ ਵਲੋਂ "
+"ਹਿੱਸਾ ਨਹੀਂ ਹਨ, ਪਰ ਕਨੋਨੀਕਲ ਵਲੋਂ ਦਿੱਤੇ ਜਾ ਰਹੇ ਹਨ ਅਤੇ ਉਬਤੂੰ ਵਰਤੋਂਕਾਰਾਂ ਲਈ ਸਰਵਿਸ ਵਜੋਂ ਇਹ ਵੇਂਡਰ ਵਲੋਂ "
 "ਉਪਲੱਬਧ ਹਨ।"
 
 #. Type: boolean

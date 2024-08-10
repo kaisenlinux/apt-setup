@@ -17,8 +17,9 @@
 # #
 # Translations from iso-codes:
 # Translations taken from ICU SVN on 2007-09-09
+#
 # Holger Wansing <hwansing@mailbox.org>, 2019, 2020, 2021, 2022.
-# Holger Wansing <linux@wansing-online.de>, 2008 - 2018.
+# Holger Wansing <linux@wansing-online.de>, 2008 - 2018, 2023, 2024.
 # Jens Seidel <jensseidel@users.sf.net>, 2005, 2006, 2007, 2008.
 # Dennis Stampfer <seppy@debian.org>, 2003, 2004, 2005.
 # Alwin Meschede <ameschede@gmx.de>, 2003, 2004.
@@ -35,12 +36,13 @@
 # Stefan Siegel <siegel@mandrakesoft.com>, 2001.
 # Tobias Quathamer <toddy@debian.org>, 2006, 2007, 2008, 2009, 2010.
 # Wolfgang Rohdewald <wolfgang@rohdewald.de>, 2005.
+# Helge Kreutzmann <debian@helgefjell.de>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2023-01-23 20:01+0000\n"
-"PO-Revision-Date: 2023-01-27 07:43+0100\n"
+"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"PO-Revision-Date: 2024-05-27 23:00+0200\n"
 "Last-Translator: Holger Wansing <hwansing@mailbox.org>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -567,16 +569,31 @@ msgstr "Nicht-freie Firmware (»non-free-firmware«) verwenden?"
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid ""
-"Some non-free firmware has been made to work with Debian. Though this "
-"firmware is not at all a part of Debian, standard Debian tools can be used "
-"to install it. This firmware has varying licenses which may prevent you from "
-"using, modifying, or sharing it."
+"Firmware is a kind of software providing low-level control of certain "
+"hardware components (such as Wi-Fi cards or audio chipsets), which may not "
+"function fully or at all without it."
 msgstr ""
-"Einige nicht freie Firmware wurde für den Einsatz mit Debian vorbereitet. "
-"Obwohl diese Firmware NICHT Teil von Debian ist, kann man sie dennoch mit "
-"den Standard-Debian-Hilfsmitteln installieren. Diese Firmware-Pakete haben "
-"verschiedene Lizenzen, welche Sie an der Benutzung, Modifikation oder der "
-"Verbreitung der Inhalte hindern könnten."
+"Firmware ist eine Art von Software, die auf systemnahem Level die Steuerung "
+"von Hardware-Komponenten (wie Wi-Fi-Karten oder Audio-Chipsets) erlaubt; die "
+"Hardware funktioniert ohne diese Firmware unter Umständen nicht "
+"vollumfänglich oder gar nicht."
+
+#. Type: boolean
+#. Description
+#. :sl5:
+#: ../apt-mirror-setup.templates:2001
+msgid ""
+"Although not at all part of Debian, some non-free firmware has been made to "
+"work with Debian. This firmware has varying licenses which restrict your "
+"freedoms to use, modify, or share the software, and generally does not have "
+"source forms that you may study."
+msgstr ""
+"Obwohl nicht Teil von Debian, wurde einige nicht-freie Firmware dafür "
+"vorbereitet, zusammen mit Debian zu funktionieren. Diese Firmware könnte "
+"verschiedenen Lizenzen unterliegen, die Sie eventuell daran hindern, die "
+"Software zu nutzen, zu verändern oder weiter zu verteilen; oft ist Firmware "
+"auch nicht in einer Form verfügbar, die Sie einsehen oder untersuchen "
+"könnten."
 
 #. Type: boolean
 #. Description
