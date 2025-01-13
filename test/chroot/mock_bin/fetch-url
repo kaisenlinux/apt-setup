@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+[ "fail" != "$fetch_url_result" ]
+echo "$fetch_url_result" > "$2"

@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-02-04 20:01+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2024-08-03 13:09+0000\n"
+"Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Debian L10N Turkish\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -548,6 +548,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Donanım yazılımı, bazı donanım bileşenlerine (Wi-Fi kartları veya ses "
+"yongaları gibi) düşük seviyeli kontrol sağlayan bir tür yazılımdır ve bunlar "
+"olmadan bu bileşenler tam olarak veya hiç çalışmayabilir."
 
 #. Type: boolean
 #. Description
@@ -559,6 +562,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Debian'ın bir parçası olmamakla birlikte, bazı ücretsiz olmayan donanım "
+"yazılımları Debian ile çalışacak şekilde düzenlenmiştir. Bu donanım "
+"yazılımlarının kullanım, değiştirme veya paylaşma özgürlüğünüzü kısıtlayan "
+"çeşitli lisansları vardır ve genellikle üzerinde çalışabileceğiniz kaynak "
+"kodlarına sahip değillerdir."
 
 #. Type: boolean
 #. Description

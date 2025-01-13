@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-01-07 16:08+0000\n"
+"PO-Revision-Date: 2024-10-16 15:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
 "debian.org>\n"
@@ -144,8 +144,8 @@ msgid ""
 "continue without all the packages from this repository."
 msgstr ""
 "Tampaknya ada masalah dengan jaringan Anda, atau pada server yang menyimpan "
-"kunci ini. Anda dapat mengunduh kembali atau mengabaikan masalah ini dan "
-"melanjutkan instalasi semua paket dari repositori ini."
+"kunci ini. Anda dapat mencoba mengunduh kembali, atau mengabaikan masalah "
+"ini dan melanjutkan instalasi semua paket dari repositori ini."
 
 #. Type: error
 #. Description
@@ -184,7 +184,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "security updates (from ${SEC_HOST})"
-msgstr "perbarui keamanan (dari ${SEC_HOST})"
+msgstr "pembaruan keamanan (dari ${SEC_HOST})"
 
 #. Type: multiselect
 #. Choices
@@ -245,7 +245,7 @@ msgid ""
 "the usability of the software. It also provides regression fixes. This "
 "service is only available for stable and oldstable releases."
 msgstr ""
-"Pembaruan Rilis menyediakan piranti lunak terbaru yang cukup sering berubah "
+"Pembaruan rilis menyediakan piranti lunak terbaru yang cukup sering berubah "
 "yang tanpa penggunaannnya dapat mengurangi kehandalan dari piranti lunak "
 "tersebut.Layanan ini hanya tersedia untuk rilis stabil dan stabil-lama."
 
@@ -286,17 +286,17 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
-"Secara default repositori sumber disimpan di /etc/apt/sources.list (sesuai "
-"dengan garis \"deb-src\") jadi \"apt-get source\" bekerja. Bagaimanapun, "
-"jika Anda tidak butuh fitur ini, Anda bisa mematikan beberapa dan menghemat "
-"bandwidth ketika \"apt-get update\" sedang berjalan."
+"Secara default repositori sumber disimpan di /etc/apt/sources.list (dengan "
+"baris \"deb-src\" yang sesuai) sehingga \"apt-get source\" bekerja. Namun, "
+"jika Anda tidak butuh fitur ini, Anda bisa mematikan entri tersebut dan "
+"menghemat bandwidth selama operasi \"apt-get update\"."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
 msgid "Scanning the installation media..."
-msgstr "Memindai media instalasi ..."
+msgstr "Memindai media instalasi..."
 
 #. Type: error
 #. Description
@@ -316,7 +316,7 @@ msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
 msgstr ""
-"Percobaan mengonfigurasi apt untuk menambah paket-paket dari media telah "
+"Percobaan mengonfigurasi apt untuk memasang paket-paket tambahan dari media "
 "gagal."
 
 #. Type: boolean
@@ -418,7 +418,7 @@ msgstr "Silakan masukkan media berlabel '${LABEL}' dan tekan enter."
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "Menonaktifkan CD netinst dalam sources.list...."
+msgstr "Menonaktifkan CD netinst dalam sources.list..."
 
 #. Type: text
 #. Description
@@ -431,9 +431,8 @@ msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Jika Anda menginstal dari image CD netinst dan memilih untuk tidak "
-"menggunakan mirror, Anda akan berakhir hanya dengan sistem basis yang sangat "
-"minim."
+"Jika Anda memasang dari image CD netinst dan memilih untuk tidak menggunakan "
+"mirror, Anda akan berakhir hanya dengan sistem basis yang sangat minim."
 
 #. Type: text
 #. Description
@@ -444,9 +443,9 @@ msgid ""
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Anda menginstal dari image CD netinst, yang bila sendirian hanya "
-"memungkinkan instalasi sistem basis yang sangat minim. Gunakan mirror untuk "
-"menginstal sistem yang lebih lengkap."
+"Anda memasang dari image CD netinst, yang bila sendirian hanya memungkinkan "
+"instalasi sistem basis yang sangat minim. Gunakan mirror untuk memasang "
+"sistem yang lebih lengkap."
 
 #. Type: text
 #. Description
@@ -455,7 +454,7 @@ msgstr ""
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Anda menginstal dari image yang berisi pilihan paket terbatas."
+msgstr "Anda memasang dari image yang berisi pilihan paket terbatas."
 
 #. Type: text
 #. Description
@@ -469,7 +468,7 @@ msgid ""
 "languages other than English)."
 msgstr ""
 "Anda telah memindai %i image. Meskipun ini berisi pilihan paket yang adil, "
-"beberapa mungkin hilang (terutama beberapa paket yang diperlukan untuk "
+"beberapa mungkin kurang (terutama beberapa paket yang diperlukan untuk "
 "mendukung bahasa selain bahasa Inggris)."
 
 #. Type: text
@@ -483,7 +482,7 @@ msgid ""
 "packages, some may be missing."
 msgstr ""
 "Anda telah memindai %i image. Meskipun ini berisi banyak pilihan paket, "
-"beberapa mungkin hilang."
+"beberapa mungkin kurang."
 
 #. Type: text
 #. Description
@@ -493,8 +492,8 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Perlu dicatat bahwa menggunakan jaringan cermin dapat menghasilkan data yang "
-"besar yang akan diunduh selama proses instalasi."
+"Perlu dicatat bahwa menggunakan jaringan cermin dapat menyebabkan diunduhnya "
+"data yang besar selama tahap instalasi berikutnya."
 
 #. Type: text
 #. Description
@@ -504,8 +503,8 @@ msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Anda menginstal dari image DVD. Meskipun berisi banyak pilihan paket, "
-"beberapa mungkin hilang."
+"Anda memasang dari image DVD. Meskipun berisi banyak pilihan paket, beberapa "
+"mungkin kurang."
 
 #. Type: text
 #. Description
@@ -516,9 +515,9 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Penggunaan jaringan cermin sangat dianjurkan, terutama bila Anda berencana "
-"memasang sebuah lingkungan desktop grafis, kecuali bila Anda tidak terhubung "
-"ke Internet yang baik."
+"Kecuali jika Anda tidak memiliki koneksi Internet yang baik, penggunaan "
+"cermin dianjurkan, terutama jika Anda berrencana untuk memasang lingkungan "
+"desktop grafis."
 
 #. Type: text
 #. Description
@@ -528,16 +527,15 @@ msgid ""
 "If you have a reasonably good Internet connection, use of a mirror is "
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
-"Jika Anda memiliki sambungan Internet yang sangat baik, penggunaan jaringan "
-"cermin sangat dianjurkan jika Anda berencana memasang sebuah lingkungan "
-"desktop grafis."
+"Jika Anda memiliki koneksi Internet yang cukup baik, penggunaan cermin "
+"disarankan jika Anda berrencana untuk memasang lingkungan desktop grafis."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Memindai jaringan cermin...."
+msgstr "Memindai cermin..."
 
 #. Type: boolean
 #. Description
@@ -555,6 +553,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Firmware adalah suatu jenis perangkat lunak yang menyediakan kendali tingkat "
+"bawah atas beberapa komponen perangkat keras (seperti misalnya kartu Wi-Fi "
+"atau chipset audio), yang mungkin tidak sepenuhnya berfungsi atau sama "
+"sekali tidak berfungsi tanpanya."
 
 #. Type: boolean
 #. Description
@@ -566,6 +568,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Walaupun sama sekali bukan bagian dari Debian, beberapa firmware non-free "
+"telah dibuat agar bekerja dengan Debian. Firmware ini memiliki lisensi yang "
+"bervariasi yang membatasi kebebasan Anda untuk memakai, mengubah, atau "
+"berbagi perangkat lunak, dan umumnya tidak memiliki bentuk sumber yang dapat "
+"Anda pelajari."
 
 #. Type: boolean
 #. Description
@@ -587,7 +594,7 @@ msgstr "Silakan pilih apakah Anda menginginkannya tersedia."
 #. :sl1:
 #: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
-msgstr "Gunakan perangkat lunak tak-bebas?"
+msgstr "Gunakan perangkat lunak non-free?"
 
 #. Type: boolean
 #. Description
@@ -599,18 +606,18 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Beberapa perangkat lunak tak-bebas telah dibuat dapat bekerja dengan Debian. "
+"Beberapa perangkat lunak non-free telah dibuat dapat bekerja dengan Debian. "
 "Walau perangkat lunak ini tidak semuanya bagian dari Debian, alat-alat "
-"standar Debian dapat digunakan untuk memasang mereka. Perangkat-perangkat "
-"lunak ini memiliki lisensi yang bervariasi yang dapat menghalangi Anda "
-"menggunakan, mengubah, atau berbagi perangkat lunak tersebut."
+"standar Debian dapat digunakan untuk memasang mereka. Perangkat lunak ini "
+"memiliki lisensi yang bervariasi yang dapat menghalangi Anda menggunakan, "
+"mengubah, atau berbagi perangkat lunak tersebut."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
-msgstr "Gunakan perangkat lunak sumbangsih?"
+msgstr "Gunakan perangkat lunak contrib?"
 
 #. Type: boolean
 #. Description
@@ -653,7 +660,7 @@ msgstr ""
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr ""
-"Silakan memilih apakah Anda ingin perangkat lunak ini tersedia untuk anda."
+"Silakan memilih apakah Anda ingin perangkat lunak ini tersedia untuk Anda."
 
 #. Type: select
 #. Choices
@@ -691,7 +698,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
-msgstr "Gunakan suatu jaringan cermin (mirror)?"
+msgstr "Gunakan suatu cermin jaringan?"
 
 #. Type: boolean
 #. Description

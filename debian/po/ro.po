@@ -39,8 +39,8 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-04-22 06:07+0000\n"
-"Last-Translator: ThinkRoot <social@crism.ro>\n"
+"PO-Revision-Date: 2024-12-04 12:00+0000\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-setup-udeb.templates:1001
 msgid "Configure the package manager"
-msgstr "Configurați managerul de pachete"
+msgstr "Configurați gestionarul de pachete"
 
 #. Type: text
 #. Description
@@ -79,28 +79,28 @@ msgstr "Se rulează ${SCRIPT}..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:4001
 msgid "Scanning local repositories..."
-msgstr "Se examinează arhivele locale..."
+msgstr "Se examinează depozitele locale..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:5001
 msgid "Scanning the security updates repository..."
-msgstr "Se examinează arhiva cu actualizările de securitate..."
+msgstr "Se examinează depozitul cu actualizările de securitate..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "Se examinează arhiva cu actualizări a distribuției..."
+msgstr "Se examinează depozitul cu actualizări a distribuției..."
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../apt-setup-udeb.templates:7001
 msgid "Scanning the backports repository..."
-msgstr "Se examinează arhiva cu pachete mai noi portate..."
+msgstr "Se examinează depozitul cu pachete migrate din ramura de dezvoltare..."
 
 #. Type: select
 #. Choices
@@ -136,8 +136,8 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"Programul de instalare a eșuat să descarce cheia publică pentru semnat "
-"depozitul legal la ${MIRROR}:"
+"Programul de instalare nu a reușit să descarce cheia publică utilizată "
+"pentru semnarea depozitului local în ${MIRROR}:"
 
 #. Type: select
 #. Description
@@ -156,7 +156,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-setup-udeb.templates:10001
 msgid "Cannot access repository"
-msgstr "Nu se poate accesa arhiva"
+msgstr "Nu se poate accesa depozitul"
 
 #. Type: error
 #. Description
@@ -166,7 +166,7 @@ msgid ""
 "The repository on ${HOST} couldn't be accessed, so its updates will not be "
 "made available to you at this time. You should investigate this later."
 msgstr ""
-"Arhiva de la ${HOST} nu au putut fi accesată, astfel că actualizările "
+"Depozitul de la ${HOST} nu au putut fi accesat, astfel că actualizările "
 "respective nu vor fi disponibile în acest moment. Ar trebui să investigați "
 "acestă problemă mai târziu."
 
@@ -178,8 +178,9 @@ msgid ""
 "Commented out entries for ${HOST} have been added to the /etc/apt/sources."
 "list file."
 msgstr ""
-"Au fost adăugate linii comentate pentru ${HOST} în fișierul /etc/apt/sources."
-"list."
+"Au fost adăugate linii marcate cu simbolul de comentariu „#” pentru ${HOST} "
+"în fișierul „/etc/apt/sources.list” -- pentru a-l activa, eliminați simbolul "
+"„#”."
 
 #. Type: multiselect
 #. Choices
@@ -209,7 +210,7 @@ msgstr "actualizări ale versiunii"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "backported software"
-msgstr "programe anterioare"
+msgstr "piese software migrate din ramura de dezvoltare"
 
 #. Type: multiselect
 #. Description
@@ -238,8 +239,9 @@ msgid ""
 "Security updates help to keep your system secured against attacks. Enabling "
 "this service is strongly recommended."
 msgstr ""
-"Actualizările de securitate vă ajută să mențineți securitatea sistemului "
-"împotriva atacurilor. Este recomandat să activați acest serviciu."
+"Actualizările de securitate vă ajută să vă mențineți sistemul protejat "
+"împotriva atacurilor. Activarea acestui serviciu este mai mult decât "
+"recomandată."
 
 #. Type: multiselect
 #. Description
@@ -252,10 +254,10 @@ msgid ""
 "service is only available for stable and oldstable releases."
 msgstr ""
 "Actualizările de lansare oferă versiuni mai actuale pentru software-ul care "
-"se modifică relativ frecvent și în cazul în care lipsa celei mai recente "
-"versiuni ar putea reduce capacitatea de utilizare a software-ului. De "
-"asemenea, oferă remedieri de regresie. Acest serviciu este disponibil numai "
-"pentru versiunile stabile și pentru versiunile stabile anterioare."
+"se modifică relativ frecvent și pentru care lipsa celei mai recente versiuni "
+"ar putea reduce utilitatea software-ului. De asemenea, oferă remedieri de "
+"regresie. Acest serviciu este disponibil numai pentru versiunile stabile "
+"(stable) și pentru versiunile stabile anterioare (oldstable)."
 
 #. Type: multiselect
 #. Description
@@ -269,12 +271,14 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"Unele programe au fost portate din ramura de dezvoltare pentru a funcționa "
-"cu această versiune. Deși aceste programe nu au trecut prin teste așa de "
-"complete ca cele din versiunea oficială, ele conțin versiuni mai noi ale "
-"unor aplicații care ar putea oferi caracteristici utile. Activând această "
-"opțiune aici nu va determina instalarea acestor programe, ci permite doar "
-"selectarea manuală a programelor pe care doriți să le folosiți."
+"Unele piese software (aplicații, biblioteci, programe...) au fost migrate "
+"din ramura de dezvoltare și adaptate pentru a funcționa cu această versiune. "
+"Deși aceste piese software nu au trecut prin teste așa de complete ca cele "
+"din versiunea oficială, ele conțin versiuni mai noi ale unor aplicații care "
+"ar putea oferi caracteristici utile. Activarea acestei opțiuni aici, nu "
+"determină instalarea în mod implicit a niciuneia dintre aceste piese "
+"software, vă permite doar să selectați manual piesele software pe care "
+"doriți să le folosiți."
 
 #. Type: boolean
 #. Description
@@ -293,10 +297,10 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
-"În mod implicit depozitele sunt listate în /etc/apt/sources.list (cu liniile "
-"„deb-src” aferente) pentru ca „apt-get” să funcționeze. Totuși dacă nu "
-"doriți această funcționalitate, puteți dezactiva acele linii și salva ceva "
-"banda de internet în timpul operațiunilor „apt-get update”."
+"În mod implicit depozitele sunt listate în „/etc/apt/sources.list” (cu "
+"liniile „deb-src” aferente) pentru ca «apt-get» să funcționeze. Totuși dacă "
+"nu doriți această funcționalitate, puteți dezactiva acele linii și salva "
+"ceva lățime de bandă în timpul operațiilor «apt-get update»."
 
 #. Type: text
 #. Description
@@ -341,14 +345,14 @@ msgstr ""
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
 msgid "Scan extra installation media?"
-msgstr "Să se scaneze medii de instalare suplimentare?"
+msgstr "Doriți să se scaneze medii de instalare suplimentare?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr "Scanarea mediilor de instalare a găsit eticheta:"
+msgstr "Scanarea mediiului de instalare a găsit eticheta:"
 
 #. Type: boolean
 #. Description
@@ -361,9 +365,9 @@ msgid ""
 "skipped."
 msgstr ""
 "Acum aveți opțiunea de a scana medii suplimentare pentru a fi utilizate de "
-"managerul de pachete (apt). În mod normal, acestea ar trebui să fie din "
-"același set cu cel din care ați pornit. Dacă nu aveți niciun conținut media "
-"suplimentar, acest pas poate fi omis."
+"gestionarul de pachete (apt). În mod normal, acestea ar trebui să fie din "
+"același set cu cel din care ați pornit. Dacă nu aveți niciun mediu de "
+"instalare suplimentar, acest pas poate fi omis."
 
 #. Type: boolean
 #. Description
@@ -374,7 +378,7 @@ msgstr ""
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
 msgstr ""
-"Dacă doriți să scanați mai multe medii, vă rugăm să introduceți încă unul "
+"Dacă doriți să scanați mai multe medii, vă rugăm să introduceți un alt mediu "
 "acum."
 
 #. Type: boolean
@@ -403,7 +407,8 @@ msgstr "Vă rugăm să îl înlocuiți acum, dacă doriți să scanați altul."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
 msgid "Please check that the media has been inserted correctly."
-msgstr "Vă rugăm să verificați dacă suportul a fost introdus corect."
+msgstr ""
+"Vă rugăm să verificați dacă mediul de instalare a fost introdus corect."
 
 #. Type: text
 #. Description
@@ -418,7 +423,8 @@ msgstr "Schimbare mediu de instalare"
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
 msgstr ""
-"Vă rugăm să introduceți suportul etichetat '${LABEL}' și apăsați enter."
+"Vă rugăm să introduceți mediul de instalare etichetat „${LABEL}” și să "
+"apăsați tasta «Enter»."
 
 #. Type: text
 #. Description
@@ -426,7 +432,7 @@ msgstr ""
 #. finish-install progress bar item
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
-msgstr "Se dezactivează CD-ul netinst în sources.list..."
+msgstr "Se dezactivează CD-ul „netinst” în fișierul sources.list..."
 
 #. Type: text
 #. Description
@@ -439,8 +445,8 @@ msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Dacă instalați de pe o imagine CD netinst și optați să nu folosiți un sit "
-"alternativ veți rămâne doar cu un sistem de bază minimal."
+"Dacă instalați de pe o imagine CD „netinst” și optați să nu folosiți o "
+"oglindă (un sit alternativ) veți rămâne doar cu un sistem de bază minimal."
 
 #. Type: text
 #. Description
@@ -451,8 +457,8 @@ msgid ""
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Instalarea se face de pe o imagine CD netinst, care în sine permite doar "
-"instalarea unui sistem de bază minimal. Folosiți un sit alternativ pentru a "
+"Instalarea se face de pe o imagine CD „netinst”, care în sine permite doar "
+"instalarea unui sistem de bază minimal. Folosiți o oglindă Debian pentru a "
 "instala un sistem mai complet."
 
 #. Type: text
@@ -479,7 +485,7 @@ msgid ""
 msgstr ""
 "Ați scanat %i imagini. Chiar dacă acestea conțin o selecție corectă de "
 "pachete, este posibil ca unele să lipsească (în special unele pachete "
-"necesare pentru a suporta alte limbi decât engleza)."
+"necesare pentru a oferi suport pentru alte limbi decât engleza)."
 
 #. Type: text
 #. Description
@@ -502,7 +508,7 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Rețineți că utilizarea unui sit alternativ poate duce la descărcarea unei "
+"Rețineți că utilizarea unei oglinzi Debian poate duce la descărcarea unei "
 "cantități mari de date în timpul următoarei etape a instalării."
 
 #. Type: text
@@ -525,9 +531,9 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Cu excepția cazului în care nu dispuneți de o conexiune bună la internet, se "
-"recomandă utilizarea unui sit alternativ, în special dacă intenționați să "
-"instalați un mediu desktop grafic."
+"Cu excepția cazului în care nu dispuneți de o conexiune bună la Internet, se "
+"recomandă utilizarea unei oglinzi Debian, în special dacă intenționați să "
+"instalați un mediu grafic de birou."
 
 #. Type: text
 #. Description
@@ -538,22 +544,22 @@ msgid ""
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
 "Dacă dispuneți de o conexiune la internet destul de bună, se recomandă "
-"utilizarea unui sit alternativ dacă intenționați să instalați un mediu "
-"desktop grafic."
+"utilizarea unei oglinzi Debian dacă intenționați să instalați un mediu "
+"grafic de birou."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Se examinează situl alternativ..."
+msgstr "Se examinează oglinda Debian..."
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid "Use non-free firmware?"
-msgstr "Utilizați un firmware care nu este liber?"
+msgstr "Utilizați firmware care nu este liber?"
 
 #. Type: boolean
 #. Description
@@ -564,6 +570,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Firmware-ul este un tip de software care asigură controlul la nivel scăzut "
+"al anumitor componente electronice (cum ar fi plăcile Wi-Fi sau cipurile "
+"audio), care pot să nu funcționeze complet sau deloc fără el."
 
 #. Type: boolean
 #. Description
@@ -575,6 +584,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Deși nu fac deloc parte din Debian, unele firmware-uri non-libere au fost "
+"făcute să funcționeze cu Debian. Acest firmware are diferite licențe care vă "
+"restricționează libertatea de a utiliza, modifica sau partaja software-ul "
+"și, în general, nu are formate sursă pe care le puteți studia."
 
 #. Type: boolean
 #. Description
@@ -608,17 +621,18 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Unele programe nelibere au fost făcute să funcționeze cu Debian. Deși acest "
-"software nu face parte din Debian, pentru a-l instala pot fi folosite "
-"instrumentele Debian standard. Acest software are licențe diferite care vă "
-"pot împiedica să îl utilizați, să îl modificați sau să îl partajați."
+"Unele piese software ne-libere (non-free) au fost făcute să funcționeze cu "
+"Debian. Deși acest software nu face parte din Debian, pentru a-l instala pot "
+"fi folosite instrumentele Debian standard. Acest software are licențe "
+"diferite care vă pot împiedica să îl utilizați, să îl modificați sau să îl "
+"partajați."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
-msgstr "Folosiți software contrib?"
+msgstr "Folosiți software din arhiva „contrib”?"
 
 #. Type: boolean
 #. Description
@@ -630,10 +644,10 @@ msgid ""
 "software is not a part of Debian, but standard Debian tools can be used to "
 "install it."
 msgstr ""
-"Unele programe suplimentare au fost create pentru a funcționa cu Debian. "
-"Deși acest software este liber, el depinde de software neliber pentru a "
-"funcționa. Acest software nu face parte din Debian, dar pot fi utilizate "
-"instrumente Debian standard pentru a-l instala."
+"Unele piese software suplimentare au fost făcute pentru a funcționa cu "
+"Debian. Deși acest software este liber, el depinde de software ne-liber "
+"pentru a funcționa. Acest software nu face parte din Debian, dar pot fi "
+"utilizate instrumente Debian standard pentru a-l instala."
 
 #. Type: boolean
 #. Description
@@ -660,7 +674,7 @@ msgstr ""
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid ""
 "Please choose whether you want this software to be made available to you."
-msgstr "Vă rugăm să alegeți dacă doriți ca aceste programe să fie disponibile."
+msgstr "Vă rugăm să alegeți dacă doriți ca acest software să fie disponibil."
 
 #. Type: select
 #. Choices
@@ -669,7 +683,7 @@ msgstr "Vă rugăm să alegeți dacă doriți ca aceste programe să fie disponi
 #. an infinitive form
 #: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
-msgstr "Schimbă situl alternativ"
+msgstr "Schimbă oglinda de arhivă"
 
 #. Type: select
 #. Description
@@ -688,17 +702,17 @@ msgid ""
 "different mirror, or ignore the problem and continue without all the "
 "packages from this mirror."
 msgstr ""
-"Programul de instalare a eșuat la accesarea sitului alternativ. Aceasta ar "
-"putea fi o problemă cu rețeaua sau cu situl alternativ. Puteți alege să "
-"reîncercați descărcarea, să selectați un alt sit alternativ, sau să ignorați "
-"problema și să continuați fără toate pachetele de pe acest sit."
+"Programul de instalare a eșuat la accesarea oglinzii. Aceasta ar putea fi o "
+"problemă cu rețeaua sau cu oglinda. Puteți alege să reîncercați descărcarea, "
+"să selectați o altă oglindă, sau să ignorați problema și să continuați fără "
+"toate pachetele din această oglindă."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
-msgstr "Se folosește un sit alternativ?"
+msgstr "Se folosește o oglindă Debian?"
 
 #. Type: boolean
 #. Description
@@ -710,7 +724,7 @@ msgid ""
 "available."
 msgstr ""
 "Pentru suplimentarea programelor existente pe mediul de instalare se poate "
-"folosi un sit alternativ. Folosirea acestuia ar putea oferi versiuni mai noi "
+"folosi o oglindă Debian. Folosirea acesteia ar putea oferi versiuni mai noi "
 "ale programelor disponibile."
 
 #. Type: boolean
@@ -718,14 +732,14 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
-msgstr "Se continuă fără un sit alternativ?"
+msgstr "Se continuă fără o oglindă de arhivă din rețea?"
 
 #. Type: boolean
 #. Description
 #. :sl2:
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
-msgstr "Niciun sit alternativ selectat."
+msgstr "Nicio oglindă de arhivă din rețea nu este selectată."
 
 #. Type: boolean
 #. Description
@@ -733,7 +747,7 @@ msgstr "Niciun sit alternativ selectat."
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Use restricted software?"
-msgstr "Se folosesc programe din componenta „restricted”?"
+msgstr "Se utilizează software restricționat (din componenta „restricted”)?"
 
 #. Type: boolean
 #. Description
@@ -746,11 +760,11 @@ msgid ""
 "can be used to install it. This software has varying licenses which may "
 "prevent you from using, modifying, or sharing it."
 msgstr ""
-"Unele programe non-libere sunt disponibile sub formă de pachete. Deși aceste "
-"programe nu sunt parte din distribuția principală, uneltele standard de "
-"management al pachetelor pot fi folosite pentru a le instala. Aceste "
-"programe au diverse licențe care ar putea să vă împiedice a le utiliza, a le "
-"modifica sau a le împărți cu alții."
+"Unele piese software non-libere sunt disponibile sub formă de pachete. Deși "
+"aceste piese software nu sunt parte din distribuția principală, "
+"instrumentele standard de gestionare a pachetelor pot fi folosite pentru a "
+"le instala. Aceste programe au diverse licențe care ar putea să vă împiedice "
+"a le utiliza, a le modifica sau a le partajai cu alții."
 
 #. Type: boolean
 #. Description
@@ -758,7 +772,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:2001
 msgid "Use software from the \"universe\" component?"
-msgstr "Se folosesc programe din componenta „universe”?"
+msgstr "Se utilizează software din componenta „universe”?"
 
 #. Type: boolean
 #. Description
@@ -770,10 +784,10 @@ msgid ""
 "free and, though it is not a part of the main distribution, standard package "
 "management tools can be used to install it."
 msgstr ""
-"Unele programe adiționale sunt disponibile sub formă de pachete. Aceste "
-"programe sunt libere și, deși nu sunt parte din distribuția principală, "
-"uneltele standard de management al pachetelor pot fi folosite pentru a le "
-"instala."
+"Unele piese software adiționale sunt disponibile sub formă de pachete. "
+"Aceste piese software sunt libere și, deși nu sunt parte din distribuția "
+"principală, instrumentele standard de gestionare a pachetelor pot fi "
+"folosite pentru a le instala."
 
 #. Type: boolean
 #. Description
@@ -781,7 +795,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:3001
 msgid "Use software from the \"multiverse\" component?"
-msgstr "Se folosesc programe din componenta „multiverse”?"
+msgstr "Se utilizează software din componenta „multiverse”?"
 
 #. Type: boolean
 #. Description
@@ -795,12 +809,12 @@ msgid ""
 "cases) patent restrictions which may prevent you from using, modifying, or "
 "sharing it."
 msgstr ""
-"Unele programe non-libere sunt disponibile sub formă de pachete. Deși aceste "
-"programe nu sunt parte din distribuția principală, uneltele standard de "
-"management al pachetelor pot fi folosite pentru a le instala. Aceste "
-"programe au diverse licențe și (în unele cazuri) sunt acoperite de patente "
-"care ar putea să vă împiedice a le utiliza, modifica sau a le împărți cu "
-"alții."
+"Unele piese software non-libere sunt disponibile sub formă de pachete. Deși "
+"aceste piese software nu sunt parte din distribuția principală, "
+"instrumentele standard de gestionare a pachetelor pot fi folosite pentru a "
+"le instala. Aceste piese software au diverse licențe și (în unele cazuri) "
+"sunt protejate de patente care ar putea să vă împiedice a le utiliza, "
+"modifica sau a le partaja cu alții."
 
 #. Type: boolean
 #. Description
@@ -808,7 +822,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:4001
 msgid "Use software from the \"partner\" repository?"
-msgstr "Se folosește software din componenta „partner”?"
+msgstr "Se utilizează software din componenta „partner”?"
 
 #. Type: boolean
 #. Description
@@ -820,9 +834,10 @@ msgid ""
 "repository. This software is not part of Ubuntu, but is offered by Canonical "
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
-"Sunt disponibile pachete de aplicații din componenta „partner” de la "
-"Canonical. Aceste aplicații nu fac parte din Ubuntu, dar sunt oferite de "
-"Canonical și de respectivii producători ca un serviciu pentru utilizatori."
+"Unele piese software suplimentare sunt disponibile din depozitul „partener” "
+"al Canonical. Aceste piese software nu fac parte din Ubuntu, dar sunt "
+"oferite de Canonical și de respectivii producători ca un serviciu pentru "
+"utilizatori."
 
 #. Type: boolean
 #. Description
@@ -830,7 +845,8 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid "Use backported software?"
-msgstr "Se folosesc programe portate pentru versiunile anterioare?"
+msgstr ""
+"Se utilizează piese software migrate din ramura de dezvoltare („backported”)?"
 
 #. Type: boolean
 #. Description
@@ -843,7 +859,8 @@ msgid ""
 "testing as that contained in the release, it includes newer versions of some "
 "applications which may provide useful features."
 msgstr ""
-"Unele programe au fost portate din ramura de dezvoltare pentru a funcționa "
-"cu această lansare. Deși aceste programe nu au trecut prin teste așa de "
-"complete ca cele din versiunea lansată, ele conțin versiuni mai noi ale unor "
-"aplicații care ar putea oferi capabilități utile."
+"Unele piese software au fost migrate din ramura de dezvoltare și adaptate "
+"pentru a funcționa cu această versiune a distribuției. Deși aceste piese "
+"software nu au trecut prin teste așa de complete ca cele din versiunea "
+"lansată, ele conțin versiuni mai noi ale unor aplicații care ar putea oferi "
+"caracteristici utile."

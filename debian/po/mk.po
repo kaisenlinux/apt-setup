@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-03-06 06:01+0000\n"
+"PO-Revision-Date: 2024-11-10 04:00+0000\n"
 "Last-Translator: Kristijan Fremen Velkovski <me@krisfremen.com>\n"
 "Language-Team: Macedonian <>\n"
 "Language: mk\n"
@@ -539,6 +539,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Фирмвер е врста на софтвер кој овозможува ниско ниво контрола на одредени "
+"хардверски компоненти (како што се например Wi-Fi картички или аудио "
+"чипсети), кои може да не функционираат деловно или целосно без него."
 
 #. Type: boolean
 #. Description
@@ -550,6 +553,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Макар и да не е дел од Debian, некои не-слободни фирмвер се биле направени "
+"да работи со Debian. Овие фирмвери имаат различни лиценци кои ги "
+"ограничуваат вашите слободи да ги користите, модифицирате или споделувате, и "
+"обично немаат форми на извор кои може да ги истражувате."
 
 #. Type: boolean
 #. Description

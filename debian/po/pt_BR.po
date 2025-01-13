@@ -7,7 +7,7 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2012.
-# Adriano Rafael Gomes <adrianorg@debian.org>, 2010-2023.
+# Adriano Rafael Gomes <adrianorg@debian.org>, 2010-2024.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry <mckinstry@computer.org>, 2001-2002.
@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-09-15 20:25-0300\n"
+"PO-Revision-Date: 2024-06-22 14:24-0300\n"
 "Last-Translator: Adriano Rafael Gomes <adrianorg@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -550,6 +550,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Firmware é um tipo de software que fornece controle de baixo nível para "
+"certos componentes de hardware (tais como placas Wi-Fi ou \"chipsets\" de "
+"áudio), os quais podem não funcionar por completo ou de forma alguma sem ele."
 
 #. Type: boolean
 #. Description
@@ -561,6 +564,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Apesar de não serem de forma alguma parte do Debian, alguns firmwares não "
+"livres foram feitos para funcionar com o Debian. Esses firmwares têm várias "
+"licenças que restringem as suas liberdades para usar, modificar, ou "
+"compartilhar o software, e geralmente não disponibilizam código-fonte para "
+"que você possa estudá-los."
 
 #. Type: boolean
 #. Description

@@ -29,8 +29,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-03-26 16:02+0000\n"
-"Last-Translator: SZERVÁC Attila <szoftvergazda@gmail.com>\n"
+"PO-Revision-Date: 2024-11-08 16:47+0000\n"
+"Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
 "Language: hu\n"
@@ -72,7 +72,7 @@ msgstr "${SCRIPT} futtatása..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:4001
 msgid "Scanning local repositories..."
-msgstr "Helyi tárak átnézése..."
+msgstr "Helyi tárolók áttekintése..."
 
 # Type: text
 # Description
@@ -82,7 +82,7 @@ msgstr "Helyi tárak átnézése..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:5001
 msgid "Scanning the security updates repository..."
-msgstr "A biztonsági frissítőtár áttekintése..."
+msgstr "A biztonsági frissítések tárolójának áttekintése..."
 
 # Type: text
 # Description
@@ -92,7 +92,7 @@ msgstr "A biztonsági frissítőtár áttekintése..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:6001
 msgid "Scanning the release updates repository..."
-msgstr "A \"kiadások\" (release) csomagtár áttekintése..."
+msgstr "A kiadási frissítések tárolójának áttekintése..."
 
 # Type: text
 # Description
@@ -102,7 +102,7 @@ msgstr "A \"kiadások\" (release) csomagtár áttekintése..."
 #. :sl2:
 #: ../apt-setup-udeb.templates:7001
 msgid "Scanning the backports repository..."
-msgstr "Backport tárolók átnézése..."
+msgstr "Backport tároló áttekintése..."
 
 #. Type: select
 #. Choices
@@ -143,8 +143,8 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"A telepítő nem tudta letölteni ezen helyi tároló aláírásához használt "
-"nyilvános kulcsot: ${MIRROR}:"
+"A telepítő nem tudta letölteni ennek a helyi tárolónak az aláíráshoz "
+"használt nyilvános kulcsát: ${MIRROR}:"
 
 #. Type: select
 #. Description
@@ -155,8 +155,8 @@ msgid ""
 "continue without all the packages from this repository."
 msgstr ""
 "Ez lehet akár a hálózat vagy a kulcsot tároló kiszolgáló hibája is. "
-"Újrapróbálhatod, vagy figyelmen kívül hagyhatod e problémát és folytathatod "
-"e tároló csomagjai nélkül."
+"Újrapróbálhatod, vagy figyelmen kívül hagyhatod a problémát és folytathatod "
+"a tároló csomagjai nélkül."
 
 # Type: error
 # Description
@@ -179,8 +179,8 @@ msgid ""
 "The repository on ${HOST} couldn't be accessed, so its updates will not be "
 "made available to you at this time. You should investigate this later."
 msgstr ""
-"A ${HOST} kiszolgálón lévő tárolót nem értem el, így e frissítések most nem "
-"történnek meg. Ez később megoldható."
+"${HOST} kiszolgálón lévő tároló nem érhető el, így annak frissítései "
+"jelenleg nem lesznek elérhetők a számodra. Ez később megoldható."
 
 # Type: error
 # Description
@@ -193,8 +193,7 @@ msgid ""
 "Commented out entries for ${HOST} have been added to the /etc/apt/sources."
 "list file."
 msgstr ""
-"A ${HOST} megjegyzésbe tett bejegyzései a /etc/apt/sources.list fájlba "
-"kerültek."
+"${HOST} megjegyzései hozzáadásra kerültek az /etc/apt/sources.list fájlban."
 
 #. Type: multiselect
 #. Choices
@@ -324,7 +323,7 @@ msgstr "A telepítő beolvasása..."
 #. :sl2:
 #: ../apt-cdrom-setup.templates:2001
 msgid "apt configuration problem"
-msgstr "apt beállítási gond"
+msgstr "apt beállítási probléma"
 
 # Type: error
 # Description
@@ -375,9 +374,9 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"Most van lehetőséged további média átnézésére a csomagkezelő (apt) számára. "
-"Általában ezek ugyanabban a készletben vannak, mint amelyről most "
-"indítottál. Ha nincs semmilyen más médiád, ezt a lépést kihagyhatod."
+"Most van lehetőséged további adathordozó átnézésére a csomagkezelő (apt) "
+"számára. Általában ezek ugyanabban a készletben vannak, mint amelyről most "
+"indítottál. Ha nincs semmilyen más adathordozód, ezt a lépést kihagyhatod."
 
 #. Type: boolean
 #. Description
@@ -387,14 +386,14 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Ha további médiát néznél át, tégy be egy másikat most."
+msgstr "Ha további adathordozót néznél át, tégy be egy másikat most."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
 msgid "The image with the following label has been scanned:"
-msgstr "Az alábbi címkével lemezképet átnéztük:"
+msgstr "Az alábbi címkéjű lemezképet átnéztük:"
 
 #. Type: boolean
 #. Description
@@ -415,7 +414,7 @@ msgstr "Cseréld most, ha szeretnél továbbit átnézni."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
 msgid "Please check that the media has been inserted correctly."
-msgstr "Ellenőrizd, hogy a média helyesen lett-e betéve."
+msgstr "Ellenőrizd, hogy az adathordozó helyesen lett-e betéve."
 
 #. Type: text
 #. Description
@@ -679,14 +678,14 @@ msgstr "Kérlek döntsd el, hogy elérhetőek legyenek-e ezek a szoftverek."
 #. an infinitive form
 #: ../apt-mirror-setup.templates:5001
 msgid "Change mirror"
-msgstr "Tükör cseréje"
+msgstr "Tükörszerver cseréje"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../apt-mirror-setup.templates:5002
 msgid "Downloading a file failed:"
-msgstr "Fájlletöltés meghiúsult:"
+msgstr "A fájl letöltése nem sikerült:"
 
 #. Type: select
 #. Description
@@ -698,9 +697,10 @@ msgid ""
 "different mirror, or ignore the problem and continue without all the "
 "packages from this mirror."
 msgstr ""
-"A telepítő nem érte el a tükröt. Ez lehet a hálózat vagy a tükör hibája. "
-"Újrapróbálható, választható más tükör vagy átugorható és folytatható e tükör "
-"összes csomagja nélkül."
+"A telepítő nem érte el a tükörszervert. Ez lehet a hálózat, vagy a "
+"tükörszerver hibája is. Megpróbálhatod újra letölteni, választhatsz másik "
+"tükörszervert, vagy figyelmen kívül hagyhatod a problémát és folytatod a "
+"tükörszerver összes csomagja nélkül."
 
 #. Type: boolean
 #. Description
@@ -729,7 +729,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates:7001
 msgid "Continue without a network mirror?"
-msgstr "Hálózati tükör nélkül folytatja?"
+msgstr "Tükörszerver nélkül folytatod?"
 
 # Type: boolean
 # Description
@@ -739,7 +739,7 @@ msgstr "Hálózati tükör nélkül folytatja?"
 #. :sl2:
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
-msgstr "Nincs kiválasztva hálózati tükröt."
+msgstr "Nincs kiválasztva hálózati tükörszerver."
 
 # Type: boolean
 # Description
@@ -751,7 +751,7 @@ msgstr "Nincs kiválasztva hálózati tükröt."
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Use restricted software?"
-msgstr "Használ korlátozott szoftvert?"
+msgstr "Szeretnél korlátozás alá eső szoftvert használni?"
 
 # Type: boolean
 # Description
@@ -768,11 +768,10 @@ msgid ""
 "can be used to install it. This software has varying licenses which may "
 "prevent you from using, modifying, or sharing it."
 msgstr ""
-"Pár nem-szabad szoftver elérhető csomagolva. Noha ezek a szoftverek nem "
-"részei a fő terjesztésnek, a szabványos csomagkezelő eszközökkel "
-"telepíthetők. Ezen szoftverek olyan különböző licenceket tartalmaznak, "
-"melyek megtiltják a felhasználás egyes módjait, és a módosítást vagy a "
-"megosztást."
+"Néhány nem szabad szoftver is elérhető csomagként. Noha ezek a szoftverek "
+"nem részei a fő terjesztésnek, a szabványos csomagkezelő eszközökkel "
+"telepíthetők. Ezek a szoftverek különböző licencekkel rendelkeznek, melyek "
+"megtiltják a felhasználás egyes módjait, és a módosítást vagy a megosztást."
 
 # Type: boolean
 # Description
@@ -784,7 +783,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:2001
 msgid "Use software from the \"universe\" component?"
-msgstr "Használ szoftvert a \"universe\" komponensből?"
+msgstr "Szeretnél az „universe” komponensből szoftvert használni?"
 
 # Type: boolean
 # Description
@@ -800,8 +799,8 @@ msgid ""
 "free and, though it is not a part of the main distribution, standard package "
 "management tools can be used to install it."
 msgstr ""
-"További szoftverek is elérhetők csomagban. Ezek a szoftverek szabad "
-"szoftverek, s bár nem részei a fő terjesztésnek, a szabványos csomagkezelő "
+"Néhány kiegészítő szoftver is elérhető csomagként. Ezek a szoftverek szabad "
+"szoftverek, és bár nem részei a fő terjesztésnek, a szabványos csomagkezelő "
 "eszközökkel telepíthetők."
 
 # Type: boolean
@@ -814,7 +813,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:3001
 msgid "Use software from the \"multiverse\" component?"
-msgstr "Használ szoftvert a \"multiverse\" komponensből?"
+msgstr "Szeretnél a „multiverse” komponensből szoftvert használni?"
 
 # Type: boolean
 # Description
@@ -832,11 +831,11 @@ msgid ""
 "cases) patent restrictions which may prevent you from using, modifying, or "
 "sharing it."
 msgstr ""
-"Pár nem-szabad szoftver elérhető csomagolva. Noha ezek a szoftverek nem "
+"Néhány nem szabad szoftver elérhető csomagként. Noha ezek a szoftverek nem "
 "részei a fő terjesztésnek, a szabványos csomagkezelő eszközökkel "
-"telepíthetők. E szoftverek olyan különböző licenceket és (néha) szabadalmi "
-"(tilalmi) korlátokat tartalmaznak, melyek megtiltják a felhasználás egyes "
-"módjait, és a módosítást vagy a megosztást."
+"telepíthetők. Ezek a szoftverek olyan különböző licencekkel és (néhány "
+"esetben) szabadalmi korlátozásokkal rendelkeznek, melyek megtiltják a "
+"felhasználás egyes módjait, és a módosítást vagy a megosztást."
 
 # Type: boolean
 # Description
@@ -848,7 +847,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:4001
 msgid "Use software from the \"partner\" repository?"
-msgstr "Használ szoftvert a \"partner\" tárolóból?"
+msgstr "Szeretnél a „partner” tárolóból szoftvert használni?"
 
 # Type: boolean
 # Description
@@ -864,9 +863,9 @@ msgid ""
 "repository. This software is not part of Ubuntu, but is offered by Canonical "
 "and the respective vendors as a service to Ubuntu users."
 msgstr ""
-"Pár további szoftver a Canonical \"partner\" tárolójából érhető el. Nem az "
-"Ubuntu részei, a Canonical és más gyártók az Ubuntu felhasználók számára "
-"nyújtják, mint szolgáltatás."
+"Néhány további szoftver elérhető a Canonical „partner” tárolójából. Ezek a "
+"szoftverek nem részei az Ubuntunak, hanem a Canonical és az adott szállítók "
+"szolgáltatásként kínálják őket az Ubuntu felhasználóinak."
 
 # Type: boolean
 # Description
@@ -878,7 +877,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid "Use backported software?"
-msgstr "Használ backport-olt szoftvereket?"
+msgstr "Szeretnél backportolt szoftvert használni?"
 
 # Type: boolean
 # Description
@@ -895,7 +894,7 @@ msgid ""
 "testing as that contained in the release, it includes newer versions of some "
 "applications which may provide useful features."
 msgstr ""
-"Néhány szoftver backport-ra került a fejlesztői ágból, hogy együttműködjön e "
-"kiadással. Bár e szoftverek nem olyan teszteltek mint amelyek e kiadásban "
-"vannak, egyes alkalmazások újabb változatait tartalmazzák, melyek fontos, új "
-"képességekkel bírhatnak."
+"Néhány szoftver backportolásra került a fejlesztői ágból, hogy "
+"együttműködjön ezzel a kiadással. Bár ezek a szoftverek nem mentek át olyan "
+"teljes körű tesztelésen, mint a kiadáshoz tartozók, de az alkalmazások újabb "
+"változatait tartalmazzák, és hasznos, új képességeket biztosíthatnak."

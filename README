@@ -1,5 +1,5 @@
 apt-setup is used to generate an /etc/apt/sources.list for the installed
-system. It does this by creating a new sources.list file (commenting out
+system. It does this by creating a new sources.list file (removing
 the previous contents) and then running each program in
 /usr/lib/apt-setup/generators/ in turn (run-parts ordering). Each generator
 is passed the name of a temporary file that it can write sources.list lines

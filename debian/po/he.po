@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-05-05 09:12+0000\n"
+"PO-Revision-Date: 2024-11-26 14:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
 "Language: he\n"
@@ -124,7 +124,7 @@ msgid ""
 "The installer failed to download the public key used to sign the local "
 "repository at ${MIRROR}:"
 msgstr ""
-"תכנית ההתקנה נכשלה בהורדת המפתח הציבורי שאיתו נחתם המאגר המקורי מתוך "
+"תוכנית ההתקנה נכשלה בהורדת המפתח הציבורי שאיתו נחתם המאגר המקורי מתוך "
 "${MIRROR}:"
 
 #. Type: select
@@ -541,6 +541,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"קושחה היא סוג של תוכנה שמספקת שליטה ברמת היסוד על רכיבי חומרה מסוימים (כגון "
+"כרטיסי רשת אלחוטית או ערכות שבבי שמע), שלא יתפקדו במלואם או שלא יתפקדו כלל "
+"בלעדיה."
 
 #. Type: boolean
 #. Description
@@ -552,6 +555,9 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"למרות שזה כלל לא חלק מדביאן, נוצרה קושחה בלתי חופשית שמטרתה לעבוד מול דביאן. "
+"לקושחה יש מגוון של רישיונות שמגבילים את מסגרות החופש שלך להשתמש, לשנות או "
+"לשתף את התוכנה ובאופן כללי חסר להם קוד המקור בצורה שמאפשרת לך ללמוד ממנו."
 
 #  Type: boolean
 #  Description
@@ -677,7 +683,7 @@ msgid ""
 "different mirror, or ignore the problem and continue without all the "
 "packages from this mirror."
 msgstr ""
-"תכנית ההתקנה נכשלה בגישה לאתר המראה. זאת יכולה להיות בעיה ברשת שלך, או באתר "
+"תוכנית ההתקנה נכשלה בגישה לאתר המראה. זאת יכולה להיות בעיה ברשת שלך, או באתר "
 "המראה. ניתן לבחור לנסות שוב את ההורדה, לבחור אתר מראה אחר או להתעלם ולהמשיך "
 "ללא חבילות מאתר מראה זה."
 
@@ -780,9 +786,10 @@ msgid ""
 "cases) patent restrictions which may prevent you from using, modifying, or "
 "sharing it."
 msgstr ""
-"מספר תכניות לא חופשיות זמינות בצורת חבילות. למרות שתכנית זאת אינה חלק מההפצה "
-"הראשית, ניתן להשתמש בכלים לניהול חבילות כדי להתקין אותה. לתכניות אלו יש "
-"רישיונות שונים והגבלות פטנטים, שעלולים למנוע ממך להשתמש, לשנות או לשתף אותן."
+"מספר תוכניות לא חופשיות זמינות בצורת חבילות. למרות שתוכנית זאת אינה חלק "
+"מההפצה הראשית, ניתן להשתמש בכלים לניהול חבילות כדי להתקין אותה. לתוכניות אלו "
+"יש רישיונות שונים והגבלות פטנטים, שעלולים למנוע ממך להשתמש, לשנות או לשתף "
+"אותן."
 
 #. Type: boolean
 #. Description

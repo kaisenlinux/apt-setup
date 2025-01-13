@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-02-04 20:01+0000\n"
+"PO-Revision-Date: 2024-08-23 16:09+0000\n"
 "Last-Translator: Petter Reinholdtsen <pere-weblate@hungry.com>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -550,6 +550,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Fastvare er en type programvare som tilbyr lavnivå kontroll over bestemte "
+"maskinvarekomponenter (som trådløsnettkort eller lyd-kretstyper), som "
+"kanskje ikke fungerer helt eller over hodet uten den."
 
 #. Type: boolean
 #. Description
@@ -561,6 +564,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Selv om det over hodet ikke er en del av Debian, så fungerer noen ufrie "
+"fastvareprogrammer med Debian. De ulike bruksvilkårene til fastvaren "
+"begrenser din frihet til å bruke, endre eller dele programvaren, og generelt "
+"sett har en ikke noe kildekode som kan leses."
 
 #. Type: boolean
 #. Description

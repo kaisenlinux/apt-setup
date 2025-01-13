@@ -1,0 +1,13 @@
+# mock debconf functions for shunit2 tests
+
+db_get() {
+    var=$(echo $1 | tr -c 'a-zA-Z0-9\n' '_')
+    # the ${foo+x} construction checks if $foo is set (including to "") -- otherwise throw an error
+    eval "[ \"\${${var}+x}\" ] || return 1"
+    eval "RET=\$$var"
+}
+
+db_subst() { true; }
+db_set() { true; }
+db_input() { true; }
+db_go() { [ "true" = "$db_go_ret" ]; }

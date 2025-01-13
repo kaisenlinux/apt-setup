@@ -1,0 +1,35 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+uses_https() {
+  [ "${1#https:}" != "$1" ];
+}
+
+certs_needed=
+upgrade_needed=
+i=0
+while db_get "apt-setup/local$((i++))/repository" && [ "$RET" ]; do
+  upgrade_needed=1
+  if uses_https "$RET"; then
+    certs_needed=1
+    break
+  fi
+done
+
+if [ -z "$certs_needed" ] && db_get "apt-setup/_DEVEL_/repository" && [ "$RET" ]; then
+  upgrade_needed=1
+  if uses_https "$RET"; then
+    certs_needed=1
+  fi
+fi
+
+if [ -n "$certs_needed" ]; then
+  apt-install ca-certificates
+fi
+
+if [ -n "$upgrade_needed" ]; then
+  in-target sh -c "apt-get -y update && apt-get -q --no-install-recommends -y -o DPkg::options=--force-confnew 'upgrade'"
+fi

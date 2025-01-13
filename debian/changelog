@@ -1,3 +1,86 @@
+apt-setup (1:0.191-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.191 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 13 Jan 2025 11:11:32 +0200
+
+apt-setup (1:0.191) unstable; urgency=medium
+
+  [ Cyril Brulebois ]
+  * Makefile: use CURDIR instead of PWD, fixing the FTBFS due to test
+    failures (Closes: #1091148).
+
+  [ Updated translations ]
+  * Persian (fa.po) by Danial Behzadi
+  * Icelandic (is.po) by Sveinn í Felli
+  * Romanian (ro.po) by Remus-Gabriel Chelu
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 25 Dec 2024 09:22:36 +0100
+
+apt-setup (1:0.190) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Estonian (et.po) Kristjan Räts
+  * Punjabi (Gurmukhi) (pa.po) by Aman Alam
+  * Hebrew (he.po) Yaron Shahrabani
+  * Hungarian (hu.po) Szia Tomi
+  * French (fr.po) by Baptiste Jammet
+  * Persian (fa.po) by Danial Behzadi
+
+  [ Philip Hands ]
+  * remove build-depend on kcov (Closes: #1088573)
+
+ -- Philip Hands <phil@hands.com>  Fri, 29 Nov 2024 08:52:21 +0100
+
+apt-setup (1:0.189) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Persian (fa.po) by Danial Behzadi
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 02 Nov 2024 21:17:57 +0100
+
+apt-setup (1:0.188) unstable; urgency=medium
+
+  * Team upload
+
+  [ Stéphane Blondon ]
+  * Update README.
+
+  [ Philip Hands ]
+  * When additional repos are configured, do an extra apt update/upgrade
+    to ensure that the packages from those repos get used in the target.
+  * add unit test & coverage test (initially just for the above)
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Hungarian (hu.po) by Szia Tomi
+  * Indonesian (id.po) by Andika Triwidada
+  * Georgian (ka.po) by Temuri Doghonadze
+  * Latvian (lv.po) by GGLVXD
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 19 Oct 2024 13:27:18 +0200
+
+apt-setup (1:0.187) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Muhammad Bahaa
+  * Catalan (ca.po) by d
+  * Hindi (hi.po) by AYUSHMAN TIWARI
+  * Hungarian (hu.po) by Szia Tomi
+  * Indonesian (id.po) by Andika Triwidada
+  * Georgian (ka.po) by Temuri Doghonadze
+  * Norwegian Bokmal (nb.po) by Petter Reinholdtsen
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+  * Turkish (tr.po) by Fatih Altun
+  * Simplified Chinese (zh_CN.po) by NtskwK
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 10 Sep 2024 20:28:28 +0200
+
 apt-setup (1:0.186-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.186 release

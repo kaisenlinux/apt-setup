@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-05-20 15:01+0000\n"
+"PO-Revision-Date: 2024-11-19 09:29+0000\n"
 "Last-Translator: Aman Alam <aalam@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -96,7 +96,7 @@ msgstr "...ਬੈਕਪੋਰਟ ਰਿਪੋਜ਼ਟਰੀ ਜਾਂਚੀ ਜਾ
 #. an infinitive form
 #: ../apt-setup-udeb.templates:8001 ../apt-mirror-setup.templates:5001
 msgid "Retry"
-msgstr "ਮੁੜ ਟਰਾਈ"
+msgstr "ਮੁੜ ਕੋਸ਼ਿਸ"
 
 #. Type: select
 #. Choices
@@ -546,6 +546,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"ਹਾਲਾਂ ਕਿ ਡੇਬੀਅਨ ਦੇ ਸਾਰੇ ਹਿੱਸਿਆਂ ਉੱਤੇ ਨਹੀਂ, ਪਰ ਕੁਝ ਗ਼ੈਰ-ਮੁਕਤ ਫਿਰਮਵੇਅਰ ਡੇਬੀਅਨ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹਨ। "
+"ਇਹ ਫਿਰਮਵੇਅਰ ਵਿੱਚ ਵੱਖ-ਵੱਖ ਲਸੰਸ ਹੁੰਦੇ ਹਨ, ਜੋ ਕਿ ਸਾਫਟਵੇਅਰਾਂ ਨੂੰ ਵਰਤਣ, ਸੋਧ ਕਰਨ ਜਾਂ ਸਾਂਝਾ ਕਰਨ ਦੀ "
+"ਤੁਹਾਡੀ ਆਜ਼ਾਦੀ ਨੂੰ ਸੀਮਿਤ ਕਰ ਸਕਦੇ ਹਨ ਅਤੇ ਅਕਸਰ ਤੁਹਾਡੇ ਕੋਲ ਅਧਿਐਨ ਕਰਨ ਵਾਸਤੇ ਸਰੋਤ ਰੂਪ ਵਿੱਚ ਮੌਜੂਦ "
+"ਨਹੀਂ ਹੁੰਦੇ ਹਨ।"
 
 #. Type: boolean
 #. Description
@@ -790,7 +794,7 @@ msgstr ""
 #. :sl2:
 #: ../apt-mirror-setup.templates-ubuntu:5001
 msgid "Use backported software?"
-msgstr "ਬੈਕਪੋਰਟਡ ਸਾਫਟਵੇਅਰ ਵਰਤੋਂ?"
+msgstr "ਬੈਕਪੋਰਟ ਕੀਤੇ ਸਾਫਟਵੇਅਰ ਵਰਤਣੇ ਹਨ?"
 
 #. Type: boolean
 #. Description
@@ -804,5 +808,5 @@ msgid ""
 "applications which may provide useful features."
 msgstr ""
 "ਕੁਝ ਪੈਕੇਜ ਵਿਕਾਸ ਟਰੀ ਤੋਂ ਸ਼ਾਮਲ ਕੀਤੇ ਹਨ ਤਾਂ ਕਿ ਇਸ ਵੰਡ ਨਾਲ ਕੰਮ ਕਰ ਸਕਣ। ਭਾਵੇਂ ਇਹ ਸਾਫਟਵੇਅਰ ਇਸੇ "
-"ਵੰਡ ਵਿੱਚ ਸ਼ਾਮਲ ਮੁਕੰਮਲ ਜਾਂਚ ਰਾਹੀਂ ਲੰਘੇ ਹਨ, ਇਸ ਵਿੱਚ ਕੁਝ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੇ ਨਵੇਂ ਵਰਜਨ ਸ਼ਾਮਲ ਹਨ ਜੋ ਵਰਤੋਂ "
+"ਵੰਡ ਵਿੱਚ ਸ਼ਾਮਲ ਮੁਕੰਮਲ ਜਾਂਚ ਰਾਹੀਂ ਲੰਘੇ ਹਨ, ਇਸ ਵਿੱਚ ਕੁਝ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੇ ਨਵੇਂ ਵਰਜ਼ਨ ਸ਼ਾਮਲ ਹਨ, ਜੋ ਵਰਤੋਂ "
 "ਯੋਗ ਫੀਚਰ ਦੇ ਸਕਦੇ ਹਨ।"

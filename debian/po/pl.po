@@ -37,8 +37,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-05-13 10:00+0000\n"
-"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
+"PO-Revision-Date: 2024-11-26 14:00+0000\n"
+"Last-Translator: Nik Nikovsky <zejdzztegomaila@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,7 @@ msgstr "Konfiguracja menedżera pakietów"
 #. :sl1:
 #: ../apt-setup-udeb.templates:2001
 msgid "Configuring apt"
-msgstr "Konfigurowanie apta"
+msgstr "Konfigurowanie apt"
 
 #. Type: text
 #. Description

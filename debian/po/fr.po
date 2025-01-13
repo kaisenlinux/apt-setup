@@ -24,14 +24,14 @@
 #   Grégoire Colbert <gregus@linux-mandrake.com>, 2001.
 #   Tobias Quathamer <toddy@debian.org>, 2007, 2008.
 # Alban Vidal <alban.vidal@zordhak.fr>, 2018.
-# Baptiste Jammet <baptiste@mailoo.org>, 2019, 2020, 2022, 2023.
+# Baptiste Jammet <baptiste@mailoo.org>, 2019, 2020, 2022, 2023, 2024.
 # bubu <bubub@no-log.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-05-14 09:38+0200\n"
+"PO-Revision-Date: 2024-11-05 22:31+0100\n"
 "Last-Translator: Baptiste Jammet <baptiste@mailoo.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
@@ -563,6 +563,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Les microprogrammes sont un type de logiciel qui fournit un contrôle bas "
+"niveau de certains composants matériels (comme les cartes wi-fi, audio ou "
+"vidéo). Ces derniers peuvent ne pas fonctionner complètement (ou pas du "
+"tout) sans ces microprogrammes."
 
 #. Type: boolean
 #. Description
@@ -574,6 +578,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Bien qu'ils ne fassent pas partie de Debian, certains microprogrammes non "
+"libres ont été faits pour fonctionner avec Debian. Ces microprogrammes "
+"possèdent différentes licences qui restreignent votre liberté de les "
+"utiliser, de les modifier ou de les partager. Et leurs sources ne sont "
+"généralement pas disponibles pour les étudier."
 
 #. Type: boolean
 #. Description

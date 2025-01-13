@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: Icelandic (Debian Installer)\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-11-28 13:05+0000\n"
+"PO-Revision-Date: 2024-12-10 10:00+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -396,7 +396,7 @@ msgstr "Gáðu hvort gagnamiðillinn hafi verið settur rétt í."
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Media change"
-msgstr "Skipti á miðli"
+msgstr "Skipti á gagnamiðli"
 
 #. Type: text
 #. Description

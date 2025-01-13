@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
 "POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-05-06 11:07+0000\n"
+"PO-Revision-Date: 2024-06-10 22:09+0000\n"
 "Last-Translator: d <dmanye@gmail.com>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "Language: ca\n"
@@ -548,6 +548,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"El microprogramari és una mena de programari que proporciona un control a "
+"baix nivell de certs components de maquinari (com ara targetes Wi-Fi o xips "
+"d'àudio), que pot no funcionar total o parcialment sense usar-lo."
 
 #. Type: boolean
 #. Description
@@ -559,6 +562,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Encara que no forma part de Debian, s'ha fet que algun microprogramari no "
+"lliure funcioni amb Debian. Aquest microprogramari té diverses llicències "
+"que restringeixen la llibertats d'utilitzar, modificar o compartir-lo, i "
+"generalment no té el codi font disponible perquè pugui ser analitzat."
 
 #. Type: boolean
 #. Description
