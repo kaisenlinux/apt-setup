@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2024-05-10 13:52+0000\n"
 "Last-Translator: Terry <wopskino2023@gmail.com>\n"
 "Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
@@ -542,12 +542,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "གང་ལྟར་ཁྱོད་ཀྱིས་འདི་སྤྱོད་རུང་བ་བཟོ་དགོས་མིན་གདམ་རོགས"
 
@@ -598,26 +593,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "མཉེན་ཆས་འདི་སྤྱོད་རུང་བར་བཟོ་དགོས་མིན་གདམ་རོགས"
@@ -686,117 +662,3 @@ msgstr "དྲ་གནས་ཤིག་མེད་པར་མུ་མཐུ
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "དྲ་གནས་གང་ཡང་བདམས་མེད་པ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "ཚད་འཛིན་ཡོད་པའི་མཉེན་ཆས་སྤྱོད་དགོས་དམ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"ཐུམ་བུའི་རྣམ་བཞག་ནང་དུ་སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་འགའ་སྤྱོད་རུང་བ་འདུག མཉེན་ཆས་འདི་འགྲེམ་སྤེལ་གཙོ་བོའི་"
-"ཁོངས་སུ་མེད་ཀྱང་ཚད་ལྡན་གྱི་ཐུམ་བུ་དོ་དམ་ཆས་སྤྱད་ནས་འདི་སྒྲིག་འཇུག་བྱེད་ཐུབ། མཉེན་ཆས་འདི་དག་ལ་ཆོག་ཡིག་"
-"འདྲ་མིན་ཡོད་པས་ཁྱོད་ཀྱིས་བེད་སྤྱོད་དང་བཟོ་བཅོས། མཉམ་སྤྱོད་བྱེད་པར་བཀག་འགོག་བྱེད་སྲིད"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\" ཡི་ལྷུ་ལག་ནས་མཉེན་ཆས་སྤྱོད་པ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"ཐུམ་བུའི་རྣམ་བཞག་ནང་དུ་མཉེན་ཆས་གཞན་དག་འགའ་སྤྱོད་རུང་བ་འདུག མཉེན་ཆས་འདི་འགྲེམ་སྤེལ་གཙོ་བོའི་ཁོངས་སུ་"
-"མེད་ཀྱང་སྤྱི་སྤྱོད་ཡིན་པ་དང་ཚད་ལྡན་གྱི་ཐུམ་བུ་དོ་དམ་ཆས་སྤྱད་ནས་འདི་སྒྲིག་འཇུག་བྱེད་ཐུབ།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" ལྷུ་ལག་ནས་མཉེན་ཆས་སྤྱོད་པ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"ཐུམ་བུའི་རྣམ་བཞག་ནང་དུ་སྤྱི་སྤྱོད་མིན་པའི་མཉེན་ཆས་འགའ་སྤྱོད་རུང་བ་འདུག མཉེན་ཆས་འདི་འགྲེམ་སྤེལ་གཙོ་བོའི་"
-"ཁོངས་སུ་མེད་ཀྱང་ཚད་ལྡན་གྱི་ཐུམ་བུ་དོ་དམ་ཆས་སྤྱད་ནས་འདི་སྒྲིག་འཇུག་བྱེད་ཐུབ། མཉེན་ཆས་འདི་དག་ལ་ཆོག་ཡིག་"
-"འདྲ་མིན་དང་ཁེ་ཕན་གྱི་ཚོད་འཛིན་ཡོད་པས་ཁྱོད་ཀྱིས་བེད་སྤྱོད་དང་བཟོ་བཅོས། མཉམ་སྤྱོད་བྱེད་པར་བཀག་འགོག་བྱེད་"
-"སྲིད"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"ལས་རོགས\" ་ཀྱི་འཇུག་མཛོད་ནས་མཉེན་ཆས་སྒྲིག་འཇུག་བྱེད་དགོས་སམ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Canonical གྱི་\"ལས་རོགས\" ཀྱི་འཇུག་མཛོད་མཉེན་ཆས་གཞན་དག་སྤྱོད་རུང་བ་ཡོད། མཉེན་ཆས་འདི་Ubuntu "
-"ཁོངས་གཏོགས་མིན་ཡང་Canonical དང་གུས་པ་འོས་པའི་གཉེར་མཁན་གྱིས་Ubuntu སྤྱོད་མཁན་ལ་མཁོ་སྤྲོད་བྱས་ཡོད"
-
-# དག་བཅོས་བྱེད་དགོས་པ
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "ཚོད་ལྟ་ཆ་ཚང་བྱས་མེད་པའི་མཉེན་ཆས་སྤྱོད་དགོས་སམ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"མཉེན་ཆས་འགའ་ཞིག་དར་སྤེལ་ཁུལ་ནས་ཐད་ཀར་བླངས་བ་ཡིན་པས་དེ་དག་ལ་ཚོད་ལྟ་ཆ་ཚང་མ་བྱས་པར་འགྲེམ་སྤེལ་"
-"འདིའི་ནང་དུ་སྤྱོད་ཡོད མཉེན་ཆས་འདིའི་རིགས་ཀྱི་ནང་དུ་པར་གཞི་གསར་བའི་བྱ་རིམ་འདུས་ཡོད་པས་བྱེད་ནུས་གསར་པ་"
-"མཁོ་སྤྲོད་བྱེད་ཐུབ"

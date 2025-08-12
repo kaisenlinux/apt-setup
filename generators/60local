@@ -22,6 +22,10 @@ while i="$(($i + 1))" || true; do
 	if db_get "apt-setup/$repo_name/key"; then
 		key="$RET"
 	fi
+	options=
+	if db_get "apt-setup/$repo_name/options"; then
+		options="$RET"
+	fi
 	echo >> $file
 	if [ -n "$comment" ]; then
 		echo "## $comment" >> $file
@@ -44,6 +48,7 @@ while i="$(($i + 1))" || true; do
 				key_path="/etc/apt/keyrings/$name.$ext"
 				# move it into place
 				mv "$ROOT/tmp/key$i.pub" "$ROOT$key_path"
+				options="signed-by=$key_path${options:+ $options}"
 				break
 			else
 				db_subst apt-setup/local/key-error MIRROR "${repository%% *}"
@@ -58,10 +63,10 @@ while i="$(($i + 1))" || true; do
 			fi
 		done
 	fi
-	echo "deb ${key_path:+[signed-by=$key_path]} $repository" >> $file
+	echo "deb${options:+ [$options]} $repository" >> $file
 	# if true, add a line for deb-src
 	if db_get "apt-setup/$repo_name/source" && [ "$RET" = true ]; then
-		echo "deb-src ${key_path:+[signed-by=$key_path]} $repository" >> $file
+		echo "deb-src${options:+ [$options]} $repository" >> $file
 	fi
 done
 

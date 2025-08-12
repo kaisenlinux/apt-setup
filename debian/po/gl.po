@@ -25,9 +25,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-01-29 20:01+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-03-09 19:32+0000\n"
+"Last-Translator: Parodper <parodper@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -544,6 +544,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"O «firmware» son unha clase de programas de baixo nivel que control certos "
+"compoñentes físicos (como poden ser tarxetas Wi-Fi ou de son) que non poden "
+"funcionar, ou a medias, sen eles."
 
 #. Type: boolean
 #. Description
@@ -555,6 +558,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Inda que non son parte de Debian de ningún xeito, si que hai algún "
+"«firmware» non libre listo para funcionar con Debian. A licenza de cada "
+"«firmware» pode, ou non, restrinxir a súa liberdade a usar, modificar e "
+"compartir o programa, e normalmente non existe un código fonte que poida "
+"revisar."
 
 #. Type: boolean
 #. Description
@@ -562,12 +570,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Indique se aínda así o quere ter dispoñíbel."
 
@@ -618,26 +621,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Indique se quere ter dispoñíbel este software."
@@ -705,121 +689,3 @@ msgstr "Desexa continuar sen unha réplica na rede?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Non se escolleu ningunha réplica na rede."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Desexa empregar software restrinxido?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Hai algún software non libre empaquetado. Aínda que este software non forma "
-"parte da distribución principal, pódense empregar as ferramentas de xestión "
-"de paquetes estándar para o instalar. Este software ten varias licenzas que "
-"poden impedirlle empregalo, modificalo ou compartilo."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Desexa empregar software da compoñente «universe»?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Hai algún software adicional empaquetado. Este software é libre e, aínda que "
-"non forma parte da distribución principal, pódense empregar as ferramentas "
-"de xestión de paquetes estándar para o instalar."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Desexa empregar software da compoñente «multiverse»?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Hai algún software non libre empaquetado. Aínda que este software non forma "
-"parte da distribución principal, pódense empregar as ferramentas de xestión "
-"de paquetes estándar para o instalar. Este software ten varias licenzas e "
-"(nalgúns casos) restricións por patentes que poden impedirlle empregalo, "
-"modificalo ou compartilo."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Desexa empregar software do repositorio «partner»?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Hai dispoñíbel software adicional no repositorio «partner» de Canonical. "
-"Este non é parte de Ubuntu, pero ofréceno Canonical e os respectivos "
-"fabricantes como un servizo para usuarios de Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Desexa empregar software retrotraido?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Algún software tróuxose da árbore de desenvolvemento para que funcione con "
-"esta versión. Aínda que este software non pasou por unhas probas tan "
-"completas como o incluído na distribución, inclúe versións máis recentes "
-"dalgúns aplicativos que poden fornecer características útiles."

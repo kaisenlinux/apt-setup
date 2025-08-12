@@ -22,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-04-04 20:12+0000\n"
-"Last-Translator: Viktar Siarheichyk <vics@eq.by>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-07-05 16:01+0000\n"
+"Last-Translator: Drugi Sapog <dindrugi@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -539,6 +539,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Прашыўка — гэта від праграмнага забеспячэння, якое на нізкім узроўні кіруе "
+"пэўнымі кампанентамі абсталявання (накшталт карт Wi-Fi або аўдыякантролера), "
+"і без якога гэтыя кампаненты могуць працаваць часткова або зусім не "
+"працаваць."
 
 #. Type: boolean
 #. Description
@@ -550,6 +554,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Некаторыя несвабодныя прашыўкі ствараліся для працы з Debian, хоць і не "
+"з'яўляюцца яго часткай. Гэтыя прашыўкі маюць розныя ліцэнзіі, якія "
+"абмяжоўваюць магчымасць выкарыстання, змянення або распаўсюджвання "
+"праграмнага забеспячэння, і звычайна не маюць зыходнага кода для вывучэння."
 
 #. Type: boolean
 #. Description
@@ -557,15 +565,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
-msgstr ""
-"Ці хочаце Вы, нягледзячы на несвабоднасць, мець доступ да такіх праграмаў?"
+msgstr "Абярыце, ці трэба ўсё адно мець гэтыя праграмы."
 
 #. Type: boolean
 #. Description
@@ -614,26 +616,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Калі ласка, вырашыце: ці хочаце Вы мець доступ да такіх праграмаў."
@@ -702,123 +685,3 @@ msgstr "Ці працягваць без сеткавага люстэрка?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Не пазначана ніводнага сеткавага люстэрка."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Ужываць праграмы з абмежаваннямі?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Пэўныя несвабодныя праграмы даступныя ў выглядзе пакетаў. Такія праграмы не "
-"ўваходзяць у галоўны дыстрыбутыў, але іх можна ўсталяваць праз стандартныя "
-"прылады для кіравання пакетамі. Ліцэнзіі, паводле якіх распаўсюджваюцца "
-"такія праграмы, могуць забараняць іх ужытак, мадыфікацыю або распаўсюд."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Ужываць праграмы з \"universe\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Пэўныя дадатковыя праграмы даступныя ў выглядзе пакетаў. Гэтыя праграмы "
-"з'яўляюцца свабоднымі. Нягледзячы на тое, што яны не ўваходзяць у асноўны "
-"дыстрыбутыў, такія праграмы можна ўсталяваць з дапамогай стандартных "
-"прыладаў кіравання пакетамі."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Ужываць праграмы з \"multiverse\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Пэўныя несвабодныя праграмы даступныя ў выглядзе пакетаў. Яны не ўваходзцяць "
-"у асноўны дыстрыбутыў, але іх можна ўсталяваць з дапамогай стандартных "
-"прыладаў кіравання пакетамі. Ліцэнзіі (і ў некаторых выпадках патэнты), "
-"паводле якіх распаўсюджваюцца такія праграмы, могуць забараняць іх ужыванне, "
-"мадыфікацыю або распаўсюд."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Ужываць праграмы з рэпазіторыя \"partner\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Пэўны набор праграм дасяжны з \"партнёрскага\" рэпазітарыю Canonical. Гэтыя "
-"праграмы не частка Ubuntu, але прапануюцца кампаніяй Canonical і адпаведнымі "
-"пастаўшчыкамі як паслуга для карыстальнікаў Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Ужываць адаптаваныя праграмы?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Некаторыя пакеты, што знаходзяцца ў распрацоўцы, адмыслова адаптаваныя дзеля "
-"працы з гэтым рэлізам. З аднаго боку, яны не паспелі прайсці такой "
-"дасканалай праверкі, як пакеты рэлізу. З іншага боку, яны ўключаюць больш "
-"новыя версіі некаторых праграмаў і могуць прадстаўляць новыя карысныя "
-"магчымасці."

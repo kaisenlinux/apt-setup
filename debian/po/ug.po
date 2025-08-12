@@ -19,9 +19,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2020-07-21 17:24+0000\n"
-"Last-Translator: Abdusalam <1810010207@s.upc.edu.cn>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-05-30 13:03+0000\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +104,7 @@ msgstr "پەرۋا قىلما"
 #. Description
 #: ../apt-setup-udeb.templates:8002
 msgid "Downloading local repository key failed:"
-msgstr "يەرلىك غەزىنە ئاچقۇچىنى چۈشۈرۈش مەغلۇپ بولدى:"
+msgstr "يەرلىك خەزىنە ئاچقۇچىنى چۈشۈرۈش مەغلۇپ بولدى:"
 
 #. Type: select
 #. Description
@@ -204,8 +204,8 @@ msgid ""
 "Debian has two services that provide updates to releases: security and "
 "release updates."
 msgstr ""
-"Debian  نەشر يېڭىلايدىغان ئىككى خىل مۇلازىمەت تەمىنلىگەن: بىخەتەرلىك ۋە نەشر "
-"يېڭىلاش"
+"Debian نەشر يېڭىلايدىغان ئىككى خىل مۇلازىمەت تەمىنلىگەن: بىخەتەرلىك ۋە نەشر "
+"يېڭىلاش."
 
 #. Type: multiselect
 #. Description
@@ -215,7 +215,7 @@ msgid ""
 "Security updates help to keep your system secured against attacks. Enabling "
 "this service is strongly recommended."
 msgstr ""
-"بىخەتەرلىك يېڭىلاش سىرتتىن كەلگەن ھۇجۇمدىن ساقلايدۇ.  بۇ خىل يېڭىلاش "
+"بىخەتەرلىك يېڭىلاش سىرتتىن كەلگەن ھۇجۇمدىن ساقلايدۇ. بۇ خىل يېڭىلاش "
 "مۇلازىمىتىنى قوزغىتىشىڭىزنى كۈچلۈك تەۋسىيە قىلىمىز."
 
 #. Type: multiselect
@@ -229,7 +229,7 @@ msgid ""
 "service is only available for stable and oldstable releases."
 msgstr ""
 "ئۆزگىرىشى نىسبەتەن كۆپ، ئەڭ يېڭى نەشرى بولمىسا قوللىنىشچانلىقى تۆۋەنلەپ "
-"كېتىدىغان يۇمشاق دېتاللارغا  نەشر يېڭىلاش تەمىنلەيدۇ، ئۇ پەقەت ئەسلىگە "
+"كېتىدىغان يۇمشاق دېتاللارغا نەشر يېڭىلاش تەمىنلەيدۇ، ئۇ پەقەت ئەسلىگە "
 "قايتۇرۇپ ئوڭشاشنىلا تەمىنلەيدۇ. بۇ مۇلازىمەت مۇقىم نەشرى ۋە كونا مۇقىم "
 "نەشرىگىلا تەمىنلىنىدۇ."
 
@@ -248,7 +248,7 @@ msgstr ""
 "يۆتكەپ ئەكەلگەن يۇمشاق دېتاللار ئىجادىيەت كودىدىن تارقىتىلغان بۇ نەشرىگە "
 "يۆتكەپ ئىشلىتىلدى. گەرچە بۇ يۇمشاق دېتاللار رەسمىي تارقىتىلغان يۇمشاق دېتال "
 "ئۆز ئىچىگە ئالغانغا ئوخشاش تەپسىلىي تەكشۈرۈلمىگەن بولسىمۇ، ئەمما ئۇلار بىر "
-"قىسىم  پروگراممىلارنىڭ يېڭى نەشرىنى ئۆز ئىچىگە ئالغان، شۇڭلاشقا بىر قىسىم "
+"قىسىم پروگراممىلارنىڭ يېڭى نەشرىنى ئۆز ئىچىگە ئالغان، شۇڭلاشقا بىر قىسىم "
 "كېرەكلىك ئىقتىدار بىلەن تەمىنلەيدۇ. يۆتكەپ ئەكەلگەن يۇمشاق دېتاللار "
 "قوزغىتىلسا كۆڭۈلدىكى ئەھۋالدا ئۇلارنى ئورنىتىشنى كەلتۈرۈپ چىقارمايدۇ، سىزنىڭ "
 "قولدا تاللىشىڭىزغا يول قويىدۇ."
@@ -258,7 +258,7 @@ msgstr ""
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr ""
+msgstr "APT دا ئەسلى مەنبە خەزىنىسىنى قوزغىتامدۇ؟"
 
 #. Type: boolean
 #. Description
@@ -270,14 +270,18 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
+"كۆڭۈلدىكى ئەھۋالدا، /etc/apt/sources.list دا ئەسلى كود خەزىنىسى تۈرى "
+"(ئالدىدا «deb-src» بار) نى ئۆز ئىچىگە ئالىدۇ شۇڭا «apt-get source» نى "
+"ئىشلىتەلەيسىز. شۇنداقتىمۇ، ئەگەر بۇ ئىقتىدارغا ئېھتىياجلىق بولمىسىڭىز، بۇ "
+"تۈرلەرنى چەكلەپ، «apt-get update» مەشغۇلاتى جەريانىدا بىر قىسىم بەلباغ "
+"كەڭلىكىنى تېجىيەلەيسىز."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
-#, fuzzy
 msgid "Scanning the installation media..."
-msgstr "ئورنىتىشنى تاماملاۋاتىدۇ"
+msgstr "ئورنىتىشنى تاماملاۋاتىدۇ…"
 
 #. Type: error
 #. Description
@@ -293,12 +297,10 @@ msgstr "apt سەپلەش مەسىلىسى"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:2001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
-msgstr ""
-"apt نى سەپلەپ، CD-ROM دىن قوشۇمچە يۇمشاق دېتال بوغچىسى ئورنىتىش مەغلۇپ بولدى."
+msgstr "apt نى سەپلەپ، ۋاسىتەدىن قوشۇمچە يۇمشاق دېتال بوغچىسىنى ئورنىتالمىدى."
 
 #. Type: boolean
 #. Description
@@ -314,32 +316,29 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Scan extra installation media?"
-msgstr "SILO ئورنىتىش مەغلۇپ بولدى"
+msgstr "ئارتۇق ئورنىتىش ۋاسىتىسىنى تارامدۇ؟"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr ""
+msgstr "ئورنىتىش ۋاسىتەسىنى تاراۋاتقاندا بەلگىنى تاپتى:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
-#, fuzzy
 msgid ""
 "You now have the option of scanning additional media for use by the package "
 "manager (apt). Normally these should be from the same set as the one you "
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"سىز ھازىر نورمىدىن سىرت بولغان بوغچا باشقۇرغۇچ (apt) ئىشلىتەلەيدىغان CD ياكى "
-"DVD نى تەكشۈرۈشنى تاللىيالايسىز. ئادەتتە بۇلار سىزنىڭ ئورنىتىش CD/DVD "
-"ئوخشاش. ئەگەر سىزدە باشقا CD ياكى  DVD بولمىسا بۇ باسقۇچتىن ئاتلاپ كەتسىڭىز "
-"بولىدۇ."
+"ھازىر سىزنىڭ بوغچا باشقۇرغۇچ (apt) ئىشلىتەلەيدىغان قوشۇمچە ۋاسىتىنى تاراش "
+"تاللانمىڭىز بار. ئادەتتە بۇلار سىز ئورنىتىشنى قوزغاتقان ۋاسىتە بىلەن ئوخشاش. "
+"ئەگەر سىزدە باشقا ۋاسىتە بولمىسا بۇ باسقۇچتىن ئاتلاپ كەتسىڭىز بولىدۇ."
 
 #. Type: boolean
 #. Description
@@ -348,41 +347,36 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "سىز باشقا CD ياكى DVD تەكشۈرمەكچى بولسىڭىز ئۇنى قىستۇرۇڭ."
+msgstr "ئەگەر سىز باشقا ۋاسىتىنى تارىماقچى بولسىڭىز ئۇنى قىستۇرۇڭ."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
-#, fuzzy
 msgid "The image with the following label has been scanned:"
-msgstr "ئەنى تۆۋەندىكىدەك بولغان CD ياكى DVD تەكشۈرۈش تاماملاندى:"
+msgstr "ئەنى تۆۋەندىكىدەك بولغان تەسۋىر تاراش تاماملاندى:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "The image with the following label has already been scanned:"
-msgstr "ئەنى تۆۋەندىكىدەك بولغان CD ياكى DVD تەكشۈرۈلگەن:"
+msgstr "ئەنى تۆۋەندىكىدەك بولغان تەسۋىر تاراش تاماملاندى:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
-#, fuzzy
 msgid "Please replace it now, if you wish to scan another."
-msgstr "ئەگەر باشقا CD ياكى DVD نى تەكشۈرمەكچى بولسىڭىز ئۇنى ئالماشتۇرۇڭ."
+msgstr "ئەگەر باشقا تەسۋىرنى تارىماقچى بولسىڭىز ئۇنى ھازىر ئالماشتۇرۇڭ."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:6001
-#, fuzzy
 msgid "Please check that the media has been inserted correctly."
-msgstr "CD/DVD نى توغرا قىستۇرغانلىقىڭىزنى تەكشۈرۈڭ."
+msgstr "ۋاسىتىنى توغرا قىستۇرغانلىقىڭىزنى تەكشۈرۈڭ."
 
 #. Type: text
 #. Description
@@ -395,11 +389,8 @@ msgstr "ۋاسىتە ئالماشتۇر"
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
-#, fuzzy
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr ""
-"/cdrom/: دىسكا ئېنى '${LABEL}' بولغان دىسكىنى '/cdrom/' قوزغاتقۇچقا سېلىپ، "
-"enter نى بېسىڭ."
+msgstr "ئېنى '${LABEL}' بولغان ۋاسىتىنى قىستۇرۇپ، enter نى بېسىڭ."
 
 #. Type: text
 #. Description
@@ -416,12 +407,11 @@ msgstr "sources.list دا netinst CD چەكلەنگەن…"
 #. Description
 #. :sl2:
 #: ../apt-cdrom-setup.templates:9001 ../apt-mirror-setup.templates:7001
-#, fuzzy
 msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"ئەگەر سىز توردىكى ئورنىتىش دىسكىسىدىن ئورنىتىۋاتقان بولۇپ، تەسۋىر "
+"ئەگەر سىز توردىكى ئورنىتىش CD تەسۋىرىدىن ئورنىتىۋاتقان بولۇپ، تەسۋىر "
 "ئىشلەتمەسلىكنى تاللىغان بولسىڭىز، ناھايىتى كىچىك بولغان ئاساسىي سىستېمىنىلا "
 "ئورنىتالايسىز."
 
@@ -429,26 +419,23 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:10001
-#, fuzzy
 msgid ""
 "You are installing from a netinst CD image, which by itself only allows "
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"سىز ھازىر تور دىسكىسىدىن ئورنىتىۋاتىسىز، تور ئورنىتىش دىسكىسى ناھايىتى كىچىك "
-"ئاساسىي سىستېمىنىلا ئورنىتىدۇ.  سىز تەسۋىرنى ئىشلىتىپ تولۇق سىستېمىنى "
-"ئورنىتالايسىز."
+"سىز ھازىر تور CD تەسۋىرىدىن ئورنىتىۋاتىسىز، ئۇ ناھايىتى كىچىك ئاساسىي "
+"سىستېمىنىلا ئورنىتىدۇ. سىز تەسۋىرنى ئىشلىتىپ تولۇق سىستېمىنى ئورنىتالايسىز."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:11001
-#, fuzzy
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
 msgstr ""
-"سىز چەكلىمىلىك يۇمشاق دېتال بوغچىسى بار CD-ROM دىن يۇمشاق دېتال "
+"سىز چەكلىمىلىك يۇمشاق دېتال بوغچىسى بار تەسۋىردىن يۇمشاق دېتال "
 "ئورنىتىۋاتىسىز."
 
 #. Type: text
@@ -456,13 +443,13 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be 2 or 3
 #: ../apt-cdrom-setup.templates:12001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a fair selection of "
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"سىز%i CD-ROM تەكشۈردىڭىز. گەرچە ئۇنىڭدا نۇرغۇن يۇمشاق دېتال بوغچىسى بولسىمۇ "
+"سىز %i تەسۋىرنى تارىدىڭىز. گەرچە ئۇنىڭدا نۇرغۇن يۇمشاق دېتال بوغچىسى بولسىمۇ "
 "ئەمما بىر قىسمى (بولۇپمۇ ئىنگلىزچىدىن باشقا تىلنى قوللايدىغان يۇمشاق دېتال "
 "بوغچىسى) كەم ئىكەن."
 
@@ -471,12 +458,12 @@ msgstr ""
 #. :sl1:
 #. The value of %i can be from 4 to 8
 #: ../apt-cdrom-setup.templates:13001
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"سىز %i CD-ROM تەكشۈردىڭىز. بۇ CD-ROM دا نۇرغۇن يۇمشاق دېتال بوغچىسى بولسىمۇ، "
+"سىز %i تەسۋىرنى تارىدىڭىز. بۇنىڭدا نۇرغۇن يۇمشاق دېتال بوغچىسى بولسىمۇ، "
 "يەنىلا بەزى يۇمشاق دېتال بوغچىلىرى كەم ئىكەن."
 
 #. Type: text
@@ -494,13 +481,12 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:15001
-#, fuzzy
 msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"سىز DVD دىن ئورنىتىۋاتىسىز. گەرچە DVD كۆپ مىقداردىكى يۇمشاق دېتال بوغچىسىنى "
-"ئۆز ئىچىگە ئالسىمۇ بەزى يۇمشاق دېتال بوغچىلىرى كەم بولۇشى مۇمكىن."
+"سىز DVD تەسۋىردىن ئورنىتىۋاتىسىز. گەرچە DVD كۆپ مىقداردىكى يۇمشاق دېتال "
+"بوغچىسىنى ئۆز ئىچىگە ئالسىمۇ بەزى يۇمشاق دېتال بوغچىلىرى كەم بولۇشى مۇمكىن."
 
 #. Type: text
 #. Description
@@ -524,7 +510,7 @@ msgid ""
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
 "ئەگەر سىزنىڭ ياخشى بولغان ئىنتېرنېت باغلىنىشىڭىز بولۇپ، كۆزنەكلىك ئۈستەك "
-"مۇھىتى ئورناتماقچى بولسىڭىز  تەسۋىردىن ئورنىتىشىڭىزنى تەۋسىيە قىلىمىز."
+"مۇھىتى ئورناتماقچى بولسىڭىز تەسۋىردىن ئورنىتىشىڭىزنى تەۋسىيە قىلىمىز."
 
 #. Type: text
 #. Description
@@ -537,9 +523,8 @@ msgstr "تەسۋىر تەكشۈرۈۋاتىدۇ..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid "Use non-free firmware?"
-msgstr "ھەقلىق يۇمشاق دېتال ئىشلىتەمسىز؟"
+msgstr "ھەقسىز بولمىغان مۇقىم دېتال ئىشلىتەمسىز؟"
 
 #. Type: boolean
 #. Description
@@ -550,6 +535,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"مۇقىم دېتال بىر خىل قاتتىق دېتال بۆلىكى (مەسىلەن Wi-Fi كارتىسى ياكى ئاۋاز "
+"ئۆزەك يۈرۈشلۈكى)، تۆۋەن دەرىجىلىك تىزگىنلەش يۇمشاق دېتالى بىلەن تەمىنلەيدۇ، "
+"ئەگەر ئۇلار بولمىسا، بۇ قاتتىق دېتال بۆلىكىنى پۈتۈنلەي ياكى ھەرگىز ئىجرا "
+"قىلغىلى بولماسلىقى مۇمكىن."
 
 #. Type: boolean
 #. Description
@@ -561,6 +550,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"گەرچە Debian نىڭ تەركىبى قىسمى بولمىسىمۇ ئەمما بىر قىسىم ئەركىن بولمىغان "
+"مۇقىم دېتاللار Debian بىللە بىلە ئىشلەيدۇ. بۇ مۇقىم دېتاللارنىڭ ئوخشىمىغان "
+"ئىجازەتلىرى بار، ئۇلار سىزنىڭ ئىشلىتىش، ئۆزگەرتىش ياكى يۇمشاق دېتالنى "
+"ھەمبەھىرلەش ئەركىنلىكىڭىزنى چەكلەيدۇ ۋە ئادەتتە سىز ئۆگەنگۈدەك ئەسلى جەدۋىلى "
+"يوق."
 
 #. Type: boolean
 #. Description
@@ -568,12 +562,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "ئۇلاردىن ئىشلىتىدىغانلىرىڭىزنى تاللاڭ."
 
@@ -594,8 +583,8 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"بەزى ھەقلىق يۇمشاق دېتالنىمۇ  Debian دا ئىشلەتكىلى بولىدۇ. بۇ دېتاللار  "
-"Debian نىڭ بىر قىسمى بولمىسىمۇ ئەمما ئۆلچەملىك  Debian قوراللىرى ئۇلارنى "
+"بەزى ھەقلىق يۇمشاق دېتالنىمۇ Debian دا ئىشلەتكىلى بولىدۇ. بۇ دېتاللار Debian "
+"نىڭ بىر قىسمى بولمىسىمۇ ئەمما ئۆلچەملىك Debian قوراللىرى ئۇلارنى "
 "ئورنىتالايدۇ. بۇ يۇمشاق دېتاللارنىڭ ئوخشاش بولمىغان ئىجازەتنامىسى بار، بۇ "
 "سىزنىڭ ئۇلارنى ئىشلىتىش، ئۆزگەرتىش ياكى ھەمبەھىرلەشنى چەكلىشى مۇمكىن."
 
@@ -604,7 +593,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
-msgstr "يۇمشاق دېتال contrib  ئىشلىتەمسىز؟"
+msgstr "يۇمشاق دېتال contrib ئىشلىتەمسىز؟"
 
 #. Type: boolean
 #. Description
@@ -624,26 +613,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "بۇ يۇمشاق دېتاللارنى ئىشلىتىدىغان ئىشلەتمەيدىغانلىقىڭىزنى تاللاڭ."
@@ -691,14 +661,13 @@ msgstr "تور تەسۋىر ئىشلىتەمسىز؟"
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:6001
-#, fuzzy
 msgid ""
 "A network mirror can be used to supplement the software that is included on "
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"تور تەسۋىرى CD-ROM دىكى يۇمشاق دېتالنى تولۇقلاشقا ئىشلىتىلىدۇ، تېخىمۇ يېڭى "
-"نەشرىدىكى يۇمشاق دېتال تەمىنلەشكىمۇ ئىشلىتىلىدۇ."
+"تور تەسۋىرى ئورنىتىش ۋاسىتىسىدىكى يۇمشاق دېتالنى تولۇقلاشقا ئىشلىتىلىدۇ، "
+"تېخىمۇ يېڭى نەشرىدىكى يۇمشاق دېتال تەمىنلەشكىمۇ ئىشلىتىلىدۇ."
 
 #. Type: boolean
 #. Description
@@ -713,123 +682,3 @@ msgstr "تور تەسۋىرىسىز داۋاملاشتۇرسۇنمۇ؟"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "تور تەسۋىرى تاللانمىدى."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "چەكلىمىلىك يۇمشاق دېتال ئىشلىتەمسىز؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"بەزى ئەركىن بولمىغان يۇمشاق دېتالنىڭمۇ  ئىشلەتكىلى بولىدىغانلىرى بار. بۇ "
-"دېتاللار  ئاساسىي تارقىتىشنىڭ بىر قىسمى بولمىسىمۇ ئەمما ئۆلچەملىك  يۇمشاق "
-"دېتال قوراللىرى ئۇلارنى ئورنىتالايدۇ. بۇ يۇمشاق دېتاللارنىڭ ئوخشاش بولمىغان "
-"ئىجازەتنامىسى بار، بۇ سىزنىڭ ئۇلارنى ئىشلىتىش، ئۆزگەرتىش ياكى "
-"ھەمبەھىرلىشىڭىزنى چەكلىشى مۇمكىن."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\" نىڭ تەركىبى قىسمى بولغان يۇمشاق دېتال ئىشلىتەمسىز؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"بەزى قوشۇمچە يۇمشاق دېتاللارنىڭمۇ  ئىشلەتكىلى بولىدىغانلىرى بار. بۇ يۇمشاق "
-"دېتاللار ئەركىن يۇمشاق دېتال بولۇپ،  ئاساسىي تارقىتىشنىڭ بىر قىسمى بولمىسىمۇ "
-"ئەمما ئۆلچەملىك  يۇمشاق دېتال قوراللىرى ئۇلارنى ئورنىتالايدۇ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" نىڭ تەركىبى قىسمى بولغان يۇمشاق دېتال ئىشلىتەمسىز؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"بەزى ئەركىن بولمىغان يۇمشاق دېتالنىڭمۇ  ئىشلەتكىلى بولىدىغانلىرى بار. بۇ "
-"دېتاللار  ئاساسىي تارقىتىشنىڭ بىر قىسمى بولمىسىمۇ ئەمما ئۆلچەملىك  يۇمشاق "
-"دېتال قوراللىرى ئۇلارنى ئورنىتالايدۇ. بۇ يۇمشاق دېتاللارنىڭ ئوخشاش بولمىغان "
-"ئىجازەتنامىسى ۋە (مەلۇم ئەھۋالدا) خاسنەپ(patent) چەكلىمىسى بار، بۇ سىزنىڭ "
-"ئۇلارنى ئىشلىتىش، ئۆزگەرتىش ياكى ھەمبەھىرلىشىڭىزنى چەكلىشى مۇمكىن."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"partner\" خەزىنىسىدىكى يۇمشاق دېتالىنى ئىشلىتەمسىز؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"بەزى قوشۇمچە دېتاللار \"partner\" نىڭ خەزىنىسىدە بار. بۇ يۇمشاق دېتاللار "
-"Ubuntuنىڭ بىر قىسمى، ئەمما مۇنتىزىم ۋە قىسمەن تەمىنلىگۈچىلەر بىر خىل "
-"مۇلازىمەت سۈپىتىدە Ubuntu ئىشلەتكۈچىلىرىگە تەمىنلىگەن."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "يۆتكەپ ئەكەلگەن يۇمشاق دېتال ئىشلىتەمسىز؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"بەزى يۇمشاق دېتاللار ئىجادىيەت كودىدىن تارقىتىلغان بۇ نەشرىگە يۆتكەپ "
-"ئىشلىتىلدى. گەرچە بۇ يۇمشاق دېتاللار رەسمىي تارقىتىلغان يۇمشاق دېتال ئۆز "
-"ئىچىگە ئالغانغا ئوخشاش تەپسىلىي تەكشۈرۈلمىگەن بولسىمۇ، ئەمما ئۇلار بىر "
-"قىسىم  پروگراممىلارنىڭ يېڭى نەشرىنى ئۆز ئىچىگە ئالغان، شۇڭلاشقا بىر قىسىم "
-"كېرەكلىك ئىقتىدار بىلەن تەمىنلەيدۇ."

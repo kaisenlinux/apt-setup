@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2022-12-04 17:19+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh\n"
@@ -556,12 +556,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Осы БҚ сізге қолжетерлік бола ма, соны таңдаңыз."
 
@@ -611,26 +606,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Осы БҚ сізге қолжетерлік бола ма, соны таңдаңыз."
@@ -697,119 +673,3 @@ msgstr "Желідегі дестелер айнасысыз жалғастыр�
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Желідегі дестелер айнасы таңдалмаған."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Шектеулері бар Бағдарламалық Қамтаманы қолдану керек пе?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Дестелер түрінде бос емес Бағдарламалық Қамтама бар. Негізгі дистрибутивтің "
-"бөлігі болмаса да, оны орнату үшін стандартты утилиттерді қолдануға болады. "
-"Бұл БҚ әртүрлі лицензиялар аясында шығарылады, оларға сәйкес кейбір кездерде "
-"Сізге осы БҚ-ны қолдануға, өзгертуге немесе таратуға болмайды."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\" бөлімінен Бағдарламалық Қамтамасын қолдану керек пе?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Дестелер түрінде қосымша БҚ бар. Ол БҚ бос болғанымен, бос емес БҚ-ға "
-"байланысты болып келеді. Негізгі дистрибутивтің бөлігі болмаса да, оны "
-"орнату үшін стандартты утилиттерді қолдануға болады."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" бөлімінен Бағдарламалық Қамтамасын қолдану керек пе?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Дестелер түрінде бос емес Бағдарламалық Қамтама бар. Негізгі дистрибутивтің "
-"бөлігі болмаса да, оны орнату үшін стандартты утилиттерді қолдануға болады. "
-"Бұл БҚ әртүрлі лицензиялар аясында шығарылады, оларға сәйкес кейбір кездерде "
-"Сізге осы БҚ-ны қолдануға, өзгертуге немесе таратуға болмайды."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"partner\" бөлімінен Бағдарламалық Қамтамасын қолдану керек пе?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Кейбір қосымша БҚ Canonical ұсынатын \"partner\" репозиторийде бар. Бұл "
-"бағдарламалық қамтама Ubuntu-дың бөлігі емес,бірақ, оны Canonical мен "
-"сенімді өндірушілер Ubuntu пайдаланушыларына қолжетерлік қылған."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Алдын-ала сақталынған БҚ қолдану керек пе?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Кейбір БҚ өндірілетін нұсқасынан осы шығарылымға ауыстырылды. Бұл БҚ толық "
-"сынаудан өтпесе де, осы шығарылымның басқа БҚ-ы сияқты, оның ішінде керек "
-"қасиеттері бар болуы мүмкін кейбір бағдарламалардың жаңа нұсқалары бар."

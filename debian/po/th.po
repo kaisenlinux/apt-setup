@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2021-02-03 16:48+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -546,12 +546,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "กรุณาเลือกว่าคุณต้องการจะให้มีซอฟต์แวร์เหล่านี้ไว้ติดตั้งหรือไม่"
 
@@ -601,26 +596,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "กรุณาเลือกว่าคุณต้องการจะให้มีซอฟต์แวร์เหล่านี้ไว้ติดตั้งหรือไม่"
@@ -687,119 +663,3 @@ msgstr "จะทำงานต่อโดยไม่มีแหล่งส
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ยังไม่ได้เลือกแหล่งสำเนาในเครือข่าย"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "จะใช้ซอฟต์แวร์จำกัดสิทธิ์หรือไม่?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"ซอฟต์แวร์ไม่เสรีบางตัว มีให้ติดตั้งในรูปแบบแพกเกจ "
-"แม้ซอฟต์แวร์เหล่านี้จะไม่ใช่ส่วนหนึ่งของชุดแจกจ่ายหลัก "
-"แต่ก็สามารถใช้เครื่องมือจัดการแพกเกจมาตรฐานในการติดตั้งได้ ซอฟต์แวร์เหล่านี้ใช้สัญญาอนุญาตต่างๆ "
-"กันไป ซึ่งอาจห้ามคุณไม่ให้ใช้ แก้ไข หรือแบ่งปันก็ได้"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "จะใช้ซอฟต์แวร์จากองค์ประกอบ \"universe\" หรือไม่?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"ซอฟต์แวร์เพิ่มเติมบางตัว มีให้ติดตั้งในรูปแบบแพกเกจ ซอฟต์แวร์เหล่านี้เป็นซอฟต์แวร์เสรี "
-"และแม้จะไม่ใช่ส่วนหนึ่งของชุดแจกจ่ายหลัก "
-"แต่ก็สามารถใช้เครื่องมือจัดการแพกเกจมาตรฐานในการติดตั้งได้"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "จะใช้ซอฟต์แวร์จากองค์ประกอบ \"multiverse\" หรือไม่?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"ซอฟต์แวร์ไม่เสรีบางตัว มีให้ติดตั้งในรูปแบบแพกเกจ "
-"แม้ซอฟต์แวร์เหล่านี้จะไม่ใช่ส่วนหนึ่งของชุดแจกจ่ายหลัก "
-"แต่ก็สามารถใช้เครื่องมือจัดการแพกเกจมาตรฐานในการติดตั้งได้ ซอฟต์แวร์เหล่านี้ใช้สัญญาอนุญาตต่างๆ "
-"กันไป และในบางกรณีอาจมีสิทธิบัตรคุ้มครอง ซึ่งอาจห้ามคุณไม่ให้ใช้ แก้ไข หรือแบ่งปันก็ได้"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "จะใช้ซอฟต์แวร์จากองค์ประกอบ \"partner\" หรือไม่?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"ซอฟต์แวร์เพิ่มเติมบางตัว มีให้ติดตั้งได้จากคลัง \"partner\" ของ Canonical "
-"ซอฟต์แวร์เหล่านี้ไม่ใช่ส่วนหนึ่งของ Ubuntu แต่จัดเตรียมให้โดย Canonical และผู้จัดจำหน่ายอื่นๆ "
-"เพื่อเป็นบริการสำหรับผู้ใช้ Ubuntu"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "จะใช้ซอฟต์แวร์ย้ายกลับหรือไม่?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"ซอฟต์แวร์บางตัวถูกย้ายกลับมาจากสายงานพัฒนา เพื่อให้ทำงานกับรุ่นนี้ได้ "
-"แม้ซอฟต์แวร์เหล่านี้จะไม่ได้ผ่านกระบวนการทดสอบอย่างสมบูรณ์เหมือนที่อยู่ในรุ่นแจกจ่าย "
-"แต่ก็มีโปรแกรมรุ่นใหม่ๆ ที่อาจมีความสามารถที่เป็นประโยชน์"

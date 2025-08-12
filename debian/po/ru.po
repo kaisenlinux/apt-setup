@@ -11,24 +11,21 @@
 #
 # Translations from iso-codes:
 # Russian L10N Team <debian-l10n-russian@lists.debian.org>, 2004.
-# Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005.
 # Dmitry Beloglazov <dm-guest@alioth.debian.org>, 2005.
 # Sergey Alyoshin <alyoshin.s@gmail.com>, 2011.
-# Yuri Kozlov <yuray@komyakino.ru>, 2005, 2006, 2007, 2008.
-# Yuri Kozlov <yuray@komyakino.ru>, 2009, 2010, 2011.
 # Alastair McKinstry <mckinstry@debian.org>, 2004.
 # Mikhail Zabaluev <mhz@altlinux.org>, 2006.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
 # Pavel Maryanov <acid@jack.kiev.ua>, 2009,2010.
-# Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2020.
+# Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2020, 2024.
 # Lev Lamberov <dogsleg@debian.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2022-12-11 12:17+0500\n"
-"Last-Translator: Lev Lamberov <dogsleg@debian.org>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-07-10 12:01+0000\n"
+"Last-Translator: Алексей Шилин <shilin.aleksej@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -536,9 +533,8 @@ msgstr "Выполняется просмотр зеркала архива..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid "Use non-free firmware?"
-msgstr "Использовать несвободное ПО?"
+msgstr "Использовать несвободные микропрограммы?"
 
 #. Type: boolean
 #. Description
@@ -549,6 +545,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Микропрограмма — это разновидность ПО, обеспечивающего низкоуровневое "
+"управление аппаратными компонентами (например, Wi-Fi картами или звуковыми "
+"чипсетами), и без которого они работают либо не полностью, либо вовсе не "
+"работают."
 
 #. Type: boolean
 #. Description
@@ -560,6 +560,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Хотя несвободные микропрограммы и не являются частью Debian, некоторые из "
+"них были адаптированы для работы с Debian. Они имеют различные лицензии, "
+"которые ограничивают вашу свободу в их использовании, модификации или "
+"распространении, и, как правило, не имеют исходных текстов, которые вы могли "
+"бы изучить."
 
 #. Type: boolean
 #. Description
@@ -567,12 +572,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Нужно ли сделать данное ПО доступным в любом случае?"
 
@@ -622,29 +622,10 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
-msgstr "Нужно ли сделать данное ПО доступным?"
+msgstr "Нужно ли сделать данное ПО доступным для вас?"
 
 #. Type: select
 #. Choices
@@ -710,121 +691,3 @@ msgstr "Продолжить без зеркала архива из сети?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Зеркало архива из сети не выбрано."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Использовать ПО с ограничениями?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"В виде пакетов доступно несвободное ПО. Хотя, оно не является частью "
-"основного дистрибутива, для установки можно использовать стандартные "
-"утилиты. Данное ПО имеет различные лицензии, согласно которым вам иногда "
-"нельзя его использовать, изменять или распространять."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Использовать ПО из раздела \"universe\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"В виде пакетов доступно дополнительное ПО. Оно бесплатное и, хотя, оно не "
-"является частью основного дистрибутива, для установки можно использовать "
-"стандартные утилиты."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Использовать ПО из раздела \"multiverse\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"В виде пакетов доступно некоторое несвободное ПО. Хотя, оно не является "
-"частью основного дистрибутива, для установки можно использовать стандартные "
-"утилиты. Данное ПО имеет различные лицензии, согласно которым вам иногда "
-"нельзя его использовать, изменять или распространять."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Использовать ПО из раздела \"partner\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"В репозитории \"partner\" компании Canonical доступно некоторое "
-"дополнительное ПО. Оно не является частью Ubuntu, но предлагается "
-"пользователям Ubuntu компанией Canonical и соответствующими производителями "
-"как услуга."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Использовать заблаговременно перенесённое ПО?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Некоторое ПО было перенесено из разрабатываемой версии в этот выпуск. Хотя, "
-"данное ПО не прошло такого полного тестирования, как остальное в выпуске, "
-"оно включает новые версии некоторых приложений, которые могут обладать "
-"нужными свойствами."

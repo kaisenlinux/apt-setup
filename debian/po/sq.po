@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2017-09-11 23:13+0300\n"
 "Last-Translator: Sotirios Vrachas <sotirios@vrachas.net>\n"
 "Language-Team: Albanian <debian-l10n-albanian@lists.debian.org>\n"
@@ -575,12 +575,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Sidoqoftë, të lutem zgjidh nëse dëshiron ti kesh."
 
@@ -631,26 +626,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Të lutem zgjidh nëse dëshiron ti kesh këto programe."
@@ -720,121 +696,3 @@ msgstr "Të vazhdoj pa një pasqyrë rrjeti?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nuk u zgjodh asnjë rrjet pasqyrë."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Të përdor software të kufizuar?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Disa programe jo-falas gjenden në formë të paketuar. Edhe pse ky software "
-"nuk është pjesë e shpërndarjes kryesore, vegla standarde paketimi mund të "
-"përdoren për ta instaluar. Ky software ka licensa të ndryshme të cilat mund "
-"të të pengojnë për ta përdorur, ndryshuar, apo shpërndarë atë."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Të përdor software nga përbërësja \"universe\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Disa programe shtesë gjenden në formë të paketuar. Ky software është falas "
-"dhe, megjithëse nuk është pjesë e shpërndarjes kryesore, vegla standarde të "
-"paketimit mund të përdoren për ta instaluar."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Të përdor software nga përbërësja \"multiverse\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Disa programe jo-falas gjenden në formë të paketuar. Edhe pse ky software "
-"nuk është pjesë e shpërndarjes kryesore, vegla standarde paketimi mund të "
-"përdoren për t'a instaluar. Ky software ka licensa të ndryshme dhe (në disa "
-"raste) pengesa licensuese të cilat mund të të ndalojnë për ta përdorur, "
-"ndryshuar, apo shpërndarë atë."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Të përdor software nga përbërësja \"partner\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Disa programe shtesë gjenden në përbërësen \"partner\" nga Canonical. Ky "
-"software nuk është pjese e Ubuntu-së, por ofrohet nga Canonical dhe nga "
-"shitësit respektivë si një shërbim ndaj përdoruesve të Ubuntu-së."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Të përdor software të përshtatur?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Disa programe janë përshtatur nga pema e zhvillimit për të punuar me këtë "
-"dalje në qarkullim. Edhe pse ky software nuk ka kaluar në testim aq të plotë "
-"sa ai që ndodhet në shpërndarjen kryesore, përmban versione të reja të disa "
-"programeve që mund të sjellin veçori të dobishme."

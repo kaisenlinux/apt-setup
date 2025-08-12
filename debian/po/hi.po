@@ -35,8 +35,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-08-11 17:09+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2024-08-21 15:09+0000\n"
 "Last-Translator: AYUSHMAN TIWARI <ayushmanranbaxy@gmail.com>\n"
 "Language-Team: \n"
 "Language: hi\n"
@@ -569,12 +569,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "कृपया चुनें कि आप फिर भी इनको उपलब्ध रखना चाहेंगे."
 
@@ -624,26 +619,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "चुनें कि आप यह सॉफ्टवेयर उपलब्ध चाहते हैं या नहीं."
@@ -710,119 +686,3 @@ msgstr "मिरर के बगैर जारी रखें?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "कोई नेटवर्क इंटरफेस नहीं मिला।"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "क्या रिस्ट्रिक्टेड सॉफ्टवेयर का प्रयोग करें?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"कुछ नॉन-फ्री सॉफ्टवेयर पैकेजों के रूप में उपलब्ध हैं. हालाँकि ये सॉफ्टवेयर मुख्य डिस्ट्रीब्यूशन का "
-"हिस्सा नहीं है, फिर भी मानक पैकेज प्रबंधन औजारों का प्रयोग करके इन्हें संस्थापित किया जा "
-"सकता है. इन सॉफ्टवेयरो के लाइसेंस भिन्न प्रकार के हैं जोकि आपको इन्हें प्रयोग, परिवर्तित या "
-"वितरित करने से रोक सकते है."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "क्या \"universe\" अवयव से सॉफ्टवेयर का प्रयोग करें?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"कुछ अतिरिक्त सॉफ्टवेयर पेकेजों के रूप में उपलब्ध हैं. यह सॉफ्टवेयर मुक्त हैं, हालाँकि मुख्य "
-"डिस्ट्रीब्यूश का भाग नहीं है, इन्हें मानक पैकेज प्रबंधन औजारों का प्रयोग करके संस्थापित किया "
-"जा सकता है."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "क्या \"multiverse\" अवयव के सॉफ्टवेयर प्रयोग करें?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"कुछ नॉन-फ्री सॉफ्टवेयर पैकेज के रूप में उपलब्ध हैं. हालाँकि ये सॉफ्टवेयर मुख्य डिस्ट्रीब्यूशन का "
-"भाग नहीं हैं, फिर भी इन्हें मानक पैकेज प्रबंधन औजारों की सहायता से संस्थापित किया जा सकता "
-"है. इन सॉफ्टवेयरों के लाइसेन्स भिन्न हैं (और कुछ स्थितियों में) पेटेंट बंधन आपको इनका प्रयोग, "
-"परिवर्तन या वितरण करने से प्रतिबंधित कर सकते हैं."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "क्या \"partner\" अवयव से सॉफ्टवेयर का प्रयोग करें?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"कुछ अतिरिक्त सॉफ्टवेयर Canonical के \"पार्टनर\" रिपॉजिटरी से उपलब्ध है। यह सॉफ्टवेयर "
-"उबंटू का हिस्सा नहीं है, लेकिन यह कैनन और संबंधित विक्रेताओं द्वारा उबंटू उपयोगकर्ताओं की सेवा "
-"के रूप में पेश किया जाता है।"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "बैकपोर्टेड सॉफ्टवेयर का प्रयोग करें?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"कुछ सॉफ्टवेयर विकास वृक्ष से इस रिलीज़ के साथ कार्य करने के लिए बैकपोर्ट िकए गये हैं. हालाँकि "
-"इन सॉफ्टवेयर का उतना पूर्ण परीक्षण नहीं हुआ है जितना कि इस रिलीज़ के सॉफ्टवेयर का हुआ है, "
-"फिर भी इसमें कुछ अनुप्रयोगों के नये वर्ज़न शामिल हैं जो कुछ उपयोगी विशेषताएँ प्रदान कर सकते हैं."

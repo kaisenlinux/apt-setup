@@ -21,9 +21,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2021-11-21 21:49+0000\n"
-"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-05-14 17:03+0000\n"
+"Last-Translator: Sripath Roy Koganti <sripathroy@swecha.net>\n"
 "Language-Team: d-i <kde-i18n-doc@kde.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -517,9 +517,8 @@ msgstr "మిర్రర్ ని పరిశీలించు..."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid "Use non-free firmware?"
-msgstr "స్వేచ్ఛ మూలములు కాని సాఫ్ట్వేర్  వాడదలచారా?"
+msgstr "స్వేచ్ఛ మూలములు కాని సాఫ్ట్వేర్ వాడదలచారా?"
 
 #. Type: boolean
 #. Description
@@ -548,12 +547,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "ఎలాగైనా, మీకు అవి కావాలేమోఎంచుకో."
 
@@ -601,26 +595,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "మీకు ఈ సాఫ్ట్వేర్  కావాలేమోఎంచుకో."
@@ -688,115 +663,3 @@ msgstr "నెట్వర్క మిర్రర్ లేకుండా క
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ఏ నెట్వర్క మిర్రరు  ఎంచుకొనబడలేదు"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "నిర్బంధమయిన మృదులాంత్రాలని (software) ఉపయోగించు?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"పాకేజి రూపంలో, స్వేచ్ఛా మూలములు కాని  సాఫ్ట్వేర్  అందుబాటులో వుంది. ప్రధాన  వితరణలో భాగం కాదు కాని, "
-"ప్రామాణిక పాకేజి నిర్వహణ పరికరములతో స్థాపన చేయవచ్చు. వీటి లైసెన్సులు రకరకాలుగా వుండి, మిమ్ములను "
-"వాడకుండా, మార్చకుండా, పంచుకొకుండా చేయవచ్చు."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\"  అంశం నుండి  సాఫ్ట్వేర్  వాడాలా ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"పాకేజి రూపంలో, కొన్ని అదనపు సాఫ్ట్వేర్  అందుబాటులో వుంది. ఈ సాఫ్ట్వేర్ స్వేచ్ఛామూలములు. ప్రధాన  వితరణలో "
-"భాగం కాదు కాని, ప్రామాణిక పాకేజి నిర్వహణ పరికరములతో స్థాపన చేయవచ్చు."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" అంశం నుండి  సాఫ్ట్వేర్  వాడాలా ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"పాకేజి రూపంలో, స్వేచ్ఛా మూలములు కాని  సాఫ్ట్వేర్  అందుబాటులో వుంది. ప్రధాన  వితరణలో భాగం కాదు కాని, "
-"ప్రామాణిక పాకేజి నిర్వహణ పరికరములతో స్థాపన చేయవచ్చు. వీటి లైసెన్సులు రకరకాలుగా (కొన్ని టిలో పేటెంట్ "
-"పరిమితులు)  వుండి, మిమ్ములను వాడకుండా, మార్చకుండా, పంచుకొకుండా చేయవచ్చు."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"partner\" సంగ్రహం నుండి  సాఫ్ట్వేర్  వాడాలా ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"కొన్ని అదనపు సాఫ్ట్వేర్ కెనానికల్   \"partner\" సంగ్రహంలో అందుబాటులో వుంది. ఇది ఉబుంటు లో   భాగం "
-"కాదు కాని, ఉబుంటు మరియు వాటిని అందచేసేవారు ఉబుంటు వాడుకరలకు సేవకొరకు అందచేస్తున్నారు."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "బాక్ పోర్టెడ్   సాఫ్ట్వేర్   వాడాలా?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"కొన్ని  సాఫ్ట్వేర్ అభివృద్ది వృక్షం నుండి ఈ విడుదలతో పనిచేయటానికి వీలుగా బాక్ పోర్టెడ్   చేశారు. విడుదలలో "
-"సాఫ్ట్వేర్ లాగా పూర్తి పరీక్ష జరగలేదు కాని, దీనిలో కొన్ని అనువర్తనాల తాజారూపాలు, ఉపయోగకరమైన  లక్షణాలు కలిగి "
-"వుండవచ్చు."

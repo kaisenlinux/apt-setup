@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-09-10 19:49+0200\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-03-10 07:28+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -486,7 +486,7 @@ msgid ""
 "selection of packages, some may be missing."
 msgstr ""
 "Instalujete z obrazu DVD. Přestože obsahuje velké množství balíků, některé "
-"mohou chybět"
+"mohou chybět."
 
 #. Type: text
 #. Description
@@ -560,12 +560,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Rozhodněte se, zda chcete zpřístupnit tento software."
 
@@ -616,26 +611,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Rozhodněte se, zda chcete mít tento software k dispozici."
@@ -702,121 +678,3 @@ msgstr "Pokračovat bez síťového zrcadla?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nebylo vybráno žádné síťové zrcadlo."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Používat omezený software?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Některý nesvobodný software je dostupný i ve formě balíků. Přestože tento "
-"software není součástí hlavní distribuce, můžete ho nainstalovat "
-"standardními nástroji pro správu balíků. Tento software má různé licence, "
-"které vám mohou bránit v jeho použití, modifikaci nebo šíření."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Používat software z archivu „universe“?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Ve formě balíků jsou dostupné i některé další programy, které jsou sice "
-"svobodné, avšak nejsou součástí hlavní distribuce. Pro jejich instalaci "
-"můžete využít standardní nástroje pro správu balíků."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Používat software z archivu „multiverse“?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Některý nesvobodný software je dostupný i ve formě balíků. Přestože tento "
-"software není součástí hlavní distribuce, můžete ho nainstalovat "
-"standardními nástroji pro správu balíků. Tento software má různé licence a "
-"(někdy) patentová omezení, což vám může bránit v jeho použití, modifikaci "
-"nebo šíření."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Používat software z repositáře „partner“?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Některý software je dostupný z partnerského repositáře firmy Canonical. "
-"Tento software není součástí Ubuntu, ale je poskytován Canonicalem a "
-"příslušnými partnery jako služba uživatelům Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Používat zpětně přenesený software?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Některý software byl přenesen z vývojové větve a upraven tak, aby pracoval v "
-"této verzi distribuce. Přestože tento software neprošel stejně důkladným "
-"testováním jako ostatní balíky, obsahuje novější verze některých aplikací, "
-"které mohou obsahovat nové užitečné vlastnosti."

@@ -24,9 +24,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-11-25 05:13+0000\n"
-"Last-Translator: FRANKLIN PRAKASH <franklinprakash1090@gmail.com>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2024-12-19 09:00+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
@@ -523,9 +523,8 @@ msgstr "இணைப்பதிப்பை வருடுகிறது...."
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
-#, fuzzy
 msgid "Use non-free firmware?"
-msgstr "இலவசமல்லாத மென் பொருளை பயன்படுத்த வேண்டுமா?"
+msgstr "இல்லாத ஃபார்ம்வேரைப் பயன்படுத்தவா?"
 
 #. Type: boolean
 #. Description
@@ -536,6 +535,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"ஃபார்ம்வேர் என்பது சில வன்பொருள் கூறுகளின் (வைஃபை கார்டுகள் அல்லது ஆடியோ சிப்செட்டுகள் "
+"போன்றவை) குறைந்த அளவிலான கட்டுப்பாட்டை வழங்கும் ஒரு வகையான மென்பொருளாகும், இது "
+"முழுமையாகவோ அல்லது இல்லாமல் செயல்படவோ கூடாது."
 
 #. Type: boolean
 #. Description
@@ -547,6 +549,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"டெபியனின் எல்லா பகுதிகளிலும் இல்லை என்றாலும், சில இலவசமற்ற ஃபார்ம்வேர்கள் டெபியனுடன் "
+"பணியாற்ற செய்யப்பட்டுள்ளன. இந்த ஃபார்ம்வேரில் மாறுபட்ட உரிமங்கள் உள்ளன, அவை உங்கள் "
+"சுதந்திரங்களை மென்பொருளைப் பயன்படுத்த, மாற்றியமைக்க அல்லது பகிர்ந்து கொள்ள "
+"கட்டுப்படுத்துகின்றன, பொதுவாக நீங்கள் படிக்கக்கூடிய மூல படிவங்கள் இல்லை."
 
 #. Type: boolean
 #. Description
@@ -554,12 +560,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "அவை எப்படியும் கிடைக்கப் பெற வேண்டுமா என தேர்ந்தெடுங்கள்."
 
@@ -609,26 +610,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "இந்த மென் பொருட்கள் கிடைக்கப் பெற வேண்டுமா என தேர்ந்தெடுங்கள்."
@@ -696,120 +678,3 @@ msgstr "எந்த வலையமைப்பு பிரதிபலிப�
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "எந்த வலையமைப்பு பிரதிபலிப்பானும் கண்டறியப்படவில்லை."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "கட்டுப் படுத்தப் பட்ட மென் பொருளை பயன்படுத்த வேண்டுமா?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"இலவசமல்லாத சில இலவச மென் பொருட்கள் தொகுப்புகளாக கிடைக்கின்றன. இந்த மென் பொருட்கள் "
-"முதன்மை விநியோகத்தின் பகுதி அல்ல எனினும் வழக்கமான தொகுப்பு மேலாண் கருவிகளைக் கொண்டு "
-"அவற்றை நிறுவலாம். இந்த மென் பொருட்களுக்கு பலவித உரிமங்கள் உள்ளன. அவை உங்களை அவற்றை பயன் "
-"படுத்துவது மாற்றுவது மற்றும் பகிர்ந்து கொள்வது ஆகியவற்றை கட்டுப் படுத்தும்."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\" (ஓருலக) பகுதியிலிருந்து மென் பொருட்களை பயன்படுத்த வேண்டுமா?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"கூடுதலாக சில இலவச மென் பொருட்கள் தொகுப்புகளாக கிடைக்கின்றன. இந்த மென் பொருட்கள் முதன்மை "
-"விநியோகத்தின் பகுதி அல்ல எனினும் வழக்கமான தொகுப்பு மேலாண் கருவிகளைக் கொண்டு அவற்றை "
-"நிறுவலாம்."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" (பல்லுலக) பகுதியிலிருந்து மென் பொருட்களை பயன்படுத்த வேண்டுமா?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"இலவசமல்லாத சில இலவச மென் பொருட்கள் தொகுப்புகளாக கிடைக்கின்றன. இந்த மென் பொருட்கள் "
-"முதன்மை விநியோகத்தின் பகுதி அல்ல எனினும் வழக்கமான தொகுப்பு மேலாண் கருவிகளைக் கொண்டு "
-"அவற்றை நிறுவலாம். இந்த மென் பொருட்களுக்கு பலவித உரிமங்கள் உள்ளன. அவற்றில் சில காப்புரிமை "
-"பெற்றவை ஆதலால் உங்களை அவற்றை பயன் படுத்துவது மாற்றுவது மற்றும் பகிர்ந்து கொள்வது "
-"ஆகியவற்றை கட்டுப் படுத்தும்."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"partner\" (கூட்டாளி) பகுதியிலிருந்து மென் பொருட்களை பயன்படுத்த வேண்டுமா?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"சில கூடுதல் மென்பொருட்கள் கனானிகலின் கூட்டாளி \"partner\" பெட்டகங்களிடமிருந்து "
-"கிடைக்கும். இது உபுண்டுவின் பகுதி அல்ல. உபுண்டு பயனர்களுக்கு ஒரு சேவையாக கனானிகலாலும் "
-"விற்பனையாளர்களாலும் வழங்கப்படுகிறது."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "பின் இணைப்பு மென் பொருட்களை பயன்படுத்தவா?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"சில மென் பொருட்கள் வளரும் தொகுப்புகளிலிருந்து இந்த வெளியீட்டுடன் வேலை செய்யும் படி இணக்கப் "
-"பட்டுள்ளன. இவை மற்றவை போல் விரிவாக பரிசோதிக்கப் படவில்லை.ஆனால் இவற்றில் உள்ள புதிய "
-"பதிப்புகள் சில நல்ல பயன்பாடுகளைத் தரக்கூடும்."

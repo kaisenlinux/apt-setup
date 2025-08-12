@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: di-sublevel1_eu\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2022-06-09 19:45+0000\n"
 "Last-Translator: Gontzal Manuel Pujana Onaindia <thadahdenyse@gmail.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
@@ -564,12 +564,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Aukeratu eskuragarri izan nahi dituzun edo ez."
 
@@ -621,26 +616,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Aukeratu software hauek eskuragarri izan nahi dituzun ala ez."
@@ -709,124 +685,3 @@ msgstr "Jarraitu sareko ispilurik gabe?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Ez da sareko ispilurik hautatu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Erabili software murriztua?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Libreak ez diren software batzuk (non-free) eskuragarri daude pakete gisa. "
-"Nahiz eta pakete hauek banaketa nagusiaren zati ez izan, pakete estandarrak "
-"kudeatzeko tresnak erabil daitezke hauek instalatzeko. Software hauek "
-"erabiltzea, eraldatzea edo partekatzea debekatzen duten lizentzia "
-"desberdinak izan ditzakete."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Erabili \"universe\" biltegiko softwarea?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Software gehigarriak eskuragarri daude pakete gisa. Software hauek libreak "
-"dira eta, banaketa nagusiko zati ez izan arren, pakete estandarrak "
-"kudeatzeko tresnak erabil daitezke hauek instalatzeko."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Erabili \"multiverse\" biltegiko softwarea?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Libreak ez diren software batzuk eskuragarri daude pakete gisa. Nahiz eta "
-"pakete hauek banaketa nagusiaren zati ez izan, pakete estandarrak kudeatzeko "
-"tresnak erabil daitezke hauek instalatzeko. Software hauek (kasu batzuetan) "
-"bere erabilera, partekaketa edo eraldaketa ezintzen duen lizentzi ezberdinak "
-"dituzte, baita patenteen murriztapena ere."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Erabili \"partner\" biltegiko softwarea?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Zenbait software gehigarri eskuragarri dago Canonical-ren \"partner\" "
-"biltegian. Software hau ez da Ubunturen zati, baina Canonical-ek eta beste "
-"saltzaileek Ubuntu erabiltzaileei zerbitzu bezala eskaintzen die."
-
-# Backport  definitzeko egokiena:
-# atzerako egokitzapena
-# hala nola feedback == atzeraelikadura gisa ere oanrtuta dagoen
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Erabili atzerako egokitzapenen softwarea?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Zenbait software garapen adarretik bertsio honekin lan egin ahal izateko "
-"egokitu da. Nahiz eta software hauei proba guztiak ez aplikatu, ezaugarri "
-"erabilgarriak dituzten aplikazio batzuen bertsio berrienak ditu."

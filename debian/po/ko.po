@@ -7,7 +7,7 @@
 # Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018, 2020-2023.
+# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018, 2020-2025.
 #
 # Translations from iso-codes:
 # Copyright (C)
@@ -27,8 +27,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-12-21 23:32+0900\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-01-04 02:39+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -537,6 +537,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"펌웨어는 소프트웨어의 일종으로 특정 하드웨어 (와이파이 카드 또는 오디오 칩셋"
+"과 같은) 구성 요소의 저수준 제어를 담당합니다. 펌웨어가 없이는 불완전하게 동"
+"작하거나 전혀 동작을 안 할 수 있습니다."
 
 #. Type: boolean
 #. Description
@@ -548,6 +551,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"데비안의 일부분은 아니지만, 일부 비자유 펌웨어는 데비안과 함께 동작하도록 준"
+"비되어 있습니다. 이 펌웨어의 라이선스는 소프트웨어의 사용, 수정, 공유에 있어 "
+"여러분의 자유를 제한할 수 있고, 일반적으로 소스 코드 형태가 아니라서 여러분"
+"이 어떻게 동작하는지 공부할 수 없습니다."
 
 #. Type: boolean
 #. Description
@@ -555,12 +562,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "그래도 이 소프트웨어를 사용할 수 있도록 만들지 여부를 선택하십시오."
 
@@ -611,26 +613,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "이 소프트웨어를 사용할 수 있도록 만들지 여부를 선택하십시오."
@@ -699,118 +682,3 @@ msgstr "네트워크 미러 사이트 없이 계속 하시겠습니까?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "선택한 네트워크 미러 사이트가 없습니다."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "제한된 소프트웨어를 사용하시겠습니까?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"독점 소프트웨어를 설치할 수 있습니다. 이 소프트웨어는 메인 배포판에 속해있지"
-"않지만 패키지 관리 도구를 사용해 설치할 수 있습니다. 비자유소프트웨어는 라이"
-"선스가 소프트웨어마다 다르며 소프트웨어를 사용하거나 수정, 공유할 수 없는경우"
-"도 있습니다."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"유니버스\" 소프트웨어를 사용하시겠습니까?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"추가로 설치할 수 있는 소프트웨어가 있습니다. 메인 배포판에 속하지는 않지만자"
-"유 소프트웨어에 해당하며, 패키지 관리 도구를 사용해 설치할 수 있습니다."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"멀티버스\" 소프트웨어를 사용하시겠습니까?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"독점 소프트웨어 중에 패키지로 사용할 수 있는 소프트웨어가 있습니다. 이 소프트"
-"웨어는 메인 배포판에 포함된 소프트웨어가 아니지만 패키지 관리 도구를 이용해 "
-"설치할 수 있습니다. 독점 소프트웨어는 라이선스가 여러가지이고, (경우에 따라) "
-"특허 문제때문에 소프트웨어 사용, 수정, 공유를 못 할 수도 있습니다."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"파트너\" 저장소에 있는 소프트웨어를 사용하시겠습니까?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"캐노니컬의 \"파트너\" 저장고에 추가 소프트웨어가 일부 들어 있습니다. 이 소프"
-"트웨어는 우분투의 일부가 아니지만 캐노니컬 및 여러 회사가 우분투 사용자에 대"
-"한 서비스로 제공합니다."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "백포팅한 소프트웨어를 사용합니까?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"이 배포판에 적합하도록 백포팅한 소프트웨어가 있습니다. 릴리스한 배포판에 들"
-"어 있는 소프트웨어만큼 철저한 테스트 과정을 거치지는 않았지만 몇 가지 기능이 "
-"추가되는 등 더 최신 버전의 소프트웨어입니다."

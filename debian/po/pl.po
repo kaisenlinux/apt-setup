@@ -36,9 +36,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-11-26 14:00+0000\n"
-"Last-Translator: Nik Nikovsky <zejdzztegomaila@gmail.com>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-02-24 04:30+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -148,8 +148,8 @@ msgid ""
 "continue without all the packages from this repository."
 msgstr ""
 "Może to oznaczać problemy z siecią lub serwerem zawierającym ten klucz. "
-"Możesz wybrać ponowienie pobierania lub zignorowanie problemu i "
-"kontynuowanie bez pakietów z tego repozytorium."
+"Możesz spróbować pobrać ponownie lub zignorować problem i kontynuować bez "
+"wszystkich pakietów z tego repozytorium."
 
 #. Type: error
 #. Description
@@ -215,7 +215,7 @@ msgstr "nowsze wersje oprogramowania (backporty)"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
 msgid "Services to use:"
-msgstr "Wykorzystywane serwisy:"
+msgstr "Wykorzystywane usługi:"
 
 #. Type: multiselect
 #. Description
@@ -225,8 +225,8 @@ msgid ""
 "Debian has two services that provide updates to releases: security and "
 "release updates."
 msgstr ""
-"Debian posiada dwa serwisy, które umożliwiają aktualizacje dystrybucji: "
-"poprawki bezpieczeństwa oraz aktualizacje wydania."
+"Debian oferuje dwie usługi zapewniające aktualizacje dystrybucji: poprawki "
+"bezpieczeństwa oraz aktualizacje wydania."
 
 #. Type: multiselect
 #. Description
@@ -237,7 +237,7 @@ msgid ""
 "this service is strongly recommended."
 msgstr ""
 "Poprawki bezpieczeństwa sprawiają, że system jest zabezpieczony przed "
-"atakami. Uaktywnienie tego serwisu jest bardzo zalecane."
+"atakami. Uaktywnienie tej usługi jest bardzo zalecane."
 
 #. Type: multiselect
 #. Description
@@ -249,10 +249,10 @@ msgid ""
 "the usability of the software. It also provides regression fixes. This "
 "service is only available for stable and oldstable releases."
 msgstr ""
-"Aktualizacje wydania dostarczają bardziej aktualnych wersji oprogramowania,"
-"które systematycznie się zmienia, a brak posiadania najnowszej wersji "
-"ogranicza jego użyteczność. Zawierają również poprawki regresji. Ten serwis "
-"jest dostępny tylko dla dystrybucji stabilnej oraz poprzedzającej ją."
+"Aktualizacje wydania dostarczają nowszych wersji oprogramowania, które "
+"systematycznie się zmienia, a brak najnowszej wersji ogranicza jego "
+"użyteczność. Zawierają również poprawki regresji. Ta usługa jest dostępna "
+"tylko dla dystrybucji stabilnej oraz poprzedzającej ją."
 
 #. Type: multiselect
 #. Description
@@ -413,7 +413,7 @@ msgstr "Zmiana nośnika"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "Włóż nośnik instalacyjny z etykietą '${LABEL}' i naciśnij enter."
+msgstr "Włóż nośnik instalacyjny z etykietą '${LABEL}' i naciśnij Enter."
 
 #. Type: text
 #. Description
@@ -435,7 +435,7 @@ msgid ""
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
 "Instalując system z wykorzystaniem płyty netinst i nie wybierając serwera "
-"lustrzanego zakończysz instalację z bardzo okrojonym systemem."
+"lustrzanego, zakończysz instalację z bardzo okrojonym systemem."
 
 #. Type: text
 #. Description
@@ -447,7 +447,7 @@ msgid ""
 "complete system."
 msgstr ""
 "Instalujesz z płyty netinst, która pozwala na instalację jedynie minimalnego "
-"systemu podstawowego. Użyj serwera lustrzanego by zainstalować bardziej "
+"systemu podstawowego. Użyj serwera lustrzanego, aby zainstalować bardziej "
 "kompletny system."
 
 #. Type: text
@@ -470,9 +470,9 @@ msgid ""
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"Przeskanowano nośnik %1 . Mimo, że zawierają one sporą ilość pakietów, to "
-"nadal niektóre mogą być niedostępne (zapewne pakiety wymagane do obsługi "
-"języków innych niż angielski)."
+"Przeskanowane nośniki: %1. Mimo że zawierają one sporą liczbę pakietów, "
+"niektórych może brakować (w szczególności niektórych pakietów potrzebnych do "
+"obsługi języków innych niż angielski)."
 
 #. Type: text
 #. Description
@@ -484,8 +484,8 @@ msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"Przeskanowano %1 nośnik. Mimo, że zawierają one dużą ilość pakietów, to "
-"nadal część może być niedostępna."
+"Przeskanowane nośniki: %1. Mimo że zawierają one duży wybór pakietów, "
+"niektóre mogą być niedostępne."
 
 #. Type: text
 #. Description
@@ -506,7 +506,7 @@ msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"Instalujesz z płyty DVD. Mimo, że zawiera ona dużą liczbę pakietów, to nadal "
+"Instalujesz z płyty DVD. Mimo że zawiera ona dużą liczbę pakietów, to nadal "
 "część może być niedostępna."
 
 #. Type: text
@@ -582,12 +582,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Proszę wybrać, czy chcesz mieć je mimo wszystko dostępne."
 
@@ -639,26 +634,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr ""
@@ -727,122 +703,3 @@ msgstr "Kontynuować bez serwera lustrzanego?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nie wybrano żadnego serwera lustrzanego."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Użyć restrykcyjnego oprogramowania?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Część niewolnego oprogramowania jest dostępna w postaci pakietów. Pomimo, że "
-"te programy nie są częścią głównej dystrybucji, standardowe narzędzia do "
-"zarządzania pakietami mogą je zainstalować. Oprogramowanie takie posiada "
-"różne licencje, które mogą ograniczać prawo do jego używania, modyfikowania "
-"lub rozpowszechniania."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Użyć oprogramowania z części \"universe\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Część dodatkowego oprogramowania jest dostępna w postaci pakietów. Mimo, że "
-"jest to wolne oprogramowanie, nie jest ono dostępne jako część głównej "
-"dystrybucji. Programy do zarządzania pakietami mogą je instalować."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Użyć oprogramowania z części \"multiverse\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Część niewolnego oprogramowania jest dostępna w postaci pakietów. Pomimo, że "
-"te programy nie są częścią głównej dystrybucji, standardowe narzędzia do "
-"zarządzania pakietami mogą je zainstalować. Oprogramowanie takie posiada "
-"różne licencje, a czasem również jest opatentowane i prawo do jego używania, "
-"modyfikowania lub rozpowszechniania. może być ograniczone."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Użyć oprogramowania z części \"partner\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Dodatkowe oprogramowanie dostępne jest z repozytorium \"partner\". Nie jest "
-"to część Ubuntu, ale jest oferowane przez Canonical i odpowiednich dostawców "
-"jako usługa dla użytkowników Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Użyć nowszych wersji oprogramowania dostosowanych do tego wydania?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Część oprogramowania pobrana z rozwojowej wersji została dostosowana do "
-"pracy z tym wydaniem. Mimo, iż pakiety te nie przeszły przez całą procedurę "
-"testową, zawierają nowsze wersje aplikacji, a przez to mogą zawierać "
-"użyteczne, nowe możliwości."

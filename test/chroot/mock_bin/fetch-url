@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
-
-[ "fail" != "$fetch_url_result" ]
+if [ "fail" = "$fetch_url_result" ]; then
+    exit 1
+fi
 echo "$fetch_url_result" > "$2"

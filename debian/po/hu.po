@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-11-08 16:47+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-07-07 20:50+0000\n"
 "Last-Translator: Szia Tomi <sziatomi01@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -131,7 +131,7 @@ msgstr "Kihagy"
 #. Description
 #: ../apt-setup-udeb.templates:8002
 msgid "Downloading local repository key failed:"
-msgstr "A helyi tárolókulcs letöltése meghiúsult:"
+msgstr "A helyi tárolókulcs letöltése nem sikerült:"
 
 #. Type: select
 #. Description
@@ -179,8 +179,9 @@ msgid ""
 "The repository on ${HOST} couldn't be accessed, so its updates will not be "
 "made available to you at this time. You should investigate this later."
 msgstr ""
-"${HOST} kiszolgálón lévő tároló nem érhető el, így annak frissítései "
-"jelenleg nem lesznek elérhetők a számodra. Ez később megoldható."
+"A következő kiszolgálón lévő tároló nem érhető el: ${HOST}. Így annak "
+"frissítései jelenleg nem lesznek elérhetők a számodra. Ezt később kell "
+"megold."
 
 # Type: error
 # Description
@@ -213,7 +214,7 @@ msgstr "biztonsági frissítések (innen: ${SEC_HOST})"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "release updates"
-msgstr "kiadás frissítések"
+msgstr "kiadási frissítések"
 
 #. Type: multiselect
 #. Choices
@@ -223,14 +224,14 @@ msgstr "kiadás frissítések"
 #. :sl1:
 #: ../apt-setup-udeb.templates:11001
 msgid "backported software"
-msgstr "Backportolt szoftverek használata"
+msgstr "backportolt szoftver"
 
 #. Type: multiselect
 #. Description
 #. :sl1:
 #: ../apt-setup-udeb.templates:11002
 msgid "Services to use:"
-msgstr "Felhasznált szolgáltatások:"
+msgstr "Használható szolgáltatások:"
 
 #. Type: multiselect
 #. Description
@@ -241,7 +242,7 @@ msgid ""
 "release updates."
 msgstr ""
 "A Debian két frissítési szolgáltatást nyújt: ezek a biztonsági (security) és "
-"a kiadás (release) frissítések."
+"a kiadási (release) frissítések."
 
 #. Type: multiselect
 #. Description
@@ -264,10 +265,10 @@ msgid ""
 "the usability of the software. It also provides regression fixes. This "
 "service is only available for stable and oldstable releases."
 msgstr ""
-"A kiadás frissítések az olyan sűrűn változó szoftverek frissítéseit adják, "
-"melyeknél az elavulás csökkenti a használhatóságot. A javítás közben "
-"bekerült hibák javítását is tartalmazza. E szolgáltatás csak a \"stable\" és "
-"\"oldstable\" kiadásokhoz érhető el."
+"A kiadási frissítések az olyan sűrűn változó szoftverek frissítéseit "
+"tartalmazza, melyeknél az elavulás csökkenti a használhatóságot. Ez a "
+"javítás közben belekerült hibák kijavítását is tartalmazza. Ez a "
+"szolgáltatás csak a „stable” és az „oldstable” kiadásokhoz érhető el."
 
 #. Type: multiselect
 #. Description
@@ -281,17 +282,20 @@ msgid ""
 "not cause any of them to be installed by default; it only allows you to "
 "manually select backports to use."
 msgstr ""
-"Néhány szoftver backportra került a fejlesztői ágból, hogy együttműködjön e "
-"kiadással. Bár e szoftverek nem olyan teszteltek, mint amelyek e kiadásban "
-"vannak, egyes alkalmazások újabb változatait tartalmazzák, melyek fontos, új "
-"képességekkel bírhatnak."
+"Néhány szoftver backportolásra került a fejlesztői ágból, hogy "
+"együttműködjön ezzel a kiadással. Bár ezek a szoftverek nem mentek át teljes "
+"körű tesztelésen, mint a kiadáshoz tartozók, de az alkalmazások újabb "
+"változatait tartalmazzák, és hasznos új képességeket biztosíthatnak. A "
+"backport engedélyezése nem eredményezi egyikük alapértelmezett telepítését "
+"sem, csak lehetővé teszi, hogy kézzel kiválaszd a használni kívánt "
+"backportolt szoftvereket."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../apt-setup-udeb.templates:12001
 msgid "Enable source repositories in APT?"
-msgstr "Engedélyezzem a forráskód gyűjteményeket az APT-ben?"
+msgstr "Engedélyezed a forráskódtárolókat az APT csomagkezelőben?"
 
 #. Type: boolean
 #. Description
@@ -303,17 +307,18 @@ msgid ""
 "you don't need this feature, you can disable those entries and save some "
 "bandwidth during \"apt-get update\" operations."
 msgstr ""
-"Alapértelmezés szerint a forrás gyűjtemények is fel vannak sorolva az /etc/"
-"apt/sources.list fájlban (megfelelő \"deb-src\" sorokkal) és így az \"apt-"
-"get source\" működik. Azonban ha erre nincs szükséged, letilthatod ezt és "
-"sávszélességet spórolhatsz az \"apt-get update\" futtatásakor."
+"Alapértelmezés szerint a forráskódtárolók is fel vannak sorolva az „/etc/apt/"
+"sources.list” fájlban (a megfelelő „deb-src” sorokkal), így az „apt-get "
+"source” működik. Ha azonban nincs szükséged erre, kikapcsolhatod ezeket a "
+"bejegyzéseket, és így némi sávszélességet takaríthatsz meg az „apt-get "
+"update” futtatása során."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:1001
 msgid "Scanning the installation media..."
-msgstr "A telepítő beolvasása..."
+msgstr "Telepítő adathordozó átnézése..."
 
 # Type: error
 # Description
@@ -338,7 +343,9 @@ msgstr "apt beállítási probléma"
 msgid ""
 "An attempt to configure apt to install additional packages from the media "
 "failed."
-msgstr "Nem sikerült az apt konfigurálása további csomagokkal a telepítőről."
+msgstr ""
+"Nem sikerült az apt csomagkezelőt beállítani úgy, hogy további csomagokat "
+"tudj telepíteni az adathordozóról."
 
 #. Type: boolean
 #. Description
@@ -355,14 +362,14 @@ msgstr "Nem sikerült az apt konfigurálása további csomagokkal a telepítőr�
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 #: ../apt-cdrom-setup.templates:5001 ../apt-cdrom-setup.templates:6001
 msgid "Scan extra installation media?"
-msgstr "Beolvasod az extra telepítőt?"
+msgstr "Átnézed az extra telepítő adathordozót?"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001
 msgid "Scanning your installation media finds the label:"
-msgstr "Telepítő médiád átnézése a következő címkét találta:"
+msgstr "A következő címkét találta a telepítő adathordozód átnézése:"
 
 #. Type: boolean
 #. Description
@@ -375,8 +382,9 @@ msgid ""
 "skipped."
 msgstr ""
 "Most van lehetőséged további adathordozó átnézésére a csomagkezelő (apt) "
-"számára. Általában ezek ugyanabban a készletben vannak, mint amelyről most "
-"indítottál. Ha nincs semmilyen más adathordozód, ezt a lépést kihagyhatod."
+"számára. Általában ezek ugyanabban a készletben vannak, mint amelyről "
+"indítottál. Ha nincs további adathordozód, akkor ezt a lépés egyszerűen "
+"kihagyhatod."
 
 #. Type: boolean
 #. Description
@@ -386,28 +394,28 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "Ha további adathordozót néznél át, tégy be egy másikat most."
+msgstr "Ha további adathordozót néznél át, tegyél be egy másikat most."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:4001
 msgid "The image with the following label has been scanned:"
-msgstr "Az alábbi címkéjű lemezképet átnéztük:"
+msgstr "Az alábbi címkéjű lemezkép átnézve:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "The image with the following label has already been scanned:"
-msgstr "Az alábbi címkéjű lemezképet már korábban átnéztük:"
+msgstr "Az alábbi címkéjű lemezkép már korábban át lett nézve:"
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-cdrom-setup.templates:5001
 msgid "Please replace it now, if you wish to scan another."
-msgstr "Cseréld most, ha szeretnél továbbit átnézni."
+msgstr "Cseréld ki most, ha másikat szeretnél átnézetni."
 
 #. Type: boolean
 #. Description
@@ -428,7 +436,7 @@ msgstr "Adathordozó csere"
 #. :sl1:
 #: ../apt-cdrom-setup.templates:7001
 msgid "Please insert the media labeled '${LABEL}' and press enter."
-msgstr "Tedd be ezt a lemezt '${LABEL}' és üssön enter-t."
+msgstr "Tedd be ezt az adathorfozót „${LABEL}”, és nyomd meg az entert."
 
 #. Type: text
 #. Description
@@ -437,7 +445,7 @@ msgstr "Tedd be ezt a lemezt '${LABEL}' és üssön enter-t."
 #: ../apt-cdrom-setup.templates:8001
 msgid "Disabling netinst CD in sources.list..."
 msgstr ""
-"A hálózati telepítő (netinst) CD kikapcsolása a sources.list fájlban..."
+"A hálózati telepítő CD (netinst CD) letiltása a sources.list fájlban..."
 
 #. Type: text
 #. Description
@@ -450,8 +458,8 @@ msgid ""
 "If you are installing from a netinst CD image and choose not to use a "
 "mirror, you will end up with only a very minimal base system."
 msgstr ""
-"Ha hálózati telepítő (netinst) CD-ről telepítesz, és nem használsz tükröt, "
-"csak egy minimális alaprendszert kapsz majd."
+"Ha hálózati telepítő CD-ről telepítesz, és nem használsz tükörszevert, akkor "
+"csak egy nagyon minimális alaprendszert kapsz."
 
 #. Type: text
 #. Description
@@ -462,9 +470,9 @@ msgid ""
 "installation of a very minimal base system. Use a mirror to install a more "
 "complete system."
 msgstr ""
-"Hálózati telepítő (netinst) CD lemezről telepítesz, mely önmaga csak egy "
-"minimális alaprendszert telepít. Használj tükröt egy teljesebb rendszer "
-"telepítéséhez."
+"Egy hálózati telepítő CD lemezképről (netinst CD) telepítesz, amely "
+"önmagában csak egy nagyon minimális alaprendszer telepítését teszi lehetővé. "
+"Egy teljesebb rendszer telepítéséhez használj tükörszervert."
 
 #. Type: text
 #. Description
@@ -473,7 +481,8 @@ msgstr ""
 msgid ""
 "You are installing from an image which contains a limited selection of "
 "packages."
-msgstr "Olyan lemezképről telepítesz, mely csak kevés csomagot tartalmaz."
+msgstr ""
+"Olyan lemezképről telepítesz, amely korlátozott csomagválasztékot tartalmaz."
 
 #. Type: text
 #. Description
@@ -486,8 +495,9 @@ msgid ""
 "packages, some may be missing (notably some packages needed to support "
 "languages other than English)."
 msgstr ""
-"%i lemezképet átnéztünk. Bár ezek sok csomagot tartalmaznak, néhány "
-"hiányozhat (főleg egyes nyelvek teljes támogatásához szükséges csomagok)."
+"%i lemezkép lett átnézve. Annak ellenére, hogy ezek megfelelő "
+"csomagválasztékot tartalmaznak, néhány csomag hiányozhat (nevezetesen az "
+"egyes nyelvek teljes támogatásához szükséges csomagok)."
 
 #. Type: text
 #. Description
@@ -499,8 +509,8 @@ msgid ""
 "You have scanned %i images. Even though these contain a large selection of "
 "packages, some may be missing."
 msgstr ""
-"%i lemezképet átnéztünk. Bár ezek sok csomagot tartalmaznak, egyesek "
-"hiányozhatnak."
+"%i lemezkép lett átnézve. Annak ellenére, hogy ezek sok csomagot "
+"tartalmaznak, néhány csomag hiányozhat."
 
 #. Type: text
 #. Description
@@ -510,8 +520,8 @@ msgid ""
 "Note that using a mirror can result in a large amount of data being "
 "downloaded during the next step of the installation."
 msgstr ""
-"Hasznos tudni, hogy tükör használata sok adat letöltését eredményezheti a "
-"telepítés következő lépésekor."
+"Jó ha tudod, hogy a tükörszerver használata nagy mennyiségű adat letöltését "
+"eredményezheti a telepítés következő részében."
 
 #. Type: text
 #. Description
@@ -521,8 +531,8 @@ msgid ""
 "You are installing from a DVD image. Even though it contains a large "
 "selection of packages, some may be missing."
 msgstr ""
-"DVD lemezképről telepítesz. Bár ez sok csomagot tartalmaz, egyesek "
-"hiányozhatnak."
+"Egy DVD lemezképről telepítesz. Annak ellenére, hogy ez sok csomagot "
+"tartalmaz, néhány csomag hiányozhat."
 
 #. Type: text
 #. Description
@@ -533,8 +543,8 @@ msgid ""
 "recommended, especially if you plan to install a graphical desktop "
 "environment."
 msgstr ""
-"Ha van tűrhető Internet kapcsolata, használjon tükröt, főleg, ha grafikus "
-"asztali környezet telepítését tervezi."
+"Ha jó internetkapcsolatod van, ajánlott a tükörszerver használata, főleg, ha "
+"grafikus asztali környezet telepítését tervezed."
 
 #. Type: text
 #. Description
@@ -544,15 +554,15 @@ msgid ""
 "If you have a reasonably good Internet connection, use of a mirror is "
 "suggested if you plan to install a graphical desktop environment."
 msgstr ""
-"Ha van tűrhető Internet kapcsolata, tükör használata javasolt, ha grafikus "
-"asztali környezet telepítését tervezi."
+"Ha viszonylag jó internetkapcsolattal rendelkezel, javasolt a tükörszerver "
+"használata, ha grafikus asztali környezet telepítését tervezed."
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:1001
 msgid "Scanning the mirror..."
-msgstr "Tükör átnézése..."
+msgstr "Tükörszerver átnézése..."
 
 #. Type: boolean
 #. Description
@@ -570,6 +580,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"A firmware egy olyan szoftver, amely bizonyos hardverösszetevők (például Wi-"
+"Fi kártyák vagy audio chipkészletek) alacsony szintű vezérlését biztosítja, "
+"amelyek enélkül esetleg nem működnek teljesen vagy egyáltalán sem."
 
 #. Type: boolean
 #. Description
@@ -581,6 +594,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Bár egyáltalán nem része a Debiannak, néhány nem ingyenes firmware készült a "
+"Debiannal való együttműködésre. Ennek a firmware-nek különböző licencei "
+"vannak, amelyek korlátozzák az Ön szabadságát a szoftver használatára, "
+"módosítására vagy megosztására, és általában nem rendelkezik olyan "
+"forrásűrlapokkal, amelyeket tanulmányozhat."
 
 #. Type: boolean
 #. Description
@@ -588,21 +606,16 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
-msgstr "Kérlek döntsd el, hogy így is szeretnéd-e."
+msgstr "Kérlek döntsd el, hogy szeretnéd-e ezt mindenképpen elérhetővé tenni."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:3001
 msgid "Use non-free software?"
-msgstr "Használ nem-szabad szoftvereket?"
+msgstr "Használsz nem szabad licencű szoftvereket?"
 
 #. Type: boolean
 #. Description
@@ -614,20 +627,18 @@ msgid ""
 "to install it. This software has varying licenses which may prevent you from "
 "using, modifying, or sharing it."
 msgstr ""
-"Pár nem-szabad szoftver be lett csomagolva, hogy a Debian rendszer-"
-"eszközeivel is felrakható legyenek. FIGYELEM: Ezek a szoftverek NEM RÉSZEI a "
-"Debian rendszernek, csupán egyes feltételekkel feltelepíthető. E szoftverek "
-"eltérő felhasználói licenc-szerződéssel rendelkeznek, melyek megakadályozzák "
-"a szoftver szabad felhasználását, tanulmányozását és ellenőrzését, "
-"módosítását vagy terjesztését, ezért csak bizonyos hasonló feltételek esetén "
-"használhatók fel.."
+"Néhány nem szabad licencű szoftvert sikerült a Debian alatt működőképessé "
+"tenni. Bár ezek a szoftverek NEM részei a Debian rendszernek, a Debian "
+"szabványos eszközei használhatók a telepítésükhöz. Ezek a szoftverek "
+"különböző licencekkel rendelkeznek, amelyek megakadályozhatják a szabad "
+"felhasználásukat, módosításukat, ellenőrzésüket vagy megosztásukat."
 
 #. Type: boolean
 #. Description
 #. :sl1:
 #: ../apt-mirror-setup.templates:4001
 msgid "Use contrib software?"
-msgstr "Felhasznál 'contrib' szoftvereket?"
+msgstr "Használsz „contrib” szoftvereket?"
 
 #. Type: boolean
 #. Description
@@ -639,37 +650,20 @@ msgid ""
 "software is not a part of Debian, but standard Debian tools can be used to "
 "install it."
 msgstr ""
-"Néhány járulékos szoftver is elérhető a Debianhoz. Ezek a szoftverek "
-"önmagukban szabadok, de működésük nem-szabad szoftverektől függ. FIGYELEM: "
-"Ezek a szoftverek SEM RÉSZEI a Debian rendszernek, de megfelelő feltételek "
-"esetén a Debian eszközökkel telepíthetők."
+"Néhány további szoftver is együttműködik a Debian rendszerrel. Bár ezek a "
+"szoftverek szabad szoftverek, de a működésük nem szabad licencű "
+"szoftverektől függ. Ezek a szoftverek SEM RÉSZEI a Debian rendszernek, de a "
+"Debian szabványos eszközeivel telepíthetők."
 
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
-msgstr "Kérlek döntsd el, hogy elérhetőek legyenek-e ezek a szoftverek."
+msgstr ""
+"Kérlek döntsd el, szeretnéd-e, hogy ezek a szoftverek elérhetővé váljanak "
+"számodra."
 
 #. Type: select
 #. Choices
@@ -707,7 +701,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-mirror-setup.templates:6001
 msgid "Use a network mirror?"
-msgstr "Használ hálózati tükröt?"
+msgstr "Használsz hálózati tükörszervert?"
 
 #. Type: boolean
 #. Description
@@ -718,8 +712,9 @@ msgid ""
 "the installation media. This may also make newer versions of software "
 "available."
 msgstr ""
-"A hálózati tükör az, amely kiegészíti a telepítő médián korlátozottan lévő "
-"szoftvereket. Az elérhető szoftverek újabb változatait is adhatja."
+"A telepítő adathordozón található szoftverek kiegészítésére hálózati "
+"tükörszervert használhatsz. Ez a szoftverek újabb verzióit is elérhetővé "
+"teheti."
 
 # Type: boolean
 # Description
@@ -740,161 +735,3 @@ msgstr "Tükörszerver nélkül folytatod?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Nincs kiválasztva hálózati tükörszerver."
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Szeretnél korlátozás alá eső szoftvert használni?"
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Néhány nem szabad szoftver is elérhető csomagként. Noha ezek a szoftverek "
-"nem részei a fő terjesztésnek, a szabványos csomagkezelő eszközökkel "
-"telepíthetők. Ezek a szoftverek különböző licencekkel rendelkeznek, melyek "
-"megtiltják a felhasználás egyes módjait, és a módosítást vagy a megosztást."
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Szeretnél az „universe” komponensből szoftvert használni?"
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Néhány kiegészítő szoftver is elérhető csomagként. Ezek a szoftverek szabad "
-"szoftverek, és bár nem részei a fő terjesztésnek, a szabványos csomagkezelő "
-"eszközökkel telepíthetők."
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Szeretnél a „multiverse” komponensből szoftvert használni?"
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Néhány nem szabad szoftver elérhető csomagként. Noha ezek a szoftverek nem "
-"részei a fő terjesztésnek, a szabványos csomagkezelő eszközökkel "
-"telepíthetők. Ezek a szoftverek olyan különböző licencekkel és (néhány "
-"esetben) szabadalmi korlátozásokkal rendelkeznek, melyek megtiltják a "
-"felhasználás egyes módjait, és a módosítást vagy a megosztást."
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Szeretnél a „partner” tárolóból szoftvert használni?"
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Néhány további szoftver elérhető a Canonical „partner” tárolójából. Ezek a "
-"szoftverek nem részei az Ubuntunak, hanem a Canonical és az adott szállítók "
-"szolgáltatásként kínálják őket az Ubuntu felhasználóinak."
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Szeretnél backportolt szoftvert használni?"
-
-# Type: boolean
-# Description
-# This template is used by the Ubuntu version of d-i.
-# :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Néhány szoftver backportolásra került a fejlesztői ágból, hogy "
-"együttműködjön ezzel a kiadással. Bár ezek a szoftverek nem mentek át olyan "
-"teljes körű tesztelésen, mint a kiadáshoz tartozók, de az alkalmazások újabb "
-"változatait tartalmazzák, és hasznos, új képességeket biztosíthatnak."

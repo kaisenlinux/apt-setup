@@ -3,30 +3,39 @@ set -e
 
 . /usr/share/debconf/confmodule
 
-# Can be preseed to true to force cdrom entries to be disabled
+# Can be preseeded to true to force cdrom entries to be disabled
 db_get apt-setup/disable-cdrom-entries
 disable_cdrom_entries="$RET"
 
-# Always disable various sources in sources.list after installation,
-# if any other sources are present:
-# 1. netinst
-# 2. live image
-# 3. single-desktop CD image
-if [ -e /cdrom/.disk/base_installable ] && \
-   [ -e /cdrom/.disk/cd_type ] && \
-   ( [ "$(cat /cdrom/.disk/cd_type)" = not_complete ] || \
-     [ "$(cat /cdrom/.disk/cd_type)" = live ] || \
-     [ "$(cat /cdrom/.disk/cd_type)" = "full_cd/single" ]
-   ) && \
-   grep -q "^deb \(ht\|f\)tp" /target/etc/apt/sources.list; then
-	disable_cdrom_entries="true"
+# Disable cdrom sources in sources.list after installation
+# if installation media is not a real CD (e.g. USB flash drive, SD/MMC card, ISO file)
+# or ftp or http(s) sources are present and
+#  cdrom type is "small" (netinst, live, single-desktop CD)
+reason="preseed"
+if [ "$disable_cdrom_entries" != "true" ] && \
+   [ -e /cdrom/.disk/base_installable ] && \
+   [ -e /cdrom/.disk/cd_type ]; then
+	install_device="$(grep -F ' /cdrom ' /proc/mounts | cut -d' ' -f1)"
+	if ! list-devices cd | grep -Fxq "$install_device"; then
+		# installation device is not a real CD
+		disable_cdrom_entries="true"
+		reason="not_a_cd"
+	elif grep -Eq "^deb (http|ftp)" /target/etc/apt/sources.list; then
+		case "$(cat /cdrom/.disk/cd_type)" in
+		    not_complete|live|full_cd/single)
+			disable_cdrom_entries="true"
+			reason="small_media"
+		esac
+	fi
 fi
 
 # Comment out the cdrom entries and update APT's cache
 if [ "$disable_cdrom_entries" = "true" ]; then
-	logger -t finish-install "Disabling CDROM entries in sources.list"
+	logger -t finish-install "Disabling CDROM entries in sources.list ($reason)"
 	sed -i "/^deb cdrom:/s/^/#/" /target/etc/apt/sources.list
-	cat >> /target/etc/apt/sources.list <<EOF
+	case "$reason" in
+	    small_media)
+		cat >> /target/etc/apt/sources.list <<EOF
 
 # This system was installed using small removable media
 # (e.g. netinst, live or single CD). The matching "deb cdrom"
@@ -34,5 +43,27 @@ if [ "$disable_cdrom_entries" = "true" ]; then
 # For information about how to configure apt package sources,
 # see the sources.list(5) manual.
 EOF
+		;;
+	    not_a_cd)
+		cat >> /target/etc/apt/sources.list <<EOF
+
+# This system was installed using removable media other than
+# CD/DVD/BD (e.g. USB stick, SD card, ISO image file).
+# The matching "deb cdrom" entries were disabled at the end
+# of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+EOF
+		;;
+	    preseed)
+		cat >> /target/etc/apt/sources.list <<EOF
+
+# This system was installed using removable media.
+# The matching "deb cdrom" entries were disabled at the end
+# of the installation process by preseed.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
+EOF
+	esac
 	log-output -t finish-install chroot /target apt-get update
 fi

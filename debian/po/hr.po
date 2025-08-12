@@ -24,9 +24,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-06-03 10:49+0000\n"
-"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-03-25 22:58+0100\n"
+"Last-Translator: Valentin Vidic <vvidic@debian.org>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -527,7 +527,7 @@ msgstr "Pretraživanje zrcalnog poslužitelja..."
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
 msgid "Use non-free firmware?"
-msgstr "Koristiti vlasnički softver?"
+msgstr "Koristiti vlasnički firmver?"
 
 #. Type: boolean
 #. Description
@@ -538,6 +538,9 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Firmver je vrsta upravljačkog programa koja omogućava rad određenih "
+"hardverskih komponenti (obično su to kartice za bežičnu mrežu ili zvučne "
+"kartice), koje bez firmvera ne mogu u potpunosti ili uopće funkcionirati."
 
 #. Type: boolean
 #. Description
@@ -549,6 +552,10 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Iako nije dio samog Debiana, određeni vlasnički firmver prilagođen je za "
+"korištenje s Debianom. Taj firmver može imati različite licence koje "
+"ograničavaju slobodu korištenja, izmjene i dijeljenja tog softvera, te "
+"najčešće nema izvoni oblik koji možete proučavati."
 
 #. Type: boolean
 #. Description
@@ -556,12 +563,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Odaberite hoćete li ga ipak imati omogućenim."
 
@@ -611,26 +613,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Odaberite želite li imati ovaj softver dostupnim."
@@ -699,121 +682,3 @@ msgstr "Nastavi bez mrežnog zrcalnog poslužitelja?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Mrežni zrcalni poslužitelj nije odabran."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Koristi ograničeni softver?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Pojedini vlasnički softver je dostupan u obliku paketa. Iako taj softver "
-"nije dio glavne distribucije, može se instalirati uobičajenim alatima za "
-"upravljanje paketima. Taj softver ima različite licence koje vas mogu "
-"spriječiti u korištenju, prilagođavanju ili dijeljenju tog softvera."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Koristi softver iz \"universe\" repozitorija?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Pojedini dodatni softver je dostupan u obliku paketa. Taj softver je "
-"slobodan iako nije dio glavne distribucije, može se instalirati uobičajenim "
-"alatima za upravljanje paketima."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Koristi softver iz \"multiverse\" repozitorija?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Pojedini vlasnički softver je dostupan u obliku paketa. Iako taj softver "
-"nije dio glavne distribucije, može se instalirati uobičajenim alatima za "
-"upravljanje paketima. Taj softver ima različite licence i (u nekim "
-"slučajevima) ograničenja patentima koji vas mogu spriječiti u korištenju, "
-"prilagođavanju ili dijeljenju tog softvera."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Koristi softver iz \"partner\" repozitorija?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Pojedini dodatni softver je dostupan iz Canonicalovog \"partner\" "
-"repozitorija. Ovaj softver nije dio Ubuntua, ali ga Canonical i pojedini "
-"izdavači nude kao uslugu korisnicima Ubuntua."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Koristi 'backported' softver?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Pojedini softver je prebačen iz razvojnog stabla kako bi radio s ovim "
-"izdanjem. Iako ovaj softver nije prošao kroz potpuno testiranje kao softver "
-"sadržan u ovom izdanju, uključuje novije inačice nekih aplikacija koje mogu "
-"pružiti korisne značajke."

@@ -1,7 +1,7 @@
 Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 
---- apt-setup-0.177.orig/generators/92updates
-+++ apt-setup-0.177/generators/92updates
+--- apt-setup-0.198.orig/generators/92updates
++++ apt-setup-0.198/generators/92updates
 @@ -36,13 +36,9 @@ echo "# ${codename}-updates, to get upda
  echo "# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports" >> $file
  
@@ -30,8 +30,8 @@ Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
  fi
  
  exit $CODE
---- apt-setup-0.177.orig/generators/93backports
-+++ apt-setup-0.177/generators/93backports
+--- apt-setup-0.198.orig/generators/93backports
++++ apt-setup-0.198/generators/93backports
 @@ -35,13 +35,9 @@ echo "# ${codename}-backports, previousl
  
  # Don't test mirror if no network selected in netcfg

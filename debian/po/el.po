@@ -14,7 +14,7 @@
 #   Panayotis Pakos <aeikineton@yahoo.com>
 #
 # George Papamichelakis <george@step.gr>, 2004.
-# Emmanuel Galatoulas <galas@tee.gr>, 2004.
+# SPDX-FileCopyrightText: 2004, 2025 Emmanuel Galatoulas <galas@tee.gr>
 # Konstantinos Margaritis <markos@debian.org>, 2004, 2006.
 # Greek Translation Team <debian-l10n-greek@lists.debian.org>, 2004, 2005.
 # quad-nrg.net <galaxico@quad-nrg.net>, 2005, 2006, 2007.
@@ -35,10 +35,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-05-13 02:46+0300\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-05-18 17:12+0300\n"
 "Last-Translator: galaxico <galas@tee.gr>\n"
-"Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
+"Language-Team: debian-l10n-greek@lists.debian.org\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -562,6 +562,10 @@ msgid ""
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Το υλισμικό (firmware) είναι ένα είδος λογισμικού που προσφέρει χαμηλού-"
+"επιπέδου έλεγχο συγκεκριμένων συνιστωσών του υλικού (τέτοιες όπως κάρτες Wi-"
+"Fi ή chipset ήχου), που μπορεί να μην λειτουργούν πλήρως ή να μην "
+"λειτουργούν καθόλου χωρίς αυτό."
 
 #. Type: boolean
 #. Description
@@ -573,6 +577,11 @@ msgid ""
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Αν και δεν αποτελούν καθόλου μέρος του Debian, μερικά είδη μη-ελεύθερου "
+"υλισμικού έχουν επεξεργαστεί ώστε να δουλεύουν με το Debian. Αυτό το "
+"υλισμικό έχει διάφορα είδη αδειών που περιορίζουν τις ελευθερίες σας να το "
+"χρησιμοποιείτε, τροποποιείτε ή να το μοιράζεστε και, γενικά, δεν έχει μορφές "
+"πηγαίου κώδικα που μπορείτε να μελετήσετε."
 
 #. Type: boolean
 #. Description
@@ -580,12 +589,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr ""
 "Παρακαλώ, επιλέξτε αν επιθυμείτε να είναι διαθέσιμο αυτό το λογισμικό ούτως "
@@ -640,26 +644,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Παρακαλώ, επιλέξτε αν επιθυμείτε να είναι διαθέσιμο αυτό το λογισμικό."
@@ -730,125 +715,3 @@ msgstr "Συνέχεια χωρίς κάποιον δικτυακό καθρέφ
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Δεν επιλέχθηκε κάποιος δικτυακός καθρέφτης."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Χρήση\"υπό περιορισμούς\" λογισιμικού;"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Μη-ελεύθερο λογισμικό είναι διαθέσιμο σε μορφή πακέτων. Αν και το λογισμικό "
-"αυτό δεν είναι μέρος της κύριας διανομής, μπορείτε να χρησιμοποιήσετε τα "
-"συνηθισμένα εργαλεία διαχείρισης πακέτων για την εγκατάστασή του. Το "
-"λογισμικό αυτό έρχεται με μια ποικιλία αδειών χρήσης που πιθανόν να σας "
-"αποτρέψουν από την χρήση, την τροποποίηση ή την κοινή του χρήση."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Χρήση λογισμικού από την ενότητα \"universe\";"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Επιπρόσθετο λογισμικό είναι διαθέσιμο σε μορφή πακέτων. Αυτό το λογισμικό "
-"είναι ελεύθερο και παρόλο που δεν είναι μέρος της κύριας διανομής, μπορείτε "
-"να χρησιμοποιήσετε τα συνηθισμένα εργαλεία διαχείρισης πακέτων για την "
-"εγκατάστασή του."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Χρήση λογισμικού από την ενότητα \"multiverse\";"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Μη-ελεύθερο λογισμικό είναι διαθέσιμο σε μορφή πακέτων. Αν και το λογισμικό "
-"αυτό δεν είναι μέρος της κύριας διανομής, μπορείτε να χρησιμοποιήσετε τα "
-"συνηθισμένα εργαλεία διαχείρισης πακέτων για την εγκατάστασή του. Το "
-"λογισμικό αυτό έρχεται με μια ποικιλία αδειών χρήσης και (σε κάποιες "
-"περιπτώσεις) περιορισμούς από ευρεσιτεχνίες που πιθανόν να σας εμποδίζουν "
-"από την χρήση, τροποποίηση ή το μοίρασμά του."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Να γίνει χρήση λογισμικού από το αποθετήριο \"partner\";"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Επιπλέον λογισμικό είναι διαθέσιμο από το αποθετήριο \"partner\" της "
-"Canonical. Αυτό το λογισμικό δεν είναι μέρος του Ubuntu, αλλά προσφέρεται "
-"από την Canonical και τους αντίστοιχους προμηθευτές σαν μια παροχή προς τους "
-"χρήστες του Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Χρήση backported λογισμικού;"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Κάποιο λογισμικό έχει γίνει backported από το δέντρο ανάπτυξης για να "
-"δουλεύει με αυτήν την έκδοση. Αν και το λογισμικό αυτό δεν έχει περάσει "
-"εξίσου πλήρη έλεγχο όπως αυτό της παρύσας έκδοσης, περιέχει ωστόσο νεώτερες "
-"εκδόσεις μερικών εφαρμογών που πιθανόν προσφέρουν κάποια χρήσιμα γνωρίσματα."

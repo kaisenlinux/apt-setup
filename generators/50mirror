@@ -52,7 +52,7 @@ if [ -e /cdrom/.disk/base_installable ]; then
 	if [ -e /cdrom/.disk/cd_type ]; then
 		cd_type=$(cat /cdrom/.disk/cd_type)
 	fi
-	#cd_count=$(grep "^deb cdrom:" $ROOT/etc/apt/sources.list.new | wc -l)
+	cd_count=$(grep "^deb cdrom:" $ROOT/etc/apt/sources.list.new | wc -l)
 
 	no_network=
 	if db_get netcfg/dhcp_options && \
@@ -268,7 +268,7 @@ while [ ! "$done" ]; do
 	if [ -n "${use_unreleased}" ]; then
 		echo "deb $trusted$protocol://$hostname$directory unreleased main" >> $file
 	fi
-
+	
 	if apt-setup-verify --from $PROGRESS_FROM --to $PROGRESS_TO $file; then
 		done=1
 	else

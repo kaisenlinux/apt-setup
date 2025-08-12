@@ -1,5 +1,5 @@
 000-define-kaisen-default-repositories-security.patch
 001-remove-backports-and-updates-repositories.patch
-002-deletion-of-the-component-var
-003-disable-cd-count
-004-remove-all-comments-and-empty-lines-final-source-list
+002-deletion-of-the-component-var.patch
+003-disable-cd-count.patch
+004-remove-all-comments-and-empty-lines-final-source-list.patch

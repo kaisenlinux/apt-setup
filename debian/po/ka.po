@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-09-21 07:40+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-03-25 04:19+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian\n"
 "Language: ka\n"
@@ -565,12 +565,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "აირჩიეთ, გნებავთ, თუ არა, ის მაინც გამოჩნდეს."
 
@@ -621,26 +616,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "აირჩიეთ, გნებავთ, თუ არა, ეს პროგრამა მაინც გამოჩნდეს."
@@ -708,122 +684,3 @@ msgstr "გსურთ ქსელის სარკის გარეშე
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ქსელური სარკე არჩეული არაა."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "გამოვიყენო შეზღუდული პროგრამები?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"ზოგიერთი არა-უფასო პროგრამა ხელმისაწვდომია პაკეტების სახით. მიუხედავად "
-"იმისა, რომ ეს პროგრამები მთავარი დისტრიბუტივის ნაწილი არაა, მათ დასაყენებლად "
-"სტანდარტული პაკეტები მართვის პროგრამები შეგიძლიათ, გამოიყენოთ. ამ პროგრამებს "
-"აქვთ სხვადასხვა ლიცენზიები, რომლებიც შეიძლება, მათ გამოყენებას, შეცვლას ან "
-"გაზიარებას გიკრძალავდეთ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "გამოვიყენო პროგრამები კომპონენტიდან \"universe\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"ზოგიერთი დამატებითი პროგრამა პაკეტების სახითაა ხელმისაწვდომი. ეს პროგრამები "
-"უფასოა და მიუხედავად იმისა, რომ ისინი მთავარი დისტრიბუტივის ნაწილს არ "
-"წარმოადგენენ, მათ დასაყენებლად პაკეტების მართვის სტანდარტული ხელსაწყოების "
-"გამოყენება შეგიძლიათ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "გამოვიყენო პროგრამები კომპონენტიდან \"multiverse\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"პაკეტი შეიცავს კომერციულ პროდუქტებსაც. ეს პროგრამები არ შედის მთავარ "
-"დისტრიბუტივში, მაგრამ შეიძლება დაყენდეს სტანდარტული საშუალებებით. ამ "
-"პროგრამებს შეიძლება ჰქონდეთ ლიცენზიები, რომლებიც კრძალავენ მათს გამოყენებას, "
-"გადაკეთებასა და გავრცელებას."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "გამოვიყენო პროგრამები რეპოზიტორიიდან „partner“?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"ზოგიერთი დამატებითი პროგრამა ხელმისაწვდომია Canonical-ის რეპოზიტორიიდან "
-"\"partner\". ეს პროგრამები Ubuntu-ის ნაწილი არაა, მაგრამ მათ Canonical და "
-"სხვა შესაბამისი მომწოდებლები Ubuntu-ის მომხმარებლებს სერვისად გთავაზობთ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "გამოვიყენო გადმოტანილი პროგრამები?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"ამ გამოშვებაში ზოგიერთი პროგრამა გადმოტანილია დამუშავების პროცესში მყოფი "
-"ვერსიიდან. მათ არ გაუვლიათ ისეთი სრული ტესტირება, როგორც სხვებს, მაგრამ ზოგი "
-"პროდუქტის ახალ ვერსიას შეიძლება საჭირო თვისებები ჰქონდეს და ამდენად, "
-"საინტერესო იყოს."

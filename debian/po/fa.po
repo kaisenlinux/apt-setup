@@ -25,8 +25,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-12-10 10:00+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-01-05 13:44+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
@@ -42,7 +42,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-setup-udeb.templates:1001
 msgid "Configure the package manager"
-msgstr "پیکربندی مدیر بسته (Package manager)"
+msgstr "پیکربندی مدیر بسته"
 
 #. Type: text
 #. Description
@@ -341,9 +341,9 @@ msgid ""
 "booted from. If you do not have any additional media, this step can just be "
 "skipped."
 msgstr ""
-"گزینهٔ پوییدن رسانهٔ اضافی برای استفاده به دست مدیر بسته (apt) را دارید. "
-"معمولاً باید از همان مجموعه‌ای که راه‌اندازی شده باشند. در صورت نداشتن رسانهٔ "
-"اضافی می‌تواند رد شود."
+"اکنون گزینهٔ پویش رسانه‌های اضافی برای استفاده به دست مدیر بسته (apt) را "
+"دارید. معمولاً این رسانه‌ها باید از همان مجموعه‌ای باشند که از آن راه‌اندازی "
+"کرده‌اید. این گام می‌تواند در صورت نداشتن رسانهٔ اضافی رد شود."
 
 #. Type: boolean
 #. Description
@@ -353,7 +353,7 @@ msgstr ""
 #. :sl1:
 #: ../apt-cdrom-setup.templates:3001 ../apt-cdrom-setup.templates:4001
 msgid "If you wish to scan more media, please insert another one now."
-msgstr "اگر می‌خواهید رسانهٔ دیگری را بپویید، لطفاً اکنون وارد شود."
+msgstr "ورود رسانه‌ای دیگر در صورت نیاز به پویش."
 
 #. Type: boolean
 #. Description
@@ -561,12 +561,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "گزینش این که می‌خواهید در هر صورت موجود باشد یا نه."
 
@@ -616,26 +611,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr ""
@@ -703,121 +679,3 @@ msgstr "ادامه بدون آینهٔ شبکه؟"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "هیچ آینهٔ شبکه‌ای گزیده نشده."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "استفاده از نرم‌افزارهای محدود شده؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"برخی نرم‌افزارهای غیرآزاد به شکل بسته فراهم‌اند. اگر چه این نرم‌افزارها بخشی از "
-"توزیع اصلی نیستند، ابزارهای مدیریت بسته‌ٔ استاندارد می‌تواند برای نصب آنها "
-"استفاده شود. این نرم‌افزارها گواهینامه‌های گوناگونی دارند که ممکن است شما را "
-"از استفاده، تغییر یا به اشتراک‌گذاری آنها منع کند."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "نرم‌افزارهای ... «universe» استفاده شود؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"برخی نرم‌افزارهای اضافی به شکل بسته فراهم‌اند. این نرم‌افزارها رایگان‌اند و "
-"اگرچه بخشی از توزیع اصلی نیستند، ابزارهای مدیریت بسته‌ٔ استاندارد می‌تواند برای "
-"نصب آن‌ها استفاده شود."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "نرم‌افزارهای ... «multiverse» استفاده شود؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"برخی نرم‌افزارهای غیرآزاد به شکل بسته فراهم‌اند. اگر چه این نرم‌افزارها بخشی از "
-"توزیع اصلی نیستند، ابزارهای مدیریت بسته‌ٔ استاندارد می‌تواند برای نصب آنها "
-"استفاده شود. این نرم‌افزارها گواهینامه‌های گوناگون و (در برخی از موارد) "
-"محدودیت‌های ... دارند که ممکن است شما را از استفاده، تغییر یا به اشتراک‌گذاری "
-"آنها منع کند."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "نرم‌افزارهای مخزن «partner» استفاده شود؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"برخی نرم‌افزارهای اضافی در مخزن partner کنونیکال موجودند. این نرم‌افزارها بخشی "
-"از ابونتو نیستند؛ ولی به دست کنونیکال و سازندگان مربوطه به عنوان خدمت به "
-"کاربران اوبونتو فراهم شده‌اند."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "از نرم‌افزارهای backported استفاده شود؟"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"برخی نرم‌افزارها از شاخهٔ توسعه backport شده‌اند تا با این انتشار کار کنند. "
-"اگرچه این نرم‌افزارها از میان آنچنان آزمایش کاملی، مانند آنهایی که در انتشار "
-"شامل‌اند، عبور نکرده است اما نسخه‌های جدیدتر بعضی از نرم‌افزارهای کاربردی را "
-"داراست که ممکن است امکانات قابل استفاده‌ای را فراهم نماید."

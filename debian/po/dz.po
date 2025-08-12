@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dDz.po\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2021-05-21 05:32+0000\n"
 "Last-Translator: Jacque Fresco <aidter@use.startmail.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -566,12 +566,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "ཁྱོད་ཀྱིས་གང་རུང་སྦེ་ཐོབ་ཚུགས་བཟོ་ནི་ཨིན་ན་མེན་ན་གདམ་ཁ་རྐྱབ་གནང་།"
 
@@ -621,26 +616,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "འ་ནི་མཉེན་ཆས་ཚུ་ཁྱོད་ལུ་ཐོབ་ཚུགསཔ་བཟོ་ནི་ཨིན་ན་མེན་ན་གདམ་ཁ་རྐྱབ་གནང་།"
@@ -709,121 +685,3 @@ msgstr "ཡོངས་འབྲེལ་ངོ་འཆར་ཅིག་མེ
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ཡོངས་འབྲེལ་ངོ་འཆར་སེལ་འཐུ་མ་འབད་བས།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "བཀག་དམ་ཅན་གྱི་མཉེན་ཆས་ལག་ལེན་འཐབ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"མཉེན་ཆས་དལཝ་མེད་མི་ལ་ལོ་ཅིག་ཐུམ་སྒྲིལ་འབད་ཡོད་པའི་རྣམ་པ་ནང་ལས་ཐོབ་ཚུགས། མ་གཞི་འ་ནི་མཉེན་ཆས་འདི་"
-"བགོ་བཀྲམ་འབད་ནིའི་གཙོ་བོའི་ཡན་ལག་ཅིག་མེན་རུང་ འདི་གཞི་བཙུགས་འབད་ནི་ལུ་ཚད་ལྡན་ཐུམ་སྒྲིལ་འཛིན་སྐྱོང་ལག་"
-"ཆས་ཚུ་ལག་ལེན་འཐབ་ཚུགས། འ་ནི་མཉེན་ཆས་ལུ་འགྱུར་ནིའི་ཆོག་ཐམ་ཚུ་ཡོདཔ་ལས་ལག་ལེན་འཐབ་ནི་ ལེགས་བཅོས་"
-"བཟོ་ནི་ ཡང་ན་ འདི་རུབ་སྤྱོད་འབད་ནི་ལས་ཁྱོད་སྔོན་བཀག་འབད་ནི་འོང་།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "\"universe\" ཆ་ཤས་ནང་ལས་མཉེན་ཆས་ལག་ལེན་འཐབ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"མཉེན་ཆས་ཁ་སྐོང་ལ་ལོ་ཅིག་ཐུམ་སྒྲིལ་འབད་ཡོད་པའི་རྣམ་པ་ནང་ལས་ཐོབ་ཚུགས། མཉེན་ཆས་འདི་དལཝ་ཨིནམ་དང་ "
-"མ་གཞི་འ་ནི་འདི་བགོ་བཀྲམ་འབད་ནིའི་གཙོ་བོའི་ཡན་ལག་ཅིག་མེན་རུང་ འདི་གཞི་བཙུགས་འབད་ནི་ལུ་ཚད་ལྡན་ཐུམ་"
-"སྒྲིལ་འཛིན་སྐྱོང་ལག་ཆས་ཚུ་ལག་ལེན་འཐབ་ཚུགས།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "\"multiverse\" ཆ་ཤས་ནང་ལས་མཉེན་ཆས་ལག་ལེན་འཐབ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"མཉེན་ཆས་དལཝ་མེད་མི་ལ་ལོ་ཅིག་ཐུམ་སྒྲིལ་འབད་ཡོད་པའི་རྣམ་པ་ནང་ལས་ཐོབ་ཚུགས། མ་གཞི་འ་ནི་མཉེན་ཆས་འདི་"
-"བགོ་བཀྲམ་འབད་ནིའི་གཙོ་བོའི་ཡན་ལག་ཅིག་མེན་རུང་ འདི་གཞི་བཙུགས་འབད་ནི་ལུ་ཚད་ལྡན་ཐུམ་སྒྲིལ་འཛིན་སྐྱོང་ལག་"
-"ཆས་ཚུ་ལག་ལེན་འཐབ་ཚུགས། འ་ནི་མཉེན་ཆས་ལུ་འགྱུར་ནིའི་ཆོག་ཐམ་ཚུ་དང་(གནད་དོན་ལ་ལུ་གཅིག་ནང་)ཁེ་དབང་"
-"སྤྱོད་ནིའི་བཀག་དམ་ཚུ་ཡོདཔ་ལས་དེ་ཚུ་གིས་ལག་ལེན་འཐབ་ནི་ ལེགས་བཅོས་བཟོ་ནི་ ཡང་ན་ འདི་རུབ་སྤྱོད་འབད་ནི་"
-"ལས་ཁྱོད་སྔོན་བཀག་འབད་ནི་འོང་།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "\"partner\" མཛོད་གནས་ནང་ལས་མཉེན་ཆས་ལག་ལེན་འཐབ་ནི་ཨིན་ན?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"མཉེན་ཆས་ཁ་སྐོང་ལ་ལོ་གཅིག་Canonical's \"partner\" མཛོད་གནས་ ལས་འཐོབ་ཚུགས། མཉེན་ཆས་འདི་ "
-"ཡུབོན་ཊུ་་ གི་ཡན་ལག་མེན་་ དེ་འབདཝ་ད་ འདི་ Canonical དང་ སྒོ་ཚོང་པ་སོ་སོ་ཚུ་གིས་ ཡུབོན་ཊུ་ལག་"
-"ལེན་པ་ཚུ་ལུ་ཞབས་ཏོག་སྦེ་བྱིནམ་ཨིན།"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "ལོག་འདྲེན་ལམ་འབད་ཡོད་མི་མཉེན་ཆས་ལག་ལུན་འཐབ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"གསར་བཏོན་འ་ནི་དང་མཉམ་ལཱ་འབད་ནི་ལུ་རྩ་འབྲེལ་གོང་འཕེལ་འདི་ལས་མཉེན་ཆས་ལ་ལོ་ཅིག་ལོག་འདྲེན་ལམ་འབད་"
-"འདི་ཡོད། འ་ནི་མཉེན་ཆས་ཚུ་གསར་བཏོན་ནང་ལུ་ཡོད་པའི་མཇུག་བསྡུ་བརྟག་ཞིབ་འབད་ནི་བཟུམ་མའི་ཐོག་ཁ་ལས་མ་"
-"འགྱོ་རུང་ འདི་གློག་རིམ་ལ་ལུ་ཚུ་གྱི་ཐོན་རིམ་གསརཔ་ཚུ་གྲངས་སུ་བཙུགསཔ་ཨིནམ་ལས་ཕན་ཐོག་ཅན་གྱི་ཁྱད་རྣམ་ཚུ་"
-"བྱིན་ནི་འོང་།"

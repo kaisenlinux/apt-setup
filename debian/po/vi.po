@@ -18,9 +18,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2023-02-24 10:38+0000\n"
-"Last-Translator: tictactoe <phandinhminh@protonmail.ch>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2025-02-25 16:41+0000\n"
+"Last-Translator: Dagon Vn <faigar1004@gmail.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -531,22 +531,31 @@ msgstr "Sử dụng phần mềm firmware không tự do chứ?"
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
 msgid ""
 "Firmware is a kind of software providing low-level control of certain "
 "hardware components (such as Wi-Fi cards or audio chipsets), which may not "
 "function fully or at all without it."
 msgstr ""
+"Firmware là một loại phần mềm cung cấp khả năng điều khiển cấp thấp cho một "
+"số thành phần phần cứng nhất định (chẳng hạn như card Wi-Fi hoặc chipset âm "
+"thanh), có thể không hoạt động đầy đủ hoặc không hoạt động nếu thiếu nó."
 
 #. Type: boolean
 #. Description
 #. :sl5:
 #: ../apt-mirror-setup.templates:2001
+#, fuzzy
 msgid ""
 "Although not at all part of Debian, some non-free firmware has been made to "
 "work with Debian. This firmware has varying licenses which restrict your "
 "freedoms to use, modify, or share the software, and generally does not have "
 "source forms that you may study."
 msgstr ""
+"Mặc dù hoàn toàn không phải là một phần của Debian, một số firmware không tự "
+"do đã được cho hoạt động với Debian. Firmware này có các giấy phép khác nhau "
+"mà chúng hạn chế quyền tự do của bạn trong việc sử dụng, sửa đổi hoặc chia "
+"sẻ phần mềm, và thường không có các dạng mã nguồn mà bạn có thể nghiên cứu."
 
 #. Type: boolean
 #. Description
@@ -554,12 +563,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Hãy chọn nếu bạn vẫn có muốn nó sẵn sàng hay không."
 
@@ -610,26 +614,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Hãy chọn nếu bạn có muốn phần mềm này sẵn sàng hay không."
@@ -696,120 +681,3 @@ msgstr "Tiếp tục lại mà không có máy bản sao trên mạng không?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Chưa chọn máy bản sao trên mạng."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Dùng phần mềm bị hạn chế không?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Một số phần mềm khác tự do có sẵn dạng gói. Mặc dù phần mềm này không phải "
-"thuộc về bản phát hành chính, công cụ quản lý gói chuẩn có thể được dùng để "
-"cài đặt nó. Phần mềm kiểu này có giấy phép thay đổi có thể ngăn chận bạn sử "
-"dụng, sửa đổi hoặc chia sẻ nó."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Dùng phần mềm từ thành phần “universe” (vũ trụ) không?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Một số phần mềm thêm có sẵn dạng gói. Phần mềm này là tự do, và dù nó không "
-"phải thuộc về bản phát hành chính, công cụ quản lý gói chuẩn có thể được "
-"dùng để cài đặt nó."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Dùng phần mềm từ thành phần “multiverse” (đa vũ trụ) không?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Một số phần mềm khác tự do có sẵn dạng gói. Mặc dù phần mềm này không phải "
-"thuộc về bản phát hành chính, công cụ quản lý gói chuẩn có thể được dùng để "
-"cài đặt nó. Phần mềm kiểu này có giấy phép thay đổi có lẽ ngăn chận bạn sử "
-"dụng, sửa đổi hoặc chia sẻ nó."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Dùng phần mềm từ thành phần “partner” (đối tác) không?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Một số phần mềm bổ sung sẵn sàng từ kho gói “partner” của Canonical. Phần "
-"mềm này không phải thuộc về Ubuntu, nhưng mà nó được cung cấp bởi Canonical "
-"và các nhà bán tương ứng để giúp các người dùng Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Dùng phần mềm đã được chuyển ngược không?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Một số gói phần mềm đã được chuyển ngược (backport) từ cây phát triển, để "
-"hoạt động với bản phát hành này. Mặc dù phần mềm này chưa được thử ra hoàn "
-"thành như điều trong bản phát hành này, nó bao gồm phiên bản mới hơn của một "
-"số ứng dụng có thể cung cấp các tính năng hữu ích."

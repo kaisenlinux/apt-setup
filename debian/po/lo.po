@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lo\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
 "PO-Revision-Date: 2012-04-25 09:05+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
@@ -540,12 +540,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "ກະລຸນາເລືອກວ່າທ່ານຕ້ອງການຈະໃຫ້ມີຊອບແວຣເຫລົ່ານີ້ໄວ້ຕິດຕັ້ງຫລືບໍ່."
 
@@ -595,26 +590,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "ກະລຸນາວ່າທ່ານຕ້ອງການຈະໃຫ້ມີຊອບແວຣເຫລົ່ານີ້ໄວ້ຕິດຕັ້ງຫລືບໍ່."
@@ -682,117 +658,3 @@ msgstr "ຈະເຮັດວຽກຕໍ່ໂດຍບໍ່ມີແຫຼ່
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "ຍັງບໍ່ໄດ້ເລືອກແຫຼ່ງສຳເນົາໃນເຄືອຂ່າຍ"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "ຈະໃຊ້ຊອບແວ້ກຳຈັດສິດທິຫຼືບໍ່?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"ຊອບແວ້ບໍ່ອິດສະຫຼະບາງໂຕ ມີໃຫ້ຕິດຕັ້ງໃນຮູບແບບແພັກເກັດ "
-"ແຕ່ຊອບແວ້ເຫຼົ່ານີ້ຈະບໍ່ໃຊ້ສວ່ນໜື່ງຂອງຊຸດກະແຈກກະຈາຍຫຼັກແຕ່ກາສາມາດໃຊ້ເຄື່ອງມືຈັດການແພັກເກັດມາດຕະຖານໃນການຕິດຕັ້ງໄດ້ "
-"ຊອບແວ້ເຫຼົ່ານີ້ໃຊ້ສັນຍາອະນຸຍາດຕ່າງໆ ກັນໄປເຊິ່ງອາດຈະຫ້າມເຈົ້າບໍ່ໃຫ້ໃຊ້ ແກ້ໄຂຫຼືແບ່ງປັນກະໄດ້ "
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "ຈະໃຊ້ຊອບແວ້ຈາກອົງປະກອບ \"universe\"ຫຼືບໍ່?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"ຊອບແວ້ເພີ້ມເຕີມບາງໂຕມີໃຫ້ຕິດຕັ້ງໃນຮູບແບບແພັກເກັດ ຊອບແວ້ເຫຼົ່ານີ້ເປັນຊອບແວ້ເສລີ "
-"ແລະຖ້າຈະບໍ່ໃຊ້ສວ່ນໜື່ງຂອງຊຸດກະແຈກກະຈາຍຫຼັກ "
-"ແຕ່ກາສາມາດໃຊ້ເຄື່ອງມືຈັດການແພັກເກັດມາດຕະຖານໃນການຕິດຕັ້ງໄດ້ "
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "ຈະໃຊ້ຊອບແວ້ຈາກອັງປະກອບ \"multiverse\" ຫຼືບໍ່?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"ຊອບແວ້ອິດສະຫຼະບາງໂຕມີໃຫ້ຕິດຕັ້ງໃນຮູບແບບແພັກເກັດ "
-"ຖ້າຊອບແວ້ເຫຼົ່ານີ້ຈະບໍ່ໃຊ້ສ່ວນໜື່ງກະແຈກກະຈາຍຫຼັກແຕ່ກາສາມາດໃຊ້ເຄື່ອງມືຈັດການແພັກເກັດມາດຕະຖານໃນການຕິດຕັ້ງໄດ້ "
-"ຊອບແວ້ເຫຼົ່ານີ້ໃຊ້ສັນຍາອະນຸຍາດຕ່າງກັນໄປ ແລະໃມບາງກໍລະນີອາດມີສິດທິບັດຄຸ້ມຄອງ "
-"ຊື່ງອາດຈະຫ້າມເຈົ້າບໍ່ໃຫ້ໃຊ້ແກ້ໄຂແບ່ງປັນກໍໄດ້ "
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "ຈະໃຊ້ຊອບແວ້ຈາກອົງປະກອບ \"partner\"ຫຼືບໍ່?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"ຊອບແວ້ເພີ້ມເຕີມບາງໂຕມີໃຫ້ຕິດຕັ້ງຈາກຄັງ \"partner\" ຂອງ Canonical ຊອບແວລ໌ເຫຼົ່ານີ້ບໍ່ໃຊ້ສວ່ນໜື່ງຂອງ "
-"Ubuntu ແຕ່ຈັດຕຽມໃຫ້ໂດຍ Canonical ແລະຜູ້ຈັດຈຳໜ່າຍອື່ນໆເພື່ອເປັນບໍລິການສຳລັບຜູ້ໃຊ້ Ubuntu"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "ຈະໃຊ້ຊອບແວ້ຍ້າຍກັບຫຼືບໍ່?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"ຊອບແວ້ບາງໂຕຖືກຍ້າຍກັບມາຈາກສາຍງານພັດທະນາ ເພື່ອໃຫ້ເຮັດງານກັບລຸ້ນນີ້ໄດ້ "
-"ຖ້າຊອບແວ້ເຫຼົ່ານີ້ຈະບໍ່ໄດ້ຜ່ານຂະບວນການທົດສອບຢ່າງສົມບູນຄືທີ່ໃນລຸ່ນກະແຈກກະຈາຍ ແຕ່ກໍມີໂປແກຣັມລຸ້ນໃໝ່ໆ "
-"ທີ່ອາດຈະມີຄວາມສາມາດທີ່ເປັນປະໂຫຍດ "

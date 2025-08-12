@@ -20,7 +20,7 @@ fi
 codename="$RET"
 
 # Trust what was set by 50mirror:
-#components=$(cat /tmp/apt-setup.components)
+components=$(cat /tmp/apt-setup.components)
 
 # Starting with bullseye, /updates became -security:
 case "$codename" in
@@ -30,7 +30,7 @@ case "$codename" in
 esac
 
 # Don't test mirror if no network selected in netcfg
-echo "deb https://deb.kaisenlinux.org kaisen-rolling main contrib non-free non-free-firmware" >> $file
+echo "deb http://$host/debian-security $security_codename $components" >> $file
 if db_get netcfg/dhcp_options && \
    [ "$RET" = "Do not configure the network at this time" ]; then
 	CODE=9
@@ -53,6 +53,6 @@ if [ "$RET" = false ]; then
 	deb_src="# deb-src"
 fi
 
-echo "deb-src https://deb.kaisenlinux.org kaisen-rolling main contrib non-free non-free-firmware" >> $file
+echo "$deb_src http://$host/debian-security $security_codename $components" >> $file
 
 exit $CODE

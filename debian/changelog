@@ -1,3 +1,101 @@
+apt-setup (1:0.198-1kaisen) kaisen-packages; urgency=medium
+
+  * Import the 0.198 release
+  * Update all quilt patch
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 10 Aug 2025 02:03:04 +0200
+
+apt-setup (1:0.198) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Drugi Sapog
+  * Spanish (es.po) by Santiago Vila
+  * Hungarian (hu.po) by Szia Tomi
+  * Malayalam (ml.po) by Nandakumar Edamana
+  * Russian (ru.po) by Алексей Шилин
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 20 Jul 2025 06:33:01 +0200
+
+apt-setup (1:0.197) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Hungarian (hu.po) by Szia Tomi
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 29 Jun 2025 15:03:31 +0200
+
+apt-setup (1:0.196) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Khmer (km.po) by Chou Chamnan
+  * Punjabi (Gurmukhi) (pa.po) by DuskyElf
+  * Russian (ru.po) by vladiruzz
+  * Uyghur (ug.po) by Abduqadir Abliz
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 25 Jun 2025 20:05:55 +0200
+
+apt-setup (1:0.195) unstable; urgency=medium
+
+  [ Pascal Hambourg ]
+  * finish-install: Disable cdrom sources if installation medium is not
+    a real CD (USB stick, SD card, ISO file), because APT cannot use it
+    after the installation (Closes: #1102140, #1103650).
+
+  [ Roland Mas ]
+  * Allow preseeding extra options for the local sources.list lines; a
+    possible use case is to allow specifying check-valid-until=false on
+    local repositories without conflicting with the signed-by= option.
+
+  [ Updated translations ]
+  * Greek (el.po) by galaxico
+  * Hungarian (hu.po) by Szia Tomi
+  * Latvian (lv.po) by Coool
+  * Telugu (te.po) by Sripath Roy Koganti
+  * Uyghur (ug.po) by Abduqadir Abliz
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 26 May 2025 20:23:24 +0200
+
+apt-setup (1:0.194) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Stéphane Blondon ]
+  * Delete unused ubuntu generator. Utuntu no longer uses apt-setup.
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 29 Apr 2025 12:42:52 +0200
+
+apt-setup (1:0.193) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Galician (gl.po) by Parodper
+  * Croatian (hr.po) by Valentin Vidic
+  * Hungarian (hu.po) by Szia Tomi
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Serbian (sr.po) by Мирослав Николић
+  * Uyghur (ug.po) by Abduqadir Abliz
+  * Vietnamese (vi.po) by Dagon Vn
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 01 Apr 2025 00:09:57 +0200
+
+apt-setup (1:0.192) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Amr Walryh
+  * Belarusian (be.po) by vics
+  * Persian (fa.po) by Danial Behzadi
+  * Finnish (fi.po) by Ricky Tigg
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+  * Polish (pl.po) by Matthaiks
+  * Traditional Chinese (zh_TW.po) by reimu105
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 02 Feb 2025 22:26:15 +0100
+
 apt-setup (1:0.191-1kaisen) kaisen-packages; urgency=medium
 
   * Import the 0.191 release

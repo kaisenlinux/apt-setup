@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: apt-setup@packages.debian.org\n"
-"POT-Creation-Date: 2024-05-11 20:02+0000\n"
-"PO-Revision-Date: 2024-03-17 11:01+0000\n"
-"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"POT-Creation-Date: 2025-04-28 20:01+0000\n"
+"PO-Revision-Date: 2024-11-04 08:22+0000\n"
+"Last-Translator: Aksel Azwaw <akselyan@proton.me>\n"
 "Language-Team: Kabyle <kab@li.org>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
@@ -544,12 +544,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
 #: ../apt-mirror-setup.templates:2001 ../apt-mirror-setup.templates:3001
-#: ../apt-mirror-setup.templates-ubuntu:1001
 msgid "Please choose whether you want to have it available anyway."
 msgstr "Ttxil-k·m fren ma yella tebɣiḍ ad yili ɣas akken."
 
@@ -601,26 +596,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #. :sl1:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates:4001 ../apt-mirror-setup.templates-ubuntu:2001
-#: ../apt-mirror-setup.templates-ubuntu:3001
-#: ../apt-mirror-setup.templates-ubuntu:4001
-#: ../apt-mirror-setup.templates-ubuntu:5001
+#: ../apt-mirror-setup.templates:4001
 msgid ""
 "Please choose whether you want this software to be made available to you."
 msgstr "Ttxil-k·m fren ma yella tebɣiḍ aseɣẓan-a ad yili ilmendad-inek·inem."
@@ -689,122 +665,3 @@ msgstr "Kemmel s war tisit n uzeṭṭa?"
 #: ../apt-mirror-setup.templates:7001
 msgid "No network mirror was selected."
 msgstr "Ulac tisit n uzeṭṭa i yettufernen."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid "Use restricted software?"
-msgstr "Seqdec aseɣẓan igedlen?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:1001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses which may "
-"prevent you from using, modifying, or sharing it."
-msgstr ""
-"Kra n yiseɣẓan ur nelli d ilelliyen llan s talɣa n yikemmusen. Ɣas akken "
-"aseɣẓan-a mačči d aḥric seg usedger agejdan, zemren ad ttusqedcen ifecka n "
-"usefrek n ukemmus aslugan i usebded-ines. Aseɣẓan-a ɣur-s aṭas n turagin "
-"yemgaraden ayen ur ak·akem-nettaǧǧa ara ad t-tesqedceḍ, ad t-tbeddleḍ neɣ ad "
-"t-tebḍuḍ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid "Use software from the \"universe\" component?"
-msgstr "Seqdec aseɣẓan seg usuddes \"ameɣrad\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:2001
-msgid ""
-"Some additional software is available in packaged form. This software is "
-"free and, though it is not a part of the main distribution, standard package "
-"management tools can be used to install it."
-msgstr ""
-"Kra n yiseɣẓan-nniḍen llan s talɣa n yikemmusen. Aseɣẓan-a d ilelli yerna "
-"mačči d aḥric seg usedger agejdan, yezmer ad ttusqedcen yifecka n usefrek n "
-"ukemmus aslugan i usebded-ines."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid "Use software from the \"multiverse\" component?"
-msgstr "Seqdec aseɣẓan seg usuddes n \"wagetmeɣrad\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:3001
-msgid ""
-"Some non-free software is available in packaged form. Though this software "
-"is not a part of the main distribution, standard package management tools "
-"can be used to install it. This software has varying licenses and (in some "
-"cases) patent restrictions which may prevent you from using, modifying, or "
-"sharing it."
-msgstr ""
-"Kra n yiseɣẓan ur nelli d ilelliyen llan s talɣa n yikemmusen. Ɣas akken "
-"aseɣẓan-a mačči d aḥric seg usedger agejdan, zemren ad ttusqedcen ifecka n "
-"usefrek n ukemmus aslugan i usebded-ines. Aseɣẓan-a ɣur-s aṭas n turagin "
-"yemgaraden yerna (yella wanda) ilugan n turagt ur ak·akem-nettaǧǧa ara ad t-"
-"tesqedceḍ, ad t-tbeddleḍ neɣ ad t-tebḍuḍ."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid "Use software from the \"partner\" repository?"
-msgstr "Seqdec aseɣẓan seg ukufi n \"umendid\"?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:4001
-msgid ""
-"Some additional software is available from Canonical's \"partner\" "
-"repository. This software is not part of Ubuntu, but is offered by Canonical "
-"and the respective vendors as a service to Ubuntu users."
-msgstr ""
-"Kra n yiseɣẓan-nniḍen llan seg ukufi n \"umendad\" n Canonical. Aseɣẓan-a "
-"mačči d aḥric n Ubuntu, maca yettunefk-d s Canoncical syen imsenziyen am "
-"umezlu n yiqeddacen n Ubuntu."
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid "Use backported software?"
-msgstr "Seqdec aseɣẓan i yebedlen llqem yezrin ?"
-
-#. Type: boolean
-#. Description
-#. This template is used by the Ubuntu version of d-i.
-#. :sl2:
-#: ../apt-mirror-setup.templates-ubuntu:5001
-msgid ""
-"Some software has been backported from the development tree to work with "
-"this release. Although this software has not gone through such complete "
-"testing as that contained in the release, it includes newer versions of some "
-"applications which may provide useful features."
-msgstr ""
-"Kra n yiseɣẓan ttwawin-d seg deffir seg useklu n usnefli i wakken ad yeddu d "
-"lqem-a. Ɣas akken aseɣẓan-a ur yettusekyed ara s wudem ummid am win yellan "
-"deg lqem, llan deg-s yileqman imaynuten ineggura n kra n yisnasen i izemren "
-"ad d-mudden timahilin yeɛan aṭas azal."
